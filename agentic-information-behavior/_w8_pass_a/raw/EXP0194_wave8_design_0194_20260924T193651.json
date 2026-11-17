@@ -1,0 +1,302 @@
+{
+ "baselines": [
+  {
+   "clusters": 12886,
+   "deviance": 11718.68,
+   "dv": "call_changed",
+   "model": "controls_only",
+   "n": 77963,
+   "terms": "log_turns+task_words_log"
+  },
+  {
+   "added_term": "position",
+   "deviance": 11456.23,
+   "deviance_drop": 262.45,
+   "dv": "call_changed",
+   "lr_chi2": 524.9,
+   "lr_df": 1,
+   "lr_p": 0.0,
+   "model": "controls_plus_position",
+   "n": 77963,
+   "position_beta": 2.0414,
+   "position_ci_hi": 2.4808,
+   "position_ci_lo": 1.6021,
+   "position_cluster": "traj_id",
+   "position_dropped_constant_terms": "none",
+   "position_p": 0.0,
+   "position_se": 0.2242,
+   "terms": "position+log_turns+task_words_log"
+  },
+  {
+   "added_term": "spoke_correction",
+   "deviance": 11450.83,
+   "deviance_drop": 267.84,
+   "dv": "call_changed",
+   "lr_chi2": 535.68,
+   "lr_df": 2,
+   "lr_p": 0.0,
+   "model": "controls_plus_admission",
+   "n": 77963,
+   "spoke_correction_beta": -0.7342,
+   "spoke_correction_ci_hi": -0.1269,
+   "spoke_correction_ci_lo": -1.3415,
+   "spoke_correction_cluster": "traj_id",
+   "spoke_correction_dropped_constant_terms": "none",
+   "spoke_correction_p": 0.0178,
+   "spoke_correction_se": 0.3098,
+   "terms": "spoke_correction+position+log_turns+task_words_log"
+  }
+ ],
+ "blocked_designs_in_this_wave": [
+  "T175",
+  "T176"
+ ],
+ "cluster_unit": "traj_id",
+ "descriptive_rates": {
+  "admissions_without_an_error_before": 273,
+  "correction_by_position_third": {
+   "first_third": {
+    "changed_rate_after_correction": 1.0,
+    "correction_share": 0.004,
+    "rows": 29850
+   },
+   "last_third": {
+    "changed_rate_after_correction": 0.9801,
+    "correction_share": 0.0087,
+    "rows": 51909
+   },
+   "middle_third": {
+    "changed_rate_after_correction": 0.985,
+    "correction_share": 0.0076,
+    "rows": 43953
+   }
+  },
+  "repeat_call_share_by_correction": {
+   "0": {
+    "repeat_share": 0.0736,
+    "rows": 124806
+   },
+   "1": {
+    "repeat_share": 0.0563,
+    "rows": 906
+   }
+  }
+ },
+ "exp_id": "EXP-0194",
+ "finished_at": "2026-09-24T19:36:51",
+ "frame_file_read": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0191_wave8_turn_features.csv.gz",
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave8_designs.py",
+ "models": [
+  {
+   "beta": -0.7342,
+   "changed_rate_with": 0.9795,
+   "changed_rate_without": 0.9852,
+   "ci_hi": -0.1269,
+   "ci_lo": -1.3415,
+   "cluster": "traj_id",
+   "dropped_constant_terms": "none",
+   "hypothesis": "H1",
+   "n": 77963,
+   "p": 0.0178,
+   "p_holm": 0.0178,
+   "se": 0.3098,
+   "term": "a_verbal_correction_after_an_error_marked_observation_on_changing_the_call",
+   "turns_after_an_error": 77963,
+   "turns_with_a_correction": 633,
+   "verdict": "opposite",
+   "verdict_direction": "predicted_positive: an admission is followed by different behaviour"
+  },
+  {
+   "beta": 0.0155,
+   "ci_hi": 0.0247,
+   "ci_lo": 0.0074,
+   "clusters": 580,
+   "corrections": 906,
+   "frozen_floor": 0.2,
+   "hypothesis": "H2",
+   "n": 906,
+   "note": "the frozen sentence puts the floor on the measured rate rather than on a coefficient, so the bootstrap interval is read against 0.20 directly and no band is invented",
+   "p": 0.0005,
+   "p_holm": null,
+   "ritual_rate": 0.0155,
+   "term": "the_share_of_verbal_corrections_with_no_behavioural_change",
+   "trajectories": 580,
+   "verdict": "not_at_or_above_the_frozen_floor_measured_0p0155"
+  },
+  {
+   "agreement": 0.3827,
+   "beta": 0.0018,
+   "ci": [
+    0.0009,
+    0.0026
+   ],
+   "clusters": 14332,
+   "corrected_without_error": 273,
+   "error_without_correction": 77330,
+   "hypothesis": "H3",
+   "kappa": 0.0018,
+   "n": 125712,
+   "note": "H3 claims the two instruments are separable; kappa < 0.50 on these rows is what the freeze fixed as the reading of that claim, and the two off-diagonal counts say in which direction they come apart",
+   "p": 0.005,
+   "p_holm": null,
+   "term": "agreement_between_an_admission_and_a_preceding_error_marker",
+   "turns": 125712,
+   "verdict": "supported",
+   "verdict_rule": "specificity"
+  }
+ ],
+ "n_clusters": 14332,
+ "n_trajectories": 14701,
+ "n_turns": 147253,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 70,
+  "exp_id": "EXP-0194",
+  "note": "wave-8 design",
+  "python": "3.11.7",
+  "rows_in": 147253,
+  "started_at": "2026-09-24T19:36:43",
+  "wallclock_sec": 7.9
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T19:36:51",
+ "strata": [
+  {
+   "beta": -2.5574,
+   "ci_hi": -1.7216,
+   "ci_lo": -3.3933,
+   "cluster": "traj_id",
+   "clusters": 3816,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 18941,
+   "p": 0.0,
+   "rows": 18941,
+   "se": 0.4265,
+   "stratification": "category",
+   "stratum": "Agent Tools"
+  },
+  {
+   "beta": 17.6897,
+   "ci_hi": 18.4079,
+   "ci_lo": 16.9715,
+   "cluster": "traj_id",
+   "clusters": 1364,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 4670,
+   "p": 0.0,
+   "rows": 4670,
+   "se": 0.3664,
+   "stratification": "category",
+   "stratum": "Browser Automation"
+  },
+  {
+   "beta": -1.7237,
+   "ci_hi": -0.3022,
+   "ci_lo": -3.1451,
+   "cluster": "traj_id",
+   "clusters": 843,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 5260,
+   "p": 0.0175,
+   "rows": 5260,
+   "se": 0.7253,
+   "stratification": "category",
+   "stratum": "Multi-Tool"
+  },
+  {
+   "beta": -0.5142,
+   "ci_hi": 1.4129,
+   "ci_lo": -2.4414,
+   "cluster": "traj_id",
+   "clusters": 2131,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 26667,
+   "p": 0.601,
+   "rows": 26667,
+   "se": 0.9832,
+   "stratification": "category",
+   "stratum": "Repository Tasks"
+  },
+  {
+   "beta": 16.5279,
+   "ci_hi": 18.164,
+   "ci_lo": 14.8918,
+   "cluster": "traj_id",
+   "clusters": 295,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 1683,
+   "p": 0.0,
+   "rows": 1683,
+   "se": 0.8348,
+   "stratification": "category",
+   "stratum": "Scheduling"
+  },
+  {
+   "beta": 1.4673,
+   "ci_hi": 3.461,
+   "ci_lo": -0.5265,
+   "cluster": "traj_id",
+   "clusters": 3669,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 18260,
+   "p": 0.1492,
+   "rows": 18260,
+   "se": 1.0172,
+   "stratification": "category",
+   "stratum": "Terminal & Coding"
+  },
+  {
+   "beta": 20.0603,
+   "ci_hi": 20.4007,
+   "ci_lo": 19.7198,
+   "cluster": "traj_id",
+   "clusters": 8076,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 17849,
+   "p": 0.0,
+   "rows": 17849,
+   "se": 0.1737,
+   "stratification": "position_third",
+   "stratum": "first_third"
+  },
+  {
+   "beta": -1.1424,
+   "ci_hi": -0.44,
+   "ci_lo": -1.8448,
+   "cluster": "traj_id",
+   "clusters": 11493,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 32777,
+   "p": 0.0014,
+   "rows": 32777,
+   "se": 0.3584,
+   "stratification": "position_third",
+   "stratum": "last_third"
+  },
+  {
+   "beta": -0.5023,
+   "ci_hi": 0.5075,
+   "ci_lo": -1.5122,
+   "cluster": "traj_id",
+   "clusters": 10462,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 27337,
+   "p": 0.3296,
+   "rows": 27337,
+   "se": 0.5152,
+   "stratification": "position_third",
+   "stratum": "middle_third"
+  }
+ ],
+ "topic": "T190"
+}

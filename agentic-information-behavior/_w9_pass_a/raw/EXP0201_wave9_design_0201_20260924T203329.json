@@ -1,0 +1,172 @@
+{
+ "baselines": [
+  {
+   "dv": "selected_rollout",
+   "instances": 1775,
+   "mean_steps_of_selected": 14.43,
+   "model": "success_only_ranking"
+  },
+  {
+   "dv": "selected_rollout",
+   "instances": 1775,
+   "mean_repeat_share_of_selected": 0.0116,
+   "mean_steps_of_selected": 13.49,
+   "model": "cost_adjusted_ranking"
+  },
+  {
+   "dv": "selected_rollout",
+   "instances": 1775,
+   "mean_steps_of_selected": 14.98,
+   "model": "longest_rollout_of_each_instance"
+  }
+ ],
+ "blocked_designs_in_this_wave": [
+  "T151",
+  "T156"
+ ],
+ "cluster_unit": "instance_id",
+ "descriptive_rates": {
+  "rollouts_per_instance": {
+   "10": 121,
+   "11": 108,
+   "2": 11,
+   "3": 29,
+   "4": 63,
+   "5": 90,
+   "6": 132,
+   "7": 143,
+   "8": 178,
+   "9": 168
+  },
+  "steps_by_ranking_choice": {
+   "False": {
+    "instances": 18204,
+    "mean_duration": 55.05,
+    "mean_steps": 14.77
+   },
+   "True": {
+    "instances": 1775,
+    "mean_duration": 59.92,
+    "mean_steps": 13.49
+   }
+  },
+  "success_share": 0.028,
+  "tau_distribution": {
+   "p10_p50_p90": [
+    -0.3333,
+    0.0277,
+    0.4187
+   ]
+  }
+ },
+ "exp_id": "EXP-0201",
+ "finished_at": "2026-09-24T20:33:29",
+ "frame_files_read": {
+  "S": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0197_wave9_step_features.csv.gz",
+  "T": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0197_wave9_rollout_features.csv.gz"
+ },
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave9_designs.py",
+ "models": [
+  {
+   "beta": 0.0414,
+   "ci_hi": 0.056,
+   "ci_lo": 0.026,
+   "clusters": 1775,
+   "frozen_agreement_ceiling": 0.8,
+   "hypothesis": "H1",
+   "instances_where_tau_is_defined": 1775,
+   "instances_with_two_rollouts": 1775,
+   "n": 1775,
+   "note": "the sentence fixes an agreement ceiling rather than an effect size, because the claim is that the two rules disagree: the tau is bounded at 1 by construction and the interval is read against 0.80",
+   "p": 0.0016666666666666668,
+   "p_holm": null,
+   "term": "within_instance_agreement_between_success_only_and_cost_adjusted_rankings",
+   "verdict": "supported",
+   "verdict_direction": "predicted_negative: the two rankings do not agree"
+  },
+  {
+   "beta": 0.8681,
+   "ci": [
+    0.8255,
+    0.9106
+   ],
+   "hypothesis": "H2",
+   "instances_with_a_cheaper_success": 204,
+   "instances_with_a_success": 235,
+   "note": "H2 asks for a share with its interval, not a coefficient; where no success exists in an instance the sentence has no denominator, and that count is printed beside the share",
+   "p": null,
+   "p_holm": null,
+   "share": 0.8681,
+   "term": "instances_where_a_cheaper_successful_rollout_than_the_longest_one_exists",
+   "verdict": "measured_descriptively_no_band_was_frozen",
+   "verdict_rule": "descriptive"
+  },
+  {
+   "beta": 0.0414,
+   "hypothesis": "H3",
+   "instances_trimmed": 1764,
+   "instances_with_a_success": 235,
+   "n": 1775,
+   "note": "H3 asks whether one structure carries the disagreement: it is supported while the restricted estimates keep the same side of the ceiling as the full one",
+   "p": 0.0016666666666666668,
+   "p_holm": null,
+   "tau_after_dropping_the_longest_rollout": 0.051,
+   "tau_all": 0.0414,
+   "tau_instances_with_a_success": 0.3081,
+   "term": "the_agreement_after_restricting_to_success_bearing_and_trimmed_instances",
+   "verdict": "supported",
+   "verdict_rule": "specificity"
+  }
+ ],
+ "n_clusters": 1775,
+ "n_rollouts": 19979,
+ "n_steps": 292992,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 48,
+  "exp_id": "EXP-0201",
+  "note": "wave-9 design",
+  "python": "3.11.7",
+  "rows_in": 19988,
+  "started_at": "2026-09-24T20:32:46",
+  "wallclock_sec": 43.3
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T20:33:29",
+ "strata": [
+  {
+   "instances": 840,
+   "max_tau": 0.7091,
+   "mean_tau": 0.0375,
+   "min_tau": -0.5833,
+   "stratification": "rollouts_per_instance_band",
+   "stratum": "11plus"
+  },
+  {
+   "instances": 11,
+   "max_tau": 1.0,
+   "mean_tau": 0.2727,
+   "min_tau": -1.0,
+   "stratification": "rollouts_per_instance_band",
+   "stratum": "2"
+  },
+  {
+   "instances": 182,
+   "max_tau": 1.0,
+   "mean_tau": 0.0806,
+   "min_tau": -1.0,
+   "stratification": "rollouts_per_instance_band",
+   "stratum": "3to5"
+  },
+  {
+   "instances": 742,
+   "max_tau": 1.0,
+   "mean_tau": 0.0329,
+   "min_tau": -1.0,
+   "stratification": "rollouts_per_instance_band",
+   "stratum": "6to10"
+  }
+ ],
+ "topic": "T193"
+}

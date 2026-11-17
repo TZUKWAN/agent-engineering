@@ -1,0 +1,6 @@
+stratification,stratum,mean_steps,submitted_share,rollouts,mean_step_difference,later_submitted_share,pairs
+neighbour similarity band,b1,14.975,0.0034,1744.0,,,
+neighbour similarity band,b2,14.893,0.0245,16099.0,,,
+neighbour similarity band,b3plus,14.719,0.0737,2157.0,,,
+sibling command-similarity band,c0,,,,0.01,0.0265,126193.0
+sibling command-similarity band,c1,,,,0.0,0.0,1.0

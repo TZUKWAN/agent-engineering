@@ -1,0 +1,9 @@
+category,n,positives,auc_transfer,auc_length_only
+Agent Tools,2732,445,0.5529,0.4525
+Browser Automation,639,369,0.7789,0.6142
+File Operations,134,43,0.3845,0.2061
+Multi-Tool,52,6,0.9493,0.1359
+Planning & Organization,92,28,0.7966,0.8357
+Repository Tasks,13,4,0.8333,0.5278
+Scheduling,103,7,0.5238,0.3929
+Terminal & Coding,2235,164,0.8574,0.4906

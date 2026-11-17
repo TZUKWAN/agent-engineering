@@ -1,0 +1,2373 @@
+{
+ "detector": "round2_number_provenance",
+ "packages": 70,
+ "totals": {
+  "table_cells": 0,
+  "prose": 6,
+  "missing_copies": 0,
+  "degenerate_tables": 129
+ },
+ "detail": {
+  "P001_routing_failure_qpp": {
+   "values_in_kept_artefacts": 100672,
+   "values_in_shipped_tables": 98367,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P002_isp_stage_measurement": {
+   "values_in_kept_artefacts": 2477,
+   "values_in_shipped_tables": 984,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [
+    {
+     "doc": "pilot_report.md",
+     "value": 1.367,
+     "context": "Q2 first-order vs position-only B4 | >= 2 bits/trajectory | 1.367 bits/trajectory (0.0916/turn) | **below"
+    },
+    {
+     "doc": "agenttrove_instrument_exp0092.md",
+     "value": 0.6562,
+     "context": "Reading the payload buys 0.6562; the corpus-specific cue"
+    }
+   ],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 25,
+    "rejected": 0.875,
+    "accepted_unrelated_in_a_passage": 25,
+    "rejected_in_a_real_passage": 0.875
+   }
+  },
+  "P003_metadata_interoperability": {
+   "values_in_kept_artefacts": 2166,
+   "values_in_shipped_tables": 942,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 18,
+    "rejected": 0.91,
+    "accepted_unrelated_in_a_passage": 18,
+    "rejected_in_a_real_passage": 0.91
+   }
+  },
+  "P004_shipped_quality_score_validity": {
+   "values_in_kept_artefacts": 2320,
+   "values_in_shipped_tables": 781,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 39,
+    "rejected": 0.805,
+    "accepted_unrelated_in_a_passage": 40,
+    "rejected_in_a_real_passage": 0.8
+   }
+  },
+  "P005_governance_metadata_verifiability": {
+   "values_in_kept_artefacts": 2109,
+   "values_in_shipped_tables": 531,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table7_hypothesis_verdicts.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "hypothesis",
+      "established",
+      "refuted",
+      "inputs",
+      "what_would_have_changed_it"
+     ],
+     "first_row": "{'hypothesis': 'H1_release_level_only', 'established': 'True', 'refuted': 'False', 'inputs': '{\"L2\": 7, \"L1\": 0, \"L6\": 0, \"uncapped_releases"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [
+    {
+     "doc": "acquisition_chain.md",
+     "value": 1789666120.667,
+     "context": "1789666120.667                               download"
+    },
+    {
+     "doc": "results_raw/top10_screening_20260919.md",
+     "value": 0.185,
+     "context": "audits scores a corpus ships | measured pilot: alpha 0.113/0.185/0.119; criterion rho 0.089/0.287/0.095;"
+    },
+    {
+     "doc": "results_raw/top10_screening_20260919.md",
+     "value": 0.185,
+     "context": "| Qwen3 | 8780 | 0.185 | 0.287 | [0.354, 0.121, 0.094, 0.578]"
+    },
+    {
+     "doc": "results_raw/top10_screening_20260919.md",
+     "value": 0.354,
+     "context": "| Qwen3 | 8780 | 0.185 | 0.287 | [0.354, 0.121, 0.094, 0.578] |"
+    }
+   ],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 26,
+    "rejected": 0.87,
+    "accepted_unrelated_in_a_passage": 26,
+    "rejected_in_a_real_passage": 0.87
+   }
+  },
+  "P006_underspecified_needs": {
+   "values_in_kept_artefacts": 35305,
+   "values_in_shipped_tables": 34677,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P007_constraint_density": {
+   "values_in_kept_artefacts": 35250,
+   "values_in_shipped_tables": 34667,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P008_query_reformulation_fidelity": {
+   "values_in_kept_artefacts": 36179,
+   "values_in_shipped_tables": 35581,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "issued",
+      "query_id",
+      "question"
+     ],
+     "first_row": "{'issued': 'search_files pattern *.py target files', 'query_id': 'HERMES|58be3f1e-49bf-4ec6-846e-041c6f9aac7f', 'question': 'Search for Pyth"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table2_retention_summary.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "key",
+      "value"
+     ],
+     "first_row": "{'key': 'kill_gates', 'value': \"{'T101_length_proxy_gate': False, 'T103_collinearity_gate': False, 'T103_note_zero_variance': None, 'T108_de"
+    },
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P009_lexical_match_bias": {
+   "values_in_kept_artefacts": 35234,
+   "values_in_shipped_tables": 34625,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P010_lexical_semantic_conflict": {
+   "values_in_kept_artefacts": 35227,
+   "values_in_shipped_tables": 34617,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table4_catalogue_size_strata.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "key",
+      "value"
+     ],
+     "first_row": "{'key': 'H2', 'value': \"{'beta': -0.7825, 'big_rate': 0.5911, 'ci_clustered': [-0.1879, -0.1511], 'gap': -0.1686, 'measure': 'follow_gap_by_"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    },
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P011_predicate_argument_relevance": {
+   "values_in_kept_artefacts": 35226,
+   "values_in_shipped_tables": 34649,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P012_entity_action_constraint_fit": {
+   "values_in_kept_artefacts": 46563,
+   "values_in_shipped_tables": 45994,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P013_negative_boundary_metadata": {
+   "values_in_kept_artefacts": 34742,
+   "values_in_shipped_tables": 34517,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P014_semantic_prototype_bias": {
+   "values_in_kept_artefacts": 46541,
+   "values_in_shipped_tables": 45981,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P015_metadata_quality_model": {
+   "values_in_kept_artefacts": 46548,
+   "values_in_shipped_tables": 45974,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table4_auroc_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "key",
+      "value"
+     ],
+     "first_row": "{'key': 'auroc_gain', 'value': 'not_recorded'}"
+    },
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P016_description_granularity": {
+   "values_in_kept_artefacts": 46581,
+   "values_in_shipped_tables": 46006,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table2_granularity_distribution.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "measure",
+      "value",
+      "source"
+     ],
+     "first_row": "{'measure': 'measured.description_tokens', 'value': '{\"deciles_distinct\": 10, \"mean\": 25.3, \"p10\": 7.0, \"p50\": 16.0, \"p90\": 46.0}', 'source'"
+    },
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P017_noun_verb_centring": {
+   "values_in_kept_artefacts": 34742,
+   "values_in_shipped_tables": 34517,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P018_function_vs_usecase_description": {
+   "values_in_kept_artefacts": 46537,
+   "values_in_shipped_tables": 45964,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P019_hierarchy_facets_flat_lists": {
+   "values_in_kept_artefacts": 46063,
+   "values_in_shipped_tables": 45833,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P020_name_description_congruence": {
+   "values_in_kept_artefacts": 46563,
+   "values_in_shipped_tables": 45999,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P021_synonym_normalisation_consistency": {
+   "values_in_kept_artefacts": 46550,
+   "values_in_shipped_tables": 45968,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "query_id"
+     ],
+     "first_row": "{'query_id': 'OSS|d8ae1231-90b1-5360-bf62-145a3a76e511'}"
+    },
+    {
+     "table": "table4_strata_by_mismatch.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "key",
+      "value"
+     ],
+     "first_row": "{'key': 'H2', 'value': 'not_recorded'}"
+    },
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P022_discriminability_and_discoverability": {
+   "values_in_kept_artefacts": 46567,
+   "values_in_shipped_tables": 46001,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table2_discriminability_distribution.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "measure",
+      "value"
+     ],
+     "first_row": "{'measure': 'contradiction', 'value': '{\"mean\": 0.0, \"non_null\": 169203}'}"
+    },
+    {
+     "table": "table6_baseline_comparison.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "model",
+      "note"
+     ],
+     "first_row": "{'model': 'shipped_frame_columns', 'note': \"the frozen frame's own BM25 columns are reproduced from P001's builder rather than recomputed, a"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 199,
+    "rejected": 0.005,
+    "accepted_unrelated_in_a_passage": 199,
+    "rejected_in_a_real_passage": 0.005
+   }
+  },
+  "P023_modality_and_verification": {
+   "values_in_kept_artefacts": 1566,
+   "values_in_shipped_tables": 308,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table13_e17_counterfactual.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "arm",
+      "beta_ci"
+     ],
+     "first_row": "{'arm': 'arms:0', 'beta_ci': '[0.4162, 0.3722, 0.4601]'}"
+    },
+    {
+     "table": "table15_e08_external_transfer.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "measure",
+      "value"
+     ],
+     "first_row": "{'measure': 'reason', 'value': 'wave 4 needs assistant turns with their own reasoning and their own tool calls. The routing corpora that ser"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 32,
+    "rejected": 0.84,
+    "accepted_unrelated_in_a_passage": 44,
+    "rejected_in_a_real_passage": 0.78
+   }
+  },
+  "P024_epistemic_behavioural_gap": {
+   "values_in_kept_artefacts": 1544,
+   "values_in_shipped_tables": 311,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table13_e17_counterfactual.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "arm",
+      "beta_ci"
+     ],
+     "first_row": "{'arm': 'arms:0', 'beta_ci': '[0.4162, 0.3722, 0.4601]'}"
+    },
+    {
+     "table": "table15_e08_external_transfer.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "measure",
+      "value"
+     ],
+     "first_row": "{'measure': 'reason', 'value': 'wave 4 needs assistant turns with their own reasoning and their own tool calls. The routing corpora that ser"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 32,
+    "rejected": 0.84,
+    "accepted_unrelated_in_a_passage": 41,
+    "rejected_in_a_real_passage": 0.795
+   }
+  },
+  "P025_contradiction_and_modality": {
+   "values_in_kept_artefacts": 1533,
+   "values_in_shipped_tables": 282,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table13_e17_counterfactual.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "arm",
+      "beta_ci"
+     ],
+     "first_row": "{'arm': 'arms:0', 'beta_ci': '[0.4162, 0.3722, 0.4601]'}"
+    },
+    {
+     "table": "table15_e08_external_transfer.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "measure",
+      "value"
+     ],
+     "first_row": "{'measure': 'reason', 'value': 'wave 4 needs assistant turns with their own reasoning and their own tool calls. The routing corpora that ser"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 32,
+    "rejected": 0.84,
+    "accepted_unrelated_in_a_passage": 40,
+    "rejected_in_a_real_passage": 0.8
+   }
+  },
+  "P026_sufficiency_language_and_stopping": {
+   "values_in_kept_artefacts": 1555,
+   "values_in_shipped_tables": 314,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table13_e17_counterfactual.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "arm",
+      "beta_ci"
+     ],
+     "first_row": "{'arm': 'arms:0', 'beta_ci': '[0.4162, 0.3722, 0.4601]'}"
+    },
+    {
+     "table": "table15_e08_external_transfer.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "measure",
+      "value"
+     ],
+     "first_row": "{'measure': 'reason', 'value': 'wave 4 needs assistant turns with their own reasoning and their own tool calls. The routing corpora that ser"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 31,
+    "rejected": 0.845,
+    "accepted_unrelated_in_a_passage": 42,
+    "rejected_in_a_real_passage": 0.79
+   }
+  },
+  "P027_discourse_grammar_of_seeking": {
+   "values_in_kept_artefacts": 1790,
+   "values_in_shipped_tables": 353,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 42,
+    "rejected": 0.79,
+    "accepted_unrelated_in_a_passage": 49,
+    "rejected_in_a_real_passage": 0.755
+   }
+  },
+  "P028_conclusion_before_evidence": {
+   "values_in_kept_artefacts": 1724,
+   "values_in_shipped_tables": 283,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 43,
+    "rejected": 0.785,
+    "accepted_unrelated_in_a_passage": 50,
+    "rejected_in_a_real_passage": 0.75
+   }
+  },
+  "P029_discourse_repair_after_failure": {
+   "values_in_kept_artefacts": 1803,
+   "values_in_shipped_tables": 368,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 41,
+    "rejected": 0.795,
+    "accepted_unrelated_in_a_passage": 49,
+    "rejected_in_a_real_passage": 0.755
+   }
+  },
+  "P030_causal_connectives_and_evidence": {
+   "values_in_kept_artefacts": 1778,
+   "values_in_shipped_tables": 379,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 42,
+    "rejected": 0.79,
+    "accepted_unrelated_in_a_passage": 48,
+    "rejected_in_a_real_passage": 0.76
+   }
+  },
+  "P031_explanatory_coherence_and_evidential_gaps": {
+   "values_in_kept_artefacts": 1723,
+   "values_in_shipped_tables": 315,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 47,
+    "rejected": 0.765,
+    "accepted_unrelated_in_a_passage": 54,
+    "rejected_in_a_real_passage": 0.73
+   }
+  },
+  "P032_plan_action_alignment": {
+   "values_in_kept_artefacts": 1744,
+   "values_in_shipped_tables": 311,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 44,
+    "rejected": 0.78,
+    "accepted_unrelated_in_a_passage": 49,
+    "rejected_in_a_real_passage": 0.755
+   }
+  },
+  "P033_search_depth_vs_need_complexity": {
+   "values_in_kept_artefacts": 1728,
+   "values_in_shipped_tables": 232,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "instance_id"
+     ],
+     "first_row": "{'instance_id': 'projectmesa__mesa-2257'}"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 36,
+    "rejected": 0.82,
+    "accepted_unrelated_in_a_passage": 41,
+    "rejected_in_a_real_passage": 0.795
+   }
+  },
+  "P034_information_scent_and_the_next_choice": {
+   "values_in_kept_artefacts": 1781,
+   "values_in_shipped_tables": 317,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "instance_id"
+     ],
+     "first_row": "{'instance_id': 'projectmesa__mesa-2257'}"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 34,
+    "rejected": 0.83,
+    "accepted_unrelated_in_a_passage": 41,
+    "rejected_in_a_real_passage": 0.795
+   }
+  },
+  "P035_marginal_gain_and_search_persistence": {
+   "values_in_kept_artefacts": 1792,
+   "values_in_shipped_tables": 332,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 36,
+    "rejected": 0.82,
+    "accepted_unrelated_in_a_passage": 43,
+    "rejected_in_a_real_passage": 0.785
+   }
+  },
+  "P036_command_family_switching_cost": {
+   "values_in_kept_artefacts": 1787,
+   "values_in_shipped_tables": 316,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "instance_id"
+     ],
+     "first_row": "{'instance_id': 'projectmesa__mesa-2257'}"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 36,
+    "rejected": 0.82,
+    "accepted_unrelated_in_a_passage": 43,
+    "rejected_in_a_real_passage": 0.785
+   }
+  },
+  "P037_first_action_path_dependence": {
+   "values_in_kept_artefacts": 1760,
+   "values_in_shipped_tables": 278,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "instance_id"
+     ],
+     "first_row": "{'instance_id': 'jensneuse__graphql-go-tools-121'}"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 45,
+    "rejected": 0.775,
+    "accepted_unrelated_in_a_passage": 51,
+    "rejected_in_a_real_passage": 0.745
+   }
+  },
+  "P038_repetition_and_rumination": {
+   "values_in_kept_artefacts": 1801,
+   "values_in_shipped_tables": 319,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "instance_id"
+     ],
+     "first_row": "{'instance_id': 'projectmesa__mesa-2257'}"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 33,
+    "rejected": 0.835,
+    "accepted_unrelated_in_a_passage": 40,
+    "rejected_in_a_real_passage": 0.8
+   }
+  },
+  "P039_semantic_decoy_and_misselection": {
+   "values_in_kept_artefacts": 1604,
+   "values_in_shipped_tables": 344,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 58,
+    "rejected": 0.71,
+    "accepted_unrelated_in_a_passage": 65,
+    "rejected_in_a_real_passage": 0.675
+   }
+  },
+  "P040_affordance_language_and_selection": {
+   "values_in_kept_artefacts": 1614,
+   "values_in_shipped_tables": 326,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 50,
+    "rejected": 0.75,
+    "accepted_unrelated_in_a_passage": 58,
+    "rejected_in_a_real_passage": 0.71
+   }
+  },
+  "P041_tool_namespace_and_candidate_overload": {
+   "values_in_kept_artefacts": 1633,
+   "values_in_shipped_tables": 341,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 46,
+    "rejected": 0.77,
+    "accepted_unrelated_in_a_passage": 54,
+    "rejected_in_a_real_passage": 0.73
+   }
+  },
+  "P042_the_catalogue_ecosystem": {
+   "values_in_kept_artefacts": 1563,
+   "values_in_shipped_tables": 307,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 49,
+    "rejected": 0.755,
+    "accepted_unrelated_in_a_passage": 53,
+    "rejected_in_a_real_passage": 0.735
+   }
+  },
+  "P043_irrelevant_candidate_contamination": {
+   "values_in_kept_artefacts": 1578,
+   "values_in_shipped_tables": 308,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "query_id"
+     ],
+     "first_row": "{'query_id': 'OSS|3e19fe02-5438-5b91-afd8-838d7dddad12'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 47,
+    "rejected": 0.765,
+    "accepted_unrelated_in_a_passage": 55,
+    "rejected_in_a_real_passage": 0.725
+   }
+  },
+  "P044_tool_dependency_network": {
+   "values_in_kept_artefacts": 1546,
+   "values_in_shipped_tables": 297,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 45,
+    "rejected": 0.775,
+    "accepted_unrelated_in_a_passage": 53,
+    "rejected_in_a_real_passage": 0.735
+   }
+  },
+  "P045_primacy_lock_in_and_later_search": {
+   "values_in_kept_artefacts": 1378,
+   "values_in_shipped_tables": 287,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 28,
+    "rejected": 0.86,
+    "accepted_unrelated_in_a_passage": 36,
+    "rejected_in_a_real_passage": 0.82
+   }
+  },
+  "P046_plan_specificity_and_search_quality": {
+   "values_in_kept_artefacts": 1375,
+   "values_in_shipped_tables": 325,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 25,
+    "rejected": 0.875,
+    "accepted_unrelated_in_a_passage": 32,
+    "rejected_in_a_real_passage": 0.84
+   }
+  },
+  "P047_verbal_versus_behavioural_correction": {
+   "values_in_kept_artefacts": 1356,
+   "values_in_shipped_tables": 317,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 12,
+    "rejected": 0.94,
+    "accepted_unrelated_in_a_passage": 28,
+    "rejected_in_a_real_passage": 0.86
+   }
+  },
+  "P048_when_to_stop_a_recorded_search": {
+   "values_in_kept_artefacts": 839,
+   "values_in_shipped_tables": 0,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 9,
+    "rejected": 0.955,
+    "accepted_unrelated_in_a_passage": 9,
+    "rejected_in_a_real_passage": 0.955
+   }
+  },
+  "P049_premature_termination_and_over_search": {
+   "values_in_kept_artefacts": 839,
+   "values_in_shipped_tables": 0,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 9,
+    "rejected": 0.955,
+    "accepted_unrelated_in_a_passage": 9,
+    "rejected_in_a_real_passage": 0.955
+   }
+  },
+  "P050_a_cross_task_grammar_of_agent_search": {
+   "values_in_kept_artefacts": 1223,
+   "values_in_shipped_tables": 214,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table10_e18_replication.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e18_replication', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'False', '"
+    },
+    {
+     "table": "table11_e15_error_taxonomy.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e15_16', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'False', 'reason': "
+    },
+    {
+     "table": "table17_battery_primary_sensitivity.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'primary', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'False', 'reason':"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e_by_config', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'False', 'reas"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    },
+    {
+     "table": "table8_e12_scaling_curve.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e12_scaling', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'False', 'reas"
+    },
+    {
+     "table": "table9_e04_ablation.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e04_ablation', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'False', 'rea"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 16,
+    "rejected": 0.92,
+    "accepted_unrelated_in_a_passage": 26,
+    "rejected_in_a_real_passage": 0.87
+   }
+  },
+  "P051_early_signals_of_agent_search_failure": {
+   "values_in_kept_artefacts": 1267,
+   "values_in_shipped_tables": 233,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 19,
+    "rejected": 0.905,
+    "accepted_unrelated_in_a_passage": 30,
+    "rejected_in_a_real_passage": 0.85
+   }
+  },
+  "P052_the_recovery_window_after_a_failed_step": {
+   "values_in_kept_artefacts": 1277,
+   "values_in_shipped_tables": 259,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 17,
+    "rejected": 0.915,
+    "accepted_unrelated_in_a_passage": 28,
+    "rejected_in_a_real_passage": 0.86
+   }
+  },
+  "P053_which_rollouts_deserve_reuse": {
+   "values_in_kept_artefacts": 1248,
+   "values_in_shipped_tables": 243,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "instance_id"
+     ],
+     "first_row": "{'instance_id': 'projectmesa__mesa-2257'}"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 18,
+    "rejected": 0.91,
+    "accepted_unrelated_in_a_passage": 28,
+    "rejected_in_a_real_passage": 0.86
+   }
+  },
+  "P054_an_induced_taxonomy_of_agent_information_behaviour": {
+   "values_in_kept_artefacts": 799,
+   "values_in_shipped_tables": 0,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 10,
+    "rejected": 0.95,
+    "accepted_unrelated_in_a_passage": 10,
+    "rejected_in_a_real_passage": 0.95
+   }
+  },
+  "P055_the_exploration_exploitation_transition": {
+   "values_in_kept_artefacts": 799,
+   "values_in_shipped_tables": 0,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 10,
+    "rejected": 0.95,
+    "accepted_unrelated_in_a_passage": 10,
+    "rejected_in_a_real_passage": 0.95
+   }
+  },
+  "P056_the_implicit_information_need": {
+   "values_in_kept_artefacts": 1290,
+   "values_in_shipped_tables": 291,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "query_id"
+     ],
+     "first_row": "{'query_id': 'OSS|d8ae1231-90b1-5360-bf62-145a3a76e511'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 20,
+    "rejected": 0.9,
+    "accepted_unrelated_in_a_passage": 31,
+    "rejected_in_a_real_passage": 0.845
+   }
+  },
+  "P057_three_kinds_of_linguistic_uncertainty": {
+   "values_in_kept_artefacts": 789,
+   "values_in_shipped_tables": 0,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 13,
+    "rejected": 0.935,
+    "accepted_unrelated_in_a_passage": 13,
+    "rejected_in_a_real_passage": 0.935
+   }
+  },
+  "P058_need_decomposition_and_search_completeness": {
+   "values_in_kept_artefacts": 789,
+   "values_in_shipped_tables": 0,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 13,
+    "rejected": 0.935,
+    "accepted_unrelated_in_a_passage": 13,
+    "rejected_in_a_real_passage": 0.935
+   }
+  },
+  "P059_linguistic_cues_and_source_reliability": {
+   "values_in_kept_artefacts": 789,
+   "values_in_shipped_tables": 0,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 13,
+    "rejected": 0.935,
+    "accepted_unrelated_in_a_passage": 13,
+    "rejected_in_a_real_passage": 0.935
+   }
+  },
+  "P060_attribution_framing_and_credibility_bias": {
+   "values_in_kept_artefacts": 789,
+   "values_in_shipped_tables": 0,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 13,
+    "rejected": 0.935,
+    "accepted_unrelated_in_a_passage": 13,
+    "rejected_in_a_real_passage": 0.935
+   }
+  },
+  "P061_task_language_ambiguity_and_search_shape": {
+   "values_in_kept_artefacts": 789,
+   "values_in_shipped_tables": 0,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 0,
+    "accepted_unrelated": 13,
+    "rejected": 0.935,
+    "accepted_unrelated_in_a_passage": 13,
+    "rejected_in_a_real_passage": 0.935
+   }
+  },
+  "P062_discourse_structure_of_successful_and_failed_searches": {
+   "values_in_kept_artefacts": 1294,
+   "values_in_shipped_tables": 268,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 11,
+    "rejected": 0.945,
+    "accepted_unrelated_in_a_passage": 23,
+    "rejected_in_a_real_passage": 0.885
+   }
+  },
+  "P063_which_components_of_a_trace_carry_forward": {
+   "values_in_kept_artefacts": 1300,
+   "values_in_shipped_tables": 244,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table17_battery_primary_sensitivity.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'primary', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'True', 'reason': "
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    },
+    {
+     "table": "table8_e12_scaling_curve.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e12_scaling', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'True', 'reaso"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 12,
+    "rejected": 0.94,
+    "accepted_unrelated_in_a_passage": 24,
+    "rejected_in_a_real_passage": 0.88
+   }
+  },
+  "P064_abstraction_level_of_a_trace_and_transfer": {
+   "values_in_kept_artefacts": 1254,
+   "values_in_shipped_tables": 254,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 17,
+    "rejected": 0.915,
+    "accepted_unrelated_in_a_passage": 27,
+    "rejected_in_a_real_passage": 0.865
+   }
+  },
+  "P065_what_a_compression_loses_first": {
+   "values_in_kept_artefacts": 1289,
+   "values_in_shipped_tables": 270,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 14,
+    "rejected": 0.93,
+    "accepted_unrelated_in_a_passage": 24,
+    "rejected_in_a_real_passage": 0.88
+   }
+  },
+  "P066_relation_classes_between_attempts_of_one_task": {
+   "values_in_kept_artefacts": 1257,
+   "values_in_shipped_tables": 245,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 17,
+    "rejected": 0.915,
+    "accepted_unrelated_in_a_passage": 29,
+    "rejected_in_a_real_passage": 0.855
+   }
+  },
+  "P067_information_density_of_language_and_code_actions": {
+   "values_in_kept_artefacts": 1244,
+   "values_in_shipped_tables": 212,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    },
+    {
+     "table": "table9_e04_ablation.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e04_ablation', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'True', 'reas"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 15,
+    "rejected": 0.925,
+    "accepted_unrelated_in_a_passage": 27,
+    "rejected_in_a_real_passage": 0.865
+   }
+  },
+  "P068_corrective_and_ritual_reflection": {
+   "values_in_kept_artefacts": 1241,
+   "values_in_shipped_tables": 219,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    },
+    {
+     "table": "table9_e04_ablation.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e04_ablation', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'True', 'reas"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 12,
+    "rejected": 0.94,
+    "accepted_unrelated_in_a_passage": 24,
+    "rejected_in_a_real_passage": 0.88
+   }
+  },
+  "P069_case_based_reuse_of_historical_trajectories": {
+   "values_in_kept_artefacts": 1253,
+   "values_in_shipped_tables": 206,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table12_e16_cases.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "instance_id"
+     ],
+     "first_row": "{'instance_id': 'projectmesa__mesa-2257'}"
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    },
+    {
+     "table": "table9_e04_ablation.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e04_ablation', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'True', 'reas"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 18,
+    "rejected": 0.91,
+    "accepted_unrelated_in_a_passage": 30,
+    "rejected_in_a_real_passage": 0.85
+   }
+  },
+  "P070_agent_trajectory_corpora_as_intelligence_sources": {
+   "values_in_kept_artefacts": 1213,
+   "values_in_shipped_tables": 165,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [
+    {
+     "table": "table11_e15_error_taxonomy.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e15_16', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'True', 'reason': '"
+    },
+    {
+     "table": "table17_battery_primary_sensitivity.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'primary', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'True', 'reason': "
+    },
+    {
+     "table": "table18_headline_by_config.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "config",
+      "status"
+     ],
+     "first_row": "{'config': '-', 'status': 'NOT MEASURABLE: the frame carries no config column'}"
+    },
+    {
+     "table": "table5_robustness_inference.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "robustness"
+     ],
+     "first_row": "{'robustness': 'holm_over_declared_family'}"
+    },
+    {
+     "table": "table8_e12_scaling_curve.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e12_scaling', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'True', 'reaso"
+    },
+    {
+     "table": "table9_e04_ablation.csv",
+     "problem": "table_has_no_numeric_column",
+     "columns": [
+      "step",
+      "applicability",
+      "step_present_in_artefact",
+      "reason"
+     ],
+     "first_row": "{'step': 'e04_ablation', 'applicability': 'not applicable / artefact holds no row for this topic', 'step_present_in_artefact': 'True', 'reas"
+    }
+   ],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 12,
+    "rejected": 0.94,
+    "accepted_unrelated_in_a_passage": 27,
+    "rejected_in_a_real_passage": 0.865
+   }
+  }
+ },
+ "matcher_specificity": {
+  "draws": 14000,
+  "accepted_unrelated": 4977,
+  "rejected": 0.645,
+  "accepted_unrelated_in_a_passage": 5331,
+  "rejected_in_a_real_passage": 0.619,
+  "meaning": "fraction of unrelated four-decimal figures the matcher refuses, alone and inside one of the package's own passages; the zero-findings result is only as strong as these numbers"
+ },
+ "at": "2026-09-26T08:28:39",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/registry/round2_number_provenance.py --limit 6 --out _round2_scratch/PROV_widened_baseline.json"
+}

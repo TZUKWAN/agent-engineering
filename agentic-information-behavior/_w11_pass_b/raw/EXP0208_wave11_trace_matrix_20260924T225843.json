@@ -1,0 +1,175 @@
+{
+ "attempt_pairs": 18216,
+ "budgets": [
+  0.1,
+  0.25,
+  0.5
+ ],
+ "categories": [
+  "context",
+  "condition",
+  "observation",
+  "procedure",
+  "rationale",
+  "exception",
+  "provenance",
+  "result"
+ ],
+ "census_artefact": "EXP0207_wave11_premise_census_20260924T221408.json",
+ "census_cross_check": {
+  "instances_with_2plus": [
+   1775,
+   1775
+  ],
+  "mean_abstract_markers": [
+   2.071,
+   2.071
+  ],
+  "mean_chars_of_agent_text": [
+   4901.0,
+   4901.0
+  ],
+  "mean_concrete_markers": [
+   18.095,
+   18.095
+  ],
+  "median_assistant_turns": [
+   15.0,
+   15.0
+  ],
+  "median_component_kinds": [
+   6.0,
+   6.0
+  ],
+  "repos_200plus": [
+   2,
+   2
+  ],
+  "rollouts_parsed": [
+   20000,
+   20000
+  ],
+  "rollouts_with_6plus_turns": [
+   19979,
+   19979
+  ],
+  "rollouts_with_condition": [
+   17389,
+   17389
+  ],
+  "rollouts_with_context": [
+   9095,
+   9095
+  ],
+  "rollouts_with_exception": [
+   10823,
+   10823
+  ],
+  "rollouts_with_identifiers": [
+   18711,
+   18711
+  ],
+  "rollouts_with_negconstraints": [
+   8715,
+   8715
+  ],
+  "rollouts_with_observation": [
+   12421,
+   12421
+  ],
+  "rollouts_with_procedure": [
+   20000,
+   20000
+  ],
+  "rollouts_with_provenance": [
+   17216,
+   17216
+  ],
+  "rollouts_with_rationale": [
+   15330,
+   15330
+  ],
+  "rollouts_with_result": [
+   7974,
+   7974
+  ],
+  "rollouts_with_uncertainty": [
+   11453,
+   11453
+  ],
+  "submitted": [
+   560,
+   560
+  ],
+  "task_instances": [
+   1784,
+   1784
+  ]
+ },
+ "cluster_unit": "instance_id",
+ "corpus": "the estate's fixed 12-file SWE-ZERO rollout draw, as in waves 6 and 9",
+ "cross_check_verdict": "every shared aggregate reproduced",
+ "duplicate_rollout_rows_dropped_before_sampling": 0,
+ "exp_id": "EXP-0208",
+ "files_read": [
+  "train-00051.parquet",
+  "train-00065.parquet",
+  "train-00178.parquet",
+  "train-00209.parquet",
+  "train-00228.parquet",
+  "train-00285.parquet",
+  "train-00457.parquet",
+  "train-00501.parquet",
+  "train-00563.parquet",
+  "train-00864.parquet",
+  "train-01116.parquet",
+  "train-01209.parquet"
+ ],
+ "frames": [
+  "EXP0208_wave11_rollout_features.csv.gz",
+  "EXP0208_wave11_attempt_pairs.csv.gz"
+ ],
+ "instances_with_2plus": 1775,
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave11_features.py",
+ "pairs_by_class": {
+  "new": 2468,
+  "refinement": 15732,
+  "restatement": 16
+ },
+ "rollouts_drawn": 20000,
+ "rollouts_measured": 20000,
+ "rows_in_files": 120000,
+ "run_cost": {
+  "cols_in": 69,
+  "exp_id": "EXP-0208",
+  "note": "wave-11 trace frame",
+  "python": "3.11.7",
+  "rows_in": 20000,
+  "started_at": "2026-09-24T22:56:54",
+  "wallclock_sec": 109.8
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T22:58:43",
+ "submitted_share": 0.028,
+ "survival_at_10_by_category": {
+  "condition": 0.063,
+  "context": 0.0739,
+  "exception": 0.0544,
+  "observation": 0.097,
+  "procedure": 0.9994,
+  "provenance": 0.2646,
+  "rationale": 0.1502,
+  "result": 0.0081
+ },
+ "survival_at_25_by_category": {
+  "condition": 0.2561,
+  "context": 0.1235,
+  "exception": 0.1187,
+  "observation": 0.2052,
+  "procedure": 1.0,
+  "provenance": 0.4805,
+  "rationale": 0.3645,
+  "result": 0.0336
+ },
+ "wallclock_sec": 109.8
+}

@@ -1,0 +1,195 @@
+{
+ "baselines": [
+  {
+   "dv": "jaccard",
+   "mean": 0.14,
+   "model": "all_transitions_described",
+   "n": 7717
+  },
+  {
+   "beta": -0.1117,
+   "ci_hi": -0.1034,
+   "ci_lo": -0.1188,
+   "dv": "jaccard",
+   "model": "marker_minus_no_marker",
+   "p": 0.0016666666666666668
+  }
+ ],
+ "blocked_designs_in_this_wave": [],
+ "claim_limited_in_this_wave": {
+  "T036": [
+   "H1",
+   "G12_eight_corpus_label_coverage"
+  ],
+  "T189": [
+   "H3",
+   "G7_mmat_no_correctness_label"
+  ],
+  "T194": [
+   "H1",
+   "G9_swe_has_neighbours"
+  ]
+ },
+ "cluster_unit": "conversation_id",
+ "conversations": 3975,
+ "descriptive_rates": {
+  "jaccard_distribution": {
+   "p10_p50_p90": [
+    0.0333,
+    0.1333,
+    0.25
+   ]
+  },
+  "marker_prevalence_by_position": {
+   "1": 0.0018,
+   "2": 0.0106,
+   "3": 0.0571,
+   "4": 0.0251,
+   "5": 0.2458,
+   "6": 0.0602
+  },
+  "thoughts_per_conversation": {
+   "mean": 1.941
+  }
+ },
+ "exp_id": "EXP-0217",
+ "finished_at": "2026-09-25T00:12:33",
+ "frame_files_read": {
+  "C": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_codeact_turns.csv.gz",
+  "IV": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_corpus_inventory.csv.gz",
+  "M": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_mmat_transitions.csv.gz",
+  "NE": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_neighbours.csv.gz",
+  "R": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_rollouts.csv.gz",
+  "SI": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_siblings.csv.gz"
+ },
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave12_designs.py",
+ "models": [
+  {
+   "beta": 0.0438,
+   "census_marker_transitions": 267,
+   "ci_hi": 0.0489,
+   "ci_lo": 0.0389,
+   "clusters": 3975,
+   "conversations": 3975,
+   "frozen_floor": 200,
+   "hypothesis": "H1",
+   "marker_transitions": 208,
+   "n": null,
+   "note": "the census counted a marker in the LATER thought of a pair and the design's sentence asks about the thought AFTER a marker, i.e. the earlier one; both counts are printed (deviation W12-D05)",
+   "p": 0.0016666666666666668,
+   "p_holm": null,
+   "se": null,
+   "term": "share_of_conversations_with_a_reflection_marker_in_a_non_first_thought",
+   "transitions": 7717,
+   "verdict": "supported",
+   "verdict_direction": "predicted_positive: reflection markers occur often enough to be split at all"
+  },
+  {
+   "beta": -0.1117,
+   "ci_hi": -0.1034,
+   "ci_lo": -0.1188,
+   "clusters": null,
+   "hypothesis": "H2",
+   "mean_jaccard_after_marker": 0.0313,
+   "mean_jaccard_without_marker": 0.143,
+   "n": null,
+   "p": 0.0016666666666666668,
+   "p_holm": null,
+   "pooled_sd": 0.0859,
+   "se": null,
+   "term": "content_word_overlap_with_the_previous_thought_after_a_marker_minus_no_marker",
+   "transitions": 7717,
+   "verdict": "supported",
+   "verdict_direction": "predicted_negative: what follows a marker is different content"
+  },
+  {
+   "beta": 0.0,
+   "ci_hi": 0.0,
+   "ci_lo": 0.0,
+   "clusters": null,
+   "frozen_floor": 0.2,
+   "hypothesis": "H3",
+   "marker_transitions": 208,
+   "n": null,
+   "note": "H3 is a share, not a coefficient, and it carries no correctness claim at all: EXP-0215's G7 fired because 0 of 4,000 MMAT conversations record whether the answer was right (W12-D01), so 'ritual' here means the words did not change, not that the answer stayed wrong",
+   "operators_after_markers": {
+    "image_caption": 9,
+    "object_detection": 8,
+    "ocr": 3
+   },
+   "p": 2.0,
+   "p_holm": null,
+   "se": null,
+   "term": "share_of_marker_transitions_whose_content_barely_changed",
+   "verdict": "below_the_frozen_floor_measured_0p0000",
+   "verdict_rule": "descriptive"
+  }
+ ],
+ "n_clusters": 3975,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 15,
+  "exp_id": "EXP-0217",
+  "note": "wave-12 design",
+  "python": "3.11.7",
+  "rows_in": 14741,
+  "started_at": "2026-09-25T00:12:19",
+  "wallclock_sec": 13.8
+ },
+ "seed": 42,
+ "started_at": "2026-09-25T00:12:33",
+ "strata": [
+  {
+   "marker_share": 0.0175,
+   "mean_jaccard": 0.1258,
+   "stratification": "operator after the transition",
+   "stratum": "image_caption",
+   "transitions": 514
+  },
+  {
+   "marker_share": 0.0164,
+   "mean_jaccard": 0.1247,
+   "stratification": "operator after the transition",
+   "stratum": "object_detection",
+   "transitions": 488
+  },
+  {
+   "marker_share": 0.0067,
+   "mean_jaccard": 0.1471,
+   "stratification": "operator after the transition",
+   "stratum": "ocr",
+   "transitions": 447
+  },
+  {
+   "marker_share": 0.0018,
+   "mean_jaccard": 0.1542,
+   "stratification": "thought position band",
+   "stratum": "1st",
+   "transitions": 3975
+  },
+  {
+   "marker_share": 0.0244,
+   "mean_jaccard": 0.1522,
+   "stratification": "thought position band",
+   "stratum": "2nd-3rd",
+   "transitions": 1885
+  },
+  {
+   "marker_share": 0.1248,
+   "mean_jaccard": 0.0832,
+   "stratification": "thought position band",
+   "stratum": "4th-6th",
+   "transitions": 809
+  },
+  {
+   "marker_share": 0.0515,
+   "mean_jaccard": 0.1083,
+   "stratification": "thought position band",
+   "stratum": "7th+",
+   "transitions": 1048
+  }
+ ],
+ "topic": "T189",
+ "transitions": 7717
+}

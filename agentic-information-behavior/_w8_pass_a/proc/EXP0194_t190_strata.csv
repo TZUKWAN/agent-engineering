@@ -1,0 +1,10 @@
+stratification,stratum,rows,clusters,dropped_constant_terms,identifiable,beta,se,ci_lo,ci_hi,p,n,cluster
+category,Agent Tools,18941,3816,none,True,-2.5574,0.4265,-3.3933,-1.7216,0.0,18941,traj_id
+category,Browser Automation,4670,1364,none,True,17.6897,0.3664,16.9715,18.4079,0.0,4670,traj_id
+category,Multi-Tool,5260,843,none,True,-1.7237,0.7253,-3.1451,-0.3022,0.0175,5260,traj_id
+category,Repository Tasks,26667,2131,none,True,-0.5142,0.9832,-2.4414,1.4129,0.601,26667,traj_id
+category,Scheduling,1683,295,none,True,16.5279,0.8348,14.8918,18.164,0.0,1683,traj_id
+category,Terminal & Coding,18260,3669,none,True,1.4673,1.0172,-0.5265,3.461,0.1492,18260,traj_id
+position_third,first_third,17849,8076,none,True,20.0603,0.1737,19.7198,20.4007,0.0,17849,traj_id
+position_third,last_third,32777,11493,none,True,-1.1424,0.3584,-1.8448,-0.44,0.0014,32777,traj_id
+position_third,middle_third,27337,10462,none,True,-0.5023,0.5152,-1.5122,0.5075,0.3296,27337,traj_id

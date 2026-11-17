@@ -1,0 +1,6 @@
+class,label,prevalence,has_application,has_operation_object,has_target_action,has_target_state,has_file_reference,has_object_properties,has_operation_order,has_multiple_subtasks,has_constraint_words,has_completion_criteria,has_initial_state
+0,Action-Oriented,0.441,0.191,0.266,0.832,0.030,0.068,0.371,0.443,0.891,0.169,0.000,0.060
+1,Constraint-Verification,0.060,0.101,0.094,0.325,0.021,0.022,0.156,0.306,0.552,1.000,0.842,0.045
+2,Action-Constrained,0.098,0.249,0.378,0.948,0.048,0.161,0.441,0.546,0.970,1.000,0.832,0.104
+3,Minimal,0.301,0.143,0.149,0.229,0.006,0.029,0.132,0.114,0.101,0.071,0.000,0.028
+4,Object/File-Rich,0.100,0.335,0.970,0.859,0.021,0.716,0.594,0.633,0.870,0.185,0.000,0.123

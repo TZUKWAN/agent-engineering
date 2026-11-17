@@ -1,0 +1,76 @@
+# 原始数据（大文件）
+data/raw/
+
+# 中间数据
+data/interim/
+data/processed/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 缓存
+*.pyc
+*.pyo
+*.pyd
+.cache/
+.pytest_cache/
+.hypothesis/
+
+# 环境变量
+.env
+.env.local
+
+# 临时文件
+*.tmp
+*.log
+*.bak
+.DS_Store
+Thumbs.db
+
+# 模型输出（大文件）
+results/models/*.pkl
+results/models/*.pickle
+results/models/*.joblib
+
+# 图片源文件（如原始截图）
+*.png
+*.jpg
+*.jpeg
+!results/figures/*.png
+!results/figures/*.pdf
+
+# 生成文档（可选，如不需要跟踪）
+paper/*.docx
+paper/*.pdf

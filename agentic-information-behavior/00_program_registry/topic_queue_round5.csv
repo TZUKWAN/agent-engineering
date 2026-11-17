@@ -1,0 +1,66 @@
+rank,topic_id,queue_score,band,rows_in_primary_release,concept_coverage,construct_overlap_with_nearest,strong_literature_hits,title_en,next_step
+1,T101,6,natural_experiment_available,1646546,1.0,0,0,How Underspecified Information Needs Shape Agentic Information Seeking,"freeze protocol, then pilot"
+2,T103,6,natural_experiment_available,1646546,1.0,0,1,Constraint Density in Task Language as a Determinant of Information-Search Complexity,"freeze protocol, then pilot"
+3,T106,6,natural_experiment_available,1646546,1.0,0,0,Information Loss from User Question to Machine Query: Semantic Fidelity in Agent Reformulation,"freeze protocol, then pilot"
+4,T108,6,natural_experiment_available,1646546,1.0,0,0,Lexical-Match Bias in Machine Relevance Judgment,"freeze protocol, then pilot"
+5,T109,6,natural_experiment_available,1646546,1.0,0,1,When Semantic and Lexical Relevance Conflict,"freeze protocol, then pilot"
+6,T110,6,natural_experiment_available,1646546,1.0,0,0,Predicate-Argument Structure as a Predictor of Tool Relevance Beyond Text Similarity,"freeze protocol, then pilot"
+7,T111,6,natural_experiment_available,1646546,1.0,0,1,"Entity, Action and Constraint Fit: Which Drives Machine Source Selection",queued
+8,T112,6,natural_experiment_available,1646546,1.0,0,0,Does Negative Boundary Language in Metadata Improve Relevance Judgment?,queued
+9,T114,6,natural_experiment_available,1646546,1.0,0,0,Semantic Prototype Bias in Machine Relevance Assessment,queued
+10,T115,6,natural_experiment_available,1646546,1.0,0,0,A Metadata Description-Quality Model for AI-Agent Resources,queued
+11,T116,6,natural_experiment_available,1646546,1.0,0,0,Metadata Description Granularity and Machine Resource Discovery,queued
+12,T117,6,natural_experiment_available,1646546,1.0,0,0,Noun-Centred or Verb-Centred: An Agent-Oriented Classification Scheme,queued
+13,T119,6,natural_experiment_available,1646546,1.0,0,0,Name-Description Congruence in Tool Metadata and Its Effect on Discovery,queued
+14,T121,6,natural_experiment_available,1646546,1.0,0,0,Does Machine-Oriented Organisation Need Negative Applicability Metadata?,queued
+15,T122,6,natural_experiment_available,1646546,1.0,0,0,Description Discriminability and Discoverability of Information Resources,queued
+16,T124,6,natural_experiment_available,1646546,1.0,0,0,The Epistemic-Behavioural Gap: Saying 'Uncertain' versus Actually Checking,queued
+17,T126,6,natural_experiment_available,1646546,1.0,0,0,Does Contradicting Evidence Escalate Epistemic Modality?,queued
+18,T127,6,natural_experiment_available,1646546,1.0,0,1,The Language of Perceived Information Sufficiency,queued
+19,T128,6,natural_experiment_available,1646546,1.0,0,0,Can Agents Judge Source Reliability from Linguistic Cues?,queued
+20,T130,6,natural_experiment_available,1646546,1.0,0,0,A Discourse Grammar of Agentic Information Seeking,queued
+21,T132,6,natural_experiment_available,1646546,1.0,0,0,Conclusion Before Evidence: Order Effects in Agentic Reasoning,queued
+22,T134,6,natural_experiment_available,1646546,1.0,0,1,Do Causal Connectives Reflect the Actual Evidence-Conclusion Relation?,queued
+23,T135,6,natural_experiment_available,1646546,1.0,0,1,Does Explanatory Coherence Conceal Evidential Gaps?,queued
+24,T137,6,natural_experiment_available,1646546,1.0,0,0,Which Linguistic Components of a Trajectory Constitute Reusable Procedural Knowledge?,queued
+25,T138,6,natural_experiment_available,1646546,0.5,0,0,How the Level of Linguistic Abstraction Affects Knowledge Transfer,queued
+26,T140,6,natural_experiment_available,1646546,1.0,0,0,Which Information Is Lost First in Agent Memory Compression?,queued
+27,T153,6,natural_experiment_available,1696847,0.8,0,0,Is There a Cross-Task Universal Grammar of Agentic Information Behaviour?,queued
+28,T154,6,natural_experiment_available,1646546,1.0,0,0,How Task-Language Ambiguity Changes Agentic Information Seeking,queued
+29,T157,6,natural_experiment_available,1646546,1.0,0,1,Can Information Scent Predict an Agent's Next Choice?,queued
+30,T161,6,natural_experiment_available,1646546,1.0,0,0,The Semantic Decoy Effect: Why Near-Synonym Tools Cause Misselection,queued
+31,T162,6,natural_experiment_available,1646546,1.0,0,1,Affordance Language in Tool Descriptions and Its Effect on Selection,queued
+32,T165,6,natural_experiment_available,1646546,1.0,0,0,Have MCP Servers Become a Machine Information-Source Ecosystem?,queued
+33,T166,6,natural_experiment_available,1646546,1.0,0,0,How Irrelevant-Information Contamination Affects Agentic Decisions,queued
+34,T169,6,natural_experiment_available,1646546,1.0,0,0,The Tool-Dependency Network in Multi-Tool Tasks,queued
+35,T170,6,natural_experiment_available,12290800,1.0,0,1,Path Dependence of the First Action,queued
+36,T104,5,natural_experiment_available,1646546,,0,0,Can Agents Recover the Implicit Information Need?,queued
+37,T107,5,natural_experiment_available,1646546,,0,0,Semantic Coverage of Need Decomposition and the Completeness of Information Seeking,queued
+38,T120,5,natural_experiment_available,1646546,,3,0,Does Synonym Normalisation Improve the Consistency of Machine Retrieval?,queued
+39,T133,5,natural_experiment_available,1646546,,0,0,Discourse Repair after Failed Information Seeking,queued
+40,T136,5,natural_experiment_available,1646546,1.0,0,2,Alignment Between Linguistic Plans and Actual Information Actions,queued
+41,T142,5,natural_experiment_available,1646546,,3,0,Semantic-Relation-Based Consolidation of Agent Organisational Memory,queued
+42,T151,5,natural_experiment_available,1696847,0.2667,0,0,An Empirically Induced Taxonomy of LLM-Agent Information Behaviour,queued
+43,T155,5,natural_experiment_available,1646546,1.0,0,2,Does Search Depth Match Information-Need Complexity?,queued
+44,T156,5,natural_experiment_available,12290800,,0,0,The Exploration-Exploitation Transition in Agentic Search,queued
+45,T158,5,natural_experiment_available,1646546,,0,0,Diminishing Marginal Information Gain and the Persistence of Search,queued
+46,T168,5,natural_experiment_available,1646546,,3,0,Tool Switching Cost and the Quality of Exploration,queued
+47,T174,5,natural_experiment_available,12290800,,0,1,Repetitive Search and Information Rumination,queued
+48,T179,5,natural_experiment_available,12290800,,2,1,The Recovery Window: How Late Can an Agent Still Be Saved?,queued
+49,T184,5,natural_experiment_available,78385,1.0,0,0,Information Density of Natural-Language versus Code Actions,queued
+50,T189,5,natural_experiment_available,1659279,,0,0,Corrective versus Ritual Reflection,queued
+51,T191,5,natural_experiment_available,1646546,,3,0,Is There an Optimal Depth of Verification?,queued
+52,T193,5,natural_experiment_available,1696847,,0,0,Which Trajectories Deserve to Become Organisational Knowledge?,queued
+53,T123,4,natural_experiment_available,22347,1.0,0,0,Do Epistemic-Modality Cues Predict an Agent's Verification Behaviour?,queued
+54,T131,4,natural_experiment_available,1696847,0.2,0,2,Do Successful and Failed Searches Have Different Discourse Structures?,queued
+55,T178,4,natural_experiment_available,1696847,0.4,0,2,Can the First 20% of a Trajectory Predict Final Failure?,queued
+56,T129,3,natural_experiment_available,1646546,1.0,0,0,Does Attribution Language Create Unwarranted Credibility Bias?,queued
+57,T164,3,natural_experiment_available,1646546,1.0,0,0,Does a Tool Namespace Reduce Information Overload?,queued
+58,T171,3,offline_replay_only,0,,0,0,Primacy Lock-In: Does an Initial Hypothesis Narrow Later Search?,queued
+59,T182,3,offline_replay_only,0,,0,0,Does Plan Specificity Improve Search Quality?,queued
+60,T190,3,offline_replay_only,0,,0,1,Verbal Correction versus Behavioural Correction,queued
+61,T194,3,natural_experiment_available,12290800,1.0,0,0,Case-Based Reuse of Historical Trajectories,queued
+62,T113,2,natural_experiment_available,1646546,,0,0,Function Descriptions versus Use-Case Descriptions in Information Discovery,queued
+63,T118,2,natural_experiment_available,1646546,,0,0,"Hierarchy, Facets and Flat Lists in Machine Information Discovery",queued
+64,T175,2,offline_replay_only,0,,0,2,When Should Agentic Search Stop?,queued
+65,T176,2,offline_replay_only,0,,0,2,Premature Termination and Over-Search as a Double Mismatch,queued

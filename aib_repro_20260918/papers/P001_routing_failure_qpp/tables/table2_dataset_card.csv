@@ -1,0 +1,4 @@
+config,rows_built,dev_informative,test_informative,catalog_mean,catalog_p50,catalog_max,gold_mean,n_servers_mean,dev_fail@1_pct,dev_fail@3_pct,dev_chance_hit@3_pct,question_tokens_mean
+OSS,15000,5714,2470,6.34,4,66,1.481,1.39,25.64,7.77,48.52,41.9
+Qwen3,15000,5512,2400,6.1,4,70,1.165,1.16,31.88,12.92,45.92,39.6
+Kimi-K2,15000,7972,3319,8.76,6,67,2.218,1.54,22.06,4.24,47.09,48.1

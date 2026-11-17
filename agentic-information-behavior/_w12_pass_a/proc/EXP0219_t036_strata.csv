@@ -1,0 +1,9 @@
+stratification,stratum,files,rows_in_first_four_files,n_columns,outcome_or_quality_column
+corpus,AgentBank,19,15737,2,0
+corpus,AgentInstruct,6,1320,2,0
+corpus,AgentTrove,38,180240,21,1
+corpus,MMAT-1M,4,1659279,2,0
+corpus,SWE-ZERO-12M,1230,40000,6,1
+corpus,Toucan-1.5M,134,51852,9,1
+corpus,code-act,2,78385,2,0
+corpus,hermes-agent-reasoning-traces,4,22347,6,0

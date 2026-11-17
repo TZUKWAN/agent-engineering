@@ -1,0 +1,13 @@
+model,term,coef,se,or,or_ci_low,or_ci_high,p,group,n,b2,b2_p,turning_point,turning_point_ci_low,turning_point_ci_high
+interaction,constraint_density,-0.167,0.157,0.846,0.622,1.152,0.288,,,,,,
+interaction,task_difficulty,-0.014,0.014,0.986,0.960,1.012,0.287,,,,,,
+interaction,constraint_density_x_task_difficulty,0.036,0.027,1.037,0.984,1.093,0.180,,,,,,
+interaction,I(constraint_density^2),0.036,0.020,1.037,0.998,1.078,0.064,,,,,,
+interaction,I(constraint_density^2)_x_task_difficulty,-0.009,0.004,0.991,0.983,0.998,0.019,,,,,,
+interaction,word_count,0.003,0.001,1.003,1.001,1.005,0.011,,,,,,
+split_task_difficulty,low,,,,,,,,12071,0.007,0.218,5.83,1.10,10.56
+split_task_difficulty,high,,,,,,,,8413,-0.039,0.019,1.93,1.03,2.82
+split_word_count,low,,,,,,,,10273,0.008,0.212,5.94,1.44,10.44
+split_word_count,high,,,,,,,,10211,-0.041,0.025,1.69,0.85,2.52
+split_has_multiple_subtasks,0,,,,,,,,7375,0.010,0.159,5.81,2.15,9.48
+split_has_multiple_subtasks,1,,,,,,,,13109,-0.045,0.006,1.87,1.23,2.51

@@ -1,0 +1,1 @@
+Figure 4. Mechanism view, development split only. (a) odds ratios per SD for features surviving Holm correction; values below 1 mean higher feature value -> lower failure risk. (b) the mean gap in catalog term coverage between hit and miss queries, by catalog stratum. Association only, not causal.

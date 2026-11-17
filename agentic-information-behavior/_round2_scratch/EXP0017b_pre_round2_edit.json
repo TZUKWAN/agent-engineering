@@ -1,0 +1,35 @@
+{
+ "OSS": {
+  "dev_rows": 10492,
+  "test_rows": 4508,
+  "distinct_catalogs_dev": 2989,
+  "distinct_catalogs_test": 1672,
+  "test_rows_whose_catalog_appears_in_dev": 3648,
+  "share": 0.8092,
+  "test_rows_in_catalogs_shared_with_dev": 0.8092,
+  "prompt_ids_in_both_splits": 0,
+  "catalogs_spanning_both_splits": 887
+ },
+ "Qwen3": {
+  "dev_rows": 10524,
+  "test_rows": 4476,
+  "distinct_catalogs_dev": 1874,
+  "distinct_catalogs_test": 1002,
+  "test_rows_whose_catalog_appears_in_dev": 3941,
+  "share": 0.8805,
+  "test_rows_in_catalogs_shared_with_dev": 0.8805,
+  "prompt_ids_in_both_splits": 0,
+  "catalogs_spanning_both_splits": 498
+ },
+ "Kimi-K2": {
+  "dev_rows": 10626,
+  "test_rows": 4374,
+  "distinct_catalogs_dev": 4836,
+  "distinct_catalogs_test": 2329,
+  "test_rows_whose_catalog_appears_in_dev": 2786,
+  "share": 0.6369,
+  "test_rows_in_catalogs_shared_with_dev": 0.6369,
+  "prompt_ids_in_both_splits": 0,
+  "catalogs_spanning_both_splits": 837
+ }
+}

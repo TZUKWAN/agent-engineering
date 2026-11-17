@@ -1,0 +1,97 @@
+config,feature,family,canonical_in_frozen_model,OR_per_SD,ci95_OR,p_raw,p_holm,sig_holm_005,cohens_d_hit_vs_miss
+OSS,char_per_subtask,instruction-only,True,0.9181,"[0.8716, 0.9672]",0.0013036464230794726,0.026073,True,1.0155
+OSS,constraint_density,instruction-only,True,0.984,"[0.9343, 1.0364]",0.5431995577528015,1.0,False,0.1686
+OSS,demonstrative_n,instruction-only,True,0.9254,"[0.8785, 0.9747]",0.003444364454953084,0.061999,False,0.7082
+OSS,epistemic_marker_n,instruction-only,True,1.009,"[0.958, 1.0627]",0.7357157073060299,1.0,False,0.0129
+OSS,file_reference_n,instruction-only,True,0.9822,"[0.9323, 1.0347]",0.4985341522596365,1.0,False,0.1857
+OSS,imperative_start,instruction-only,True,1.0134,"[0.9601, 1.0696]",0.6298044210489981,1.0,False,0.0307
+OSS,lex_diversity_mtld_proxy,instruction-only,True,0.84,"[0.7965, 0.8859]",1.2875038629642444e-10,0.0,True,1.2087
+OSS,mean_sentence_len,instruction-only,True,0.9068,"[0.8607, 0.9553]",0.00023208366716255603,0.005106,True,0.8788
+OSS,n_chars,instruction-only,True,0.8639,"[0.8198, 0.9104]",4.494292709751732e-08,1e-06,True,1.4981
+OSS,n_constraint_words,instruction-only,True,0.9773,"[0.9279, 1.0293]",0.38557623411426956,1.0,False,0.299
+OSS,n_sentences,instruction-only,True,0.9192,"[0.8722, 0.9686]",0.0016219658843196843,0.030817,True,0.6073
+OSS,n_subtasks_by_punctuation,instruction-only,True,0.9289,"[0.8809, 0.9794]",0.0063203134997218465,0.101125,False,0.8168
+OSS,n_tokens,instruction-only,True,0.8579,"[0.8141, 0.904]",9.862008532277754e-09,0.0,True,1.4778
+OSS,named_app_n,instruction-only,True,0.9652,"[0.9161, 1.0169]",0.1828992567514981,1.0,False,0.4282
+OSS,number_n,instruction-only,True,1.0078,"[0.9569, 1.0614]",0.769139742383119,1.0,False,0.0932
+OSS,pronoun_clause_start,instruction-only,True,0.9917,"[0.9415, 1.0445]",0.7521272428797212,1.0,False,0.0017
+OSS,proper_entity_n,instruction-only,True,0.9666,"[0.9177, 1.0181]",0.19926997782050326,1.0,False,0.4837
+OSS,qpp_clarity_meanmax,collection-aware QPP,True,0.8974,"[0.8517, 0.9455]",4.8801329717432796e-05,0.001122,True,0.501
+OSS,qpp_clarity_sd,collection-aware QPP,True,0.879,"[0.8343, 0.9262]",1.2983517172108771e-06,3.1e-05,True,0.5453
+OSS,qpp_coverage,collection-aware QPP,True,0.875,"[0.8304, 0.922]",5.622339327546495e-07,1.4e-05,True,0.8557
+OSS,qpp_doc_sim_spread,collection-aware QPP,True,0.8177,"[0.7752, 0.8625]",1.426047855694627e-13,0.0,True,1.1883
+OSS,qpp_ecle,collection-aware QPP,True,0.9628,"[0.914, 1.0141]",0.15253634475075273,1.0,False,0.4833
+OSS,qpp_idf_weighted_coverage,collection-aware QPP,True,0.8657,"[0.8213, 0.9125]",7.852442450382295e-08,2e-06,True,1.0802
+OSS,qpp_max_doc_sim,collection-aware QPP,True,0.8653,"[0.8211, 0.9118]",6.22588214039029e-08,2e-06,True,0.5729
+OSS,qpp_mean_doc_sim,collection-aware QPP,True,0.9766,"[0.9272, 1.0287]",0.37224116404525853,1.0,False,0.1003
+OSS,qpp_missing_term_n,collection-aware QPP,True,0.9263,"[0.8794, 0.9758]",0.003926791629004535,0.066755,False,0.9217
+OSS,qpp_n_query_terms,collection-aware QPP,True,0.872,"[0.8276, 0.9189]",2.994087675108805e-07,8e-06,True,1.3451
+OSS,question_mark,instruction-only,True,0.962,"[0.9133, 1.0134]",0.1447061035551697,1.0,False,0.2977
+OSS,quoted_span_n,instruction-only,True,0.9655,"[0.9167, 1.017]",0.1851921403514395,1.0,False,0.4482
+OSS,sequence_marker_n,instruction-only,True,0.9104,"[0.8643, 0.9591]",0.0004129409685466109,0.008672,True,0.9684
+OSS,url_n,instruction-only,True,0.9804,"[0.9297, 1.0338]",0.4642757574256595,1.0,False,0.1243
+OSS,vague_word_n,instruction-only,True,0.9595,"[0.9109, 1.0108]",0.11984207855414467,1.0,False,0.3381
+Qwen3,char_per_subtask,instruction-only,True,0.9384,"[0.8901, 0.9894]",0.018620256138497847,0.316544,False,0.3332
+Qwen3,constraint_density,instruction-only,True,0.9463,"[0.8975, 0.9978]",0.041104783366640314,0.576065,False,0.2405
+Qwen3,demonstrative_n,instruction-only,True,0.9707,"[0.9208, 1.0234]",0.2699797677001643,1.0,False,0.0059
+Qwen3,epistemic_marker_n,instruction-only,True,1.0581,"[1.003, 1.1162]",0.03840435828971012,0.576065,False,0.1836
+Qwen3,file_reference_n,instruction-only,True,0.9642,"[0.9132, 1.018]",0.18782998981085441,1.0,False,0.1521
+Qwen3,imperative_start,instruction-only,True,0.9896,"[0.9369, 1.0453]",0.7092609306595318,1.0,False,0.0326
+Qwen3,lex_diversity_mtld_proxy,instruction-only,True,0.8845,"[0.8384, 0.9331]",6.861143271917676e-06,0.000158,True,0.4361
+Qwen3,mean_sentence_len,instruction-only,True,0.9807,"[0.9302, 1.0338]",0.46838611841152555,1.0,False,0.0323
+Qwen3,n_chars,instruction-only,True,0.8697,"[0.8245, 0.9174]",2.908887220656865e-07,8e-06,True,0.6002
+Qwen3,n_constraint_words,instruction-only,True,0.9567,"[0.9074, 1.0087]",0.10108787415170281,1.0,False,0.1505
+Qwen3,n_sentences,instruction-only,True,0.9014,"[0.8543, 0.9511]",0.00015142097387366027,0.003028,True,0.4267
+Qwen3,n_subtasks_by_punctuation,instruction-only,True,0.9435,"[0.8945, 0.9952]",0.03274814928279271,0.52397,False,0.2609
+Qwen3,n_tokens,instruction-only,True,0.8915,"[0.8454, 0.9402]",2.2913753711365305e-05,0.000481,True,0.4176
+Qwen3,named_app_n,instruction-only,True,0.8879,"[0.8407, 0.9378]",2.0341991382726045e-05,0.000448,True,0.4696
+Qwen3,number_n,instruction-only,True,1.018,"[0.9656, 1.0733]",0.5078704806981236,1.0,False,0.0885
+Qwen3,pronoun_clause_start,instruction-only,True,0.9934,"[0.9423, 1.0472]",0.8047267125825788,1.0,False,0.0287
+Qwen3,proper_entity_n,instruction-only,True,0.9878,"[0.937, 1.0413]",0.648305445834543,1.0,False,0.0755
+Qwen3,qpp_clarity_meanmax,collection-aware QPP,True,0.8315,"[0.7862, 0.8794]",1.0761931838585931e-10,0.0,True,0.389
+Qwen3,qpp_clarity_sd,collection-aware QPP,True,0.8829,"[0.8373, 0.931]",4.192022397446496e-06,0.000101,True,0.1027
+Qwen3,qpp_coverage,collection-aware QPP,True,0.7396,"[0.6998, 0.7817]",1.1951446620364007e-26,0.0,True,0.9098
+Qwen3,qpp_doc_sim_spread,collection-aware QPP,True,0.6893,"[0.6507, 0.7302]",8.879294708057455e-37,0.0,True,1.1249
+Qwen3,qpp_ecle,collection-aware QPP,True,0.8493,"[0.8042, 0.897]",4.571746335149565e-09,0.0,True,0.5612
+Qwen3,qpp_idf_weighted_coverage,collection-aware QPP,True,0.7289,"[0.6886, 0.7717]",1.4075791779273312e-27,0.0,True,0.9846
+Qwen3,qpp_max_doc_sim,collection-aware QPP,True,0.8331,"[0.7896, 0.8791]",2.6777014439098096e-11,0.0,True,0.2815
+Qwen3,qpp_mean_doc_sim,collection-aware QPP,True,1.0316,"[0.9785, 1.0876]",0.24910880190585005,1.0,False,0.3761
+Qwen3,qpp_missing_term_n,collection-aware QPP,True,1.0395,"[0.986, 1.0959]",0.15075417976121006,1.0,False,0.04
+Qwen3,qpp_n_query_terms,collection-aware QPP,True,0.9059,"[0.8591, 0.9554]",0.000266372183414892,0.005061,True,0.4517
+Qwen3,question_mark,instruction-only,True,0.9263,"[0.8777, 0.9776]",0.005402610454688397,0.097247,False,0.2662
+Qwen3,quoted_span_n,instruction-only,True,0.9747,"[0.9245, 1.0276]",0.3422703192233263,1.0,False,0.0894
+Qwen3,sequence_marker_n,instruction-only,True,0.8781,"[0.8323, 0.9264]",1.9841203370447913e-06,5e-05,True,0.6258
+Qwen3,url_n,instruction-only,True,0.9576,"[0.9064, 1.0117]",0.12267317141204934,1.0,False,0.1413
+Qwen3,vague_word_n,instruction-only,True,1.0303,"[0.9773, 1.0863]",0.26817001276514996,1.0,False,0.2092
+Kimi-K2,char_per_subtask,instruction-only,True,0.991,"[0.9485, 1.0355]",0.6871869375418093,1.0,False,0.0769
+Kimi-K2,constraint_density,instruction-only,True,0.9833,"[0.9411, 1.0275]",0.4533185986884657,1.0,False,0.2404
+Kimi-K2,demonstrative_n,instruction-only,True,0.9849,"[0.9426, 1.0291]",0.49641132021258405,1.0,False,0.4037
+Kimi-K2,epistemic_marker_n,instruction-only,True,0.9969,"[0.9541, 1.0417]",0.8903606968686437,1.0,False,0.2898
+Kimi-K2,file_reference_n,instruction-only,True,0.9969,"[0.9541, 1.0417]",0.8905848944272357,1.0,False,0.2363
+Kimi-K2,imperative_start,instruction-only,True,0.9982,"[0.9553, 1.043]",0.9370118295445775,1.0,False,0.0401
+Kimi-K2,lex_diversity_mtld_proxy,instruction-only,True,0.9632,"[0.9218, 1.0065]",0.09494419822129056,1.0,False,0.6708
+Kimi-K2,mean_sentence_len,instruction-only,True,0.9778,"[0.9358, 1.0217]",0.3162610600406698,1.0,False,0.1618
+Kimi-K2,n_chars,instruction-only,True,0.9644,"[0.923, 1.0078]",0.10620662555758027,1.0,False,0.4389
+Kimi-K2,n_constraint_words,instruction-only,True,0.9834,"[0.9412, 1.0275]",0.45480999058813754,1.0,False,0.2776
+Kimi-K2,n_sentences,instruction-only,True,0.974,"[0.9321, 1.0177]",0.23931881384653075,1.0,False,0.383
+Kimi-K2,n_subtasks_by_punctuation,instruction-only,True,0.9802,"[0.9379, 1.0245]",0.37596339757391506,1.0,False,0.3001
+Kimi-K2,n_tokens,instruction-only,True,0.9564,"[0.9153, 0.9993]",0.04660439617855638,1.0,False,0.4011
+Kimi-K2,named_app_n,instruction-only,True,0.9796,"[0.9375, 1.0236]",0.3584965985244941,1.0,False,0.1587
+Kimi-K2,number_n,instruction-only,True,0.9991,"[0.9562, 1.0439]",0.9685633004496139,1.0,False,0.4985
+Kimi-K2,pronoun_clause_start,instruction-only,True,1.0099,"[0.9665, 1.0553]",0.6601219244458012,1.0,False,0.1571
+Kimi-K2,proper_entity_n,instruction-only,True,0.9947,"[0.952, 1.0393]",0.8122338266483944,1.0,False,0.36
+Kimi-K2,qpp_clarity_meanmax,collection-aware QPP,True,0.9367,"[0.8961, 0.979]",0.003733796205729873,0.100812,False,1.5871
+Kimi-K2,qpp_clarity_sd,collection-aware QPP,True,0.9359,"[0.8957, 0.978]",0.0031573581841373563,0.088406,False,1.2308
+Kimi-K2,qpp_coverage,collection-aware QPP,True,0.9302,"[0.8902, 0.9721]",0.0012744797399133001,0.038234,True,1.7764
+Kimi-K2,qpp_doc_sim_spread,collection-aware QPP,True,0.9156,"[0.8761, 0.9569]",9.089139985012497e-05,0.002909,True,1.5736
+Kimi-K2,qpp_ecle,collection-aware QPP,True,0.9849,"[0.9426, 1.0291]",0.4975107825402336,1.0,False,0.9843
+Kimi-K2,qpp_idf_weighted_coverage,collection-aware QPP,True,0.9311,"[0.891, 0.9731]",0.0015043563610582192,0.043626,True,1.7121
+Kimi-K2,qpp_max_doc_sim,collection-aware QPP,True,0.9243,"[0.8844, 0.9659]",0.0004609189695574758,0.014288,True,1.2696
+Kimi-K2,qpp_mean_doc_sim,collection-aware QPP,True,0.9639,"[0.9224, 1.0072]",0.10111913831754643,1.0,False,0.5679
+Kimi-K2,qpp_missing_term_n,collection-aware QPP,True,1.0082,"[0.9649, 1.0534]",0.7155573028112274,1.0,False,1.4908
+Kimi-K2,qpp_n_query_terms,collection-aware QPP,True,0.972,"[0.9302, 1.0156]",0.20512284913781687,1.0,False,0.8159
+Kimi-K2,question_mark,instruction-only,True,0.9859,"[0.9436, 1.0302]",0.5272425372037436,1.0,False,0.1408
+Kimi-K2,quoted_span_n,instruction-only,True,0.9956,"[0.9528, 1.0402]",0.8427132470391898,1.0,False,0.3719
+Kimi-K2,sequence_marker_n,instruction-only,True,0.9615,"[0.9201, 1.0046]",0.07945864839370566,1.0,False,1.0224
+Kimi-K2,url_n,instruction-only,True,0.9888,"[0.9463, 1.0333]",0.6165503623384675,1.0,False,0.1577
+Kimi-K2,vague_word_n,instruction-only,True,0.9891,"[0.9466, 1.0334]",0.6232173241978086,1.0,False,0.0608

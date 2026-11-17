@@ -1,0 +1,60 @@
+{
+  "best_k": 4,
+  "best_criterion": "silhouette",
+  "selection": [
+    {
+      "k": 2,
+      "silhouette": 0.2581919012877082,
+      "bic": 512137.3228063129,
+      "inertia": 139094.38739268816
+    },
+    {
+      "k": 3,
+      "silhouette": 0.21908973347738553,
+      "bic": 469152.06370517134,
+      "inertia": 114503.2135161903
+    },
+    {
+      "k": 4,
+      "silhouette": 0.16079242339745675,
+      "bic": 447858.7588929053,
+      "inertia": 103981.89211447079
+    },
+    {
+      "k": 5,
+      "silhouette": 0.15749987626630382,
+      "bic": 439931.2135627789,
+      "inertia": 97064.86519400573
+    },
+    {
+      "k": 6,
+      "silhouette": 0.1421385187330176,
+      "bic": 428363.096638497,
+      "inertia": 91613.02893563427
+    },
+    {
+      "k": 7,
+      "silhouette": 0.13472677573505643,
+      "bic": 422148.2956169215,
+      "inertia": 86906.37748156933
+    },
+    {
+      "k": 8,
+      "silhouette": 0.12871032623929454,
+      "bic": 420066.6779032442,
+      "inertia": 83169.35855692007
+    }
+  ],
+  "features_used": [
+    "reasoning_words_log1p",
+    "structure_markers_log1p",
+    "decomposition_words_log1p",
+    "constraint_mentions_log1p",
+    "verification_mentions_log1p",
+    "feedback_phrases_log1p",
+    "self_correction_phrases_log1p",
+    "termination_last20_mentions_log1p",
+    "reasoning_action_alignment",
+    "tool_mentions_in_reasoning_log1p"
+  ]
+}

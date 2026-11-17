@@ -1,0 +1,1 @@
+Figure 1. Study framework. Predictors use only the instruction and the candidate catalog available at query time; gold tool labels enter the dependent variable and the evaluation, never the features. Schematic drawn by make_figures_tables.py (no measured quantities).

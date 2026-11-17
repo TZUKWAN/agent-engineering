@@ -1,0 +1,4 @@
+stratification,stratum,turns,mean_density,answered_share,mean_statements
+action kind,code,10515,68.857,0.8895,6.444
+action kind,natural_language,3805,81.053,0.3078,0.0
+action kind,tool,262,49.159,0.2214,0.0

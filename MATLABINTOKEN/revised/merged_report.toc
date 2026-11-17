@@ -1,0 +1,115 @@
+\contentsline {chapter}{目录}{2}{chapter*.2}%
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}第1部分　完成标准作为终止判准：用户指令验证显性度与任务型交互智能体执行效率——基于 AgentNet 交互轨迹的实证研究}{6}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}1 引言}{6}{subsection.1.0.1}%
+\contentsline {subsubsection}{1.1 研究背景}{6}{subsubsection*.3}%
+\contentsline {subsubsection}{1.2 问题提出：终止不确定性}{6}{subsubsection*.4}%
+\contentsline {subsubsection}{1.3 核心研究问题与论点}{7}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {1.0.2}2 理论基础与研究假设}{7}{subsection.1.0.2}%
+\contentsline {subsubsection}{2.1 言语行为理论与指令中的验证行为}{7}{subsubsection*.6}%
+\contentsline {subsubsection}{2.2 关联理论与认知效应优化}{8}{subsubsection*.7}%
+\contentsline {subsubsection}{2.3 行动终止理论与停止规则}{8}{subsubsection*.8}%
+\contentsline {subsubsection}{2.4 研究假设}{8}{subsubsection*.9}%
+\contentsline {subsection}{\numberline {1.0.3}3 研究方法}{9}{subsection.1.0.3}%
+\contentsline {subsubsection}{3.1 数据来源与样本口径}{9}{subsubsection*.10}%
+\contentsline {subsubsection}{3.2 变量操作化}{9}{subsubsection*.11}%
+\contentsline {paragraph}{3.2.1 核心解释变量}{9}{paragraph*.12}%
+\contentsline {paragraph}{3.2.2 因变量}{10}{paragraph*.13}%
+\contentsline {paragraph}{3.2.3 控制变量}{10}{paragraph*.14}%
+\contentsline {subsubsection}{3.3 终止阶段过程指标的构建}{10}{subsubsection*.15}%
+\contentsline {subsubsection}{3.4 分析模型}{11}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {1.0.4}4 结果}{11}{subsection.1.0.4}%
+\contentsline {subsubsection}{4.1 描述性统计与验证类型分布}{11}{subsubsection*.17}%
+\contentsline {subsubsection}{4.2 完成标准对任务完成率的影响}{12}{subsubsection*.20}%
+\contentsline {subsubsection}{4.3 完成标准对执行成本的影响}{14}{subsubsection*.24}%
+\contentsline {subsubsection}{4.4 终止阶段过程指标}{15}{subsubsection*.27}%
+\contentsline {subsubsection}{4.5 验证密度：补充性分析}{15}{subsubsection*.30}%
+\contentsline {subsubsection}{4.6 位置分析：探索性检验}{17}{subsubsection*.32}%
+\contentsline {subsubsection}{4.7 稳健性检验}{17}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {1.0.5}5 讨论}{18}{subsection.1.0.5}%
+\contentsline {subsubsection}{5.1 完成标准作为终止判准：过程层面的证据}{18}{subsubsection*.36}%
+\contentsline {subsubsection}{5.2 理论解释}{18}{subsubsection*.37}%
+\contentsline {subsubsection}{5.3 对智能体设计的实践启示}{19}{subsubsection*.38}%
+\contentsline {subsubsection}{5.4 局限性与未来方向}{19}{subsubsection*.39}%
+\contentsline {subsection}{\numberline {1.0.6}6 结论与展望}{20}{subsection.1.0.6}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}第2部分　约束何时成为负荷：任务型交互智能体用户指令中约束密度的条件性非线性效应——基于 AgentNet 交互轨迹的实证研究}{21}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}1 引言}{21}{subsection.2.0.1}%
+\contentsline {subsubsection}{1.1 从验证到约束：问题域的延伸}{21}{subsubsection*.40}%
+\contentsline {subsubsection}{1.2 约束密度的核心问题}{21}{subsubsection*.41}%
+\contentsline {subsubsection}{1.3 研究边界与核心论点}{22}{subsubsection*.42}%
+\contentsline {subsection}{\numberline {2.0.2}2 理论基础与研究假设}{22}{subsection.2.0.2}%
+\contentsline {subsubsection}{2.1 语用学视角：合作原则与关联理论中的约束}{23}{subsubsection*.43}%
+\contentsline {subsubsection}{2.2 认知负荷与边界条件框架}{23}{subsubsection*.44}%
+\contentsline {subsubsection}{2.3 研究假设}{24}{subsubsection*.45}%
+\contentsline {subsection}{\numberline {2.0.3}3 研究方法}{24}{subsection.2.0.3}%
+\contentsline {subsubsection}{3.1 数据来源与样本构成}{24}{subsubsection*.46}%
+\contentsline {subsubsection}{3.2 约束词分类与密度操作化}{24}{subsubsection*.47}%
+\contentsline {subsubsection}{3.3 三阶段分析框架}{25}{subsubsection*.49}%
+\contentsline {subsubsection}{3.4 辅助检验与数据特征说明}{26}{subsubsection*.50}%
+\contentsline {subsection}{\numberline {2.0.4}4 结果}{26}{subsection.2.0.4}%
+\contentsline {subsubsection}{4.1 约束类型与密度分布}{26}{subsubsection*.51}%
+\contentsline {subsubsection}{4.2 Stage 1：约束有无效应}{28}{subsubsection*.56}%
+\contentsline {subsubsection}{4.3 Stage 2：约束任务内的全局密度效应}{28}{subsubsection*.57}%
+\contentsline {subsubsection}{4.4 Stage 3：条件模型——任务难度、指令长度与子任务数量}{29}{subsubsection*.60}%
+\contentsline {paragraph}{4.4.1 任务难度的调节作用}{29}{paragraph*.61}%
+\contentsline {paragraph}{4.4.2 指令长度的调节作用}{29}{paragraph*.62}%
+\contentsline {paragraph}{4.4.3 子任务数量的探索性条件效应}{29}{paragraph*.63}%
+\contentsline {paragraph}{4.4.4 Johnson-Neyman 风格的调节区间分析}{31}{paragraph*.67}%
+\contentsline {subsubsection}{4.5 子类型异质性（探索性）}{32}{subsubsection*.70}%
+\contentsline {subsubsection}{4.6 稳健性检验}{33}{subsubsection*.73}%
+\contentsline {subsubsection}{4.7 探索性过程结果：冗余步数比的非线性模式}{34}{subsubsection*.76}%
+\contentsline {subsection}{\numberline {2.0.5}5 讨论}{34}{subsection.2.0.5}%
+\contentsline {subsubsection}{5.1 从"全局定律"到"边界条件"：理论贡献的重新定位}{34}{subsubsection*.77}%
+\contentsline {subsubsection}{5.2 低、中、高约束密度的作用机制}{35}{subsubsection*.78}%
+\contentsline {subsubsection}{5.3 与认知负荷理论和关联理论的对话}{35}{subsubsection*.79}%
+\contentsline {subsubsection}{5.4 三阶段框架的方法论意义}{35}{subsubsection*.80}%
+\contentsline {subsubsection}{5.5 实践建议}{36}{subsubsection*.81}%
+\contentsline {subsubsection}{5.6 局限与未来方向}{36}{subsubsection*.82}%
+\contentsline {subsection}{\numberline {2.0.6}6 结论与展望}{36}{subsection.2.0.6}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}第3部分　任务型交互智能体用户指令的语用结构类型及其执行效应——基于 AgentNet 交互轨迹的潜类别分析}{38}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}1 引言}{38}{subsection.3.0.1}%
+\contentsline {subsubsection}{1.1 从"成分"到"结构"：分析单元的提升}{38}{subsubsection*.83}%
+\contentsline {subsubsection}{1.2 指令质量的"组合性"问题}{38}{subsubsection*.84}%
+\contentsline {subsubsection}{1.3 研究问题与定位}{39}{subsubsection*.85}%
+\contentsline {subsection}{\numberline {3.0.2}2 理论基础与研究假设}{39}{subsection.3.0.2}%
+\contentsline {subsubsection}{2.1 语用类型学与言语行为分类学}{39}{subsubsection*.86}%
+\contentsline {subsubsection}{2.2 共同基础理论与指令理解}{40}{subsubsection*.87}%
+\contentsline {subsubsection}{2.3 研究假设}{40}{subsubsection*.88}%
+\contentsline {subsection}{\numberline {3.0.3}3 研究方法}{41}{subsection.3.0.3}%
+\contentsline {subsubsection}{3.1 数据来源与样本}{41}{subsubsection*.89}%
+\contentsline {subsubsection}{3.2 语用特征提取}{41}{subsubsection*.90}%
+\contentsline {subsubsection}{3.3 潜类别分析（LCA）实现}{42}{subsubsection*.92}%
+\contentsline {subsubsection}{3.4 过程结果与路径指标}{42}{subsubsection*.93}%
+\contentsline {subsubsection}{3.5 分析流程}{42}{subsubsection*.94}%
+\contentsline {subsection}{\numberline {3.0.4}4 结果}{43}{subsection.3.0.4}%
+\contentsline {subsubsection}{4.1 LCA 模型选择}{43}{subsubsection*.95}%
+\contentsline {subsubsection}{4.2 语用特征剖面与类别标签}{44}{subsubsection*.98}%
+\contentsline {subsubsection}{4.3 样本分布与指令示例}{45}{subsubsection*.101}%
+\contentsline {subsubsection}{4.4 执行路径稳定性差异}{45}{subsubsection*.104}%
+\contentsline {subsubsection}{4.5 任务完成率比较与显式性独立效应}{47}{subsubsection*.110}%
+\contentsline {subsubsection}{4.6 任务难度的调节效应}{48}{subsubsection*.113}%
+\contentsline {subsubsection}{4.7 LCA 稳定性检查}{48}{subsubsection*.116}%
+\contentsline {subsection}{\numberline {3.0.5}5 讨论}{49}{subsection.3.0.5}%
+\contentsline {subsubsection}{5.1 五种语用结构类型的执行意义}{49}{subsubsection*.118}%
+\contentsline {subsubsection}{5.2 路径稳定性作为语用结构效应的核心证据}{50}{subsubsection*.119}%
+\contentsline {subsubsection}{5.3 与 Paper 01/02 的理论整合}{50}{subsubsection*.120}%
+\contentsline {subsubsection}{5.4 显式性评分的局限性}{51}{subsubsection*.122}%
+\contentsline {subsubsection}{5.5 局限与未来方向}{52}{subsubsection*.123}%
+\contentsline {subsection}{\numberline {3.0.6}6 结论与展望}{52}{subsection.3.0.6}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}综合讨论与展望}{54}{chapter.4}%
+\contentsline {section}{\numberline {4.1}核心发现回顾}{54}{section.4.1}%
+\contentsline {section}{\numberline {4.2}理论贡献}{54}{section.4.2}%
+\contentsline {section}{\numberline {4.3}实践启示}{54}{section.4.3}%
+\contentsline {section}{\numberline {4.4}局限与未来方向}{55}{section.4.4}%
+\contentsline {chapter}{参考文献}{56}{chapter*.124}%
+\contentsline {section}{\numberline {4.5}补充数据文件}{57}{section.4.5}%
+\contentsline {section}{\numberline {4.6}附录：补充表格}{57}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}表 8　Stage 2 约束任务子样本的完整系数表}{57}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}表 9　Johnson-Neyman 风格的简单斜率与曲率（交互模型）}{58}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}表 10　探索性过程结果模型}{58}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}附录：补充表格与说明}{59}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}表 A1　k=4/5/6 拟合统计量比较}{59}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}表 A2　补充图表文件索引}{59}{subsection.4.7.2}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}附录}{60}{appendix.A}%
+\contentsline {section}{\numberline {A.1}附录 A　Paper 01 补充数据文件索引}{60}{section.A.1}%
+\contentsline {section}{\numberline {A.2}附录 B　Paper 02 补充数据文件索引}{60}{section.A.2}%
+\contentsline {section}{\numberline {A.3}附录 C　Paper 03 补充数据文件索引}{60}{section.A.3}%

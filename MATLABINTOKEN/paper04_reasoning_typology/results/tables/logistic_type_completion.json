@@ -1,0 +1,32 @@
+{
+  "pseudo_r2": 0.020318001106993,
+  "aic": 20293.179996500534,
+  "bic": 20348.575794143122,
+  "coef": {
+    "Intercept": 2.786585983747051,
+    "C(reasoning_type_label, Treatment(reference='常规综合型'))[T.简洁直觉型]": -0.518008108988566,
+    "C(reasoning_type_label, Treatment(reference='常规综合型'))[T.结构化分解型]": 0.025072837671001772,
+    "C(reasoning_type_label, Treatment(reference='常规综合型'))[T.详细展开型]": 0.25860136166596054,
+    "C(os)[T.win_mac]": -0.7266276443962048,
+    "task_difficulty": -0.1468628329385536,
+    "reasoning_words_c": 6.318202453399051e-05
+  },
+  "or": {
+    "Intercept": 16.225530909456598,
+    "C(reasoning_type_label, Treatment(reference='常规综合型'))[T.简洁直觉型]": 0.5957059483080122,
+    "C(reasoning_type_label, Treatment(reference='常规综合型'))[T.结构化分解型]": 1.0253898048097325,
+    "C(reasoning_type_label, Treatment(reference='常规综合型'))[T.详细展开型]": 1.2951174184591059,
+    "C(os)[T.win_mac]": 0.48353690197952,
+    "task_difficulty": 0.8634124010360903,
+    "reasoning_words_c": 1.00006318402056
+  },
+  "pvalues": {
+    "Intercept": 8.293548124722024e-155,
+    "C(reasoning_type_label, Treatment(reference='常规综合型'))[T.简洁直觉型]": 2.092187585193356e-13,
+    "C(reasoning_type_label, Treatment(reference='常规综合型'))[T.结构化分解型]": 0.7776396073283084,
+    "C(reasoning_type_label, Treatment(reference='常规综合型'))[T.详细展开型]": 6.338967479123522e-08,
+    "C(os)[T.win_mac]": 9.371641918961527e-33,
+    "task_difficulty": 1.504930313690352e-23,
+    "reasoning_words_c": 1.6520033173130543e-12
+  }
+}

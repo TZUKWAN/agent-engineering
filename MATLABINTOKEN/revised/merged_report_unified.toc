@@ -1,0 +1,121 @@
+\contentsline {chapter}{目录}{2}{chapter*.2}%
+\contentsline {section}{\numberline {0.1}摘要}{6}{section.0.1}%
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}导论}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}研究背景}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}三层次分析框架}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}数据基础}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}报告结构}{8}{section.1.4}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}完成标准与执行终止：用户指令验证信息对智能体执行效率的影响}{9}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}引言}{9}{subsection.2.0.1}%
+\contentsline {subsubsection}{2.1.1 研究背景}{9}{subsubsection*.3}%
+\contentsline {subsubsection}{2.1.2 问题提出：终止不确定性}{9}{subsubsection*.4}%
+\contentsline {subsubsection}{2.1.3 核心研究问题与论点}{10}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {2.0.2}2.2 理论基础与研究假设}{10}{subsection.2.0.2}%
+\contentsline {subsubsection}{2.2.1 言语行为理论与指令中的验证行为}{10}{subsubsection*.6}%
+\contentsline {subsubsection}{2.2.2 关联理论与认知效应优化}{11}{subsubsection*.7}%
+\contentsline {subsubsection}{2.2.3 行动终止理论与停止规则}{11}{subsubsection*.8}%
+\contentsline {subsubsection}{2.2.4 研究假设}{11}{subsubsection*.9}%
+\contentsline {subsection}{\numberline {2.0.3}2.3 研究方法}{12}{subsection.2.0.3}%
+\contentsline {subsubsection}{2.3.1 数据来源与样本口径}{12}{subsubsection*.10}%
+\contentsline {subsubsection}{2.3.2 变量操作化}{12}{subsubsection*.11}%
+\contentsline {paragraph}{2.3.2.1 核心解释变量}{12}{paragraph*.12}%
+\contentsline {paragraph}{2.3.2.2 因变量}{13}{paragraph*.13}%
+\contentsline {paragraph}{2.3.2.3 控制变量}{13}{paragraph*.14}%
+\contentsline {subsubsection}{2.3.3 终止阶段过程指标的构建}{13}{subsubsection*.15}%
+\contentsline {subsubsection}{2.3.4 分析模型}{14}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {2.0.4}2.4 结果}{14}{subsection.2.0.4}%
+\contentsline {subsubsection}{2.4.1 描述性统计与验证类型分布}{14}{subsubsection*.17}%
+\contentsline {subsubsection}{2.4.2 完成标准对任务完成率的影响}{15}{subsubsection*.20}%
+\contentsline {subsubsection}{2.4.3 完成标准对执行成本的影响}{16}{subsubsection*.24}%
+\contentsline {subsubsection}{2.4.4 终止阶段过程指标}{18}{subsubsection*.27}%
+\contentsline {subsubsection}{2.4.5 验证密度：补充性分析}{19}{subsubsection*.30}%
+\contentsline {subsubsection}{2.4.6 位置分析：探索性检验}{20}{subsubsection*.32}%
+\contentsline {subsubsection}{2.4.7 稳健性检验}{20}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {2.0.5}2.5 讨论}{22}{subsection.2.0.5}%
+\contentsline {subsubsection}{2.5.1 完成标准作为终止判准：过程层面的证据}{22}{subsubsection*.36}%
+\contentsline {subsubsection}{2.5.2 理论解释}{22}{subsubsection*.37}%
+\contentsline {subsubsection}{2.5.3 对智能体设计的实践启示}{22}{subsubsection*.38}%
+\contentsline {subsubsection}{2.5.4 局限性与未来方向}{23}{subsubsection*.39}%
+\contentsline {subsection}{\numberline {2.0.6}2.6 结论与展望}{23}{subsection.2.0.6}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}约束密度的条件性效应：从全局定律到边界条件的实证检验}{25}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}3.1 引言}{25}{subsection.3.0.1}%
+\contentsline {subsubsection}{3.1.1 从验证到约束：问题域的延伸}{25}{subsubsection*.40}%
+\contentsline {subsubsection}{3.1.2 约束密度的核心问题}{25}{subsubsection*.41}%
+\contentsline {subsubsection}{3.1.3 研究边界与核心论点}{26}{subsubsection*.42}%
+\contentsline {subsection}{\numberline {3.0.2}3.2 理论基础与研究假设}{27}{subsection.3.0.2}%
+\contentsline {subsubsection}{3.2.1 语用学视角：合作原则与关联理论中的约束}{27}{subsubsection*.43}%
+\contentsline {subsubsection}{3.2.2 认知负荷与边界条件框架}{27}{subsubsection*.44}%
+\contentsline {subsubsection}{3.2.3 研究假设}{28}{subsubsection*.45}%
+\contentsline {subsection}{\numberline {3.0.3}3.3 研究方法}{28}{subsection.3.0.3}%
+\contentsline {subsubsection}{3.3.1 数据来源与样本构成}{28}{subsubsection*.46}%
+\contentsline {subsubsection}{3.3.2 约束词分类与密度操作化}{29}{subsubsection*.47}%
+\contentsline {subsubsection}{3.3.3 三阶段分析框架}{29}{subsubsection*.49}%
+\contentsline {subsubsection}{3.3.4 辅助检验与数据特征说明}{30}{subsubsection*.50}%
+\contentsline {subsection}{\numberline {3.0.4}3.4 结果}{30}{subsection.3.0.4}%
+\contentsline {subsubsection}{3.4.1 约束类型与密度分布}{30}{subsubsection*.51}%
+\contentsline {subsubsection}{3.4.2 Stage 1：约束有无效应}{31}{subsubsection*.56}%
+\contentsline {subsubsection}{3.4.3 Stage 2：约束任务内的全局密度效应}{32}{subsubsection*.57}%
+\contentsline {subsubsection}{3.4.4 Stage 3：条件模型——任务难度、指令长度与子任务数量}{33}{subsubsection*.60}%
+\contentsline {paragraph}{3.4.4.1 任务难度的调节作用}{33}{paragraph*.61}%
+\contentsline {paragraph}{3.4.4.2 指令长度的调节作用}{33}{paragraph*.62}%
+\contentsline {paragraph}{3.4.4.3 子任务数量的探索性条件效应}{34}{paragraph*.63}%
+\contentsline {paragraph}{3.4.4.4 Johnson-Neyman 风格的调节区间分析}{35}{paragraph*.67}%
+\contentsline {subsubsection}{3.4.5 子类型异质性（探索性）}{37}{subsubsection*.70}%
+\contentsline {subsubsection}{3.4.6 稳健性检验}{37}{subsubsection*.73}%
+\contentsline {subsubsection}{3.4.7 探索性过程结果：冗余步数比的非线性模式}{38}{subsubsection*.76}%
+\contentsline {subsection}{\numberline {3.0.5}3.5 讨论}{39}{subsection.3.0.5}%
+\contentsline {subsubsection}{3.5.1 从"全局定律"到"边界条件"：理论贡献的重新定位}{39}{subsubsection*.77}%
+\contentsline {subsubsection}{3.5.2 低、中、高约束密度的作用机制}{39}{subsubsection*.78}%
+\contentsline {subsubsection}{3.5.3 与认知负荷理论和关联理论的对话}{39}{subsubsection*.79}%
+\contentsline {subsubsection}{3.5.4 三阶段框架的方法论意义}{40}{subsubsection*.80}%
+\contentsline {subsubsection}{3.5.5 实践建议}{40}{subsubsection*.81}%
+\contentsline {subsubsection}{3.5.6 局限与未来方向}{40}{subsubsection*.82}%
+\contentsline {subsection}{\numberline {3.0.6}3.6 结论与展望}{41}{subsection.3.0.6}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}用户指令的语用结构类型学：基于潜类别分析的语用类型及其执行效应}{42}{chapter.4}%
+\contentsline {subsection}{\numberline {4.0.1}4.1 引言}{42}{subsection.4.0.1}%
+\contentsline {subsubsection}{4.1.1 从"成分"到"结构"：分析单元的提升}{42}{subsubsection*.83}%
+\contentsline {subsubsection}{4.1.2 指令质量的"组合性"问题}{42}{subsubsection*.84}%
+\contentsline {subsubsection}{4.1.3 研究问题与定位}{43}{subsubsection*.85}%
+\contentsline {subsection}{\numberline {4.0.2}4.2 理论基础与研究假设}{43}{subsection.4.0.2}%
+\contentsline {subsubsection}{4.2.1 语用类型学与言语行为分类学}{43}{subsubsection*.86}%
+\contentsline {subsubsection}{4.2.2 共同基础理论与指令理解}{44}{subsubsection*.87}%
+\contentsline {subsubsection}{4.2.3 研究假设}{44}{subsubsection*.88}%
+\contentsline {subsection}{\numberline {4.0.3}4.3 研究方法}{45}{subsection.4.0.3}%
+\contentsline {subsubsection}{4.3.1 数据来源与样本}{45}{subsubsection*.89}%
+\contentsline {subsubsection}{4.3.2 语用特征提取}{45}{subsubsection*.90}%
+\contentsline {subsubsection}{4.3.3 潜类别分析（LCA）实现}{46}{subsubsection*.92}%
+\contentsline {subsubsection}{4.3.4 过程结果与路径指标}{46}{subsubsection*.93}%
+\contentsline {subsubsection}{4.3.5 分析流程}{47}{subsubsection*.94}%
+\contentsline {subsection}{\numberline {4.0.4}4.4 结果}{47}{subsection.4.0.4}%
+\contentsline {subsubsection}{4.4.1 LCA 模型选择}{47}{subsubsection*.95}%
+\contentsline {subsubsection}{4.4.2 语用特征剖面与类别标签}{47}{subsubsection*.98}%
+\contentsline {subsubsection}{4.4.3 样本分布与指令示例}{49}{subsubsection*.101}%
+\contentsline {subsubsection}{4.4.4 执行路径稳定性差异}{50}{subsubsection*.104}%
+\contentsline {subsubsection}{4.4.5 任务完成率比较与显式性独立效应}{51}{subsubsection*.110}%
+\contentsline {subsubsection}{4.4.6 任务难度的调节效应}{52}{subsubsection*.113}%
+\contentsline {subsubsection}{4.4.7 LCA 稳定性检查}{53}{subsubsection*.116}%
+\contentsline {subsection}{\numberline {4.0.5}4.5 讨论}{54}{subsection.4.0.5}%
+\contentsline {subsubsection}{4.5.1 五种语用结构类型的执行意义}{54}{subsubsection*.118}%
+\contentsline {subsubsection}{4.5.2 路径稳定性作为语用结构效应的核心证据}{54}{subsubsection*.119}%
+\contentsline {subsubsection}{4.5.3 与 第二章与第三章 的理论整合}{55}{subsubsection*.120}%
+\contentsline {subsubsection}{4.5.4 显式性评分的局限性}{56}{subsubsection*.122}%
+\contentsline {subsubsection}{4.5.5 局限与未来方向}{56}{subsubsection*.123}%
+\contentsline {subsection}{\numberline {4.0.6}4.6 结论与展望}{56}{subsection.4.0.6}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}综合讨论与展望}{58}{chapter.5}%
+\contentsline {section}{\numberline {5.1}核心发现回顾}{58}{section.5.1}%
+\contentsline {section}{\numberline {5.2}理论贡献}{58}{section.5.2}%
+\contentsline {section}{\numberline {5.3}实践启示}{59}{section.5.3}%
+\contentsline {section}{\numberline {5.4}局限与未来方向}{59}{section.5.4}%
+\contentsline {chapter}{参考文献}{60}{chapter*.124}%
+\contentsline {section}{\numberline {5.5}补充数据文件}{61}{section.5.5}%
+\contentsline {section}{\numberline {5.6}附录：补充表格}{61}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}表 26　Stage 2 约束任务子样本的完整系数表}{61}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}表 27　Johnson-Neyman 风格的简单斜率与曲率（交互模型）}{62}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}表 28　探索性过程结果模型}{62}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}附录：补充表格与说明}{63}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}表 29　k=4/5/6 拟合统计量比较}{63}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}表 30　补充图表文件索引}{63}{subsection.5.7.2}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}附录}{64}{appendix.A}%
+\contentsline {section}{\numberline {A.1}第二章 补充数据文件索引}{64}{section.A.1}%
+\contentsline {section}{\numberline {A.2}第三章 补充数据文件索引}{64}{section.A.2}%
+\contentsline {section}{\numberline {A.3}第四章 补充数据文件索引}{64}{section.A.3}%

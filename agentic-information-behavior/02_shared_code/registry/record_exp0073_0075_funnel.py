@@ -1,0 +1,272 @@
+"""EXP-0073/0074/0075 recorder: correct the AgentNet premise in the funnel record and file the two novelty screens.
+
+Three things happen here, in the order the evidence supports them:
+
+1. the false premise is withdrawn **and replaced by measurements** - what AgentNet holds, at what rate the step labels
+   appear, and whether it declares instruction provenance (it does not, so T004's conclusion survives on its remaining
+   grounds even though one of its reasons was wrong);
+2. the two topics parked as "screen incomplete: empty feeds" get the screen they never had, with the readable/unread
+   split stated so a zero-collision result cannot be read as proof of absence;
+3. the topic registry is updated with an assertion that only the status and blocking-issue columns moved.
+
+    python 02_shared_code/registry/record_exp0073_0075_funnel.py
+"""
+from __future__ import annotations
+
+import csv, glob, io, json, pathlib, re, time
+
+ROOT = pathlib.Path(__file__).resolve().parents[2]
+REG = ROOT / "00_program_registry"
+DOCS = ROOT / "docs"
+NOW = time.strftime("%Y-%m-%dT%H:%M:%S")
+
+E73 = json.loads(pathlib.Path(sorted(glob.glob(str(ROOT / "results_raw" / "EXP0073_agentnet_reaudit_*.json")))[-1]
+                               ).read_text(encoding="utf-8"))
+SCREENS = {}
+for tid, exp in (("T029", "EXP-0074"), ("T036", "EXP-0075")):
+    f = sorted(glob.glob(str(ROOT / "results_raw" / f"{exp.replace('-', '')}_{tid.lower()}_novelty_screen_*.json")))
+    if f:
+        SCREENS[tid] = json.loads(pathlib.Path(f[-1]).read_text(encoding="utf-8"))
+
+AN = {k: v for k, v in E73["files"].items() if k.startswith("agentnet")}
+if not AN:
+    raise SystemExit("[e73/75] no AgentNet files in the EXP-0073 output.")
+tasks = sum(v["tier1_exact_stream"]["lines"] for v in AN.values())
+markers = sum(v["tier1_exact_stream"]["marker_occurrences"]["last_step_correct_any"] for v in AN.values())
+steps_sampled = sum(v["tier2_parsed_sample"]["steps_in_sample"] for v in AN.values())
+prov_keys = {k: v["tier2_parsed_sample"]["provenance_like_keys"] for k, v in E73["files"].items()}
+step_keys = sorted(set().union(*[set(v["tier2_parsed_sample"]["step_value_keys"]) for v in AN.values()]))
+
+# precomputed blocks: an f-string expression cannot contain a backslash on this Python, so nested quotes are built here
+file_tbl = "\n".join(
+    f"| {k} | {v['tier1_exact_stream']['lines']:,} | "
+    f"{v['tier1_exact_stream']['marker_occurrences']['last_step_correct_any']:,} | "
+    f"{v['tier1_exact_stream']['bytes']:,} |" for k, v in AN.items())
+mean_steps = ", ".join(str(v["tier2_parsed_sample"]["mean_steps_per_task"]) for v in AN.values())
+label_shares = ", ".join(
+    f"{v['tier2_parsed_sample']['share_of_tasks_with_label']} "
+    f"(Wilson {v['tier2_parsed_sample']['wilson95_on_that_share'][0]}-"
+    f"{v['tier2_parsed_sample']['wilson95_on_that_share'][1]})" for v in AN.values())
+E73_NAME = pathlib.Path(sorted(glob.glob(str(ROOT / "results_raw" / "EXP0073_agentnet_reaudit_*.json")))[-1]).name
+
+
+def screen_block(tid, S):
+    closest = "\n".join(f"  - `{c['level']}` {c['title'][:96]} ({c['venue'][:30]}, {c['year']})"
+                        for c in S["closest"][:6]) or "  - none"
+    return (f"### {tid} ({S['exp_id']}) - {S['records']} records from {len(S['queries'])} family queries\n"
+            f"* readable at grade time {S['readable']}, unread {S['unread']} (of which "
+            f"{S['filled_by_semanticscholar']} were recovered from the Semantic Scholar batch index and "
+            f"{S['rejected_on_title_mismatch']} candidate fills were refused for title disagreement);\n"
+            f"* grades {json.dumps(S['grade_distribution'], ensure_ascii=False)}; "
+            f"**L2+ = {S['L2plus']}, L3+ = {S['L3plus']}**;\n* closest records:\n{closest}")
+
+
+def verdict_line(tid, S):
+    if S["L2plus"] == 0:
+        return (f"- **{tid}**: {S['L3plus']} L3+ and {S['L2plus']} L2+ records. Screen verdict: no collision found - "
+                f"but with {S['unread']} of {S['records']} records unread, this is a bounded negative, not proof of "
+                "absence.")
+    return (f"- **{tid}**: {S['L3plus']} L3+ and {S['L2plus']} L2+ records. Collision present; see the closest list "
+            "above.")
+
+
+SCREEN_BLOCKS = "\n\n".join(screen_block(t, S) for t, S in SCREENS.items())
+VERDICTS = "\n".join(verdict_line(t, S) for t, S in SCREENS.items())
+UNREAD_LINES = "\n".join(f"- {t}: {S['unread']}/{S['records']} records unread "
+                         f"({100 * S['unread'] / max(1, S['records']):.0f}%)" for t, S in SCREENS.items())
+PROV_AGENTNET = (prov_keys.get("agentnet_win_mac_18k.jsonl") or "no provenance-like keys in the parsed sample") \
+    if (prov_keys := {k: v["tier2_parsed_sample"]["provenance_like_keys"] for k, v in E73["files"].items()}) else {}
+
+DOC = f"""# Funnel correction: AgentNet IS on this machine (EXP-0073), and two topic screens finally ran (EXP-0074/0075)
+
+Generated by `02_shared_code/registry/record_exp0073_0075_funnel.py` from
+`{E73_NAME}` and the
+EXP-0074/0075 screen summaries.
+
+## 1. The withdrawn premise
+
+`docs/funnel_decision_T004_20260920.md` states: *"AgentNet is not on this machine: the eight releases under
+`MATLABINTOKEN/datasets` are all there is."* That was produced by listing one directory. AgentNet is at
+`MATLABINTOKEN/data/raw/`, and measured now it holds:
+
+| file | task lines | `last_step_correct` markers | bytes |
+|---|---|---|---|
+{file_tbl}
+
+Sampled schema (seed {E73['seed']}, {E73['sample_n_per_file']} lines per file, parsed in full):
+{tasks:,} task lines, {steps_sampled:,} steps in the samples, mean steps/task
+{mean_steps}; share of sampled tasks
+carrying at least one step label
+{label_shares}.
+Step `value` objects expose: {', '.join(step_keys)}.
+
+The measurement also cost two of its own bugs, recorded because they are the reason a naive audit reads an empty
+corpus: parsing every line with `json.loads` had not finished one 270 MB file in nine minutes (rewritten as a
+byte-level census plus a sampled deep read), and sampling by line index while seeking a text-mode handle made all 400
+sampled lines fail to parse - which looked like "no records" rather than "broken seek". The current version asserts a
+non-zero parse count and that each sampled line begins with a brace.
+
+## 2. What the correction does and does not change
+
+**T004 (Real Human vs Synthetic Agent Instructions) - the conclusion stands, on verified grounds.** The withdrawn
+sentence was a reason, not the finding. The finding was that only one release *declares* instruction provenance. That
+is now checked against AgentNet itself rather than skipped because the file was thought absent: AgentNet has no
+provenance-declaring field ({PROV_AGENTNET};
+the byte-level hits on `"human`/`"annotat` are inside free-text observations, not fields). So the single-corpus
+objection to T004 is unchanged and now covers nine readable releases instead of eight.
+
+**T029 (Verification Language and Stopping Judgement) - its data blocker is removed.** Its primary dataset exists,
+with step-level `last_step_correct`, `last_step_redundant` and `reflection` on every step. The remaining gates are the
+novelty screen and a self-overlap check against the completed papers.
+
+## 3. The novelty screens that never ran
+
+Both topics sat at `w2_screen_incomplete_empty_feeds` because the screen was executed against feeds that returned
+nothing (arXiv refused urllib; Crossref had only been queried per-work). Both transports work now, and each topic got
+queries derived from its own object/construct/measure/data families, graded by the frozen EXP-0057 rule injected at
+runtime so `grade_collisions.py` stayed byte-identical.
+
+{SCREEN_BLOCKS}
+
+## 4. Status decisions, and what they are not
+
+{VERDICTS}
+
+A zero-collision screen does not promote a topic by itself, and does not kill one either: the decision rule fixed
+before the first query requires an L3/L4 hit or a measured data/self-overlap blocker. What these screens change is the
+*evidence status* of the two topics - from "never searched" to "searched, with the readable fraction reported".
+
+## 5. Method note kept on purpose
+
+The screen's power is bounded by abstract availability, and this run shows by how much:
+{UNREAD_LINES}
+Those records were graded from a title alone and cannot clear L2 by construction.
+
+## 6. Where the withdrawn sentence still appears, and why those copies are left alone
+
+The false premise is quoted or echoed in places that must not be rewritten:
+
+* `results_raw/EXP0054_provenance_label_feasibility_*.json` (three runs) - raw result files. They record what that
+  probe enumerated, and their substantive conclusion (only Toucan declares the provenance construct) is unchanged and
+  was re-verified against AgentNet by EXP-0073. Editing a raw result to match a later understanding is the one thing a
+  reproducible record cannot survive.
+* `docs/funnel_decision_T004_20260920.md` - left as written, with the correction appended below the original text
+  rather than substituted for it.
+* the `results_raw/` mirrors inside `papers/P001_*` and `papers/P005_*` - copies of the same raw files, carrying the
+  same historical wording for the same reason.
+* `00_program_registry/topic_registry.csv` - T004's blocking-issue column said "AgentNet absent". That copy is a live
+  statement rather than a historical record, so it is corrected here, touching only the status and blocking-issue
+  columns with every other column asserted unchanged across all rows.
+"""
+(DOCS / "funnel_correction_agentnet_20260920.md").write_text(DOC, encoding="utf-8", newline="")
+print("[e73/75] wrote docs/funnel_correction_agentnet_20260920.md")
+
+T4 = DOCS / "funnel_decision_T004_20260920.md"
+t4 = T4.read_text(encoding="utf-8")
+if "EXP-0073" not in t4:
+    T4.write_text(t4.rstrip() + f"""
+
+---
+
+## Correction (2026-09-20, EXP-0073)
+
+One factual premise in this document is withdrawn: *"AgentNet is not on this machine"*. It is on this machine, at
+`MATLABINTOKEN/data/raw/` - {tasks:,} task lines and {markers:,} `last_step_correct` step labels, measured in
+`results_raw/{E73_NAME}`
+and written up in `docs/funnel_correction_agentnet_20260920.md`. The listing that produced the claim covered only
+`MATLABINTOKEN/datasets`.
+
+The decision itself is unchanged, and the reason matters: this document's conclusion was that only one release
+**declares** instruction provenance. AgentNet has now been checked for that directly rather than assumed away, and it
+declares none - no provenance field exists in the parsed sample, and the byte-level matches on `"human`/`"annotat`
+sit inside free-text observation strings. The single-corpus objection therefore still holds over nine readable
+releases instead of eight. What the error does cost is a topic that was parked partly behind the false premise: T029's
+data blocker is removed by this measurement.
+""", encoding="utf-8", newline="")
+    print("[e73/75] T004 decision doc annotated with the correction")
+
+# ---------------------------------------------------------------- registry status updates
+P = REG / "topic_registry.csv"
+rows = list(csv.reader(io.StringIO(P.read_text(encoding="utf-8"))))
+hdr, body = rows[0], [r for r in rows[1:] if r]
+before = {r[0]: list(r) for r in body}
+iS, iB = hdr.index("status"), hdr.index("blocking_issue")
+NEW = {
+    "T029": (f"w3_data_present_screen_L2plus{SCREENS['T029']['L2plus']}_selfoverlap_open",
+             "AgentNet present on disk with step labels (EXP-0073); screen found "
+             f"{SCREENS['T029']['L2plus']} L2+ of {SCREENS['T029']['records']} records with "
+             f"{SCREENS['T029']['unread']} unread; self-overlap check against P001/P002 still open"),
+    "T036": (f"w3_screen_L2plus{SCREENS['T036']['L2plus']}_L3plus{SCREENS['T036']['L3plus']}_"
+             f"bounded_negative_{SCREENS['T036']['unread']}_unread",
+             f"screen finally run (EXP-0075): {SCREENS['T036']['L2plus']} L2+, {SCREENS['T036']['L3plus']} L3+ of "
+             f"{SCREENS['T036']['records']} records; the one L2 hit matches construct+measure only (no agent-corpus "
+             "object), so no collision; descriptive-type risk and the manifest gap remain the real objections"),
+    # T004's row is a LIVE statement rather than a historical record, so its withdrawn premise is corrected here.
+    # The copies in raw result files and in the decision doc are deliberately left as written (see the doc's §6).
+    "T004": ("not_promoted_single_corpus_and_p001_overlap_PREMISE_CORRECTED_EXP0073",
+             "only Toucan declares instruction provenance (EXP-0054, re-verified against AgentNet in EXP-0073: "
+             "AgentNet is present on disk and declares no provenance field); a Toucan register study would re-slice "
+             "P001's sample"),
+}
+for tid, (st, blk) in NEW.items():
+    if tid not in before:
+        raise SystemExit(f"[e73/75] ABORT: {tid} is not in the topic registry.")
+    body[[r[0] for r in body].index(tid)][iS] = st
+    body[[r[0] for r in body].index(tid)][iB] = blk
+for r in body:
+    old = before[r[0]]
+    changed = [hdr[i] for i in range(len(hdr)) if old[i] != r[i]]
+    if changed and set(changed) - {"status", "blocking_issue"}:
+        raise SystemExit(f"[e73/75] ABORT: {r[0]} changed columns beyond status/blocking_issue: {changed}")
+buf = io.StringIO()
+w = csv.writer(buf, lineterminator="\r\n")
+w.writerow(hdr)
+w.writerows(body)
+P.write_text(buf.getvalue(), encoding="utf-8", newline="")
+print(f"[e73/75] registry updated for {', '.join(NEW)} (only status/blocking_issue; asserted across all "
+      f"{len(body)} rows)")
+
+# ---------------------------------------------------------------- registry of experiments
+p = REG / "experiment_registry.csv"
+rows = [r for r in csv.reader(io.StringIO(p.read_text(encoding="utf-8"))) if r]
+have = {r[0] for r in rows}
+REC = [("EXP-0073", "programme",
+        "02_shared_code/data_audit/agentnet_premise_reaudit.py",
+        f"two-tier audit of {', '.join(AN)}: exact byte-stream census of label markers plus a "
+        f"{E73['sample_n_per_file']}-line random sample (seed {E73['seed']}) parsed in full for schema, steps-per-task "
+        "and provenance-declaring fields; asserts a non-zero parse count and that sampled lines start with a brace",
+        f"seed {E73['seed']}",
+        f"premise FALSE: {tasks:,} AgentNet task lines, {markers:,} last_step_correct markers, "
+        "no provenance-declaring field",
+        "withdraws a factual premise used in the T004 decision (decision survives on other, now-verified grounds) and "
+        "removes T029's data blocker"),
+       ]
+for tid, exp in (("T029", "EXP-0074"), ("T036", "EXP-0075")):
+    S = SCREENS.get(tid)
+    if not S:
+        continue
+    REC.append((exp, f"funnel:{tid}",
+                "02_shared_code/literature/topic_novelty_pass.py",
+                f"{len(S['queries'])} queries derived from the topic's own object/construct/measure/data families over "
+                "Crossref query.bibliographic and arXiv export (curl); Semantic Scholar batch fill before grading; "
+                "graded with the frozen EXP-0057 rule injected at runtime (module file unmodified)",
+                "none",
+                f"{S['records']} records, {S['readable']} readable / {S['unread']} unread, "
+                f"L2+ {S['L2plus']}, L3+ {S['L3plus']}",
+                "replaces 'screen incomplete: empty feeds' with a real search and a stated readable fraction; a "
+                "zero-collision result is filed as a bounded negative, not as proof of absence"))
+for exp, paper, script, cfg, seed, stat, note in REC:
+    if exp in have:
+        continue
+    rows.append([exp, paper, "success_" + stat.split(":")[0][:60], script, cfg, seed,
+                 E73["at"], E73["at"], stat,
+                 "results_raw/; docs/funnel_correction_agentnet_20260920.md; 00_program_registry/topic_registry.csv",
+                 note, "yes - funnel record and topic registry"])
+    print(f"[e73/75] registered {exp}")
+buf = io.StringIO()
+csv.writer(buf, lineterminator="\r\n").writerows(rows)
+p.write_text(buf.getvalue(), encoding="utf-8", newline="")
+import pandas as pd
+d = pd.read_csv(p)
+assert not d.exp_id.duplicated().any()
+print(f"[e73/75] registry rows={len(d)}")

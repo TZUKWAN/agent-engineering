@@ -1,0 +1,237 @@
+{
+ "baselines": [
+  {
+   "auc": 0.5,
+   "dv": "submitted",
+   "model": "chance",
+   "n": 19988
+  },
+  {
+   "auc": 0.8604,
+   "dv": "submitted",
+   "model": "length_only",
+   "n": 19988
+  },
+  {
+   "auc": 0.6857,
+   "dv": "submitted",
+   "model": "first_fifth_block",
+   "n": 19988
+  },
+  {
+   "auc": 0.694,
+   "dv": "submitted",
+   "model": "both_phases",
+   "n": 19988
+  }
+ ],
+ "blocked_designs_in_this_wave": [
+  "T151",
+  "T156"
+ ],
+ "cluster_unit": "instance_id",
+ "descriptive_rates": {
+  "completion_by_length_quartile": {
+   "q1_shortest": {
+    "rollouts": 4997,
+    "submitted_share": 0.0951
+   },
+   "q2": {
+    "rollouts": 4997,
+    "submitted_share": 0.0056
+   },
+   "q3": {
+    "rollouts": 4997,
+    "submitted_share": 0.0056
+   },
+   "q4_longest": {
+    "rollouts": 4997,
+    "submitted_share": 0.0058
+   }
+  },
+  "first_fifth_features": {
+   "ff_cmd_words": {
+    "mean": 25.01,
+    "std": 6.3968
+   },
+   "ff_distinct_families": {
+    "mean": 1.965,
+    "std": 0.5842
+   },
+   "ff_newness_mean": {
+    "mean": 0.8847,
+    "std": 0.1129
+   },
+   "ff_repeat_share": {
+    "mean": 0.0004,
+    "std": 0.0115
+   },
+   "ff_switch_rate": {
+    "mean": 0.3488,
+    "std": 0.2157
+   }
+  },
+  "positives": {
+   "instances_with_any_success": 235,
+   "share_of_rollouts": 0.028,
+   "submitted_rollouts": 560
+  }
+ },
+ "exp_id": "EXP-0199",
+ "finished_at": "2026-09-24T20:33:25",
+ "frame_files_read": {
+  "S": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0197_wave9_step_features.csv.gz",
+  "T": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0197_wave9_rollout_features.csv.gz"
+ },
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave9_designs.py",
+ "models": [
+  {
+   "auc": 0.6857,
+   "ci": [
+    0.6598,
+    0.7116
+   ],
+   "clusters": 1784,
+   "features": [
+    "ff_switch_rate",
+    "ff_distinct_families",
+    "ff_repeat_share",
+    "ff_cmd_words",
+    "ff_newness_mean"
+   ],
+   "frozen_auc_floor": 0.65,
+   "frozen_chance_floor": 0.5,
+   "hypothesis": "H1",
+   "n": 19654,
+   "p": 0.0025,
+   "p_holm": null,
+   "positives": 557,
+   "term": "first_fifth_features_predict_the_release_s_completion_label",
+   "verdict": "supported",
+   "verdict_direction": "predicted_positive: the early phase carries signal above chance"
+  },
+  {
+   "auc_both_phases": 0.694,
+   "auc_first_fifth": 0.6857,
+   "beta": 0.0083,
+   "hypothesis": "H2",
+   "increment_nats_of_auc": 0.0083,
+   "n": 19654,
+   "note": "both models share the same instance-disjoint folds, so the increment is a difference of two cross-validated estimates on the same partition; the freeze asks for it reported with a cluster bootstrap, which is why each side carries its own interval instead of a paired p",
+   "p": null,
+   "p_holm": null,
+   "term": "the_increment_from_adding_the_last_fifth",
+   "verdict": "not_specific_the_later_phase_adds_nothing",
+   "verdict_direction": "predicted_positive: the later phase adds what the first fifth does not carry"
+  },
+  {
+   "families": [
+    {
+     "auc": 0.5002,
+     "ci": [
+      0.3779,
+      0.7248
+     ],
+     "clusters": 30,
+     "features": [
+      "ff_switch_rate",
+      "ff_distinct_families",
+      "ff_repeat_share",
+      "ff_cmd_words",
+      "ff_newness_mean"
+     ],
+     "n": 350,
+     "p": 0.0025,
+     "positives": 16,
+     "task_family": "kubernetes-sigs"
+    },
+    {
+     "auc": 0.507,
+     "ci": null,
+     "clusters": 28,
+     "features": [
+      "ff_switch_rate",
+      "ff_distinct_families",
+      "ff_repeat_share",
+      "ff_cmd_words",
+      "ff_newness_mean"
+     ],
+     "n": 288,
+     "p": null,
+     "positives": 29,
+     "task_family": "google"
+    },
+    {
+     "auc": 0.4577,
+     "ci": null,
+     "clusters": 16,
+     "features": [
+      "ff_switch_rate",
+      "ff_distinct_families",
+      "ff_repeat_share",
+      "ff_cmd_words",
+      "ff_newness_mean"
+     ],
+     "n": 199,
+     "p": null,
+     "positives": 6,
+     "task_family": "Azure"
+    }
+   ],
+   "families_at_or_above_floor": 0,
+   "families_tested": 3,
+   "hypothesis": "H3",
+   "p_holm": null,
+   "term": "the_early_signal_inside_each_of_the_five_largest_task_families",
+   "verdict": "not_reproduced_in_0_of_3_families_below_the_3_frozen_floor",
+   "verdict_rule": "sign_reproduction"
+  }
+ ],
+ "n_clusters": 1784,
+ "n_rollouts": 19988,
+ "n_steps": 292992,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 48,
+  "exp_id": "EXP-0199",
+  "note": "wave-9 design",
+  "python": "3.11.7",
+  "rows_in": 19988,
+  "started_at": "2026-09-24T20:32:46",
+  "wallclock_sec": 39.3
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T20:33:25",
+ "strata": [
+  {
+   "auc_first_fifth": 0.6859,
+   "positives": 475,
+   "rollouts": 4997,
+   "stratification": "length_quartile",
+   "stratum": "q1_shortest"
+  },
+  {
+   "auc_first_fifth": 0.7168,
+   "positives": 28,
+   "rollouts": 4997,
+   "stratification": "length_quartile",
+   "stratum": "q2"
+  },
+  {
+   "auc_first_fifth": 0.6768,
+   "positives": 28,
+   "rollouts": 4997,
+   "stratification": "length_quartile",
+   "stratum": "q3"
+  },
+  {
+   "auc_first_fifth": 0.5152,
+   "positives": 29,
+   "rollouts": 4997,
+   "stratification": "length_quartile",
+   "stratum": "q4_longest"
+  }
+ ],
+ "topic": "T178"
+}

@@ -1,0 +1,5 @@
+cfg,bridge__fail0,bridge__fail1,no_bridge__fail0,no_bridge__fail1,fail_rate_given_no_bridge,fail_rate_given_bridge,risk_difference_pp,odds_ratio,fisher_p,phi
+OSS,5077,259,193,185,0.4894,0.0485,44.09,18.79,5.42e-116,0.4093
+Qwen3,4621,346,179,366,0.6716,0.0697,60.19,27.308,4.19e-228,0.5357
+Kimi-K2,7401,264,233,74,0.241,0.0344,20.66,8.904,5.45e-37,0.1973
+AGGREGATE,17099,869,605,625,0.5081,0.0484,45.98,20.327,0.0,0.4203

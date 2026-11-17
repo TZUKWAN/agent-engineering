@@ -1,0 +1,937 @@
+{
+ "0031|Kuhlthau1999a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1002/bult.115",
+  "s2_paper_id": "6bfaac41d890c8c6fbbd6e3ceb529fbb44ffdf56",
+  "s2_title": "Accommodating the User's Information Search Process: Challenges for Information Retrieval System Designers",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0040|Mitscheu": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/3-211-27283-6_17",
+  "s2_paper_id": "fe6e54b46a22c2024ea1c34ccdd965c2b444fe46",
+  "s2_title": "Understanding the Information Search Process within a Tourism Domain-specific Search Engine",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0059|Klein1999a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/3-540-48239-3_50",
+  "s2_paper_id": "bcbc4e0f86862219a99356f5f0c0a0902b677491",
+  "s2_title": "An Overview of the State of the Art of Coding Schemes for Dialogue Act Annotation",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0078|Thalhath2020m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-030-64452-9_34",
+  "s2_paper_id": "5b091c6060c0753707a76f4df883abbb9352c0dc",
+  "s2_title": "MetaProfiles - A Mechanism to Express Metadata Schema, Privacy, Rights and Provenance for Data Interoperability",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0087|Rauch2022f": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-030-98876-0_16",
+  "s2_paper_id": "63b13ba3a8f0e9f093bd444035e70d49c4b6a9e2",
+  "s2_title": "FAIR Metadata: A Community-driven Vocabulary Application",
+  "abstract": "FAIR metadata is critical to supporting FAIR data overall. Transparency, community engagement, and flexibility are key aspects of FAIR that apply to metadata. This paper presents YAMZ (Yet Another Metadata Zoo), a community-driven vocabulary application that supports FAIR. The history ofYAMZ and its original features are reviewed, followed by a presentation of recent innovations and a discussion of how YAMZ supports FAIR principles. The conclusion identifies next steps and key outputs.",
+  "abstract_chars": 490,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0206|Bettivia2022d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-031-18700-1",
+  "s2_paper_id": "a94fee9ef9012752c884c7552a1390647e6f2011",
+  "s2_title": "Documenting the Future: Navigating Provenance Metadata Standards",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0082|Peregrina2022t": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-031-23298-5_1",
+  "s2_paper_id": "2294c76943bc41365e72e75049a8acc5e9515d4d",
+  "s2_title": "Towards a Metadata Management System for Provenance, Reproducibility and Accountability in Federated Machine Learning",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0085|Schindler2024d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-031-58468-8_14",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0168|Schindler2024d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-031-58468-8_14",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0209|Lagoze2013e": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-319-03437-9_13",
+  "s2_paper_id": "930bad33c2867795c7d2ba88c74f46ca982962b4",
+  "s2_title": "Encoding Provenance Metadata for Social Science Datasets",
+  "abstract": "Recording provenance is a key requirement for data-centric scholarship, allowing researchers to evaluate the integrity of source data sets and reproduce, and thereby, validate results. Provenance has become even more critical in the web environment in which data from distributed sources and of varying integrity can be combined and derived. Recent work by the W3C on the PROV model provides the foundation for semantically-rich, interoperable, and web-compatible provenance metadata. We apply that model to complex, but characteristic, provenance examples of social science data, describe scenarios that make scholarly use of those provenance descriptions, and propose a manner for encoding this provenance metadata within the widely-used DDI metadata standard.",
+  "abstract_chars": 762,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0110|Ruotsalo2007a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-540-76298-0_30",
+  "s2_paper_id": "cdac8a781cb1df7bd001dc6f8236cadbc99350d7",
+  "s2_title": "An Event-Based Approach for Semantic Metadata Interoperability",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0145|Cho2008t": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-540-79860-6_20",
+  "s2_paper_id": "df6ed6d5ed45fd74264e68b6b87b7d2372f38141",
+  "s2_title": "Trajectory Annotation and Retrieval Based on Semantics",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0193|Hartig2010p": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-642-17819-1_10",
+  "s2_paper_id": "1bd5bbbf9530098a6c830613b09a36d4d6a30f94",
+  "s2_title": "Publishing and Consuming Provenance Metadata on the Web of Linked Data",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0088|Yang2012a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-3-642-33024-7_23",
+  "s2_paper_id": "1d26f109ecfae623c1717d16f23d1847ad6f38df",
+  "s2_title": "Automatic Creation of Crosswalk for Geospatial Metadata Standard Interoperability",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0126|Li2026e": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1007/978-981-92-0372-7_2",
+  "s2_paper_id": "d0b26fc297c2779b4c59ae019dc8750f614c3f47",
+  "s2_title": "Evaluating Scoring Bias in LLM-as-a-Judge",
+  "abstract": "The\"LLM-as-a-Judge\"paradigm, using Large Language Models (LLMs) as automated evaluators, is pivotal to LLM development, offering scalable feedback for complex tasks. However, the reliability of these judges is compromised by various biases. Existing research has heavily concentrated on biases in comparative evaluations. In contrast, scoring-based evaluations-which assign an absolute score and are often more practical in industrial applications-remain under-investigated. To address this gap, we undertake the first dedicated examination of scoring bias in LLM judges. We shift the focus from biases tied to the evaluation targets to those originating from the scoring prompt itself. We formally define scoring bias and identify three novel, previously unstudied types: rubric order bias, score ID bias, and reference answer score bias. We propose a comprehensive framework to quantify these biases, featuring a suite of multi-faceted metrics and an automatic data synthesis pipeline to create a tailored evaluation corpus. Our experiments empirically demonstrate that even the most advanced LLMs suffer from these substantial scoring biases. Our analysis yields actionable insights for designing more robust scoring prompts and mitigating these newly identified biases.",
+  "abstract_chars": 1273,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0202|Mchombu1984d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/0306-4573(84)90007-4",
+  "s2_paper_id": "0a8b70b3e9b62fccc90efc4de3228e695f3f0e0a",
+  "s2_title": "Development of library and documentation services in Tanzania: Problems of strategy and tactics",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0032|Kuhlthau1988p": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/0306-4573(88)90045-3",
+  "s2_paper_id": "7a944e6562ccc62ffd69849fe34b3f5875552bca",
+  "s2_title": "Perceptions of the information search process in libraries: a study of changes from high school through college",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0196|Buckland1996d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/0306-4573(95)00050-q",
+  "s2_paper_id": "544840906cae5373ee166e42c5609380c142bb81",
+  "s2_title": "Documentation, Information Science, and Library Science in the USA",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0084|Thalhath2025m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.dim.2024.100068",
+  "s2_paper_id": "cf222cecb66913df169b930388409ae3e40e4043",
+  "s2_title": "Metadata application profile as a mechanism for semantic interoperability in FAIR and open data publishing",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0214|Thalhath2025m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.dim.2024.100068",
+  "s2_paper_id": "cf222cecb66913df169b930388409ae3e40e4043",
+  "s2_title": "Metadata application profile as a mechanism for semantic interoperability in FAIR and open data publishing",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0039|Browne2021s": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.dss.2021.113498",
+  "s2_paper_id": "a94020a6c0b3372671cd06051e0291f5882ae46c",
+  "s2_title": "Stopping information search: An fMRI investigation",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0175|Miles2011m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.future.2010.10.007",
+  "s2_paper_id": "5e1dcf10128e8a64ba9442872f27bcc3898339c4",
+  "s2_title": "Mapping attribution metadata to the Open Provenance Model",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0201|Liu2015u": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.future.2014.10.030",
+  "s2_paper_id": "95791b79651362fae00cbbe28c800f139ff4e762",
+  "s2_title": "Using provenance to efficiently improve metadata searching performance in storage systems",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0029|Hyldegård2006c": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.ipm.2004.06.013",
+  "s2_paper_id": "1c06b85fe1c6b3b60d6fa7643b0d69ba1b8982cc",
+  "s2_title": "Collaborative information behaviour--exploring Kuhlthau's Information Search Process model in a group-based educational setting",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0034|Taylor2012u": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.ipm.2011.04.005",
+  "s2_paper_id": "e150cf04063173e02f7a5f8a600d57b4a2ebbe54",
+  "s2_title": "User relevance criteria choices and the information search process",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0195|Tani2013d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.ipm.2013.05.003",
+  "s2_paper_id": "99cc15c4b157160f7c9c4e54677b1d51aba2b35e",
+  "s2_title": "Dealing with metadata quality: The legacy of digital library efforts",
+  "abstract": "In this work, we elaborate on the meaning of metadata quality by surveying efforts and experiences matured in the digital library domain. In particular, an overview of the frameworks developed to characterize such a multi-faceted concept is presented. Moreover, the most common quality-related problems affecting metadata both during the creation and the aggregation phase are discussed together with the approaches, technologies and tools developed to mitigate them. This survey on digital library developments is expected to contribute to the ongoing discussion on data and metadata quality occurring in the emerging yet more general framework of data infrastructures.",
+  "abstract_chars": 670,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0037|Bowler2010a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.lisr.2009.09.005",
+  "s2_paper_id": "3a60f0c2b791b78046e4fa2010ff8249f28f0abe",
+  "s2_title": "A taxonomy of adolescent metacognitive knowledge during the information search process",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0030|Browne2004s": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.obhdp.2004.05.001",
+  "s2_paper_id": "94c4f2d598673048580b12f2f31bb8ee024e52b0",
+  "s2_title": "Stopping rule use during information search in design problems",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0109|Pandit2018q": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.procs.2018.09.026",
+  "s2_paper_id": "cead6435cd20e5beb20575693a6e518ee20a0cbd",
+  "s2_title": "Queryable Provenance Metadata For GDPR Compliance",
+  "abstract": "Abstract Information associated with regulatory compliance is often siloed as legal documentation that is not suitable for querying or reuse. Utilising open standards and technologies to represent and query this information can facilitate interoperability between stakeholders and assist in the task of maintaining as well as demonstrating compliance. In this paper, we show how semantic web technologies can assist in representation and querying of compliance information related to the General Data Protection Regulation (GDPR), an European law governing the use of consent and personal data. We focus on the subset of obligations related to the use of consent and personal data, and represent the associated metadata using the previously published GDPRov ontology and GDPRtEXT resource. We present a proof-of-concept demonstration (available online) where information is queried to automatically populate the GDPR-readiness checklist published by Ireland’s Data Protection Commissioner.",
+  "abstract_chars": 989,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0173|Pandit2018q": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.procs.2018.09.026",
+  "s2_paper_id": "cead6435cd20e5beb20575693a6e518ee20a0cbd",
+  "s2_title": "Queryable Provenance Metadata For GDPR Compliance",
+  "abstract": "Abstract Information associated with regulatory compliance is often siloed as legal documentation that is not suitable for querying or reuse. Utilising open standards and technologies to represent and query this information can facilitate interoperability between stakeholders and assist in the task of maintaining as well as demonstrating compliance. In this paper, we show how semantic web technologies can assist in representation and querying of compliance information related to the General Data Protection Regulation (GDPR), an European law governing the use of consent and personal data. We focus on the subset of obligations related to the use of consent and personal data, and represent the associated metadata using the previously published GDPRov ontology and GDPRtEXT resource. We present a proof-of-concept demonstration (available online) where information is queried to automatically populate the GDPR-readiness checklist published by Ireland’s Data Protection Commissioner.",
+  "abstract_chars": 989,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0134|Gu2026a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/j.xinn.2025.101253",
+  "s2_paper_id": "de866bc97ae78f475495717ab06f18addd63887e",
+  "s2_title": "A survey on LLM-as-a-judge",
+  "abstract": "Accurate and consistent evaluation is crucial for decision-making across numerous fields, yet it remains challenging due to inherent subjectivity, variability, and scale. Large language models (LLMs) have achieved remarkable success, leading to “LLM-as-a-judge,” where LLMs serve as evaluators for complex tasks. With their ability to process diverse data types and provide scalable assessments, LLMs present a compelling alternative to traditional expert-driven evaluations. However, ensuring the reliability of LLM-as-a-judge systems remains a significant challenge requiring careful design and standardization. This paper provides a comprehensive survey of LLM-as-a-judge, offering a formal definition and detailed classification while addressing the core question of how to build reliable LLM-as-a-judge systems. We explore strategies to enhance reliability, including improving consistency, mitigating biases, and adapting to diverse scenarios. We propose methodologies for evaluating reliability, supported by a novel benchmark. To advance development and deployment, we discuss practical applications, challenges, and future directions. Our contributions span multiple levels: we establish conceptual boundaries, reorganize fragmented literature into a unified framework, and propose a reliability-oriented benchmark. We articulate a forward-looking research agenda, offering theoretical foundations and practical guidance for constructing reliable and trustworthy LLM-as-a-judge systems.",
+  "abstract_chars": 1495,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0207|Bird2001s": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1016/s0167-6393(00)00066-2",
+  "s2_paper_id": "3c1d6e73f01b78f5d6d53442baa99a8c3228f6b8",
+  "s2_title": "Speech annotation and corpus tools",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0127|Li2026g": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1038/s44387-026-00153-8",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0033|Nilsson2010t": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1057/fsm.2010.5",
+  "s2_paper_id": "7dc5b6bd30e8c405045b4361e52cc4aff23be46c",
+  "s2_title": "The information search process of socially responsible investors",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0041|Brumfield2008u": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1080/01930820802289417",
+  "s2_paper_id": "b557401d357362b88b194ce3639bd533545b6867",
+  "s2_title": "Using Online Tutorials to Reduce Uncertainty in Information Seeking Behavior",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0197|Anselin2014m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1080/13658816.2014.917313",
+  "s2_paper_id": "b1e58519377cee0f729a4a289d046b4d0c26872d",
+  "s2_title": "Metadata and provenance for spatial analysis: the case of spatial weights",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0081|Bountouri2009i": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1080/19386380903095107",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0116|Barroso2015m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1080/19386389.2015.1011025",
+  "s2_paper_id": "c737a16077dec287fa659d8b3d327fd2bc63dfa2",
+  "s2_title": "Metadata Crosswalk for a Museum Collection in a Thematic Digital Library",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0045|anon2009i": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1081/e-elis3-120043229",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0139|Rafique2025a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1109/cloud67622.2025.00053",
+  "s2_paper_id": "0fa64af717d7a5607c8de660bb247f9699aa6ff9",
+  "s2_title": "Automated LLM Deployment and Evaluation: A Cloud-Native Approach Using LLM-as-a-Judge",
+  "abstract": "The rapid advancement of LLMs has led to widespread adoption across various domains, but it has also raised concerns about data security and privacy, particularly with publicly available and commercially operated platforms. Given their high computational demands, cloud environments are the obvious choice for deployment. As a result, organizations are increasingly deploying LLMs in confined cloud environments to protect sensitive data while leverazing scalable cloud resources. However, deploying LLMs in cloud environments remains a complex and time-consuming process that requires specialized skills and expertise in various areas, such as infrastructure management, resource allocation, and model setup. Testing and comparing LLMs to select the appropriate one is particularly challenging as different models are trained for different purposes, making the direct comparison nontrivial. Furthermore, differences in model architectures, training data, and fine-tuning strategies make objective evaluation difficult, limiting the effectiveness of traditional benchmarking approaches. To address these challenges, we present a cloud-native system that automates both the deployment and evaluation of LLMs. Our contributions are twofold: (i) we automate the provisioning and deployment of LLMs on various cloud platforms to stream-line infrastructure setup, and (ii) we develop a lightweight evaluation framework that leverages the LLM-as-a-Judge approach, where an independent LLM systematically assesses and compares different models based on predefined evaluation criteria. Our ongoing work aims to optimize LLM deployment by selecting cost-efficient cloud resources. We are also enhancing the evaluation framework with diverse prompts, broader metrics, and cross-model validation for fair, reproducible benchmarking.",
+  "abstract_chars": 1821,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0157|Li2026c": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1109/gaiis69281.2026.11519324",
+  "s2_paper_id": "a465d5d12a1f5d8c7faad8fc7fe4871319620e06",
+  "s2_title": "CoD-Judge: Efficient LLM-as-a-Judge for Biomedical Relation Extraction Evaluation via Chain-of-Thought Distillation",
+  "abstract": "Automatic evaluation for biomedical relation extraction remains difficult because generated outputs are often semantically correct but lexically diverse, which limits the effectiveness of exact-match-based metrics. To address this issue, this paper proposes CoD-Judge, an efficient evaluation framework that transfers structured judgment logic from a closed-source teacher model to a lightweight open-source model through chain-of-thought distillation. The framework constructs high-quality teacher supervision data and adopts a reason-before-score training strategy for structured evaluation. Experimental results show that CoD-Judge improves evaluation accuracy, reduces scoring error on the source-domain dataset, and maintains strong zero-shot transferability on heterogeneous target datasets. These results demonstrate the effectiveness of chain-of-thought distillation for low-cost and reliable biomedical relation extraction evaluation.",
+  "abstract_chars": 943,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0092|Tasdelen2025a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1109/iccce66530.2025.11474145",
+  "s2_paper_id": "e538e9148ca9feaa56a317c47e34955005914a16",
+  "s2_title": "A Cryptographically-Linked Metadata Schema for Academic Credential Interoperability: The ILMEQ Model",
+  "abstract": "This paper presents ILMEQ (Interlinked Ledger Metadata for Educational Qualifications), a novel metadata schema that enables the representation of academic credentials as cryptographically verifiable digital assets. Aimed at addressing the shortcomings of current credentialing systems—such as lack of interoperability, vulnerability to fraud, and inadequate modeling of document relationships—ILMEQ introduces a JSON-LD-based structure that supports rich semantic linking and integrity validation. Unlike many existing blockchain-based approaches that rely on fully on-chain storage, ILMEQ maintains privacy and scalability by operating off-chain, anchoring only cryptographic hashes of credential metadata. The schema is designed to capture the full lifecycle and interdependencies of academic documents, including prerequisite chains, equivalency certifications, validation references, and revocation effects. It enables status-aware, hashverified validation of credentials without exposing sensitive content, ensuring both trust and confidentiality. ILMEQ was evaluated in three practical educational scenarios, ranging from simple undergraduate records to complex cross-border recognition cases. Results demonstrated successful modeling of linear and non-linear academic paths, effective revocation tracking, and logical propagation of status changes across related documents. The implementation includes a client-side tool for managing and exporting credential graphs, emphasizing modularity, offline capability, and user privacy. By providing a structured, machine-readable, and extensible model for academic credentials, ILMEQ significantly enhances the trustworthiness, portability, and semantic clarity of digital educational records, contributing toward a globally interoperable credentialing infrastructure.",
+  "abstract_chars": 1819,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0159|Adib2025a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1109/iccit68739.2025.11491589",
+  "s2_paper_id": "dae2219ee788acc5f3d272a13f27a7fc2f1cffa2",
+  "s2_title": "Assessing Large Language Models for Medical QA: Zero-Shot and LLM-as-a-Judge Evaluation",
+  "abstract": "Recently, Large Language Models (LLMs) have gained significant traction in medical domain, especially in developing a QA systems to Medical QA systems for enhancing access to healthcare in low-resourced settings. This paper compares five LLMs deployed between April 2024 and August 2025 for medical QA, using the iCliniq dataset, containing 38,000 medical questions and answers of diverse specialties. Our models include Llama-3-8B-Instruct, Llama 3.2 3B, Llama 3.3 70B Instruct, Llama-4-Maverick-17B-128E-Instruct, and GPT-5-mini. We are using a zero-shot evaluation methodology and using BLEU and ROUGE metrics to evaluate performance without specialized fine-tuning. Our results show that larger models like Llama 3.3 70B Instruct outperform smaller models, consistent with observed scaling benefits in clinical tasks. It is notable that, Llama-4-Maverick-17B exhibited more competitive results, thus highlighting evasion efficiency trade-offs relevant for practical deployment. These findings align with advancements in LLM capabilities toward professional-level medical reasoning and reflect the increasing feasibility of LLM-supported QA systems in the real clinical environments. This benchmark aims to serve as a standardized setting for future study to minimize model size, computational resources and to maximize clinical utility in medical NLP applications.",
+  "abstract_chars": 1368,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0056|Xue2018d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1109/icsess.2018.8663960",
+  "s2_paper_id": "b2088f534a54a5646087b12bf73a727d4d994278",
+  "s2_title": "Dialogue Act Recognition for Open-Domain Based on Word-Level Sequence Annotation with CRF",
+  "abstract": "In dialogue system, natural language understanding has a huge impact on human-machine interaction. Moreover, natural language contains a huge amount of noise within its content because the short length and free format. From this aspect, the demand of this paper is to design the useful feature representations and verify these feature sets by searching suitable machine learnings. Besides, the dialogue acts as labels associate with utterance can be viewed as sequence labelling problem. Considering this situation, this paper provides a word-level sequence annotation method, which annotates dialogue structural information and semantic information to each word of utterance. Meanwhile, Linear-CRF is employed in this paper because it is able to natively capture constrains of hidden state sequence and obtain optimal probability, which is perfectly suit for sequence labeling task. Compared with proposed method, this paper uses the Bag-of-word model to present utterance as baseline. According to result, all the designed features outperform the feature in baseline, which indicates that the proposed method is useful for DA recognition task.",
+  "abstract_chars": 1145,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0160|Koc2026b": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1109/sieds69358.2026.11540303",
+  "s2_paper_id": "d928e3c6837ea699baab0cddfd94d281853d595e",
+  "s2_title": "Behavioral Transfer via Automated Prompt Optimization and LLM-as-a-Judge Evaluation Loops for Prompt-Based Knowledge Distillation",
+  "abstract": "Large language models (LLMs) are efficient and expensive to implement. We present APO-KD, a framework that uses zero-fine-tuning to replicate the observable behavior of a teacher LLM using a cheaper student by maximising discrete packages of prompts rather than weights. APO-KD (i) produces teacher reference outputs, (ii) executes the student with candidate prompts, (iii) assesses alignment with an LLM-as-a-Judge rubric in terms of answer quality, format fidelity, constraint adherence, and consistency, and (iv) rewrites prompts based on judge feedback. On limited bullet-point summarization and code generation (function and unit tests only), distilled prompts are much more effective in getting students to comply and lowering the behavior gap to the teacher compared to zero-shot and manual prompts, and can be deployed quickly and with control using a small budget when fine-tuning is not feasible.",
+  "abstract_chars": 906,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0210|Chen-Chieh Feng2013m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1109/tgrs.2013.2252181",
+  "s2_paper_id": "a8808ebd644d0b9926a26dc49dd1aa44ad1cdbdb",
+  "s2_title": "Mapping Geospatial Metadata to Open Provenance Model",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0204|Stock2005m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1145/1085313.1085330",
+  "s2_paper_id": "d7a78ed4b89c19de95287fe5a7a4c5d5c790f3a8",
+  "s2_title": "Metadata based authoring for technical documentation",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0212|Duan2024m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1145/3589334.3645520",
+  "s2_paper_id": "7fd33765b0eb21c58b57feefb29ce86b205f6394",
+  "s2_title": "ModelGo: A Practical Tool for Machine Learning License Analysis",
+  "abstract": "Productionizing machine learning projects is inherently complex, involving a multitude of interconnected components that are assembled like LEGO blocks and evolve throughout development lifecycle. These components encompass software, databases, and models, each subject to various licenses governing their reuse and redistribution. However, existing license analysis approaches for Open Source Software (OSS) are not well-suited for this context. For instance, some projects are licensed without explicitly granting sublicensing rights, or the granted rights can be revoked, potentially exposing their derivatives to legal risks. Indeed, the analysis of licenses in machine learning projects grows significantly more intricate as it involves interactions among diverse types of licenses and licensed materials. To the best of our knowledge, no prior research has delved into the exploration of license conflicts within this domain. In this paper, we introduce ModelGo, a practical tool for auditing potential legal risks in machine learning projects to enhance compliance and fairness. With ModelGo, we present license assessment reports based on five use cases with diverse model-reusing scenarios, rendered by real-world machine learning components. Finally, we summarize the reasons behind license conflicts and provide guidelines for minimizing them. Our code is publicly available at https://github.com/Xtra-Computing/ModelGo.",
+  "abstract_chars": 1431,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0141|Meisenbacher2025l": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1145/3733816.3760760",
+  "s2_paper_id": "ff2dffdfae65c359cf04dbfe9aecf344afd154dd",
+  "s2_title": "LLM-as-a-Judge for Privacy Evaluation? Exploring the Alignment of Human and LLM Perceptions of Privacy in Textual Data",
+  "abstract": "Despite advances in the field of privacy-preserving Natural Language Processing (NLP), a significant challenge remains the accurate evaluation of privacy. As a potential solution, using LLMs as a privacy evaluator presents a promising approach – a strategy inspired by its success in other subfields of NLP. In particular, the so-called LLM-as-a-Judge paradigm has achieved impressive results on a variety of natural language evaluation tasks, demonstrating high agreement rates with human annotators. Recognizing that privacy is both subjective and difficult to define, we investigate whether LLM-as-a-Judge can also be leveraged to evaluate the privacy sensitivity of textual data. Furthermore, we measure how closely LLM evaluations align with human perceptions of privacy in text. Resulting from a study involving 10 datasets, 13 LLMs, and 677 human survey participants, we confirm that privacy is indeed a difficult concept to measure empirically, exhibited by generally low inter-human agreement rates. Nevertheless, we find that LLMs can accurately model a global human privacy perspective, and through an analysis of human and LLM reasoning patterns, we discuss the merits and limitations of LLM-as-a-Judge for privacy evaluation in textual data. Our findings pave the way for exploring the feasibility of LLMs as privacy evaluators, addressing a core challenge in solving pressing privacy issues with innovative technical solutions.",
+  "abstract_chars": 1441,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0058|Tajik2026d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1145/3785022.3785101",
+  "s2_paper_id": "6a76ee0e1768328ff0f4a7b49e00ef3f163db3ab",
+  "s2_title": "Disagreement as Data: Reasoning Trace Analytics in Multi-Agent Systems",
+  "abstract": "Learning analytics researchers often analyze qualitative student data such as coded annotations or interview transcripts to understand learning processes. With the rise of generative AI, fully automated and human–AI workflows have emerged as promising methods for analysis. However, methodological standards to guide such workflows remain limited. In this study, we propose that reasoning traces generated by large language model (LLM) agents, especially within multi-agent systems, constitute a novel and rich form of process data to enhance interpretive practices in qualitative coding. We apply cosine similarity to LLM reasoning traces to systematically detect, quantify, and interpret disagreements among agents, reframing disagreement as a meaningful analytic signal. Analyzing nearly 10,000 instances of agent pairs coding human tutoring dialog segments, we show that LLM agents’ semantic reasoning similarity robustly differentiates consensus from disagreement and correlates with human coding reliability. Qualitative analysis guided by this metric reveals nuanced instructional sub-functions within codes and opportunities for conceptual codebook refinement. By integrating quantitative similarity metrics with qualitative review, our method bears potential to improve and accelerate the process of establishing inter-rater reliability during coding by surfacing interpretive ambiguity, especially when LLMs collaborate with humans. We discuss how reasoning-trace disagreements represent a valuable new class of analytic signals advancing methodological rigor and interpretive depth in educational research.",
+  "abstract_chars": 1617,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0154|Amin2026m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1145/3786175.3788342",
+  "s2_paper_id": "af582c73e21b9077a8805837248a4e83690c8563",
+  "s2_title": "Multilingual Code Evaluation with LLM-as-a-Judge: AI-Assisted Feedback for Human-Centric Understanding",
+  "abstract": "The rapid deployment of large language models (LLMs) in software development has created an urgent demand for reliable evaluation of code quality beyond functional correctness. Current human assessments of LLM-generated code across non-functional dimensions, such as Readability, Modularity, Style, Understandability, and Effort, often suffer from low reproducibility because of ambiguous guidelines, which lead to conflicting judgments and undermine benchmark reliability, thereby slowing progress in aligning LLM outputs with human expectations. To address this problem, we introduce a controlled multi-language study with rubric-guided, AI-assisted feedback designed to clarify guideline interpretation while preserving rater autonomy. Across Python, Java, JavaScript, Go, and Swift, we collected over 2,400 ratings under two conditions: No-AI (baseline) and AI-assisted (rubric-tuned feedback). Results show that AI-assisted feedback improves inter-rater reliability (Cronbach’s α increases by up to +0.19 in Python and Swift), strengthens dimensional coherence (e.g., Readability–Understandability ρ = 0.85), and produces more structured latent rating distributions via PCA and clustering, thereby reducing annotation variance. Crucially, these gains stem from the resolution of ambiguity-driven inconsistencies, while preserving the valuable diversity of judgment, demonstrating that rubric-aligned AI-assisted feedback can transform fragmented assessments into a reproducible and scalable framework for the trustworthy study of LLM-generated code quality.",
+  "abstract_chars": 1562,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0155|Farzi2026l": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1145/3805712.3809580",
+  "s2_paper_id": "e30f7820307baf2e3d12fe435fde44a2c3e5951f",
+  "s2_title": "Learning to Rank with Multi-Criteria LLM-Judge Annotations",
+  "abstract": "Large Language Models (LLMs) are increasingly used as automated judges (LLM judges) to evaluate Information Retrieval (IR) systems, offering a cost-effective complement to human assessments. However, most prior work treats evaluation mainly as a tool for comparison rather than as a signal for improving the retrieval system. We study whether criterion grades from Multi-Criteria LLM-Judge relevance labeling, which decomposes relevance into Exactness, Coverage, Topicality, and Contextual Fit, can serve as effective ranking features for learning-to-rank (L2R). We evaluate this approach using manual relevance labels from TREC TREC DL 2019, DL 2020, and DL 2023. We then analyze how the Multi-Criteria LLM-Judge feature importance varies relative to retrieval scores across IR system performance levels. The results show that although weaker IR systems benefit the most from this treatment, we see improvements ranging from 14% to 36% in NDCG@20 across diverse IR systems. Contextual Fit often becomes the primary discriminator, exceeding the importance of the retrieval scores. As system quality increases, retrieval scores become the dominant feature, with Multi-Criteria LLM-Judge grades providing complementary, dataset-dependent signals. These findings show that LLM-based relevance labeling can go beyond comparison by turning Multi-Criteria LLM-Judge grades into effective ranking features for reranking.",
+  "abstract_chars": 1413,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0046|McNally1994i": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1300/j120v20n44_06",
+  "s2_paper_id": "3445d723b0a8bfc1c115e2cee923e79400fb7fe7",
+  "s2_title": "Information Search Process in Science Education.",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:33"
+ },
+ "0213|Kenfield2019m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.1353/pla.2019.0041",
+  "s2_paper_id": "6f589486b6328e66330e76a0fee2aa08b0cf9b06",
+  "s2_title": "Metadata Documentation Practices at ARL Institutional Repositories",
+  "abstract": "abstract:This paper describes an investigation into whether institutional repositories at member libraries of the Association of Research Libraries (ARL) provide publicly available metadata documentation via the repositories' websites. The study compares the results of a September 2017 survey with findings from a review of ARL institutional repository websites. Slightly more than half of ARL institutional repositories do provide metadata documentation. Implications of the results are discussed, including specific research questions for moving forward. A call to reimagine documentation as a tool of transparency is delivered.",
+  "abstract_chars": 631,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0117|Ramesh2015m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.14429/djlit.35.3.8074",
+  "s2_paper_id": "07fcc10eeaadd880a480533a884df1c17a26d885",
+  "s2_title": "Metadata Diversity, Interoperability and Resource Discovery Issues and Challenges",
+  "abstract": "Information resources are available in various kinds of media and forms. To describe them there exists number of diverse metadata standards and schema. Metadata is crucial for preservation and archiving, organisation, resource discovery and information retrieval across platforms. As one metadata standard cannot be applicable for all the emerging media and document formats, a combination of them is used. In this context the present paper presents an overview on types of metadata standards and schemas, and also discusses on the issues and challenges in metadata creation, management, interoperability, and resource discovery.",
+  "abstract_chars": 629,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0093|Lee2012a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.14699/kbiblia.2012.23.4.025",
+  "s2_paper_id": "9a6020c562c9501d25e880b7df09436cfb6e46da",
+  "s2_title": "A Study on the Metadata Authority Description Schema for the Interoperability of Authority Data",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0066|Kyoungsik Na2017m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.16981/kliss.48.3.201709.281",
+  "s2_paper_id": "cd44e85223e7418c36110f0e258056b54d9484da",
+  "s2_title": "Mental States in Information Search Process",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0161|Mehta2023v": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2023.findings-acl.696",
+  "s2_paper_id": "a0e747bfdea5962b0bb2f47434d8492373ac2042",
+  "s2_title": "Verifying Annotation Agreement without Multiple Experts: A Case Study with Gujarati SNACS",
+  "abstract": ",",
+  "abstract_chars": 1,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0136|Pan2024h": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2024.hucllm-1.2",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0149|Bodke2025p": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2025.findings-acl.1309",
+  "s2_paper_id": "7f9efccb0294151886b0fc2597d7f3cfc3e32f3b",
+  "s2_title": "PASTEL : Polarity-Aware Sentiment Triplet Extraction with LLM-as-a-Judge",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0135|Huang2025a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2025.findings-acl.306",
+  "s2_paper_id": "f1bbe52d857a5b3abc3fc9d9469c407a4add8d2c",
+  "s2_title": "An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Model is not a General Substitute for GPT-4",
+  "abstract": "Recently, there has been a growing trend of utilizing Large Language Model (LLM) to evaluate the quality of other LLMs. Many studies have fine-tuned judge models based on open-source LLMs for evaluation. While the fine-tuned judge models are claimed to achieve comparable evaluation capability with GPT-4, in this work, we conduct an empirical study of LLM-as-a-Judge. Our findings indicate that although the fine-tuned judge models achieve high performance on in-domain test sets, even surpassing GPT-4, they underperform GPT-4 across several dimensions, including generalizability, fairness and adaptability. We also reveal that the fine-tuned judge model inherently operates as a task-specific classifier, consequently imposing the limitations.",
+  "abstract_chars": 747,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0158|Wang2025i": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2025.findings-emnlp.1259",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0137|Haldar2025r": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2025.findings-emnlp.1361",
+  "s2_paper_id": "e17002b2a3f0d4678e0ca1946bc347fbb402cc19",
+  "s2_title": "Rating Roulette: Self-Inconsistency in LLM-As-A-Judge Frameworks",
+  "abstract": "As Natural Language Generation (NLG) continues to be widely adopted, properly assessing it has become quite difficult. Lately, using large language models (LLMs) for evaluating these generations has gained traction, as they tend to align more closely with human preferences than conventional n-gram or embedding-based metrics. In our experiments, we show that LLM judges have low intra-rater reliability in their assigned scores across different runs. This variance makes their ratings inconsistent, almost arbitrary in the worst case, making it difficult to measure how good their judgments actually are. We quantify this inconsistency across different NLG tasks and benchmarks and see if judicious use of LLM judges can still be useful following proper guidelines.",
+  "abstract_chars": 766,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0140|Fu2025h": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2025.findings-emnlp.587",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0148|Faisal2025d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2025.findings-emnlp.664",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0142|Enguehard2025l": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2025.nllp-1.23",
+  "s2_paper_id": "b5e5b8a5f78988b8400bc5c91fe334ef287aa8c3",
+  "s2_title": "LeMAJ (Legal LLM-as-a-Judge): Bridging Legal Reasoning and LLM Evaluation",
+  "abstract": "Evaluating large language model (LLM) outputs in the legal domain presents unique challenges due to the complex and nuanced nature of legal analysis. Current evaluation approaches either depend on reference data, which is costly to produce, or use standardized assessment methods, both of which have significant limitations for legal applications. Although LLM-as-a-Judge has emerged as a promising evaluation technique, its reliability and effectiveness in legal contexts depend heavily on evaluation processes unique to the legal industry and how trustworthy the evaluation appears to the human legal expert. This is where existing evaluation methods currently fail and exhibit considerable variability. This paper aims to close the gap: a) we break down lengthy responses into'Legal Data Points'(LDPs), self-contained units of information, and introduce a novel, reference-free evaluation methodology that reflects how lawyers evaluate legal answers; b) we demonstrate that our method outperforms a variety of baselines on both our proprietary dataset and an open-source dataset (LegalBench); c) we show how our method correlates more closely with human expert evaluations and helps improve inter-annotator agreement; and finally d) we open source our Legal Data Points for a subset of LegalBench used in our experiments, allowing the research community to replicate our results and advance research in this vital area of LLM evaluation on legal question-answering.",
+  "abstract_chars": 1468,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0152|Kola2026s": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2026.acl-industry.45",
+  "s2_paper_id": "3dfca3ef7eb615ed70833be9512c6edf2cd3362b",
+  "s2_title": "SAJA: A Simple Approach to Judge Alignment for LLM-as-a-Judge",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0150|Lee2026g": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2026.bea-1.54",
+  "s2_paper_id": "8f29aa3acb5ce873c5aac3fb83a87da94e38222b",
+  "s2_title": "Generative-Evaluative Agreement: A Necessary Validity Criterion for LLM-Enabled Adaptive Assessment",
+  "abstract": "When the same LLM generates assessment items, simulates student responses, and scores them, the validation loop is self-referential. We introduce Generative-Evaluative Agreement (GEA), a validity criterion measuring whether an LLM's scoring function recovers the skill levels its generative function was instructed to produce. In the first direct measurement of GEA on a two-stage adaptive assessment, the model recovers roughly half the intended variance r = 0.698 with systematic positive bias. GEA is strong r>0.7 for syntactically verifiable skills but near zero for design-level skills, and low-skill overestimation inflates scores near the routing threshold. We argue that granular, skill-decomposed rubrics are the principal proposed mechanism for strengthening GEA and outline complementary mitigations.",
+  "abstract_chars": 811,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0129|Fujinuma2026c": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/2026.findings-acl.657",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0057|Martínez Alonso2015p": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/w15-2711",
+  "s2_paper_id": "12f655d87c83f65af222e3d44c069ef84d835a3e",
+  "s2_title": "Predicting word sense annotation agreement",
+  "abstract": "High agreement is a common objective when annotating data for word senses. However, a number of factors make perfect agreement impossible, e.g. the limitations of sense inventories, the difficulty of the examples or the interpretation preferences of the annotators. Estimating potential agreement is thus a relevant task to supplement the evaluation of sense annotations. In this article we propose two methods to predict agreement on wordannotation instances. We experiment with a continuous representation and a threeway discretization of observed agreement. In spite of the difficulty of the task, we find that different levels of agreement can be identified—in particular, low-agreement examples are easier to identify.",
+  "abstract_chars": 723,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0144|Martínez Alonso2015p": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.18653/v1/w15-2711",
+  "s2_paper_id": "12f655d87c83f65af222e3d44c069ef84d835a3e",
+  "s2_title": "Predicting word sense annotation agreement",
+  "abstract": "High agreement is a common objective when annotating data for word senses. However, a number of factors make perfect agreement impossible, e.g. the limitations of sense inventories, the difficulty of the examples or the interpretation preferences of the annotators. Estimating potential agreement is thus a relevant task to supplement the evaluation of sense annotations. In this article we propose two methods to predict agreement on wordannotation instances. We experiment with a continuous representation and a threeway discretization of observed agreement. In spite of the difficulty of the task, we find that different levels of agreement can be identified—in particular, low-agreement examples are easier to identify.",
+  "abstract_chars": 723,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0043|Kuhlthau1990t": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.2307/40323730",
+  "s2_paper_id": "3ec72ea1f304bd4168644412a7d3102981e3683c",
+  "s2_title": "The Information Search Process: From Theory to Practice.",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0044|Geertzen2006m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.3115/1654595.1654619",
+  "s2_paper_id": "a7f628d5dc6cad697c70f74a80d52a935b858d45",
+  "s2_title": "Measuring annotator agreement in a complex hierarchical dialogue act annotation scheme",
+  "abstract": "We present a first analysis of inter-annotator agreement for the DIT++ tagset of dialogue acts, a comprehensive, layered, multidimensional set of 86 tags. Within a dimension or a layer, subsets of tags are often hierarchically organised. We argue that especially for such highly structured annotation schemes the well-known kappa statistic is not an adequate measure of inter-annotator agreement. Instead, we propose a statistic that takes the structural properties of the tagset into account, and we discuss the application of this statistic in an annotation experiment. The experiment shows promising agreement scores for most dimensions in the tagset and provides useful insights into the usability of the annotation scheme, but also indicates that several additional factors influence annotator agreement. We finally suggest that the proposed approach for measuring agreement per dimension can be a good basis for measuring annotator agreement over the dimensions of a multidimensional annotation scheme.",
+  "abstract_chars": 1008,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0114|Hodge2005m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.3233/isu-2005-25105",
+  "s2_paper_id": "d4fb42e81a7170a916186bd23da5cb936682e9fa",
+  "s2_title": "Metadata for electronic information resources: From variety to interoperability",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0064|anon2023e": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.37227/jibm-2023-01-5834/",
+  "s2_paper_id": "09b7246fe88bcd204a942d629306a124fc480094",
+  "s2_title": "Exploring Millennial Mom Information Search Stages in the Birthplace Decision-Making Process: A Phenomenological Study",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0162|Lee2020a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.37244/ela.2020.15.2.149",
+  "s2_paper_id": "959bb0726a8569d9d7d3b94eca161578fbb78d3b",
+  "s2_title": "Analalysis of the construct validity of the TOEIC test when used as an English proficiency evaluation tool",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0086|Ko2007a": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.3743/kosim.2007.24.4.223",
+  "s2_paper_id": "0872a01b33e7c520ac47cc68e54edcddf38e71d9",
+  "s2_title": "A Study on Metadata Mapping for Semantic Interoperability",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0090|Khan2014m": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.4018/978-1-4666-5888-2.ch177",
+  "s2_paper_id": "ff000e4d804ab951736c6b86f1ca179e0183fee0",
+  "s2_title": "Metadata Crosswalks as a Way Towards Interoperability",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0068|Maniotes2025i": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.5040/9798216193487.0008",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0069|anon2025l": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.5040/9798216193487.ch-005",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0065|anon2025i": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.5040/9798216193487.ch-010",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0067|anon2011t": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.5040/9798216974598.0007",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0063|anon2013k": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.5040/9798400660535.0011",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0061|anon2020t": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.5040/9798400670084.0059",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0062|anon2023k": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.5040/9798881813277.ch-20",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0151|Chen2025d": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.52202/085713-1008",
+  "s2_paper_id": "f2fda003a4fe91f08670985774d6f08fade6966c",
+  "s2_title": "Distributional LLM-as-a-Judge",
+  "abstract": "LLMs have emerged as powerful evaluators in the LLM-as-a-Judge paradigm, offering significant efficiency and flexibility compared to human judgments. However, previous methods primarily rely on single-point evaluations, overlooking the inherent diversity and uncertainty in human evaluations. This approach leads to information loss and decreases the reliability of evaluations. To address this limitation, we propose a novel training framework that explicitly aligns the LLM-generated judgment distribution with human evaluation distributions. Specifically, we propose a distributional alignment objective based on KL divergence, combined with an auxiliary cross-entropy regularization to stabilize the training process. Furthermore, due to limited human annotations, empirical human distributions are merely noisy estimates of the true underlying distribution. We therefore incorporate adversarial training to ensure a robust alignment with this true distribution, rather than overfitting to its imperfect approximation. Extensive experiments across various LLM backbones and evaluation tasks demonstrate that our framework significantly outperforms existing closed-source LLMs and conventional single-point alignment methods, with superior alignment quality, strong robustness, and competitive evaluation accuracy.",
+  "abstract_chars": 1317,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0153|Lai2025b": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.52202/085713-3122",
+  "s2_paper_id": null,
+  "s2_title": null,
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "all_null",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0156|Guerdan2025v": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.52202/085713-3751",
+  "s2_paper_id": "17fe90fcd871038739e527aa7a2ac937c416c337",
+  "s2_title": "Validating LLM-as-a-Judge Systems under Rating Indeterminacy",
+  "abstract": "The LLM-as-a-judge paradigm, in which a judge LLM system replaces human raters in rating the outputs of other generative AI (GenAI) systems, plays a critical role in scaling and standardizing GenAI evaluations. To validate such judge systems, evaluators assess human--judge agreement by first collecting multiple human ratings for each item in a validation corpus, then aggregating the ratings into a single, per-item gold label rating. For many items, however, rating criteria may admit multiple valid interpretations, so a human or LLM rater may deem multiple ratings\"reasonable\"or\"correct.\"We call this condition rating indeterminacy. Problematically, many rating tasks that contain rating indeterminacy rely on forced-choice elicitation, whereby raters are instructed to select only one rating for each item. In this paper, we introduce a framework for validating LLM-as-a-judge systems under rating indeterminacy. We draw theoretical connections between different measures of judge system performance under different human--judge agreement metrics, and different rating elicitation and aggregation schemes. We demonstrate that differences in how humans and LLMs resolve rating indeterminacy when responding to forced-choice rating instructions can heavily bias LLM-as-a-judge validation. Through extensive experiments involving 11 real-world rating tasks and 9 commercial LLMs, we show that standard validation approaches that rely upon forced-choice ratings select judge systems that are highly suboptimal, performing as much as 31% worse than judge systems selected by our approach that uses multi-label\"response set\"ratings to account for rating indeterminacy. We conclude with concrete recommendations for more principled approaches to LLM-as-a-judge validation.",
+  "abstract_chars": 1771,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0091|Lee2012s": {
+  "attempted_via": "DOI",
+  "queried": "DOI:10.9708/jksci/2012.17.10.129",
+  "s2_paper_id": "f638b4aab05f5b0909e93bac9c8bfa135a5535c3",
+  "s2_title": "Schema Mapping and Data Conversion System for Integrating Article Metadata",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "informative",
+  "fetched_at": "2026-09-20T03:53:35"
+ },
+ "0019|arxiv2605.14241": {
+  "attempted_via": "title_search",
+  "queried": "Latency-Quality Routing for Functionally Equivalent Tools",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "transport_error",
+  "error": "HTTPError: HTTP Error 429: ",
+  "fetched_at": "2026-09-20T03:53:56"
+ },
+ "0024|ellis1999classic": {
+  "attempted_via": "title_search",
+  "queried": "Ellis, Cox & Gordon - A survey of principles for information behaviour studies; Ellis - Information and Online Behaviour",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "transport_error",
+  "error": "HTTPError: HTTP Error 429: ",
+  "fetched_at": "2026-09-20T03:54:16"
+ },
+ "0075|fairprinciples": {
+  "attempted_via": "title_search",
+  "queried": "The FAIR Principles",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "transport_error",
+  "error": "HTTPError: HTTP Error 429: ",
+  "fetched_at": "2026-09-20T03:54:35"
+ },
+ "0076|dublin_core_and_dcat": {
+  "attempted_via": "title_search",
+  "queried": "DCMI Metadata Terms; Data Catalog vocabulary (DCAT 3)",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "transport_error",
+  "error": "HTTPError: HTTP Error 429: ",
+  "fetched_at": "2026-09-20T03:54:55"
+ },
+ "0277|arxivcs/0508067": {
+  "attempted_via": "title_search",
+  "queried": "Copyright and Promotion: Oxymoron or Opportunity?",
+  "abstract": null,
+  "abstract_chars": 0,
+  "status": "transport_error",
+  "error": "HTTPError: HTTP Error 429: ",
+  "fetched_at": "2026-09-20T03:55:14"
+ }
+}

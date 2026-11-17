@@ -1,0 +1,2 @@
+corpus,class,declared,measured,ratio,basis,evidence
+code-act,D2_size_claim_vs_file_rows,size_categories=1K<n<10K,78385,None,declared_band_vs_footer_sum,band [1000;10000] excludes 78385

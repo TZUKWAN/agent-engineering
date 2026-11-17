@@ -1,0 +1,5 @@
+
+# interpreter: D:\Environment\anaconda3\python.exe
+# python: 3.11.7
+# resolved-by: importlib.metadata not pinned to a lockfile; versions above are the ones
+# that actually executed EXP-0004..EXP-0014 (see system_info.json)

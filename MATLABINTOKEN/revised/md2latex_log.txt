@@ -1,0 +1,16 @@
+Reading merged_report.md ...
+  64349 chars, 1326 lines
+Converting ...
+
+Written: D:/MATLABINTOKEN/revised\merged_report.tex
+  73534 chars, 1946 lines
+  \chapter{: 5
+  \chapter*{: 1
+  \section{: 10
+  \subsection{: 23
+  \begin{figure}: 21
+  \begin{table}: 25
+  \begin{tabular}: 25
+  \bibitem{: 15
+  \begin{enumerate}: 14
+  \begin{itemize}: 11

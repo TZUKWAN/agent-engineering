@@ -1,0 +1,258 @@
+{
+ "cluster_unit": "traj_id",
+ "duplicate_traj_ids_dropped_before_sampling": 7646,
+ "exp_id": "EXP-0190",
+ "files_read": 4,
+ "gate_rules": {
+  "G10_repeated_call_trajectories": ">= 200 trajectories re-issue an identical (name, arguments) call - the observable over-search arm T176 and the behavioural-change baseline T190 both need",
+  "G11_cluster_count": ">= 1,000 trajectories readable at all, so a traj_id-clustered interval exists for every design",
+  "G12_category_breadth": ">= 5 task categories with >= 100 trajectories each, which is the stratum T175 and T176 report inside",
+  "G13_outcome_label_available": "the release carries a per-trajectory task outcome (success, reward, pass, exit status) that a premature-versus-over-search mismatch could be scored against. This gate is reported as measured either way, because the sentence it scopes - T176's - can be narrowed to behaviour without moving any threshold, and a fired gate here is a statement about what the release does not record",
+  "G1_trajectories_parseable": ">= 0.95 of drawn trajectories yield at least one readable assistant turn",
+  "G2_task_instruction_present": ">= 0.90 of trajectories carry a non-empty task instruction, which is what 'later search' is later than and what an entity count counts against",
+  "G3_early_hypothesis_trajectories": ">= 200 trajectories state a hypothesis within their first two assistant turns - the arm T171 compares against",
+  "G4_trajectories_with_later_turns": ">= 500 trajectories have >= 4 assistant turns, so a turn-by-turn concentration profile has a later half",
+  "G5_terminal_turn_identifiable": ">= 0.95 of trajectories end on an assistant turn, so STOP is a measurable event rather than a guess about a truncated log",
+  "G6_observations_parseable": ">= 0.80 of trajectories return at least one observation for every call they emitted - marginal information is computed from that content",
+  "G7_error_marked_observations": ">= 0.05 of observations carry a failure marker, the conditioning event T176's premature arm and T190's correction arm both stand on",
+  "G8_verbal_corrections": ">= 200 trajectories contain at least one explicit self-correction from the frozen list; below this the construct T190 names is rare in this corpus rather than uninformative",
+  "G9_plan_specificity_computable": ">= 200 trajectories have a first assistant turn carrying at least two ordering markers and at least two action verbs, the low end of 'a plan whose specificity can be counted'"
+ },
+ "gates": {
+  "G10_repeated_call_trajectories": {
+   "blocks": [
+    "T176",
+    "T190"
+   ],
+   "fires": false,
+   "measured": 4125,
+   "rule": ">= 200 trajectories re-issue an identical (name, arguments) call - the observable over-search arm T176 and the behavioural-change baseline T190 both need",
+   "scope": "H1",
+   "threshold": 200
+  },
+  "G11_cluster_count": {
+   "blocks": [
+    "T171",
+    "T175",
+    "T176",
+    "T182",
+    "T190"
+   ],
+   "fires": false,
+   "measured": 14701,
+   "rule": ">= 1,000 trajectories readable at all, so a traj_id-clustered interval exists for every design",
+   "scope": "design",
+   "threshold": 1000
+  },
+  "G12_category_breadth": {
+   "blocks": [
+    "T175",
+    "T176"
+   ],
+   "fires": false,
+   "measured": 8,
+   "rule": ">= 5 task categories with >= 100 trajectories each, which is the stratum T175 and T176 report inside",
+   "scope": "strata",
+   "threshold": 5
+  },
+  "G13_outcome_label_available": {
+   "blocks": [
+    "T176"
+   ],
+   "fires": true,
+   "measured": 0,
+   "rule": "the release carries a per-trajectory task outcome (success, reward, pass, exit status) that a premature-versus-over-search mismatch could be scored against. This gate is reported as measured either way, because the sentence it scopes - T176's - can be narrowed to behaviour without moving any threshold, and a fired gate here is a statement about what the release does not record",
+   "scope": "design",
+   "threshold": 1
+  },
+  "G1_trajectories_parseable": {
+   "blocks": [
+    "T171",
+    "T175",
+    "T176",
+    "T182",
+    "T190"
+   ],
+   "fires": false,
+   "measured": 1.0,
+   "rule": ">= 0.95 of drawn trajectories yield at least one readable assistant turn",
+   "scope": "design",
+   "threshold": 0.95
+  },
+  "G2_task_instruction_present": {
+   "blocks": [
+    "T171",
+    "T182"
+   ],
+   "fires": false,
+   "measured": 1.0,
+   "rule": ">= 0.90 of trajectories carry a non-empty task instruction, which is what 'later search' is later than and what an entity count counts against",
+   "scope": "design",
+   "threshold": 0.9
+  },
+  "G3_early_hypothesis_trajectories": {
+   "blocks": [
+    "T171"
+   ],
+   "fires": false,
+   "measured": 570,
+   "rule": ">= 200 trajectories state a hypothesis within their first two assistant turns - the arm T171 compares against",
+   "scope": "H1",
+   "threshold": 200
+  },
+  "G4_trajectories_with_later_turns": {
+   "blocks": [
+    "T171",
+    "T175",
+    "T182"
+   ],
+   "fires": false,
+   "measured": 13695,
+   "rule": ">= 500 trajectories have >= 4 assistant turns, so a turn-by-turn concentration profile has a later half",
+   "scope": "design",
+   "threshold": 500
+  },
+  "G5_terminal_turn_identifiable": {
+   "blocks": [
+    "T175",
+    "T176"
+   ],
+   "fires": true,
+   "measured": 0.4649,
+   "rule": ">= 0.95 of trajectories end on an assistant turn, so STOP is a measurable event rather than a guess about a truncated log",
+   "scope": "design",
+   "threshold": 0.95
+  },
+  "G6_observations_parseable": {
+   "blocks": [
+    "T175",
+    "T176",
+    "T190"
+   ],
+   "fires": false,
+   "measured": 1.0,
+   "rule": ">= 0.80 of trajectories return at least one observation for every call they emitted - marginal information is computed from that content",
+   "scope": "design",
+   "threshold": 0.8
+  },
+  "G7_error_marked_observations": {
+   "blocks": [
+    "T176"
+   ],
+   "fires": false,
+   "measured": 0.5893,
+   "rule": ">= 0.05 of observations carry a failure marker, the conditioning event T176's premature arm and T190's correction arm both stand on",
+   "scope": "H1",
+   "threshold": 0.05
+  },
+  "G8_verbal_corrections": {
+   "blocks": [
+    "T190"
+   ],
+   "fires": false,
+   "measured": 825,
+   "rule": ">= 200 trajectories contain at least one explicit self-correction from the frozen list; below this the construct T190 names is rare in this corpus rather than uninformative",
+   "scope": "design",
+   "threshold": 200
+  },
+  "G9_plan_specificity_computable": {
+   "blocks": [
+    "T182"
+   ],
+   "fires": false,
+   "measured": 6975,
+   "rule": ">= 200 trajectories have a first assistant turn carrying at least two ordering markers and at least two action verbs, the low end of 'a plan whose specificity can be counted'",
+   "scope": "H1",
+   "threshold": 200
+  }
+ },
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/probe_wave8_premises.py",
+ "measured": {
+  "assistant_turns_total": 147253,
+  "calls_total": 174546,
+  "calls_unparsed_share": 0.0,
+  "categories_with_100plus_trajectories": 8,
+  "category_counts": {
+   "Agent Tools": 4249,
+   "Browser Automation": 1687,
+   "File Operations": 891,
+   "Multi-Tool": 859,
+   "Planning & Organization": 293,
+   "Repository Tasks": 2131,
+   "Scheduling": 308,
+   "Terminal & Coding": 4247
+  },
+  "corpus": "hermes-agent-reasoning-traces, whole release after the duplicate-trajectory drop",
+  "correction_examples": [
+   {
+    "excerpt": "[ ( ' w r i t e _ f i l e ' ,   ' { \" c o n t e n t \" :   \" \\ \\ \" \\ \\ \" \\ \\ \" O ( n ^ 2 ) ",
+    "markers": 1,
+    "turn_index": 1
+   },
+   {
+    "excerpt": "[ ( ' p a t c h ' ,   ' { \" m o d e \" :   \" r e p l a c e \" ,   \" n e w _ s t r i n g \" : ",
+    "markers": 1,
+    "turn_index": 4
+   },
+   {
+    "excerpt": "[ ]",
+    "markers": 1,
+    "turn_index": 11
+   }
+  ],
+  "mean_observations_per_trajectory": 11.87,
+  "mean_turns_per_trajectory": 10.02,
+  "median_action_verbs_in_the_first_turn": 2.0,
+  "median_entities_in_the_first_turn": 10.0,
+  "median_turns_per_trajectory": 9.0,
+  "observations_total": 174545,
+  "observations_with_a_failure_marker_share": 0.5893,
+  "outcome_field_note": "the release ships id, conversations, tools, category, subcategory and task only - there is no success, reward, pass or exit-status column on any row, so a premature-versus-over-search mismatch has no reference label here and T176 is specified on behaviour alone",
+  "outcome_field_present": false,
+  "sample_first_turn_words": [
+   "/think",
+   "cleaning",
+   "cleans",
+   "common",
+   "comprehensive",
+   "csv",
+   "data",
+   "duplicates"
+  ],
+  "task_instruction_share": 1.0,
+  "trajectories": 14701,
+  "trajectories_answering_every_call_share": 1.0,
+  "trajectories_ending_on_an_assistant_turn_share": 0.4649,
+  "trajectories_parsed": 14701,
+  "trajectories_stating_a_hypothesis_in_the_first_two_turns": 570,
+  "trajectories_with_4plus_turns": 13695,
+  "trajectories_with_a_countable_first_turn_plan": 6975,
+  "trajectories_with_a_repeated_identical_call": 4125,
+  "trajectories_with_an_explicit_self_correction": 825,
+  "trajectory_parse_share": 1.0
+ },
+ "rows_requested": "all trajectories",
+ "run_cost": {
+  "cols_in": 0,
+  "exp_id": "EXP-0190",
+  "note": "wave-8 premise census",
+  "python": "3.11.7",
+  "rows_in": 14701,
+  "started_at": "2026-09-24T19:08:21",
+  "wallclock_sec": 47.6
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T19:09:09",
+ "verdict": {
+  "blocked_gates": [
+   "G5_terminal_turn_identifiable",
+   "G13_outcome_label_available"
+  ],
+  "blocked_whole_design": [
+   "T175",
+   "T176"
+  ],
+  "claim_limited": {}
+ },
+ "wallclock_sec": 47.6
+}

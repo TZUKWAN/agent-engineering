@@ -1,0 +1,19 @@
+experiment,quantity,value
+EXP-0021,SFT tool names also in source pool,1797/1797
+EXP-0021,shared catalogue fingerprints (SFT/source),848
+EXP-0021,catalogue-token coverage of SFT by source,1.0
+EXP-0021,AUROC pipeline transfer SFT (catalogue-clustered CI),"0.8138 [0.7576, 0.8545]"
+EXP-0021,AUROC on 801 catalogue-disjoint SFT rows,0.8316
+EXP-0021,AUROC leave-one-tool-family-out (mean of 12 families),0.7282
+EXP-0021,"AUROC same families, family seen (reference)",0.7823
+EXP-0021,family-holdout degradation (criterion 0.02),0.0541
+EXP-0021,length-only AUROC on held-out families,0.6332
+EXP-0023,external corpus rows after inclusion rule,6000
+EXP-0023,external fail@3 prevalence,0.1777
+EXP-0023,external tool names unseen in source,69% of 26
+EXP-0023,CROSS-CORPUS transfer AUROC (row CI),"0.6939 [0.6797, 0.7097]"
+EXP-0023,in-domain source dev OOF AUROC,0.8118
+EXP-0023,within-external-corpus OOF AUROC,0.8432
+EXP-0023,external-corpus length-only baseline,0.4413
+EXP-0023,external-corpus post-retrieval margin baseline,0.6481
+EXP-0023,pre-registered verdict,transfers

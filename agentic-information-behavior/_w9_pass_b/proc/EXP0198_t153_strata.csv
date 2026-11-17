@@ -1,0 +1,5 @@
+stratification,stratum,rollouts,mean_pooled_bigram_gain,mean_family_gain
+transitions_band,1to5,60,0.2308,0.1327
+transitions_band,6to15,19921,0.3322,0.0803
+task_family,google,288,0.2805,0.0261
+task_family,kubernetes-sigs,352,0.2238,0.0216

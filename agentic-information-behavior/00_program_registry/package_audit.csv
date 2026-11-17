@@ -1,0 +1,71 @@
+paper,missing,weak,gate_ready
+P001_routing_failure_qpp,,,True
+P002_isp_stage_measurement,,,True
+P003_metadata_interoperability,,,True
+P004_shipped_quality_score_validity,,,True
+P005_governance_metadata_verifiability,,,True
+P006_underspecified_needs,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead,False
+P007_constraint_density,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead,False
+P008_query_reformulation_fidelity,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead,False
+P009_lexical_match_bias,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead,False
+P010_lexical_semantic_conflict,,4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead,False
+P011_predicate_argument_relevance,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead,False
+P012_entity_action_constraint_fit,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0136_wave2_candidate_features.csv) - cite the owning package's full path instead,False
+P013_negative_boundary_metadata,,,False
+P014_semantic_prototype_bias,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0136_wave2_candidate_features.csv) - cite the owning package's full path instead,False
+P015_metadata_quality_model,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0136_wave2_candidate_features.csv) - cite the owning package's full path instead,False
+P016_description_granularity,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0136_wave2_candidate_features.csv) - cite the owning package's full path instead,False
+P017_noun_verb_centring,,,False
+P018_function_vs_usecase_description,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0143_wave3_candidate_features.csv) - cite the owning package's full path instead,False
+P019_hierarchy_facets_flat_lists,,,False
+P020_name_description_congruence,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0143_wave3_candidate_features.csv) - cite the owning package's full path instead,False
+P021_synonym_normalisation_consistency,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0143_wave3_candidate_features.csv) - cite the owning package's full path instead,False
+P022_discriminability_and_discoverability,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0143_wave3_candidate_features.csv) - cite the owning package's full path instead,False
+P023_modality_and_verification,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0153_wave4_step_features.csv) - cite the owning package's full path instead,False
+P024_epistemic_behavioural_gap,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0153_wave4_step_features.csv) - cite the owning package's full path instead,False
+P025_contradiction_and_modality,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0153_wave4_step_features.csv) - cite the owning package's full path instead,False
+P026_sufficiency_language_and_stopping,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0153_wave4_step_features.csv) - cite the owning package's full path instead,False
+P027_discourse_grammar_of_seeking,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead,False
+P028_conclusion_before_evidence,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead,False
+P029_discourse_repair_after_failure,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead,False
+P030_causal_connectives_and_evidence,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead,False
+P031_explanatory_coherence_and_evidential_gaps,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead,False
+P032_plan_action_alignment,,1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead,False
+P033_search_depth_vs_need_complexity,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead,False
+P034_information_scent_and_the_next_choice,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead,False
+P035_marginal_gain_and_search_persistence,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead,False
+P036_command_family_switching_cost,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead,False
+P037_first_action_path_dependence,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead,False
+P038_repetition_and_rumination,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead,False
+P039_semantic_decoy_and_misselection,,6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead,False
+P040_affordance_language_and_selection,,6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead,False
+P041_tool_namespace_and_candidate_overload,,6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead,False
+P042_the_catalogue_ecosystem,,6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead,False
+P043_irrelevant_candidate_contamination,,6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead,False
+P044_tool_dependency_network,,6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead,False
+P045_primacy_lock_in_and_later_search,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0191_wave8_trajectory_summary.csv) - cite the owning package's full path instead,False
+P046_plan_specificity_and_search_quality,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0191_wave8_trajectory_summary.csv) - cite the owning package's full path instead,False
+P047_verbal_versus_behavioural_correction,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0191_wave8_trajectory_summary.csv) - cite the owning package's full path instead,False
+P048_when_to_stop_a_recorded_search,,,False
+P049_premature_termination_and_over_search,,,False
+P050_a_cross_task_grammar_of_agent_search,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0197_wave9_rollout_features.csv) - cite the owning package's full path instead,False
+P051_early_signals_of_agent_search_failure,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0197_wave9_rollout_features.csv) - cite the owning package's full path instead,False
+P052_the_recovery_window_after_a_failed_step,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0197_wave9_rollout_features.csv) - cite the owning package's full path instead,False
+P053_which_rollouts_deserve_reuse,,3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0197_wave9_rollout_features.csv) - cite the owning package's full path instead,False
+P054_an_induced_taxonomy_of_agent_information_behaviour,,,False
+P055_the_exploration_exploitation_transition,,,False
+P056_the_implicit_information_need,,2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0205_wave10_requirement_features.csv) - cite the owning package's full path instead,False
+P057_three_kinds_of_linguistic_uncertainty,,,False
+P058_need_decomposition_and_search_completeness,,,False
+P059_linguistic_cues_and_source_reliability,,,False
+P060_attribution_framing_and_credibility_bias,,,False
+P061_task_language_ambiguity_and_search_shape,,,False
+P062_discourse_structure_of_successful_and_failed_searches,,4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead,False
+P063_which_components_of_a_trace_carry_forward,,4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead,False
+P064_abstraction_level_of_a_trace_and_transfer,,4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead,False
+P065_what_a_compression_loses_first,,4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead,False
+P066_relation_classes_between_attempts_of_one_task,,4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead,False
+P067_information_density_of_language_and_code_actions,,7 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0220_wave12_codeact_turns.csv) - cite the owning package's full path instead,False
+P068_corrective_and_ritual_reflection,,7 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0220_wave12_codeact_turns.csv) - cite the owning package's full path instead,False
+P069_case_based_reuse_of_historical_trajectories,,7 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0220_wave12_codeact_turns.csv) - cite the owning package's full path instead,False
+P070_agent_trajectory_corpora_as_intelligence_sources,,7 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0220_wave12_codeact_turns.csv) - cite the owning package's full path instead,False

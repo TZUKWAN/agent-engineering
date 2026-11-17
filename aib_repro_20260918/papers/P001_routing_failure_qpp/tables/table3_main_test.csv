@@ -1,0 +1,4 @@
+config,test_n,test_positives,prevalence,auc_pre_retrieval,sd_seeds,auc_post_margin,auc_length,leave_one_config_out_auc
+OSS,2470,192,0.0777,0.808,0.0042,0.7523,0.6677,0.7977
+Qwen3,2400,294,0.1225,0.819,0.0024,0.8061,0.5322,0.7585
+Kimi-K2,3319,171,0.0515,0.7897,0.0068,0.6489,0.5439,0.7476

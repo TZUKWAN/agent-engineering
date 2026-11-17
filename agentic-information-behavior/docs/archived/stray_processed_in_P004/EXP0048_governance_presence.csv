@@ -1,0 +1,9 @@
+corpus,licence_class,licence_field_value,artefacts,yaml_front_matter,licence_mentions,card_urls,distinct_hosts,record_governance_columns,footer_metadata_keys,n_gaps
+Toucan-1.5M,named_or_custom_field,apache-2.0,,True,2,11,4,,2,1
+SWE-ZERO,named_or_custom_field,apache-2.0,,True,0,11,3,,1,1
+AgentBank,named_or_custom_field,apache-2.0,,True,0,0,0,,2,2
+MMAT-1M,named_or_custom_field,apache-2.0;cc-by-4.0;cc-by-nc-sa-4.0,,True,11,10,6,,0,1
+hermes,named_or_custom_field,apache-2.0,,True,2,2,1,,3,1
+AgentTrove,named_or_custom_field,apache-2.0,,True,0,4,3,,2,1
+code-act,named_or_custom_field,apache-2.0,,True,0,14,4,,2,1
+AgentInstruct,nothing,,,True,0,10,5,,2,1

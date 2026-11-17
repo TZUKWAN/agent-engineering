@@ -1,0 +1,953 @@
+{
+ "generated_at": "2026-09-27T04:05:54",
+ "papers": [
+  {
+   "paper": "P001_routing_failure_qpp",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": true
+  },
+  {
+   "paper": "P002_isp_stage_measurement",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": true
+  },
+  {
+   "paper": "P003_metadata_interoperability",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": true
+  },
+  {
+   "paper": "P004_shipped_quality_score_validity",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": true
+  },
+  {
+   "paper": "P005_governance_metadata_verifiability",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": true
+  },
+  {
+   "paper": "P006_underspecified_needs",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P007_constraint_density",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P008_query_reformulation_fidelity",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P009_lexical_match_bias",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P010_lexical_semantic_conflict",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P011_predicate_argument_relevance",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0119_wave1_candidate_rows.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P012_entity_action_constraint_fit",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0136_wave2_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P013_negative_boundary_metadata",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0135"
+  },
+  {
+   "paper": "P014_semantic_prototype_bias",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0136_wave2_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P015_metadata_quality_model",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0136_wave2_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P016_description_granularity",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0136_wave2_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P017_noun_verb_centring",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0135"
+  },
+  {
+   "paper": "P018_function_vs_usecase_description",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0143_wave3_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P019_hierarchy_facets_flat_lists",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0142"
+  },
+  {
+   "paper": "P020_name_description_congruence",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0143_wave3_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P021_synonym_normalisation_consistency",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0143_wave3_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P022_discriminability_and_discoverability",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0143_wave3_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P023_modality_and_verification",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0153_wave4_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P024_epistemic_behavioural_gap",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0153_wave4_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P025_contradiction_and_modality",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0153_wave4_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P026_sufficiency_language_and_stopping",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0153_wave4_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P027_discourse_grammar_of_seeking",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P028_conclusion_before_evidence",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P029_discourse_repair_after_failure",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P030_causal_connectives_and_evidence",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P031_explanatory_coherence_and_evidential_gaps",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P032_plan_action_alignment",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "1 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0164_wave5_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P033_search_depth_vs_need_complexity",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P034_information_scent_and_the_next_choice",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P035_marginal_gain_and_search_persistence",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P036_command_family_switching_cost",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P037_first_action_path_dependence",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P038_repetition_and_rumination",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0173_wave6_step_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P039_semantic_decoy_and_misselection",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P040_affordance_language_and_selection",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P041_tool_namespace_and_candidate_overload",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P042_the_catalogue_ecosystem",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P043_irrelevant_candidate_contamination",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P044_tool_dependency_network",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "6 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0182_wave7_candidate_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P045_primacy_lock_in_and_later_search",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0191_wave8_trajectory_summary.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P046_plan_specificity_and_search_quality",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0191_wave8_trajectory_summary.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P047_verbal_versus_behavioural_correction",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0191_wave8_trajectory_summary.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P048_when_to_stop_a_recorded_search",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0190"
+  },
+  {
+   "paper": "P049_premature_termination_and_over_search",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0190"
+  },
+  {
+   "paper": "P050_a_cross_task_grammar_of_agent_search",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0197_wave9_rollout_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P051_early_signals_of_agent_search_failure",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0197_wave9_rollout_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P052_the_recovery_window_after_a_failed_step",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0197_wave9_rollout_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P053_which_rollouts_deserve_reuse",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "3 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0197_wave9_rollout_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P054_an_induced_taxonomy_of_agent_information_behaviour",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0196"
+  },
+  {
+   "paper": "P055_the_exploration_exploitation_transition",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0196"
+  },
+  {
+   "paper": "P056_the_implicit_information_need",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "2 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0205_wave10_requirement_features.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P057_three_kinds_of_linguistic_uncertainty",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0203"
+  },
+  {
+   "paper": "P058_need_decomposition_and_search_completeness",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0203"
+  },
+  {
+   "paper": "P059_linguistic_cues_and_source_reliability",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0203"
+  },
+  {
+   "paper": "P060_attribution_framing_and_credibility_bias",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0203"
+  },
+  {
+   "paper": "P061_task_language_ambiguity_and_search_shape",
+   "blocked": true,
+   "missing": [],
+   "weak": [],
+   "ready_for_submission_gate": false,
+   "note": "premise-blocked; measurement cited: EXP-0203"
+  },
+  {
+   "paper": "P062_discourse_structure_of_successful_and_failed_searches",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P063_which_components_of_a_trace_carry_forward",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P064_abstraction_level_of_a_trace_and_transfer",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P065_what_a_compression_loses_first",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P066_relation_classes_between_attempts_of_one_task",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "4 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0208_wave11_attempt_pairs.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P067_information_density_of_language_and_code_actions",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "7 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0220_wave12_codeact_turns.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P068_corrective_and_ritual_reflection",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "7 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0220_wave12_codeact_turns.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P069_case_based_reuse_of_historical_trajectories",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "7 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0220_wave12_codeact_turns.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  },
+  {
+   "paper": "P070_agent_trajectory_corpora_as_intelligence_sources",
+   "reproduce_syntax": "bash -n passed",
+   "missing": [],
+   "weak": [
+    "7 path(s) cited by this package's documents do not resolve inside it (paper.md: results_processed/EXP0220_wave12_codeact_turns.csv) - cite the owning package's full path instead"
+   ],
+   "ready_for_submission_gate": false
+  }
+ ],
+ "program": {
+  "experiments": 234,
+  "registry_paper_id_vocabulary": {
+   "rows": 234,
+   "violations": []
+  },
+  "experiments_by_status": {
+   "success": 6,
+   "battery_executed_across_six_topics": 6,
+   "success_LEAKAGE_CONCERN_CONFIRMED": 2,
+   "H1:supported_H2:null_H3:not_specific_control_tracks_the_same_variance": 1,
+   "H1:supported_H2:outside_the_frozen_rule_negative_contrast_H3:supported": 1,
+   "H1:opposite_H2:partial_H3:null": 1,
+   "H1:null_H2:opposite_H3:descriptive stratum slopes, not a family member": 1,
+   "battery_executed_for_4_topics__e17_arms_3__turn_text_repeat_share_0.1708": 1,
+   "reposition_written_for_70_topics;0_same_design_pairs": 1,
+   "gates_fired__G4_conclusion_marker_prevalence[scope=H1]__G5_conclusion_before_first_inspection[scope=H1]__G11_outcome_label_available[scope=design]__stopped_designs___claim_limited_2": 1,
+   "release_repeats_trajectory_ids_true;duplicates_identical_true;7646_of_14701_ids_duplicated": 1,
+   "19_premise_values_refreshed_from_the_deduplicated_census;0_gates_changed;re-run_reports_0_moved": 1,
+   "matrix_built_147253_turns_in_14701_trajectories__calls_unparseable_4__act_any_share_0.6682__duplicate_traj_ids_dropped_before_sampling_7646": 1,
+   "H1:supported_H2:supported_H3:not_invariant_kappa_below_0p60_for_conclusion_evidence_request_hypothesis_plan_question": 1,
+   "H1:not_testable_premise_floor_with_114_trajectories_H2:opposite_H3:supported": 1,
+   "H1:supported_H2:supported_H3:opposite": 1,
+   "gates_fired__G7_outcome_label_available[scope=design]__stopped_designs_T191__claim_limited_0": 1,
+   "H1:partial_H2:null_H3:measured_descriptively_rule_declared_non_inferential": 1,
+   "H1:null_H2:null_H3:not_reproduced_in_three_of_four_quartiles": 1,
+   "H1:null_H2:opposite_H3:not_testable_only_4_of_20_families_estimable": 1,
+   "battery_executed_for_6_topics__e06_pairs_8__e17_arms_6__turn_text_repeat_share_0.283": 1,
+   "gates_fired__G11_failure_marker_present[scope=H2|measured=0.1855|blocks=T158]__stopped_designs_none__claim_limited_1": 1,
+   "matrix_built_292992_steps_in_19988_rollouts_in_1784_instances__duplicate_rollout_rows_dropped_before_sampling_0__unparsed_family_steps_71__new_information_mean_0.5982": 1,
+   "H1:opposite_H2:supported_H3:not_reproduced_in_1_of_1_families_below_the_10_frozen_floor": 1,
+   "H1:partial_H2:partial_H3:not_specific_control_tracks_the_same_variance": 1,
+   "H1:opposite_H2:not_testable_premise_floor_share_0p20_measured_0p1855_H3:not_reproduced_in_0_of_4_quartiles": 1,
+   "H1:opposite_H2:opposite_H3:not_reproduced_in_0_of_9_families_below_the_5_frozen_floor": 1,
+   "H1:null_H2:opposite_H3:null": 1,
+   "matrix_built_147253_turns_in_14701_trajectories__calls_unparseable_2__modal_share_0.1397": 1,
+   "deterministic": 1,
+   "battery_executed_for_6_topics__e06_pairs_6__e17_arms_6__distinct_command_strings_190710": 1,
+   "share_of_descriptions_in_more_than_one_config_0.95401__most_reused_rows_1590": 1,
+   "full_substrate_cache_24000_queries_169203_documents_shape_aligned_to_key_lists": 1,
+   "H1:underspec_z=null_H2:underspec_z:clarification=null_H3:underspec_z:wrong_tool=opposite_H1_n=24000_n=24000": 1,
+   "H1:density_z:inspected_pos=null_H2:density_z:bm25_desc_rank=opposite_H3:H3_nested_gain=below_the_frozen_floor_measured_0p0005_lr=4.721_n=24000_p_lr=0.02979740984206279_partial_r2_gain=0.00052": 1,
+   "H1:H1=partial_H2:con_z=opposite_H3:ic_z=null": 1,
+   "H1:high_overlap_decoy_over_selection=supported_H2:lexical_displacement_excess_over_c=null_H3:underspec_z_on_displacement=null_n_candidate_rows=169203_n_queries_identifiable=18174": 1,
+   "H1:H1=supported_H2:H2=see_ci;_the_two_rates_and_their_interval_carry_the_claim_H3:H3=partial_conflict_set_floor=200_n_candidate_rows=166289": 1,
+   "H1:partial_coverage.argument_coverage=0.7243_coverage.desc_argument_coverage=0.5198_coverage.predicate_coverage=0.8138_n_rows=166289": 1,
+   "levels_rederived_rows=45_across_1_papers_L4_{}": 1,
+   "DETERMINISTIC_6_of_6_packages_identical_analysis_coefficients_identical": 1,
+   "premise_blocked_T112_negation_identifiable+T117_centring_contrast__premise_satisfied_T114_prototype_computable+T115_enumeration_coverage+T116_granularity_spread": 1,
+   "matrix_built_24000_queries_169203_candidate_rows": 1,
+   "H1:partial_H2:partial_H3:partial": 1,
+   "H1:null_H2:supported_H3:characterised": 1,
+   "H1:not_estimable_no_interval_for_this_statistic_H2:not_estimable_denominator_not_recorded_H3:not_estimable_no_interval_for_this_statistic": 1,
+   "all_queries:supported_large_catalogue:descriptive stratum slope, not a family member_small_catalogue:descriptive stratum slope, not a family member_H2_interaction_length_x_catalogue_size:supported": 1,
+   "battery_executed_across_four_topics_e19_cross_config_description_share_0.85707_e17_rows_2499": 1,
+   "runnable_T113+T119+T120+T122__blocked_whole_T118__claim_limited_T113:H1+T119:H3": 1,
+   "matrix_built_24000_queries_169203_rows__dense_neighbour_coverage_0.8755__contradiction_rows_0": 1,
+   "H1:not_interpretable_length_confound_H2:null_H3:partial": 1,
+   "H1:supported_H2:partial_H3:not_testable_empty_cell": 1,
+   "H1:partial_H2:null_H3:opposite": 1,
+   "H1:null_H2:null_H3:supported": 1,
+   "battery_executed_e17_rows_24000__arms_3": 1,
+   "H1:supported_H2:opposite_H3:not_monotone_in_4_measured_levels": 1,
+   "failed_attempt": 1,
+   "four_kill_gates_not_fired_24000_queries_169203_candidate_rows_zero_parse_rejects": 1,
+   "success_20_rows_written": 1,
+   "H1:supported_H2:null_H3:not_specific_the_alien_level_carries_it_too": 1,
+   "H1:not_the_predicted_ordering_H2:measured_descriptively_rule_declared_non_inferential_H3:null": 1,
+   "H1:measured_descriptively_rule_declared_non_inferential_H2:not_estimable_quasi_separation_in_this_cell_H3:not_estimable_quasi_separation_in_this_cell": 1,
+   "battery_executed_for_5_topics__e06_pairs_7__e17_arms_5__distinct_prompts_1784__share_repeating_a_prompt_0.9108__distinct_opening_prose_18414": 1,
+   "gates_fired__G7_mmat_no_correctness_label[scope=H3|measured=0|blocks=T189]__G9_swe_has_neighbours[scope=H1|measured=200|blocks=T194]__G10_swe_records_order_or_a_library[scope=H3|measured=0|blocks=T194]__G12_eight_corpus_label_coverage[scope=H1|measured=3|blocks=T036]__stopped_designs_none__claim_lim": 1,
+   "H1:opposite_H2:supported_H3:measured_descriptively_no_band_was_frozen": 1,
+   "H1:supported_H2:supported_H3:below_the_frozen_floor_measured_0p0000": 1,
+   "H1:measured_descriptively_gate_fired_claim_limited_H2:not_testable_H3:not_testable_premise_no_order_or_case_library_recorded": 1,
+   "H1:measured_descriptively_gate_fired_claim_limited_H2:measured_descriptively_no_band_was_frozen_H3:measured_descriptively_no_band_was_frozen": 1,
+   "matrix_built_4000_codeact_conversations_and_7717_mmat_transitions_and_20000_swe_rollouts__census_agreement_codeact_error_conversations_567_vs_567__census_agreement_codeact_multi_statement_3171_vs_3171__census_agreement_codeact_rows_read_4000_vs_4000__census_agreement_codeact_statements_per_block_6.2": 1,
+   "battery_executed_for_4_topics__e06_pairs_5__e17_arms_3__distinct_executed_blocks_9324__share_repeating_a_block_0.1133__distinct_opening_texts_7": 1,
+   "success_86_rows_derived": 1,
+   "H1:supported_H2:null_H3:not_specific_the_observation_count_alone_separates": 1,
+   "sweep_complete": 1,
+   "measured": 1,
+   "measured_all_quoted_shares_matched": 1,
+   "success_dependent_variable_reproduced_rank_ties_are_seed_dependent": 1,
+   "registry_rows_already_correct": 1,
+   "871_generations_retired_by_this_rule": 1,
+   "24_rows_filled": 1,
+   "evidence_reconciled": 1,
+   "cluster_units_mapped": 1,
+   "reproduce_scripts_written": 1,
+   "register_window_kinds_set": 1,
+   "H1:supported_H2:not_uniform_enough_to_claim_H3:not_specific_the_alien_category_carries_it_too": 1,
+   "matrix_built_20000_rollouts_and_18216_pairs__census_agreement_instances_with_2plus_1775_vs_1775__census_agreement_mean_abstract_markers_2.071_vs_2.071__census_agreement_mean_chars_of_agent_text_4901.0_vs_4901.0__census_agreement_mean_concrete_markers_18.095_vs_18.095__census_agreement_median_assista": 1,
+   "matrix_built_31642_queries_in_{'Kimi-K2': 10626, 'OSS': 10492, 'Qwen3': 10524}__queries_dropped_0__census_agreement_contaminated_share_0.0933_vs_0.0933__census_agreement_decoy_present_share_0.4329_vs_0.4329__census_agreement_distinct_gold_pairs_11798.0_vs_11798.0__census_agreement_distinct_servers_i": 1,
+   "H1:opposite_H2:not_at_or_above_the_frozen_floor_measured_0p0155_H3:measured_descriptively_rule_declared_non_inferential": 1,
+   "H1:supported_H2:not_monotone_in_6_measured_levels_H3:measured_descriptively_rule_declared_non_inferential": 1,
+   "H1:null_H2:null_H3:not_specific_length_carries_the_same_signal": 1,
+   "H1:supported_H2:supported_H3:not_specific_namespace_share_still_separates": 1,
+   "H1:supported_H2:measured_descriptively_no_band_was_frozen_H3:measured_descriptively_no_band_was_frozen": 1,
+   "H1:not_testable_premise_floor_share_0p10_measured_0p0933_H2:measured_per_config_no_band_was_frozen_H3:supported": 1,
+   "H1:supported_H2:supported_H3:measured_descriptively_no_band_was_frozen": 1,
+   "battery_executed_for_6_topics__e06_pairs_8__e17_arms_6__ranker_desc_fail_at_1_0.2081__ranker_full_fail_at_1_0.1794__ranker_name_fail_at_1_0.2415__description_signatures_1902": 1,
+   "gates_fired__G5_terminal_turn_identifiable[scope=design|measured=0.4649|blocks=T175;T176]__G13_outcome_label_available[scope=design|measured=0|blocks=T176]__stopped_designs_T175_T176__claim_limited_0": 1,
+   "matrix_built_147253_turns_in_14701_trajectories__census_agreement_assistant_turns_147253_vs_147253__census_agreement_categories_100plus_8_vs_8__census_agreement_countable_plan_trajectories_6975_vs_6975__census_agreement_early_hypothesis_trajectories_570_vs_570__census_agreement_every_call_answered_s": 1,
+   "H1:opposite_H2:null_H3:not_specific_the_alien_anchor_tracks_the_same_variance": 1,
+   "H1:opposite_H2:opposite_H3:not_specific_length_carries_the_same_signal": 1,
+   "battery_executed_for_3_topics_of_five_two_blocked_at_premise__e06_pairs_8__e17_arms_3__distinct_tasks_2285__distinct_call_strings_107143__observations_seen_elsewhere_0.4596": 1,
+   "gates_fired__G10_agent_diversity_for_strata[scope=strata|measured=1|blocks=T137;T138]__G12_source_diversity[scope=strata|measured=2|blocks=T131;T137;T138;T140;T142]__stopped_designs_none__claim_limited_2": 1,
+   "gates_fired__G3_command_families_for_a_taxonomy[scope=H1|measured=11|blocks=T151]__G6_task_families_for_a_cross_task_grammar[scope=H1|measured=2|blocks=T153]__G9_newness_available[scope=design|measured=0.7876|blocks=T151;T156]__stopped_designs_T151_T156__claim_limited_2": 1,
+   "matrix_built_292992_steps_in_19988_rollouts_in_1784_instances__census_agreement_distinct_command_families_13_vs_13__census_agreement_instances_1784_vs_1784__census_agreement_instances_with_2plus_rollouts_1775_vs_1775__census_agreement_mean_steps_14.66_vs_14.66__census_agreement_median_steps_15.0_vs_": 1,
+   "H1:not_testable_premise_family_breadth_frozen_10_measured_2_H2:partial_H3:not_specific_the_shuffle_carries_the_same_gain": 1,
+   "H1:supported_H2:not_specific_the_later_phase_adds_nothing_H3:not_reproduced_in_0_of_3_families_below_the_3_frozen_floor": 1,
+   "H1:null_H2:not_monotone_in_3_measured_lags_H3:not_estimable_no_interval_for_this_statistic": 1,
+   "H1:supported_H2:measured_descriptively_no_band_was_frozen_H3:measured_descriptively_rule_declared_non_inferential": 1,
+   "battery_executed_for_3_topics_of_six_two_blocked_at_premise__e06_pairs_7__e17_arms_3__distinct_command_strings_190710__most_repeated_command_rows_6291__share_in_the_twenty_most_repeated_0.0817": 1,
+   "gates_fired__G2_comparable_candidate_sets[scope=design|measured=0.8376|blocks=T102;T107;T128;T129;T154]__stopped_designs_T102_T107_T128_T129_T154__claim_limited_0": 1,
+   "H1:partial_H2:measured_descriptively_rule_declared_non_inferential_H3:not_specific_another_uncertainty_kind_carries_the_signal": 1,
+   "matrix_built_31642_instructions__rows_with_requirements_19716__mean_requirements_0.988__mean_coverage_any_0.673__mean_coverage_half_0.1203__census_agreement_authority_share_0.1065_vs_0.1065__census_agreement_candidates_total_222770_vs_222770__census_agreement_comparable_share_0.8376_vs_0.8376__censu": 1,
+   "battery_executed_for_1_topic_of_six_five_blocked_at_premise__e06_pairs_6__e17_arms_1__distinct_instructions_None__prompt_groups_6859__max_rows_per_prompt_group_14__in_all_three_configs_3907": 1,
+   "gates_fired__G8_contaminated_rankings[scope=H1|measured=0.0933|blocks=T166]__stopped_designs_none__claim_limited_1": 1,
+   "60_natural_experiment_available_5_offline_replay_only_wave1_T101_T103_T106_T108_T109_T110": 1,
+   "trajectory_DV_NOT_measurable_on_Toucan_clarification_DV_measurable_retrieval_DV_measurable": 1,
+   "success_RULE_DEPENDENT_positive_finding": 1,
+   "success_kappa_inestimable_agreement_reported": 1,
+   "success_coverage_gap_measured_inert_on_primary_outcome": 1,
+   "completed_PREDICTOR_IS_SUBSET_SPECIFIC": 1,
+   "success_MATRIX_STABLE": 1,
+   "success_crossref_reachable_arxiv_still_406": 1,
+   "success_first_literature_pass_that_actually_ran": 1,
+   "pilot_heterogeneous_validity_promotion_rule_misshaped": 1,
+   "failed_pilot_NO_GO_topic_killed": 1,
+   "success_only_Toucan_ships_scores": 1,
+   "failed_sample_construction": 1,
+   "success_instrument_NOT_COHERENT_and_gating_distorts": 1,
+   "success_LIST_DEPENDENT_headline_moves_2_to_1": 1,
+   "completed_RQ2_not_established": 1,
+   "success_errors_are_reachable_but_missed_first_version_superseded": 1,
+   "success_10_topics_have_collisions_2_undecidable": 1,
+   "pilot_PROSE_ONLY_rule2_and_rule3_fail": 1,
+   "success_H1_rights_only_established_H3_H4_refuted_27size_tests_zero_disagreements": 1,
+   "success_rights_survives_both_lexicons_provenance_does_not": 1,
+   "success_one_false_negative_found_and_fixed": 1,
+   "success_novelty_supports_L1_gap": 1,
+   "success_headline_survived_value_test_formal_verdict_sparse": 1,
+   "pilot_T004_NOT_PROMOTED_construct_in_one_corpus_only": 1,
+   "success_189_of_287_abstracts": 1,
+   "success_no_rule_graded_L4_but_hand_overrides_exist": 1,
+   "success_screen_corrected_twice": 1,
+   "success_one_cell_corrected_headline_unchanged": 1,
+   "success_advance:67": 1,
+   "success_rule_precision_zero_H4_upper_bound": 1,
+   "completed_negative": 1,
+   "completed_positive": 1,
+   "completed_two_defects_found": 1,
+   "completed_foundations_fixed": 1,
+   "completed_positive_after_qpp_features": 1,
+   "success_final_dev_ladder": 1,
+   "superseded_by_EXP-0225": 1,
+   "success_hypotheses_H1_H2_H3_supported": 1,
+   "success_reproduction_verified": 1,
+   "success_H4_not_supported": 1,
+   "superseded_by_EXP-0227": 1,
+   "success_mechanism_supported_by_intervention": 1,
+   "success_alignability_low_typed_failures_dominant": 1,
+   "infeasible_by_design_split_not_usable": 1,
+   "success_headline_survives_corrected_inference": 1,
+   "success_built_and_anchored": 1,
+   "success_PREMISE_FALSIFIED_family_holdout_is_the_real_test": 1,
+   "success_only_one_non_toucan_catalogue_source_locally": 1,
+   "success_CROSS_CORPUS_GENERALISATION_MEASURED": 1,
+   "success_dense_ranker_strongest_and_finding_is_ranker_specific": 1,
+   "success_reproduced_with_declared_numeric_tolerance": 1,
+   "pilot_passed_RQ1_borderline_RQ2": 1,
+   "pilot_proceed_only_two_concepts_align_broadly": 1,
+   "success_modest_pooled_gain_strong_config_heterogeneity": 1,
+   "success_COLLISION_CONFIRMED_24_relevant_records": 1,
+   "success_no_L4_in_P001_P004_but_query_expansion_outstanding": 1,
+   "success_no_new_L4_for_P001_P004": 1,
+   "4_manuscripts_completed_rebuild_wired_idempotent": 1,
+   "CROSSED ON 9 of 96: usable agreement 0.9062, kappa 0.7236, exact 0.8229": 1,
+   "8 cells change state, 3 cross absent->usable; all-corpus concepts 2->3; gate unchanged at 3": 1,
+   "H3 STANDS: boolean agreement 8/8, instances A 1 / B 1, shared 1": 1,
+   "CEILING 0.7634 < 0.80: codable 0.0991 -> 0.7553 (payload) -> 0.7634 (cues); replication still untestable": 1,
+   "CENSUS COMPLETE: 1596 rows over 9 config x kind groups, all reconciled": 1,
+   "TRANSFERS within scope: in-support 0.9514, AUROC 0.8028 CI [0.7254, 0.868] vs length-only 0.7137; native scale still untestable (EXP-0086)": 1,
+   "recovered_54_abstracts_0_of_26_grade_moves_caused_by_them": 1,
+   "parked_on_measured_censoring": 1,
+   "legacy_levels_not_reproducible_on_30_of_34_rows_no_claim_changed": 1,
+   "advanced_3_held_0": 1,
+   "74 requirements_35_by_content_signature_37_in_a_package_0_at_programme_level_2_open": 1,
+   "EXTRACTOR_DEPENDENT": 1,
+   "probe_PRETRAINED_ENCODER_OBTAINABLE": 1,
+   "1_of_1_packages_carry_all_20_steps_0_open_rows": 1,
+   "measured_first_pass_had_two_false_cleanes": 1,
+   "per_package_cost_tables_written_span_disagreement_named": 1,
+   "3_published_1_under_every_naive_arm_single_source_under_drop_top_p_chance_0p0018": 1,
+   "extraction_rule_tvd_0p44_command_text_drives_labels_27_of_43_repos_differ_after_holm": 1,
+   "DOES_NOT_TRAVEL_2_values_96p5_percent_default_clustered_ci_covers_1": 1,
+   "ALL_TESTS_PASS_12_of_12": 1,
+   "section_21_documented_from_artefacts": 1,
+   "4 recovered, 0 terminal of 4": 1,
+   "NOT_RUBRIC_INVARIANT (kappa 0.5679)": 1,
+   "success_demoted_L3_crowded:13_w1_audit_done:72_w2_screen_incomplete_collision_unretrieved:1": 1,
+   "INVARIANT: kappa 0.9956/0.9927, DV change 0.0004/0.0006, selection gap 0.0034": 1,
+   "BELOW BAR: kappa 0.5019 CI 0.4659-0.5406, alpha 0.4985": 1,
+   "NOT TESTABLE: in-support 0.0 (0 rows), 2 pool-size features outside on 100% of rows, 17 features never outside": 1,
+   "BOTH ARMS SATURATE: 6/6 and 6/6 rows out of dev feature range; unique probabilities 1 and 1 (constant 1.0)": 1,
+   "E03c pretrained hit@3=0.9157 vs bm25=0.9222 vs scratch=0.9643; transfer AUROC=0.7128 CI=0.699-0.7265 bar=0.65 -> PASS": 1,
+   "recovered=28 with_abstract_now=30 still_title_only=64 transport_error=5": 1,
+   "title_only 94->64; rule changes 12 (upwards 12); hand_check 48->52": 1,
+   "552 new records with abstracts; grades {\"L0\": 516, \"L1\": 36}; 426 distinct venues; 0 at L2+": 1,
+   "filled=187 rejected_on_title_mismatch=13 with_abstract=300/552 L2plus=0": 1,
+   "323 new records, 123 readable, 200 unread, L2+ 41; 20 rows appended to the curated matrix": 1,
+   "384 new records, 137 readable, 247 unread, L2+ 167; 0 rows appended to the curated matrix": 1,
+   "frozen L2+ 167 -> anchored survivors 9 (removed 158); sampled readable 7 all on-topic": 1,
+   "totals: 26 adjudicated, 1 rejected_on_read, 2 still pending (P003 0+0 this run, P004 7+0 this run)": 1,
+   "testable=52/62 reachable=50 gone=2 untestable=10 availability_over_testable=0.9615": 1,
+   "discriminative=['canonical-other', 'hf-mirror']; demoted=1; availability 0.9623 -> 0.9615 primary / 0.9394 strict": 1,
+   "premise FALSE: 22,625 AgentNet task lines, 410,987 last_step_correct markers, no provenance-declaring field": 1,
+   "437 records, 184 readable / 253 unread, L2+ 0, L3+ 0": 1,
+   "392 records, 193 readable / 199 unread, L2+ 1, L3+ 0": 1,
+   "GO=False; disjoint PASS (0/0 overlap on 66000 rows); A at chance, B prevalence 0.9185, C inverse AUC 0.1651 vs null 0.4422": 1,
+   "5 papers x 3 config files + README; deliverable 13 and gate G18-E were absent before and are now present": 1,
+   "79 rows, 51 paper_id values normalised; per-paper P001=36 P002=2 P003=7 P004=8 P005=9": 1,
+   "PASS for P002/P003/P004/P005 (0 mismatches)": 1,
+   "completed": 1,
+   "ACQUISITION CHANNEL VERIFIED - corpus not yet ingested": 1,
+   "borderline pass: AUROC 0.6536 CI 0.6349-0.6733": 1,
+   "ingested and audited; union resolves 1.0 of queries; full eval ~38 h on this host, so the transfer run is stratified": 1,
+   "DOES NOT TRANSFER: AUROC 0.4671, subset-clustered CI 0.4439-0.4869, below the length-only baseline 0.5569": 1,
+   "derivation_chains_reported": 1
+  },
+  "topics_total": 123,
+  "topics_by_stage": {
+   "demoted_L3_crowded": 15,
+   "w3_fold_into_T037": 9,
+   "demoted_L4_taken": 2,
+   "w5_package_complete_pre_submission_checks_open": 2,
+   "w3_fold_into_T012": 2,
+   "w5_packaged_failure_preceded_turn_on_diagnostic_lang:supported_reissue_language_on_calling_again_after_:supported_abandon_language_on_stopping_after_failu:opposite": 1,
+   "w5_packaged_causal_connective_on_standardised_eviden:partial_inferential_minus_explanatory_on_evidenc:null_causal_control_lexicon_on_evidence_overl:measured_descriptively_rule_declared_non_inferential": 1,
+   "w7_packaged_affordance_verb_density_in_the_gold_desc:null_gold_candidate_naming_its_parameters_on_:null_parameters_and_affordance_language_are_n:not_specific_length_carries_the_same_signal": 1,
+   "w7_packaged_near_synonym_decoy_present_on_missing_th:supported_fail_at_1_profile_by_number_of_decoys_in:not_monotone_in_6_measured_levels_decoy_presence_against_a_random_candidat:measured_descriptively_rule_declared_non_inferential": 1,
+   "w6_packaged_newness_of_the_observation_just_returned:opposite_failed_observation_on_continuing_the_sea:not_testable_premise_floor_share_0p20_measured_0p1855_cumulative_newness_on_submitting_within_:not_reproduced_in_0_of_4_quartiles": 1,
+   "w6_packaged_scent_on_new_information_returned:partial_same_model_under_the_asymmetric_scent_in:partial_verbosity_control_on_new_information:not_specific_control_tracks_the_same_variance": 1,
+   "w_blocked_premise_T156_cluster_count=1784_rollouts_parseable=0.9994_outcome_label_present=1.0_trajectories_with_switches=19964_newness_available=0.7876": 1,
+   "w6_packaged_need_length_within_instance_on_log_steps:opposite_depth_on_submitting_rather_than_running_:supported_sign_of_the_depth_need_association_by_ta:not_reproduced_in_1_of_1_families_below_the_10_frozen_floor": 1,
+   "w_blocked_premise_T154_cluster_count=31642_catalogues_and_rows_parseable=1.0_comparable_candidate_sets=0.8376_lexical_ambiguity_variation=15264_referential_ambiguity_variation=24568_outcome_columns_present=1.0": 1,
+   "w9_packaged_pooled_transition_matrix_against_the_uni:not_testable_premise_family_breadth_frozen_10_measured_2_a_family_s_own_matrix_against_the_pooled:partial_ordering_beyond_the_unigram_against_a_wi:not_specific_the_shuffle_carries_the_same_gain": 1,
+   "w3_fold_into_P002": 1,
+   "w_blocked_premise_T151_cluster_count=1784_rollouts_parseable=0.9994_command_families_for_a_taxonomy=11_newness_available=0.7876": 1,
+   "w11_packaged_prevalence_of_each_relation_class_among_:measured_descriptively_rule_declared_non_inferential_refinement_versus_new_on_the_later_attem:not_estimable_quasi_separation_in_this_cell_the_relation_class_beyond_overlap_and_th:not_estimable_quasi_separation_in_this_cell": 1,
+   "w11_packaged_survival_of_each_component_category_unde:not_the_predicted_ordering_survival_within_a_stratum_of_first_menti:measured_descriptively_rule_declared_non_inferential_a_compression_that_removes_the_exception:null": 1,
+   "w7_packaged_namespace_separator_share_within_a_catal:supported_fourth_versus_first_candidate_count_quar:supported_the_namespace_share_after_server_concent:not_specific_namespace_share_still_separates": 1,
+   "w11_packaged_the_earlier_attempt_s_concreteness_on_th:null_own_earlier_level_against_a_seeded_other:not_specific_the_alien_level_carries_it_too": 1,
+   "w11_packaged_carry_forward_lift_per_component_categor:supported_the_spread_of_carry_forward_across_categ:not_uniform_enough_to_claim_own_earlier_category_against_an_alien_on:not_specific_the_alien_category_carries_it_too": 1,
+   "w5_packaged_plan_alignment_minus_other_trajectory_nu:null_alignment_on_the_next_call_failing:opposite_sign_of_the_alignment_contrast_by_tool_f:not_testable_only_4_of_20_families_estimable": 1,
+   "w11_packaged_result_minus_exception_balance_on_submit:supported_submitting_on_the_position_of_the_first_:null_the_balance_against_an_observation_count:not_specific_the_observation_count_alone_separates": 1,
+   "w5_packaged_conclusion_before_first_inspection_vs_af:not_testable_premise_floor_with_114_trajectories_concluded_after_inspection_on_standardis:opposite_act_conclusion_on_stopping_here:supported": 1,
+   "w5_packaged_causal_chain_on_standardised_evidence_ov:null_causal_chain_on_stopping_here:null_sign_of_the_chain_contrast_within_body_l:not_reproduced_in_three_of_four_quartiles": 1,
+   "w3_fold_into_T116": 1,
+   "w7_packaged_a_zero_overlap_candidate_ranked_above_th:not_testable_premise_floor_share_0p10_measured_0p0933_contamination_measured_inside_each_confi:measured_per_config_no_band_was_frozen_catalogue_size_on_the_number_of_contamin:supported": 1,
+   "w7_packaged_within_server_minus_across_server_descri:supported_the_catalogue_population_is_not_concentr:measured_descriptively_no_band_was_frozen_local_tool_names_published_by_more_than_:measured_descriptively_no_band_was_frozen": 1,
+   "w9_packaged_changing_the_command_at_the_first_step_a:null_the_completion_advantage_by_lag_after_th:not_monotone_in_3_measured_lags_the_lag_one_advantage_inside_each_length:not_estimable_no_interval_for_this_statistic": 1,
+   "w9_packaged_within_instance_agreement_between_succes:supported_instances_where_a_cheaper_successful_rol:measured_descriptively_no_band_was_frozen_the_agreement_after_restricting_to_succe:measured_descriptively_rule_declared_non_inferential": 1,
+   "w_blocked_premise_T191_field_coverage_of_sampled_trajectories=0.0_gate=0.5_local_alternative=AgentTrove `result` 13.7% (EXP-0027), below the same gate": 1,
+   "w8_packaged_a_verbal_correction_after_an_error_marke:opposite_the_share_of_verbal_corrections_with_no_:not_at_or_above_the_frozen_floor_measured_0p0155_agreement_between_an_admission_and_a_pre:measured_descriptively_rule_declared_non_inferential": 1,
+   "w12_packaged_share_of_conversations_with_a_reflection:supported_content_word_overlap_with_the_previous_t:supported_share_of_marker_transitions_whose_conten:below_the_frozen_floor_measured_0p0000": 1,
+   "w3_fold_into_T127": 1,
+   "w3_fold_into_T125": 1,
+   "w3_fold_into_T123": 1,
+   "w12_packaged_content_word_density_per_1000_characters:opposite_share_of_turns_answered_by_an_observatio:supported_composition_and_block_level_correction_a:measured_descriptively_no_band_was_frozen": 1,
+   "w8_packaged_first_turn_plan_specificity_on_the_repea:opposite_first_turn_plan_specificity_on_the_error:opposite_the_specificity_parts_against_opening_tu:not_specific_length_carries_the_same_signal": 1,
+   "w9_packaged_first_fifth_features_predict_the_release:supported_the_increment_from_adding_the_last_fifth:not_specific_the_later_phase_adds_nothing_the_early_signal_inside_each_of_the_five:not_reproduced_in_0_of_3_families_below_the_3_frozen_floor": 1,
+   "w_blocked_premise_T129_cluster_count=31642_catalogues_and_rows_parseable=1.0_comparable_candidate_sets=0.8376_cross_server_content_pairs=1845_outcome_columns_present=1.0": 1,
+   "w3_fold_into_T131": 1,
+   "w_blocked_premise_T176_repeated_call_trajectories=4125_cluster_count=14701_category_breadth=8_outcome_label_available=0_trajectories_parseable=1.0_terminal_turn_identifiable=0.4649_observations_parseable=1.0_error_marked_observations=0.5893": 1,
+   "w_blocked_premise_T175_cluster_count=14701_category_breadth=8_trajectories_parseable=1.0_trajectories_with_later_turns=13695_terminal_turn_identifiable=0.4649_observations_parseable=1.0": 1,
+   "w6_packaged_repeated_command_on_new_information:supported_exact_repeat_present_on_submitting_with_:opposite_newness_profile_by_number_of_prior_runs:not_monotone_in_4_measured_levels": 1,
+   "w8_packaged_turn_position_on_overlap_with_the_trajec:opposite_an_early_hypothesis_on_the_newness_of_wh:null_own_anchor_versus_a_seed_chosen_alien_an:not_specific_the_alien_anchor_tracks_the_same_variance": 1,
+   "w6_packaged_off_modal_first_action_on_family_concent:null_staying_in_the_first_family_on_submittin:opposite_search_first_opening_on_staying_in_famil:null": 1,
+   "w7_packaged_a_frequently_co_needed_gold_pair_on_miss:supported_frequent_pair_minus_random_pair_descript:supported_the_network_is_sparse_and_its_degree_is_:measured_descriptively_no_band_was_frozen": 1,
+   "w6_packaged_family_switch_on_new_information:opposite_switch_rate_on_rollout_depth:opposite_sign_of_the_switching_cost_by_command_fa:not_reproduced_in_0_of_9_families_below_the_5_frozen_floor": 1,
+   "w3_fold_into_P001": 1,
+   "w5_packaged_last_third_on_act_plan:supported_last_third_on_act_conclusion:supported_tagger_a_vs_tagger_b_kappa_per_act:not_invariant_kappa_below_0p60_for_conclusion_evidence_request_hypothesis_plan_question": 1,
+   "w4_packaged_sufficiency_claim_added_to_the_evidence_:null_prior_inspections_at_claim_stops_minus_o:opposite_category_strata_of_the_claim_effect:descriptive stratum slopes, not a family member": 1,
+   "w_blocked_premise_T128_cluster_count=31642_descriptions_have_text=13.17_catalogues_and_rows_parseable=1.0_comparable_candidate_sets=0.8376_credibility_language_present=0.2555_outcome_columns_present=1.0": 1,
+   "w3_fold_into_T001": 1,
+   "w5_package_complete_as_P001_reconciled_EXP0098": 1,
+   "w12_packaged_corpora_exposing_an_outcome_or_quality_c:measured_descriptively_gate_fired_claim_limited_spread_in_unit_of_observation_across_the:measured_descriptively_no_band_was_frozen_construct_by_corpus_availability_matrix:measured_descriptively_no_band_was_frozen": 1,
+   "demoted_L4_crowded": 1,
+   "w3_fold_into_T002": 1,
+   "killed_self_overlap_not_novelty": 1,
+   "not_promoted_identifiability": 1,
+   "demoted_L3_crowded_and_needs_human_gold": 1,
+   "w2_parked_after_feasibility_probe_EXP0096": 1,
+   "demoted_L4_taken_and_own_overlap": 1,
+   "killed_blocked": 1,
+   "w4_packaged_same_tool_content_change_on_modality:opposite_changed_minus_different_tool_on_modality:supported_same_tool_content_change_on_sufficiency_:null": 1,
+   "demoted_L4_crowded_and_data_blocked": 1,
+   "w3_merged_into_T013_reference_structure_only": 1,
+   "w3_pilot_PROSE_ONLY_declaration_vs_verifiability_p005": 1,
+   "killed_L4_and_unidentifiable": 1,
+   "w3_fold_into_T008": 1,
+   "w3_pilot_passed_main_experiment_next": 1,
+   "killed_pilot_no_identifiability": 1,
+   "demoted_L4_taken_by_three_2026_papers": 1,
+   "not_promoted_single_corpus_and_p001_overlap_PREMISE_CORRECTED_EXP0073": 1,
+   "w1_packaged_underspec_z:null_underspec_z:clarification:null_underspec_z:wrong_tool:opposite": 1,
+   "w_blocked_premise_T102_cluster_count=31642_catalogues_and_rows_parseable=1.0_comparable_candidate_sets=0.8376_lexical_ambiguity_variation=15264_referential_ambiguity_variation=24568_underspecification_spread=13874_outcome_columns_present=1.": 1,
+   "w1_packaged_density_z:inspected_pos:null_density_z:bm25_desc_rank:opposite_H3_nested_gain:below_the_frozen_floor_measured_0p0005": 1,
+   "w10_packaged_underspecification_of_the_instruction_on:partial_the_share_of_requirements_surfaced_by_at:measured_descriptively_rule_declared_non_inferential_underspecification_against_constraint_co:not_specific_another_uncertainty_kind_carries_the_signal": 1,
+   "w4_packaged_discordant_minus_body_only_on_next_inspe:supported_body_only_vs_no_hedge_on_next_inspection:outside_the_frozen_rule_negative_contrast_discordant_minus_body_only_on_stopping:supported": 1,
+   "w4_packaged_modal_turn_on_next_inspection:supported_modal_x_error_interaction:null_topical_control_count_z_on_next_inspecti:not_specific_control_tracks_the_same_variance": 1,
+   "w3_packaged_discriminability_lexical:null_discriminability_over_completeness_auroc:null_discriminability_x_catalogue_size:supported": 1,
+   "w_blocked_premise_T121_marker_share_of_candidates=0.029_gate=0.05_source=EXP-0135 (wave-2 premise census), the same column on the same corpus": 1,
+   "w3_packaged_synonym_minus_baseline_hit1:partial_within_family_rank_spread_synonym_minus_:null_benefit_where_vocabulary_differs:opposite": 1,
+   "w3_packaged_congruence_unconditional:supported_congruence_with_frozen_controls:partial_congruence_level_contrast:not_testable_empty_cell": 1,
+   "w_blocked_premise_T118_median_name_segments=1.0_share_of_entries_with_more_than_one_segment=0.1694": 1,
+   "w2_blocked_premise_centring_dominance_0p890_above_gate_0p80_kappa_0p414": 1,
+   "w2_packaged_t:descriptive stratum slope, not a family member_txlarge:supported": 1,
+   "w2_packaged_unlabelled_row:verdict_not_recorded_binding_nested_step_enumeration->full:not_estimable_no_interval_for_this_statistic_composite_minus_length_only_auroc:not_estimable_denominator_not_recorded": 1,
+   "w2_packaged_centr_z:verdict_not_recorded_hi:supported_H3_disagreement_census:characterised": 1,
+   "w3_packaged_usecase_minus_baseline_hit1:not_interpretable_length_confound_gain_by_description_length:null_usecase_matched_minus_baseline_hit1:partial": 1,
+   "w2_blocked_premise_negation_prevalence_0p029_below_gate_0p05": 1,
+   "w2_packaged_entity_agree:partial_action_agree:partial_constraint_agree:partial": 1,
+   "w1_packaged_unlabelled_row:verdict_not_recorded": 1,
+   "w1_packaged_H1:supported_H2:non_vocabulary_verdict_word_see_ci_the_two_rates_and_their_interval_carry_th_H3:measured_descriptively_rule_declared_non_inferential": 1,
+   "w1_packaged_underspec_z_on_displacement:null": 1,
+   "w_blocked_premise_T107_cluster_count=31642_catalogues_and_rows_parseable=1.0_comparable_candidate_sets=0.8376_decomposable_needs=11288_outcome_columns_present=1.0": 1,
+   "w1_packaged_H1:partial_con_z:opposite_H3:verdict_not_recorded": 1,
+   "w12_packaged_share_of_rollouts_with_another_instance_:measured_descriptively_gate_fired_claim_limited_sibling_issue_similarity_against_sibling:not_testable_neighbour_similarity_against_steps_and_f:not_testable_premise_no_order_or_case_library_recorded": 1
+  },
+  "topics_past_w0": 123,
+  "P001_test_evaluations": 1,
+  "program_status": {
+   "generated_at": "2026-09-27 00:49:00",
+   "newest_experiment_finished": "2026-09-26 18:56:41",
+   "stale": false
+  }
+ }
+}

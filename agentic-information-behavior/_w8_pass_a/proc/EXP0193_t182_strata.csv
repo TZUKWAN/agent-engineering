@@ -1,0 +1,12 @@
+stratification,stratum,rows,clusters,dropped_constant_terms,identifiable,beta,se,ci_lo,ci_hi,p,n,cluster
+category,Agent Tools,4249,4249,none,True,0.003,0.0027,-0.0024,0.0083,0.2764,4249,traj_id
+category,Browser Automation,1687,1687,none,True,-0.0262,0.0693,-0.162,0.1096,0.7055,1687,traj_id
+category,File Operations,891,891,none,True,0.0022,0.0008,0.0006,0.0037,0.0058,891,traj_id
+category,Multi-Tool,859,859,none,True,0.0147,0.009,-0.003,0.0324,0.1046,859,traj_id
+category,Repository Tasks,2131,2131,none,True,0.0035,0.0123,-0.0207,0.0276,0.7777,2131,traj_id
+category,Scheduling,308,308,none,True,-0.0104,0.0217,-0.053,0.0322,0.6311,308,traj_id
+category,Terminal & Coding,4247,4247,none,True,-0.0053,0.0012,-0.0077,-0.0029,0.0,4247,traj_id
+turn_quartile,q1_shortest,6823,6823,none,True,0.0012,0.0008,-0.0005,0.0028,0.1665,6823,traj_id
+turn_quartile,q2,3561,3561,none,True,0.0128,0.0025,0.0079,0.0177,0.0,3561,traj_id
+turn_quartile,q3,2580,2580,none,True,0.0166,0.0046,0.0077,0.0256,0.0003,2580,traj_id
+turn_quartile,q4_longest,1737,1737,none,True,0.0231,0.0061,0.0112,0.0351,0.0001,1737,traj_id

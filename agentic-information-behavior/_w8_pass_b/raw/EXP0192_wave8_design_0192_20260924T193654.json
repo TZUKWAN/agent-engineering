@@ -1,0 +1,337 @@
+{
+ "baselines": [
+  {
+   "clusters": 515,
+   "deviance": 3271.05,
+   "dv": "hypo_overlap_z",
+   "model": "controls_only",
+   "n": 3764,
+   "terms": "log_turns+task_words_log"
+  },
+  {
+   "added_term": "position",
+   "deviance": 3186.53,
+   "deviance_drop": 84.52,
+   "dv": "hypo_overlap_z",
+   "lr_chi2": 169.03,
+   "lr_df": 1,
+   "lr_p": 0.0,
+   "model": "controls_plus_position",
+   "n": 3764,
+   "position_beta": -0.6391,
+   "position_ci_hi": -0.5397,
+   "position_ci_lo": -0.7386,
+   "position_cluster": "traj_id",
+   "position_dropped_constant_terms": "none",
+   "position_p": 0.0,
+   "position_se": 0.0507,
+   "terms": "position+log_turns+task_words_log"
+  },
+  {
+   "added_term": "alien_overlap_z",
+   "alien_overlap_z_beta": 0.879,
+   "alien_overlap_z_ci_hi": 0.892,
+   "alien_overlap_z_ci_lo": 0.866,
+   "alien_overlap_z_cluster": "traj_id",
+   "alien_overlap_z_dropped_constant_terms": "none",
+   "alien_overlap_z_p": 0.0,
+   "alien_overlap_z_se": 0.0066,
+   "deviance": 351.64,
+   "deviance_drop": 2919.41,
+   "dv": "hypo_overlap_z",
+   "lr_chi2": 5838.81,
+   "lr_df": 2,
+   "lr_p": 0.0,
+   "model": "controls_plus_alien_anchor",
+   "n": 3764,
+   "terms": "position+alien_overlap_z+log_turns+task_words_log"
+  }
+ ],
+ "blocked_designs_in_this_wave": [
+  "T175",
+  "T176"
+ ],
+ "cluster_unit": "traj_id",
+ "descriptive_rates": {
+  "newness_by_early_hypothesis": {
+   "0": {
+    "mean_obs_new_share": 0.5202,
+    "trajectories": 14131
+   },
+   "1": {
+    "mean_obs_new_share": 0.5423,
+    "trajectories": 570
+   }
+  },
+  "overlap_by_category": {
+   "Agent Tools": {
+    "mean_hypo_overlap": 0.6726,
+    "rows": 1341
+   },
+   "Browser Automation": {
+    "mean_hypo_overlap": 0.4064,
+    "rows": 151
+   },
+   "File Operations": {
+    "mean_hypo_overlap": 0.4799,
+    "rows": 189
+   },
+   "Multi-Tool": {
+    "mean_hypo_overlap": 0.3864,
+    "rows": 344
+   },
+   "Planning & Organization": {
+    "mean_hypo_overlap": 0.46,
+    "rows": 158
+   },
+   "Repository Tasks": {
+    "mean_hypo_overlap": 0.4645,
+    "rows": 719
+   },
+   "Scheduling": {
+    "mean_hypo_overlap": 0.4508,
+    "rows": 157
+   },
+   "Terminal & Coding": {
+    "mean_hypo_overlap": 0.6098,
+    "rows": 704
+   }
+  },
+  "overlap_by_position_third": {
+   "first_third": {
+    "mean_alien_overlap": 0.4422,
+    "mean_hypo_overlap": 0.5285,
+    "rows": 549
+   },
+   "last_third": {
+    "mean_alien_overlap": 0.4874,
+    "mean_hypo_overlap": 0.5336,
+    "rows": 1899
+   },
+   "middle_third": {
+    "mean_alien_overlap": 0.5467,
+    "mean_hypo_overlap": 0.6005,
+    "rows": 1316
+   }
+  }
+ },
+ "exp_id": "EXP-0192",
+ "finished_at": "2026-09-24T19:36:54",
+ "frame_file_read": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0191_wave8_turn_features.csv.gz",
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave8_designs.py",
+ "models": [
+  {
+   "beta": -0.6391,
+   "ci_hi": -0.5397,
+   "ci_lo": -0.7386,
+   "cluster": "traj_id",
+   "dropped_constant_terms": "none",
+   "early_hypothesis_trajectories_in_release": 4904,
+   "hypothesis": "H1",
+   "mean_overlap": 0.5562,
+   "n": 3764,
+   "p": 0.0,
+   "p_holm": 0.0,
+   "se": 0.0507,
+   "term": "turn_position_on_overlap_with_the_trajectorys_own_early_hypothesis",
+   "trajectories_in_the_cell": 515,
+   "turns_in_the_cell": 3764,
+   "verdict": "opposite",
+   "verdict_direction": "predicted_positive: later turns keep returning to what the trajectory first guessed"
+  },
+  {
+   "beta": 0.0241,
+   "ci_hi": 0.0552,
+   "ci_lo": -0.0069,
+   "cluster": "traj_id",
+   "dropped_constant_terms": "none",
+   "hypothesis": "H2",
+   "mean_new_share_with": 0.5423,
+   "mean_new_share_without": 0.5202,
+   "n": 140418,
+   "p": 0.1277,
+   "p_holm": 0.1277,
+   "se": 0.0158,
+   "term": "an_early_hypothesis_on_the_newness_of_what_comes_next",
+   "turns_with_an_observation": 140418,
+   "verdict": "null",
+   "verdict_direction": "predicted_negative: an anchored search is told less that is new"
+  },
+  {
+   "alien_anchor": {
+    "beta": -0.2774,
+    "ci_hi": -0.231,
+    "ci_lo": -0.3239,
+    "cluster": "traj_id",
+    "dropped_constant_terms": "none",
+    "n": 4595,
+    "p": 0.0,
+    "se": 0.0237
+   },
+   "beta": 0.2376,
+   "ci_hi": 0.2846,
+   "ci_lo": 0.1905,
+   "dropped_constant_terms": "none",
+   "hypothesis": "H3",
+   "n": 4595,
+   "note": "the freeze asks whether the concentration is on the hypothesis rather than on early text in general, so the two anchors are estimated in one specification and the alien one is the control",
+   "own_anchor": {
+    "beta": 0.2376,
+    "ci_hi": 0.2846,
+    "ci_lo": 0.1905,
+    "cluster": "traj_id",
+    "dropped_constant_terms": "none",
+    "n": 4595,
+    "p": 0.0,
+    "se": 0.024
+   },
+   "p": 0.0,
+   "p_holm": null,
+   "rows": 4595,
+   "se": 0.024,
+   "term": "own_anchor_versus_a_seed_chosen_alien_anchor",
+   "trajectories": 570,
+   "verdict": "not_specific_the_alien_anchor_tracks_the_same_variance",
+   "verdict_rule": "specificity"
+  }
+ ],
+ "n_clusters": 14701,
+ "n_trajectories": 14701,
+ "n_turns": 147253,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 70,
+  "exp_id": "EXP-0192",
+  "note": "wave-8 design",
+  "python": "3.11.7",
+  "rows_in": 147253,
+  "started_at": "2026-09-24T19:36:52",
+  "wallclock_sec": 1.8
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T19:36:54",
+ "strata": [
+  {
+   "beta": -1.1495,
+   "ci_hi": -0.8908,
+   "ci_lo": -1.4082,
+   "cluster": "traj_id",
+   "clusters": 272,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 907,
+   "p": 0.0,
+   "rows": 907,
+   "se": 0.132,
+   "stratification": "turn_quartile",
+   "stratum": "q1_shortest"
+  },
+  {
+   "beta": -0.38,
+   "ci_hi": -0.1906,
+   "ci_lo": -0.5694,
+   "cluster": "traj_id",
+   "clusters": 116,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 980,
+   "p": 0.0001,
+   "rows": 980,
+   "se": 0.0966,
+   "stratification": "turn_quartile",
+   "stratum": "q2"
+  },
+  {
+   "beta": -0.4492,
+   "ci_hi": -0.2434,
+   "ci_lo": -0.655,
+   "cluster": "traj_id",
+   "clusters": 81,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 981,
+   "p": 0.0,
+   "rows": 981,
+   "se": 0.105,
+   "stratification": "turn_quartile",
+   "stratum": "q3"
+  },
+  {
+   "beta": -0.5487,
+   "ci_hi": -0.3881,
+   "ci_lo": -0.7094,
+   "cluster": "traj_id",
+   "clusters": 46,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 896,
+   "p": 0.0,
+   "rows": 896,
+   "se": 0.082,
+   "stratification": "turn_quartile",
+   "stratum": "q4_longest"
+  },
+  {
+   "beta": -0.4408,
+   "ci_hi": -0.2326,
+   "ci_lo": -0.649,
+   "cluster": "traj_id",
+   "clusters": 213,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 1341,
+   "p": 0.0,
+   "rows": 1341,
+   "se": 0.1062,
+   "stratification": "category",
+   "stratum": "Agent Tools"
+  },
+  {
+   "beta": -0.7405,
+   "ci_hi": -0.5076,
+   "ci_lo": -0.9734,
+   "cluster": "traj_id",
+   "clusters": 36,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 344,
+   "p": 0.0,
+   "rows": 344,
+   "se": 0.1188,
+   "stratification": "category",
+   "stratum": "Multi-Tool"
+  },
+  {
+   "beta": -0.5337,
+   "ci_hi": -0.3505,
+   "ci_lo": -0.7168,
+   "cluster": "traj_id",
+   "clusters": 39,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 719,
+   "p": 0.0,
+   "rows": 719,
+   "se": 0.0935,
+   "stratification": "category",
+   "stratum": "Repository Tasks"
+  },
+  {
+   "beta": -0.6626,
+   "ci_hi": -0.4124,
+   "ci_lo": -0.9128,
+   "cluster": "traj_id",
+   "clusters": 116,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 704,
+   "p": 0.0,
+   "rows": 704,
+   "se": 0.1277,
+   "stratification": "category",
+   "stratum": "Terminal & Coding"
+  }
+ ],
+ "topic": "T171"
+}

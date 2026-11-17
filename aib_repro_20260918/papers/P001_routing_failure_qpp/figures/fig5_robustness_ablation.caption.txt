@@ -1,0 +1,1 @@
+Figure 5. Alternative operationalizations and ablation (development split). (a) predictive strength is monotone in how strict the miss definition is. (b) removing collection-aware features costs 0.09-0.15 AUROC, so most of the signal is query-catalog lexical reachability rather than instruction style alone.

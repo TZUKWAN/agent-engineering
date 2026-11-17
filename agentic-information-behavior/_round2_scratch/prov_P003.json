@@ -1,0 +1,38 @@
+{
+ "detector": "round2_number_provenance",
+ "packages": 1,
+ "totals": {
+  "table_cells": 0,
+  "prose": 0,
+  "missing_copies": 0,
+  "degenerate_tables": 0
+ },
+ "detail": {
+  "P003_metadata_interoperability": {
+   "values_in_kept_artefacts": 2166,
+   "values_in_shipped_tables": 942,
+   "cited_exps_not_in_package": [],
+   "degenerate_tables": [],
+   "unsupported_table_cells": [],
+   "unsupported_prose_numbers": [],
+   "matcher_specificity": {
+    "draws": 200,
+    "passages_used": 40,
+    "accepted_unrelated": 18,
+    "rejected": 0.91,
+    "accepted_unrelated_in_a_passage": 18,
+    "rejected_in_a_real_passage": 0.91
+   }
+  }
+ },
+ "matcher_specificity": {
+  "draws": 200,
+  "accepted_unrelated": 18,
+  "rejected": 0.91,
+  "accepted_unrelated_in_a_passage": 18,
+  "rejected_in_a_real_passage": 0.91,
+  "meaning": "fraction of unrelated four-decimal figures the matcher refuses, alone and inside one of the package's own passages; the zero-findings result is only as strong as these numbers"
+ },
+ "at": "2026-09-26T08:21:52",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/registry/round2_number_provenance.py --paper P003 --out _round2_scratch/prov_P003.json"
+}

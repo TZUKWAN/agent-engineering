@@ -1,0 +1,8 @@
+stratification,stratum,mean_jaccard,transitions,marker_share
+operator after the transition,image_caption,0.1258,514,0.0175
+operator after the transition,object_detection,0.1247,488,0.0164
+operator after the transition,ocr,0.1471,447,0.0067
+thought position band,1st,0.1542,3975,0.0018
+thought position band,2nd-3rd,0.1522,1885,0.0244
+thought position band,4th-6th,0.0832,809,0.1248
+thought position band,7th+,0.1083,1048,0.0515

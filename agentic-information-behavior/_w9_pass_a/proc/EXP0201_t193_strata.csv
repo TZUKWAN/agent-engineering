@@ -1,0 +1,5 @@
+stratification,stratum,instances,mean_tau,min_tau,max_tau
+rollouts_per_instance_band,11plus,840,0.0375,-0.5833,0.7091
+rollouts_per_instance_band,2,11,0.2727,-1.0,1.0
+rollouts_per_instance_band,3to5,182,0.0806,-1.0,1.0
+rollouts_per_instance_band,6to10,742,0.0329,-1.0,1.0

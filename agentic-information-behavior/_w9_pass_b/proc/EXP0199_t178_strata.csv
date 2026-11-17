@@ -1,0 +1,5 @@
+stratification,stratum,rollouts,auc_first_fifth,positives
+length_quartile,q1_shortest,4997,0.6859,475
+length_quartile,q2,4997,0.7168,28
+length_quartile,q3,4997,0.6768,28
+length_quartile,q4_longest,4997,0.5152,29

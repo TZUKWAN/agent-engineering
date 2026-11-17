@@ -1,0 +1,417 @@
+{
+ "exp_id": "EXP-0095",
+ "at": "2026-09-21T10:26:32",
+ "wallclock_sec": 173.8,
+ "targets": {
+  "title_only_rows": 94,
+  "with_doi_tried": 89
+ },
+ "channel_probes": {
+  "crossref": {
+   "control_candidates_tried": 8,
+   "positive_words": 258,
+   "positive_control_doi": "10.3322/caac.21660",
+   "negative_returned_text": false,
+   "http_status": "200",
+   "status": "working"
+  },
+  "openalex": {
+   "control_candidates_tried": 8,
+   "positive_words": 198,
+   "positive_control_doi": "10.1585/pfr.15.2402039",
+   "negative_returned_text": false,
+   "http_status": "200",
+   "status": "working"
+  },
+  "semanticscholar": {
+   "control_candidates_tried": 8,
+   "positive_words": 211,
+   "positive_control_doi": "10.1585/pfr.15.2402039",
+   "negative_returned_text": false,
+   "http_status": "200",
+   "status": "working"
+  }
+ },
+ "recovered_by_channel": {
+  "openalex": 46,
+  "semanticscholar": 8
+ },
+ "recovered_total": 54,
+ "failure_counter": {
+  "no_channel_returned_text": 35
+ },
+ "graded_rows": 287,
+ "grades_moved": 26,
+ "moved_detail": [
+  {
+   "paper_id": "P001",
+   "cite_key": "ToolRet",
+   "from": "L2",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "SealTools",
+   "from": "L1",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "MCP-Atlas",
+   "from": "L0",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "MCPToolBenchPP",
+   "from": "L0",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "CoHyDE",
+   "from": "L3",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "ToolRetrievalBridge",
+   "from": "L3",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "ToolDE",
+   "from": "L2",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "HumanMCP",
+   "from": "L2",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "ToolEX",
+   "from": "L2",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "TOOLQP",
+   "from": "L2",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "MultiFieldTR",
+   "from": "L2",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "TraceFreePlus",
+   "from": "L3",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "JTPRO",
+   "from": "L2",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "QPPRAGUtility",
+   "from": "L1",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "QPPVariantChoice",
+   "from": "L1",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "TSDQPP",
+   "from": "L1",
+   "to": "L2",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P001",
+   "cite_key": "ToucanPaper",
+   "from": "L2",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P002",
+   "cite_key": "arxiv2601.17617",
+   "from": "L4",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P002",
+   "cite_key": "arxiv2609.07984",
+   "from": "L2",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P002",
+   "cite_key": "arxiv2511.09329",
+   "from": "L3",
+   "to": "L1",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P002",
+   "cite_key": "arxiv2411.15594",
+   "from": "L2",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P003",
+   "cite_key": "arxiv2608.14228",
+   "from": "L2",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P003",
+   "cite_key": "arxiv2606.28867",
+   "from": "L3",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P003",
+   "cite_key": "arxiv2604.20857",
+   "from": "L2",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P003",
+   "cite_key": "arxiv2601.17617",
+   "from": "L2",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  },
+  {
+   "paper_id": "P003",
+   "cite_key": "arxiv2503.01763",
+   "from": "L2",
+   "to": "L0",
+   "graded_on_before": "title+abstract",
+   "graded_on_now": "title+abstract",
+   "abstract_recovered_by_this_round": false
+  }
+ ],
+ "abstracts_reused_from_this_scripts_prior_v3_run": 54,
+ "recovered_rows_holding_a_grade": 0,
+ "recovered_rows_holding_only_a_screening_state": 54,
+ "move_attribution": {
+  "stored_level_not_reproducible_from_the_text_already_on_disk": 26
+ },
+ "curated_matrix_agreement_with_frozen_rule": {
+  "P001": {
+   "matrix_rows_with_a_level": 20,
+   "disagree_with_frozen_rule": 17,
+   "examples": [
+    {
+     "cite_key": "ToolRet",
+     "matrix": "L2",
+     "frozen_rule": "L1"
+    },
+    {
+     "cite_key": "SealTools",
+     "matrix": "L1",
+     "frozen_rule": "L0"
+    },
+    {
+     "cite_key": "MCP-Atlas",
+     "matrix": "L0",
+     "frozen_rule": "L1"
+    },
+    {
+     "cite_key": "MCPToolBenchPP",
+     "matrix": "L0",
+     "frozen_rule": "L1"
+    },
+    {
+     "cite_key": "CoHyDE",
+     "matrix": "L3",
+     "frozen_rule": "L1"
+    },
+    {
+     "cite_key": "ToolRetrievalBridge",
+     "matrix": "L3",
+     "frozen_rule": "L1"
+    }
+   ]
+  },
+  "P002": {
+   "matrix_rows_with_a_level": 4,
+   "disagree_with_frozen_rule": 4,
+   "examples": [
+    {
+     "cite_key": "arxiv2601.17617",
+     "matrix": "L4",
+     "frozen_rule": "L1"
+    },
+    {
+     "cite_key": "arxiv2609.07984",
+     "matrix": "L2",
+     "frozen_rule": "L0"
+    },
+    {
+     "cite_key": "arxiv2511.09329",
+     "matrix": "L3",
+     "frozen_rule": "L1"
+    },
+    {
+     "cite_key": "arxiv2411.15594",
+     "matrix": "L2",
+     "frozen_rule": "L0"
+    }
+   ]
+  },
+  "P003": {
+   "matrix_rows_with_a_level": 25,
+   "disagree_with_frozen_rule": 5,
+   "examples": [
+    {
+     "cite_key": "arxiv2608.14228",
+     "matrix": "L2",
+     "frozen_rule": "L0"
+    },
+    {
+     "cite_key": "arxiv2606.28867",
+     "matrix": "L3",
+     "frozen_rule": "L0"
+    },
+    {
+     "cite_key": "arxiv2604.20857",
+     "matrix": "L2",
+     "frozen_rule": "L0"
+    },
+    {
+     "cite_key": "arxiv2601.17617",
+     "matrix": "L2",
+     "frozen_rule": "L0"
+    },
+    {
+     "cite_key": "arxiv2503.01763",
+     "matrix": "L2",
+     "frozen_rule": "L0"
+    }
+   ]
+  }
+ },
+ "still_title_only": 1,
+ "still_title_only_detail": [
+  {
+   "paper_id": "P001",
+   "cite_key": "arxiv2605.14241",
+   "doi": "",
+   "label": "undecidable_on_title"
+  }
+ ],
+ "abstracts_before": 193,
+ "abstracts_after": 193,
+ "level_counts_before": {
+  "L2": 14,
+  "L1": 6,
+  "L0": 2,
+  "L3": 5,
+  "L1_provisional": 1,
+  "L4": 1,
+  "": 1,
+  "candidate - abstract read, not yet graded": 185,
+  "n/a": 2,
+  "candidate - not yet graded": 70
+ },
+ "level_counts_after": {
+  "L1": 16,
+  "L0": 11,
+  "L2": 1,
+  "L1_provisional": 1,
+  "": 1,
+  "candidate - abstract read, not yet graded": 185,
+  "n/a": 2,
+  "candidate - not yet graded": 70
+ },
+ "rule": "pre-declared in the module docstring: channels need a positive control to count as working; no grade changes on a title; no upgrade is inferred from an unavailable channel",
+ "verdict": "RECOVERED 54 abstracts via openalex=46, semanticscholar=8 (0 of them on records that carry a grade, 54 on funnel candidates that were never graded); 1 screened record(s) remain title-only and are labelled undecidable_on_title. 26 grade(s) moved under the frozen rule, attributed as: stored_level_not_reproducible_from_the_text_already_on_disk=26. The recovery round changed no grade: every move is a stored level the frozen rule does not reproduce from the abstract already on disk, so this is a finding about the consistency of the level columns, not about the literature. Curated matrix columns disagree with the rule on P001: 17 of 20; P002: 4 of 4; P003: 5 of 25 - both levels are kept."
+}

@@ -1,0 +1,9 @@
+corpus,L1,L2,L3,L4,L5,L6,L7,footers_read,files,components_strict,components_with_rights,disagreements,unverifiable_host_share
+Toucan-1.5M,0,1,1,1,0,0,0,134,273,5,0,0,0.8182
+SWE-ZERO,0,1,1,0,0,0,0,1230,2467,3,0,0,0.9091
+AgentBank,0,1,1,0,0,0,0,19,43,20,0,0,0.0
+MMAT-1M,0,1,1,1,0,0,0,0,13,0,0,0,0.8
+hermes,0,1,1,1,0,0,0,4,13,3,0,0,1.0
+AgentTrove,0,1,1,0,0,0,0,38,81,1,0,0,0.5
+code-act,0,1,1,0,0,0,0,2,9,4,0,1,0.8571
+AgentInstruct,0,0,0,0,0,0,0,6,17,8,0,0,0.9

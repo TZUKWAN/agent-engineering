@@ -1,0 +1,337 @@
+{
+ "baselines": [
+  {
+   "clusters": 1775,
+   "deviance": 3045.24,
+   "dv": "submitted",
+   "model": "controls_only",
+   "n": 17229,
+   "terms": "log_steps+obs_chars_mean"
+  },
+  {
+   "added_term": "log_steps",
+   "deviance": 3045.24,
+   "deviance_drop": 0.0,
+   "dv": "submitted",
+   "log_steps_beta": -8.193,
+   "log_steps_ci_hi": -6.8807,
+   "log_steps_ci_lo": -9.5054,
+   "log_steps_cluster": "instance_id",
+   "log_steps_dropped_constant_terms": "none",
+   "log_steps_p": 0.0,
+   "log_steps_se": 0.6696,
+   "lr_chi2": 0.0,
+   "lr_df": 1,
+   "lr_p": 1.0,
+   "model": "controls_only",
+   "n": 17229,
+   "terms": "log_steps+obs_chars_mean"
+  },
+  {
+   "added_term": "changed_at_lag_1",
+   "changed_at_lag_1_beta": 0.4048,
+   "changed_at_lag_1_ci_hi": 2.6601,
+   "changed_at_lag_1_ci_lo": -1.8505,
+   "changed_at_lag_1_cluster": "instance_id",
+   "changed_at_lag_1_dropped_constant_terms": "none",
+   "changed_at_lag_1_p": 0.725,
+   "changed_at_lag_1_se": 1.1507,
+   "deviance": 3045.08,
+   "deviance_drop": 0.17,
+   "dv": "submitted",
+   "lr_chi2": 0.33,
+   "lr_df": 1,
+   "lr_p": 0.563646,
+   "model": "controls_plus_lag_one",
+   "n": 17229,
+   "terms": "changed_at_lag_1+log_steps+obs_chars_mean"
+  },
+  {
+   "added_term": "changed_at_lag_1",
+   "changed_at_lag_1_beta": 0.5733,
+   "changed_at_lag_1_ci_hi": 2.7749,
+   "changed_at_lag_1_ci_lo": -1.6283,
+   "changed_at_lag_1_cluster": "instance_id",
+   "changed_at_lag_1_dropped_constant_terms": "none",
+   "changed_at_lag_1_p": 0.6098,
+   "changed_at_lag_1_se": 1.1233,
+   "deviance": 2906.31,
+   "deviance_drop": 138.93,
+   "dv": "submitted",
+   "lr_chi2": 277.87,
+   "lr_df": 3,
+   "lr_p": 0.0,
+   "model": "controls_plus_repetition_and_switches",
+   "n": 17229,
+   "terms": "changed_at_lag_1+repeat_share_z+switch_rate_z+log_steps+obs_chars_mean"
+  }
+ ],
+ "blocked_designs_in_this_wave": [
+  "T151",
+  "T156"
+ ],
+ "cluster_unit": "instance_id",
+ "descriptive_rates": {
+  "failures_per_rollout": {
+   "1": 3692,
+   "2": 3937,
+   "3": 3421,
+   "4": 2512,
+   "5": 1635,
+   "6": 973,
+   "7": 537,
+   "8": 308
+  },
+  "first_change_lag_distribution": {
+   "0": 5,
+   "1": 17185,
+   "2": 35,
+   "3": 3,
+   "4": 1
+  },
+  "submitted_by_first_change_lag": {
+   "0": {
+    "rollouts": 5,
+    "submitted_share": 0.0
+   },
+   "1": {
+    "rollouts": 17185,
+    "submitted_share": 0.0246
+   },
+   "2": {
+    "rollouts": 35,
+    "submitted_share": 0.0286
+   },
+   "3": {
+    "rollouts": 3,
+    "submitted_share": 0.0
+   },
+   "4": {
+    "rollouts": 1,
+    "submitted_share": 0.0
+   }
+  }
+ },
+ "exp_id": "EXP-0200",
+ "finished_at": "2026-09-24T20:34:11",
+ "frame_files_read": {
+  "S": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0197_wave9_step_features.csv.gz",
+  "T": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0197_wave9_rollout_features.csv.gz"
+ },
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave9_designs.py",
+ "models": [
+  {
+   "beta": 0.4048,
+   "changed_at_lag_1": 17185,
+   "ci_hi": 2.6601,
+   "ci_lo": -1.8505,
+   "cluster": "instance_id",
+   "dropped_constant_terms": "none",
+   "hypothesis": "H1",
+   "minority_arm_rollouts": 44,
+   "n": 17229,
+   "note": "the interval is wide and the ladder thin because of two properties of this release rather than of the behaviour: it truncates rollouts at 15 commanded steps, so the length the design controls for barely varies, and 97.6% of the cell changes its command after a failure, so the comparison is a minority of non-changers against everyone else. Both counts are printed with the estimate (deviations W9-D05 and W9-D06)",
+   "p": 0.725,
+   "p_holm": 0.725,
+   "rollouts_after_a_failure": 17229,
+   "rollouts_at_the_release_s_step_cap": 15052,
+   "sd_of_log_steps_in_this_cell": 0.0825,
+   "se": 1.1507,
+   "share_changing_at_lag_1": 0.9974,
+   "submitted_share_when_changed": 0.0246,
+   "submitted_share_when_not": 0.0227,
+   "term": "changing_the_command_at_the_first_step_after_a_failure_on_completing",
+   "verdict": "null",
+   "verdict_direction": "predicted_positive: a fast change of command is a rollout that recovers"
+  },
+  {
+   "hypothesis": "H2",
+   "lags_estimable": 3,
+   "note": "the frozen claim is a decay toward zero across lags, so the verdict is the monotonicity of the fitted advantages; each lag is its own coefficient, never pooled",
+   "p_holm": null,
+   "profile": [
+    {
+     "beta": 0.4048,
+     "ci_hi": 2.6601,
+     "ci_lo": -1.8505,
+     "cluster": "instance_id",
+     "dropped_constant_terms": "none",
+     "lag": 1,
+     "n": 17229,
+     "p": 0.725,
+     "se": 1.1507
+    },
+    {
+     "beta": -0.6773,
+     "ci_hi": -0.12,
+     "ci_lo": -1.2346,
+     "cluster": "instance_id",
+     "dropped_constant_terms": "none",
+     "lag": 3,
+     "n": 17229,
+     "p": 0.0172,
+     "se": 0.2843
+    },
+    {
+     "beta": -0.3841,
+     "ci_hi": 0.105,
+     "ci_lo": -0.8733,
+     "cluster": "instance_id",
+     "dropped_constant_terms": "none",
+     "lag": 5,
+     "n": 17229,
+     "p": 0.1238,
+     "se": 0.2496
+    }
+   ],
+   "term": "the_completion_advantage_by_lag_after_the_failure",
+   "verdict": "not_monotone_in_3_measured_lags",
+   "verdict_rule": "dose_response"
+  },
+  {
+   "hypothesis": "H3",
+   "p_holm": null,
+   "quartiles_tested": 4,
+   "strata": [
+    {
+     "beta": 20.3365,
+     "ci_hi": 20.5834,
+     "ci_lo": 20.0895,
+     "cluster": "instance_id",
+     "dropped_constant_terms": "none",
+     "n": 4234,
+     "p": 0.0,
+     "rollouts": 4234,
+     "se": 0.126,
+     "stratum": "q1_shortest"
+    },
+    {
+     "beta": 17.0893,
+     "ci_hi": null,
+     "ci_lo": null,
+     "cluster": "instance_id",
+     "dropped_constant_terms": "log_steps",
+     "n": 4341,
+     "p": null,
+     "rollouts": 4341,
+     "se": null,
+     "stratum": "q2"
+    },
+    {
+     "beta": -3.0237,
+     "ci_hi": -0.6712,
+     "ci_lo": -5.3761,
+     "cluster": "instance_id",
+     "dropped_constant_terms": "log_steps",
+     "n": 4342,
+     "p": 0.0118,
+     "rollouts": 4342,
+     "se": 1.2002,
+     "stratum": "q3"
+    },
+    {
+     "beta": 17.9748,
+     "ci_hi": 100.2219,
+     "ci_lo": -64.2723,
+     "cluster": "instance_id",
+     "dropped_constant_terms": "log_steps",
+     "n": 4312,
+     "p": 0.6684,
+     "rollouts": 4312,
+     "se": 41.9636,
+     "stratum": "q4_longest"
+    }
+   ],
+   "term": "the_lag_one_advantage_inside_each_length_quartile",
+   "verdict": "supported",
+   "verdict_rule": "sign_reproduction"
+  }
+ ],
+ "n_clusters": 1775,
+ "n_rollouts": 17229,
+ "n_steps": 292992,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 48,
+  "exp_id": "EXP-0200",
+  "note": "wave-9 design",
+  "python": "3.11.7",
+  "rows_in": 19988,
+  "started_at": "2026-09-24T20:33:30",
+  "wallclock_sec": 40.4
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T20:34:11",
+ "strata": [
+  {
+   "clusters": 30,
+   "dropped_constant_terms": "changed_at_lag_1",
+   "identifiable": false,
+   "rows": 305,
+   "stratification": "task_family",
+   "stratum": "kubernetes-sigs"
+  },
+  {
+   "beta": 20.3365,
+   "ci_hi": 20.5834,
+   "ci_lo": 20.0895,
+   "cluster": "instance_id",
+   "clusters": 1460,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 4234,
+   "p": 0.0,
+   "rows": 4234,
+   "se": 0.126,
+   "stratification": "length_quartile",
+   "stratum": "q1_shortest"
+  },
+  {
+   "beta": 17.0893,
+   "ci_hi": null,
+   "ci_lo": null,
+   "cluster": "instance_id",
+   "clusters": 1508,
+   "dropped_constant_terms": "log_steps",
+   "identifiable": true,
+   "n": 4341,
+   "p": null,
+   "rows": 4341,
+   "se": null,
+   "stratification": "length_quartile",
+   "stratum": "q2"
+  },
+  {
+   "beta": -3.0237,
+   "ci_hi": -0.6712,
+   "ci_lo": -5.3761,
+   "cluster": "instance_id",
+   "clusters": 1491,
+   "dropped_constant_terms": "log_steps",
+   "identifiable": true,
+   "n": 4342,
+   "p": 0.0118,
+   "rows": 4342,
+   "se": 1.2002,
+   "stratification": "length_quartile",
+   "stratum": "q3"
+  },
+  {
+   "beta": 17.9748,
+   "ci_hi": 100.2219,
+   "ci_lo": -64.2723,
+   "cluster": "instance_id",
+   "clusters": 1521,
+   "dropped_constant_terms": "log_steps",
+   "identifiable": true,
+   "n": 4312,
+   "p": 0.6684,
+   "rows": 4312,
+   "se": 41.9636,
+   "stratification": "length_quartile",
+   "stratum": "q4_longest"
+  }
+ ],
+ "topic": "T179"
+}

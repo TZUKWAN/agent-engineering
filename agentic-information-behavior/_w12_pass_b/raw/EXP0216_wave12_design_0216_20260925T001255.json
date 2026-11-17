@@ -1,0 +1,200 @@
+{
+ "baselines": [
+  {
+   "by_kind": {
+    "code": {
+     "answered_share": 0.8895,
+     "mean_density": 68.857,
+     "mean_statements": 6.444,
+     "turns": 10515
+    },
+    "natural_language": {
+     "answered_share": 0.3078,
+     "mean_density": 81.053,
+     "mean_statements": 0.0,
+     "turns": 3805
+    },
+    "tool": {
+     "answered_share": 0.2214,
+     "mean_density": 49.159,
+     "mean_statements": 0.0,
+     "turns": 262
+    }
+   },
+   "dv": "density_per_1000",
+   "model": "kinds_described",
+   "n": 14582
+  },
+  {
+   "beta": -12.196,
+   "ci_hi": -11.497,
+   "ci_lo": -12.9051,
+   "dv": "density_per_1000",
+   "model": "code_minus_natural_language",
+   "p": 0.0016666666666666668
+  }
+ ],
+ "blocked_designs_in_this_wave": [],
+ "claim_limited_in_this_wave": {
+  "T036": [
+   "H1",
+   "G12_eight_corpus_label_coverage"
+  ],
+  "T189": [
+   "H3",
+   "G7_mmat_no_correctness_label"
+  ],
+  "T194": [
+   "H1",
+   "G9_swe_has_neighbours"
+  ]
+ },
+ "cluster_unit": "conversation_id",
+ "conversations": 4000,
+ "descriptive_rates": {
+  "conversations_with_an_error_in_their_own_text": 567,
+  "density_by_kind": {
+   "code": {
+    "answered_share": 0.8895,
+    "mean_density": 68.857,
+    "mean_statements": 6.444,
+    "turns": 10515
+   },
+   "natural_language": {
+    "answered_share": 0.3078,
+    "mean_density": 81.053,
+    "mean_statements": 0.0,
+    "turns": 3805
+   },
+   "tool": {
+    "answered_share": 0.2214,
+    "mean_density": 49.159,
+    "mean_statements": 0.0,
+    "turns": 262
+   }
+  },
+  "observation_chars_by_kind": {
+   "code": 493.3,
+   "natural_language": 50.4,
+   "tool": 40.0
+  },
+  "statements_per_code_block_mean": 6.444
+ },
+ "exp_id": "EXP-0216",
+ "finished_at": "2026-09-25T00:12:55",
+ "frame_files_read": {
+  "C": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_codeact_turns.csv.gz",
+  "IV": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_corpus_inventory.csv.gz",
+  "M": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_mmat_transitions.csv.gz",
+  "NE": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_neighbours.csv.gz",
+  "R": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_rollouts.csv.gz",
+  "SI": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_siblings.csv.gz"
+ },
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave12_designs.py",
+ "models": [
+  {
+   "beta": -12.196,
+   "ci_hi": -11.497,
+   "ci_lo": -12.9051,
+   "clusters": null,
+   "code_mean_density": 68.857,
+   "conversations": 4000,
+   "hypothesis": "H1",
+   "n": null,
+   "nl_mean_density": 81.053,
+   "p": 0.0016666666666666668,
+   "p_holm": null,
+   "pooled_sd": 17.971,
+   "se": null,
+   "term": "content_word_density_per_1000_characters_code_minus_natural_language",
+   "tool_mean_density": 49.159,
+   "turns": 14582,
+   "verdict": "opposite",
+   "verdict_direction": "predicted_positive: a code turn is denser in content words per character"
+  },
+  {
+   "beta": 0.582,
+   "ci_hi": 0.5955,
+   "ci_lo": 0.5699,
+   "clusters": null,
+   "code_answered_share": 0.8895,
+   "conversations": 4000,
+   "hypothesis": "H2",
+   "n": null,
+   "nl_answered_share": 0.3078,
+   "p": 0.0016666666666666668,
+   "p_holm": null,
+   "pooled_sd": 1.0,
+   "se": null,
+   "term": "share_of_turns_answered_by_an_observation_code_minus_natural_language",
+   "turns": 14582,
+   "verdict": "supported",
+   "verdict_direction": "predicted_positive: the environment answers a code action"
+  },
+  {
+   "beta": 0.7963,
+   "ci_hi": 0.8075,
+   "ci_lo": 0.7843,
+   "clusters": null,
+   "conversations_that_changed_the_block": 792,
+   "conversations_with_code": 3990,
+   "correction_share": 0.1985,
+   "hypothesis": "H3",
+   "multi_statement_ci": [
+    0.7843,
+    0.8075
+   ],
+   "multi_statement_share": 0.7963,
+   "n": 4000,
+   "note": "H3 is two shares, not an effect on a task outcome: the release records no result, so composition and the block-level correction cycle are what the sentence can ask for. The correction cycle is the stricter, block-level reading; the message-level count EXP-0215 produced is reported in the frame artefact beside it (deviation W12-D06)",
+   "p": 0.0016666666666666668,
+   "p_holm": null,
+   "se": null,
+   "term": "composition_and_block_level_correction_after_an_error",
+   "verdict": "measured_descriptively_no_band_was_frozen",
+   "verdict_rule": "descriptive"
+  }
+ ],
+ "n_clusters": 4000,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 15,
+  "exp_id": "EXP-0216",
+  "note": "wave-12 design",
+  "python": "3.11.7",
+  "rows_in": 14741,
+  "started_at": "2026-09-25T00:12:44",
+  "wallclock_sec": 10.6
+ },
+ "seed": 42,
+ "started_at": "2026-09-25T00:12:55",
+ "strata": [
+  {
+   "answered_share": 0.8895,
+   "mean_density": 68.857,
+   "mean_statements": 6.444,
+   "stratification": "action kind",
+   "stratum": "code",
+   "turns": 10515
+  },
+  {
+   "answered_share": 0.3078,
+   "mean_density": 81.053,
+   "mean_statements": 0.0,
+   "stratification": "action kind",
+   "stratum": "natural_language",
+   "turns": 3805
+  },
+  {
+   "answered_share": 0.2214,
+   "mean_density": 49.159,
+   "mean_statements": 0.0,
+   "stratification": "action kind",
+   "stratum": "tool",
+   "turns": 262
+  }
+ ],
+ "topic": "T184",
+ "turns": 14741
+}

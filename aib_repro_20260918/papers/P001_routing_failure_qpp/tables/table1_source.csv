@@ -1,0 +1,2 @@
+dataset,hf_repo_id,license_declared,hf_git_revisions,download_first_at,total_rows_measured,configs
+Toucan-1.5M,Agent-Ark/Toucan-1.5M,apache-2.0,0df3cf37f2abefb380370cfb02eabea2a35ae782,2026-09-18T01:22:31,1646546,OSS;Qwen3;Kimi-K2;SFT

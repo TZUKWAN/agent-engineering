@@ -1,0 +1,48 @@
+{
+  "note": "Lightweight stability checks due to computational constraints. Bootstrap used only 5 resamples with 2 random starts; train/test split used 10 starts on training set. For publication-grade inference, increase bootstrap resamples to 200+ and random starts to 30.",
+  "train_test_split": {
+    "test_frac": 0.2,
+    "test_n": 4041,
+    "ari": 0.9959737604720801
+  },
+  "k_comparison": {
+    "4": {
+      "k": 4,
+      "loglik": -98754.46880676057,
+      "aic": 197602.93761352115,
+      "bic": 197974.88082626424,
+      "entropy": 0.7710042342476278,
+      "n_params": 47
+    },
+    "5": {
+      "k": 5,
+      "loglik": -98264.3099280124,
+      "aic": 196646.6198560248,
+      "bic": 197113.52729329804,
+      "entropy": 0.7675786438735084,
+      "n_params": 59
+    },
+    "6": {
+      "k": 6,
+      "loglik": -98129.20366168222,
+      "aic": 196400.40732336443,
+      "bic": 196962.27898516782,
+      "entropy": 0.6767650193635141,
+      "n_params": 71
+    }
+  },
+  "small_bootstrap": {
+    "n_boot": 5,
+    "ari_mean": 0.6260564036890779,
+    "ari_std": 0.0766169216690152,
+    "ari_min": 0.5289537407972291,
+    "ari_max": 0.7396372844035746,
+    "aris": [
+      0.7396372844035746,
+      0.5638796614920119,
+      0.5289537407972291,
+      0.6813948563122708,
+      0.6164164754403031
+    ]
+  }
+}

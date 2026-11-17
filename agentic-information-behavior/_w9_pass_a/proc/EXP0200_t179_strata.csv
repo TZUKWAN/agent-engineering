@@ -1,0 +1,6 @@
+stratification,stratum,rows,clusters,dropped_constant_terms,identifiable,beta,se,ci_lo,ci_hi,p,n,cluster
+task_family,kubernetes-sigs,305,30,changed_at_lag_1,False,,,,,,,
+length_quartile,q1_shortest,4234,1460,none,True,20.3365,0.126,20.0895,20.5834,0.0,4234.0,instance_id
+length_quartile,q2,4341,1508,log_steps,True,17.0893,,,,,4341.0,instance_id
+length_quartile,q3,4342,1491,log_steps,True,-3.0237,1.2002,-5.3761,-0.6712,0.0118,4342.0,instance_id
+length_quartile,q4_longest,4312,1521,log_steps,True,17.9748,41.9636,-64.2723,100.2219,0.6684,4312.0,instance_id

@@ -1,0 +1,60 @@
+# Steps the two-pass rebuild round does not re-execute, one script path per line (as `reproduce.sh` declares it).
+#
+# These are the programme's measurements: dataset acquisition and audits, the coder/main/sensitivity runs, the
+# statistics and model steps. Re-running them would make the determinism round a new experiment - and for P001
+# would re-open a test split that is evaluated exactly once - instead of asking the question the round asks,
+# which is whether every document, table and figure regenerates byte for byte from the raw files already on
+# disk. Anything NOT listed here is exercised, so a new generator is covered automatically; a listed step that
+# no chain declares is reported by rebuild_all_rounds.py as stale rather than dropped silently.
+
+# P001
+02_shared_code/data_audit/audit_datasets.py
+02_shared_code/data_audit/audit_shard_coverage_p001.py
+02_shared_code/data_audit/audit_split_integrity.py
+02_shared_code/data_audit/package_contamination_audit.py
+02_shared_code/data_audit/probe_external_catalogue_availability.py
+02_shared_code/data_audit/probe_gold_tool_grounding.py
+02_shared_code/data_audit/probe_hermes_toolcalls.py
+02_shared_code/statistics/adjudicate_equivalence_sample.py
+02_shared_code/statistics/catalog_intervention_e17.py
+02_shared_code/statistics/catalogue_clustered_inference.py
+02_shared_code/statistics/cross_pipeline_transfer_e08.py
+02_shared_code/statistics/dense_comparator_e03b.py
+02_shared_code/statistics/equivalence_relabel_h4.py
+02_shared_code/statistics/error_analysis_p001.py
+02_shared_code/statistics/external_corpus_transfer_hermes.py
+02_shared_code/statistics/hierarchical_dependence.py
+02_shared_code/statistics/learning_curve_e12.py
+02_shared_code/statistics/run_p001_experiments.py
+02_shared_code/statistics/second_coder_agreement.py
+02_shared_code/statistics/subset_sensitivity_p001.py
+02_shared_code/statistics/toolret_external_transfer_e08.py
+02_shared_code/statistics/toolret_size_matched_external_p001.py
+02_shared_code/statistics/toolret_support_respecting_external.py
+02_shared_code/trajectory_parser/build_catalog_disjoint_split.py
+02_shared_code/trajectory_parser/build_toucan_routing_dataset.py
+# P002
+02_shared_code/behavior_tagger/isp_stage_coder.py
+02_shared_code/behavior_tagger/isp_stage_codex_agenttrove.py
+02_shared_code/behavior_tagger/isp_stage_codex_agenttrove_second.py
+02_shared_code/behavior_tagger/isp_stage_codex_independent.py
+02_shared_code/behavior_tagger/p002_cue_ablation_cases.py
+02_shared_code/statistics/isp_stage_main_p002.py
+# P003
+02_shared_code/data_audit/canonical_conformance_corrected_p003.py
+02_shared_code/data_audit/canonical_conformance_main_p003.py
+02_shared_code/data_audit/canonical_conformance_second_auditor_p003.py
+02_shared_code/data_audit/p003_ablation_and_baselines.py
+# P004
+02_shared_code/data_audit/quality_presence_scan_p004.py
+02_shared_code/statistics/p004_criterion_sensitivity.py
+02_shared_code/statistics/p004_external_shipped_label_e08.py
+02_shared_code/statistics/p004_extractor_invariance.py
+02_shared_code/statistics/p004_validity_main.py
+# P005
+02_shared_code/data_audit/acquisition_chain_p005.py
+02_shared_code/data_audit/governance_disagreement_second_matcher_p005.py
+02_shared_code/data_audit/governance_metadata_main_p005.py
+02_shared_code/data_audit/governance_metadata_pilot_p005.py
+02_shared_code/data_audit/governance_sensitivity_p005.py
+02_shared_code/data_audit/link_availability_p005.py

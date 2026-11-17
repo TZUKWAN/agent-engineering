@@ -1,0 +1,20 @@
+quantity,value
+hit_at_3_bm25_frozen,0.9222
+hit_at_3_dense_trained,0.9643
+mean_bm25_best_rank,1.614
+mean_dense_best_rank,1.354
+chance_hit_at_3,0.4718
+spearman_dense_vs_bm25_rank,0.1608
+positive_set_overlap_jaccard,0.0846
+discordant_rows,1839
+prevalence_fail_at_3_dense,0.0357
+auc_frozen_model_trained_on_bm25_failure__scored_on_dense_failure,0.6451
+auc_model_trained_on_dense_failure_oof,"[0.7816, 0.7796]"
+auc_model_trained_on_bm25_failure_oof,"[0.8122, 0.812]"
+auc_length_only_vs_dense_failure,0.5653
+auc_post_margin_bm25_ranker_vs_dense_failure,0.5553
+auc_post_margin_dense_ranker_vs_dense_failure,0.6471
+note_on_margins,"the BM25 margin is the wrong post-retrieval signal once the ranker is dense, so the dense model's own top1-top2 cosine margin is reported alongside it"
+dense_is_stronger_ranker,True
+construct_survives_trained_ranker,False
+rule,AUROC >= 0.65 against the dense-ranker outcome (fixed before training) means the pre-retrieval signal is not a BM25 artifact; the dense-vs-BM25 hit@3 gap is reported either way

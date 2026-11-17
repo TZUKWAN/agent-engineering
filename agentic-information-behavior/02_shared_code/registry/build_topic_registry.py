@@ -1,0 +1,544 @@
+"""Build 00_program_registry/topic_registry.csv (spec T02.01, section 23 item 7).
+
+Topic ideas live here as structured records so the CSV is always regenerable and
+never hand-patched: ragged columns are a real integrity risk in a registry that
+later papers cite.
+
+    python build_topic_registry.py
+"""
+
+from __future__ import annotations
+
+import csv
+from pathlib import Path
+
+from topic_pool_round4 import rows as rows4
+from topic_pool_round5 import rows as rows5
+
+COLUMNS = ["topic_id", "title_zh", "title_en", "paper_type", "primary_dataset",
+           "external_validation_dataset", "theory_basis", "core_rq_h", "primary_dv", "primary_iv",
+           "main_method", "novelty_risk", "data_feasibility", "compute_cost", "expected_venue",
+           "status", "blocking_issue", "differentiation_from_other_topics",
+           # the five columns below are written by the packages themselves (`wave_package.py` appends to
+           # 00_program_registry/topic_evidence.csv), so a completed topic carries its experiment ids, the coverage
+           # the data actually measured, its shipped figures and tables, and its collision verdict - the four things
+           # the objective asks the topic table to record.
+           "package", "exp_ids", "measured_coverage", "figures_tables", "collision_verdict"]
+
+EVID = "01_datasets/manifests/*.audit.json (seed=42, audited 2026-09-18)"
+
+T: list[dict] = [
+ dict(topic_id="T001", title_zh="指令语用特征对工具路由可检索性的效应",
+   title_en="Pragmatic Form of User Instructions and the Lexical Retrievability of Agent Tools",
+   paper_type="A_mechanism", primary_dataset="Toucan-1.5M (OSS n=457130)",
+   external_validation_dataset="Toucan Qwen3/Kimi-K2; AgentNet human instructions",
+   theory_basis="joint task representation; vocabulary mismatch (Kerr 1982); query formulation",
+   core_rq_h="H1 constraint density; H2 ellipsis; H3 subtask count each lower BM25 hit on gold target_tools",
+   primary_dv="lexical retriever hit@1 / hit@k / MRR against gold target_tools",
+   primary_iv="rule-based instruction pragmatic features",
+   main_method="BM25/TF-IDF retrieval + mixed-effects logistic (query nested in catalog)",
+   novelty_risk="pending_lit_audit", data_feasibility="VERIFIED target_tools non-empty ratio 1.0 in all 4 configs; exact-dup text ratio <=0.0077",
+   compute_cost="low_cpu", expected_venue="Information Processing & Management / SIGIR agentic-IR",
+   status="demoted_L4_taken", blocking_issue="lit audit 2026-09-18: mechanism claim already stated+used by CoHyDE (EMNLP26 wshp), Tool Retrieval Bridge, Tool-DE, HumanMCP -> as framed this is L4; repositioned as T037",
+   differentiation_from_other_topics="query-side form; T002 manipulates the catalog instead"),
+
+ dict(topic_id="T002", title_zh="工具目录语义拥挤与路由退化",
+   title_en="Tool Semantic Crowding and Routing Degradation", paper_type="A_mechanism",
+   primary_dataset="Toucan-1.5M", external_validation_dataset="AgentBank 18 environments; hermes tools field",
+   theory_basis="choice overload; catalog/facet design",
+   core_rq_h="H more candidates and higher pairwise description similarity lower routing accuracy",
+   primary_dv="routing accuracy of lexical ranker", primary_iv="candidate count 1-79; TF-IDF pairwise description similarity",
+   main_method="dose-response strata + controlled distractor injection (E17)",
+   novelty_risk="pending_lit_audit", data_feasibility="VERIFIED mean 6.7 candidates/query, max 79; catalog description text present",
+   compute_cost="low_cpu", expected_venue="IP&M / JASIST", status="w3_fold_into_T037",
+   blocking_issue="lit audit: L3-L4 taken by 2605.24660 (chance-corrected shortlist-depth evaluation, 20-3251 tools) plus 2602.20426/2602.14878 (description rewriting already published); Toucan itself ships an Irrelevance-extension mechanism",
+   differentiation_from_other_topics="catalog-side manipulation; T001 never alters the catalog"),
+
+ dict(topic_id="T003", title_zh="隐含信息需求的词面可达性指标",
+   title_en="An Obliqueness Index: Implicit Information Needs in Tool Retrieval", paper_type="C_new_metric",
+   primary_dataset="Toucan-1.5M", external_validation_dataset="AgentTrove staqc / stack_exchange",
+   theory_basis="non-episodic/ambiguous need (Belkin); oblique queries",
+   core_rq_h="H index predicts routing failure beyond length and overlaps no simple proxy",
+   primary_dv="Obliqueness Index (1 - lexical reachability of gold tool description)",
+   primary_iv="construct definition variants", main_method="index construction + convergent/discriminant validity + criterion validity",
+   novelty_risk="pending_lit_audit", data_feasibility="needs only question + tool description text; both verified present",
+   compute_cost="low_cpu", expected_venue="IP&M / JASIST", status="w3_fold_into_T037",
+   blocking_issue="lit audit: vague/underspecified-query construct already named by CoHyDE and HumanMCP persona continuum; survives only as the index inside T037",
+   differentiation_from_other_topics="sells the measure; T001 sells the mechanism"),
+
+ dict(topic_id="T004", title_zh="真实人类指令与合成指令的语言学对比",
+   title_en="Real Human vs Synthetic Agent Instructions: A Linguistic Contrast", paper_type="A_mechanism",
+   primary_dataset="AgentNet 22811 human instructions", external_validation_dataset="Toucan-1.5M synthetic; AgentTrove",
+   theory_basis="corpus ecological validity; register; synthetic-data bias",
+   core_rq_h="H synthetic instructions deviate systematically from human ones in constraint density and explicitness",
+   primary_dv="per-feature standardized divergence (Cohen d, PSI, inverted KL)", primary_iv="corpus provenance",
+   main_method="distributional comparison + propensity matching on length and domain",
+   novelty_risk="medium", data_feasibility="AgentNet already parsed (MATLABINTOKEN/data/processed/analysis_data.parquet)",
+   compute_cost="low_cpu", expected_venue="IP&M / research-data note", status="w0_audit",
+   blocking_issue="task types differ across corpora; matching may fail",
+   differentiation_from_other_topics="only topic using AgentNet as the human gold-standard contrast"),
+
+ dict(topic_id="T005", title_zh="指令显性度构念的跨情境可迁移性",
+   title_en="Transferability of the Instruction-Explicitness Construct Across Interaction Contexts",
+   paper_type="A_mechanism", primary_dataset="Toucan-1.5M", external_validation_dataset="AgentNet; SWE-ZERO; code-act",
+   theory_basis="construct validity; pragmatic explicitness", core_rq_h="H effect direction persists but magnitude attenuates outside GUI context",
+   primary_dv="standardized effect per context", primary_iv="explicitness feature battery",
+   main_method="re-estimation per corpus + meta-analytic comparison", novelty_risk="medium",
+   data_feasibility="instruction text usable in all four corpora (verified)", compute_cost="low_cpu",
+   expected_venue="当代语言学 / IP&M", status="w3_fold_into_T037",
+   blocking_issue="lit audit 2026-09-18 (round 2, behaviour side): a cross-context construct-transfer study of 'explicitness' adds no test beyond P001's three-config design, which already re-estimates the same feature battery per corpus -> folded in as its E09/E10 evidence",
+   differentiation_from_other_topics="synthesis topic; consumes T001-T004 but asks a distinct transfer question"),
+
+ dict(topic_id="T006", title_zh="工具描述元数据的丰富度与可发现性",
+   title_en="Description Richness and Discoverability of Tool Metadata", paper_type="E_knowledge_mgmt",
+   primary_dataset="Toucan available_tools + metadata.mcp_servers", external_validation_dataset="AgentBank meta_information.environment",
+   theory_basis="abstracting/indexing quality; FAIR-F2", core_rq_h="H description length, verb density and parameter documentation raise gold-tool recall",
+   primary_dv="recall of gold tool by lexical ranker", primary_iv="metadata richness index",
+   main_method="per-tool aggregation + multilevel logistic", novelty_risk="medium",
+   data_feasibility="tool JSON and server overview/author fields verified present", compute_cost="low_cpu",
+   expected_venue="数字图书馆论坛 / IP&M", status="w0_audit",
+   blocking_issue="unit becomes the tool (few hundred) so power is limited",
+   differentiation_from_other_topics="catalog-side unit of analysis, unlike T001/T002"),
+
+ dict(topic_id="T007", title_zh="从工具目录自动构造分类体系",
+   title_en="Inducing a Classification Scheme from MCP Tool Catalogs", paper_type="E_knowledge_mgmt",
+   primary_dataset="Toucan metadata.mcp_servers", external_validation_dataset="hermes category/subcategory; AgentBank 18 envs",
+   theory_basis="knowledge organization; taxonomy construction; cluster validity",
+   core_rq_h="H unsupervised topic structure corresponds significantly to human category labels",
+   primary_dv="ARI / NMI against hermes category", primary_iv="TF-IDF + LDA / agglomerative solution",
+   main_method="scheme induction + external validity against human labels", novelty_risk="high",
+   data_feasibility="VERIFIED hermes carries category+subcategory; Toucan carries server overview", compute_cost="low_cpu",
+   expected_venue="情报学报 / KW", status="w0_audit", blocking_issue="human labels coarse; agreement ceiling unknown",
+   differentiation_from_other_topics="organizes the catalog; T001/T002 study query behaviour"),
+
+ dict(topic_id="T008", title_zh="12M 轨迹上的信息搜索过程阶段再检验",
+   title_en="Re-testing Information Search Processing Stages on 12M Agent Trajectories", paper_type="A_mechanism",
+   primary_dataset="SWE-ZERO-12M (12290800 rows)", external_validation_dataset="AgentTrove 1696847 rows",
+   theory_basis="Ellis ISP; Bates stratagems; Kuhlthau ISP",
+   core_rq_h="H stable stage sequence identifiable by rule-based markers at human-study proportions",
+   primary_dv="stage transition probabilities", primary_iv="rule-based discourse/lexical stage markers",
+   main_method="sequence analysis + HMM/Markov fit + explicit censoring handling", novelty_risk="high",
+   data_feasibility="VERIFIED turns mean 31.73 p50=32 max=32 -> right-censored at 32 turns", compute_cost="medium_12M_scan",
+   expected_venue="JASIST / IP&M", status="w1_repositioned_as_P002",
+   blocking_issue="lit audit 2026-09-18 (round 2): ISP-stage-in-agent-trajectory is no longer an open gap, so any 'first at scale' framing is withdrawn; survives ONLY as a measurement study (rule-based stage markers + first-order Markov null + human-coded subset at kappa>=0.75) and must not claim a new stage model",
+   differentiation_from_other_topics="overall stage structure; T009 studies only reformulation moves"),
+
+ dict(topic_id="T009", title_zh="智能体查询改写的类型学与代价", title_en="Taxonomy and Cost of Agent Query Reformulation",
+   paper_type="A_mechanism", primary_dataset="SWE-ZERO-12M", external_validation_dataset="AgentTrove",
+   theory_basis="query reformulation taxonomies (Marchionini; Radah & Hariri)",
+   core_rq_h="H reformulation type mix predicts duration and submission behaviour",
+   primary_dv="duration_sec; exit_status", primary_iv="reformulation type counts from successive-query diffs",
+   main_method="edit-based typing + negative binomial + repo random effects", novelty_risk="pending_lit_audit",
+   data_feasibility="VERIFIED duration mean 51.65 p50 45.3 max 356.4; 132 repos per shard", compute_cost="medium",
+   expected_venue="CHIIR / JASIST", status="w3_fold_into_T008", blocking_issue="lit audit 2026-09-18 (round 2): agent query-reformulation taxonomies already exist and edit-based typing is a known move set -> no standalone gap; becomes the reformulation-marker family inside P002",
+   differentiation_from_other_topics="the reformulation move itself, not global stage structure"),
+
+ dict(topic_id="T010", title_zh="任务表达的编码化：代码与自然语言", title_en="Codification of Task Expression: Code versus Natural Language",
+   paper_type="A_mechanism", primary_dataset="code-act (codeact 7139 vs general 71246)", external_validation_dataset="SWE-ZERO",
+   theory_basis="controlled vs natural language in knowledge organization",
+   core_rq_h="H codified expression reduces interaction rounds to reach the goal", primary_dv="turns to completion; action count",
+   primary_iv="expression mode + syntactic density", main_method="matched comparison on task type + regression",
+   novelty_risk="high", data_feasibility="VERIFIED turns 7-11 (codeact) vs 2-234 mean 5.23 (general); role start differs by config",
+   compute_cost="low_cpu", expected_venue="IP&M / 现代外语", status="killed_L4_and_unidentifiable",
+   blocking_issue="closed 2026-09-18: (a) lit audit round 2 puts code-vs-natural-language task expression at L3-L4; (b) the identifying assumption is unfixable here - expression mode is a property of the config, not randomly assigned, and the data audit measured the two sub-corpora differing on turns (7-11 vs 2-234) as well as on mode, so no matched comparison recovers a causal contrast",
+   differentiation_from_other_topics="only topic treating expression formalism as the construct"),
+
+ dict(topic_id="T011", title_zh="规划文本中的认识情态与后续失败", title_en="Epistemic Modality in Planning Text and Subsequent Failure",
+   paper_type="B_prediction", primary_dataset="SWE-ZERO-12M", external_validation_dataset="AgentTrove; hermes traces",
+   theory_basis="epistemic modality; hedging; verbalized confidence",
+   core_rq_h="H early hedge density predicts non-submission", primary_dv="exit_status binary",
+   primary_iv="rule-based epistemic marker density", main_method="logistic + calibration + AUROC vs classic baselines",
+   novelty_risk="high (verbalized-confidence literature is large)", data_feasibility="marker lexicons rule-based; no API needed; 2.8% positives",
+   compute_cost="medium", expected_venue="ACL-family / IP&M", status="demoted_L3_crowded",
+   blocking_issue="lit audit 2026-09-18 (round 2): verbalised-confidence/hedging-as-failure-prediction is crowded, and as a Type B paper it owes strong neural baselines the project's no-API constraint cannot run; kept only as a secondary predictor inside P001/P002 feature batteries",
+   differentiation_from_other_topics="prediction acceptance bar; T008/T009 are descriptive"),
+
+ dict(topic_id="T012", title_zh="轨迹语料的元数据互操作性审计", title_en="Metadata Interoperability of Agent Trajectory Corpora",
+   paper_type="C_new_metric", primary_dataset="all 8 downloaded datasets", external_validation_dataset="-",
+   theory_basis="FAIR; metadata mapping; schema interoperability",
+   core_rq_h="H key behavioural concepts cannot be losslessly aligned across corpora",
+   primary_dv="field-level mapping coverage; conflict typing counts", primary_iv="canonical schema conformance",
+   main_method="programmatic conformance audit with unit-tested parsers", novelty_risk="low",
+   data_feasibility="VERIFIED three message key schemes {role,content} / {from,value} / {from,loss,value}; AgentInstruct license None",
+   compute_cost="low_cpu", expected_venue="情报杂志 / DLF", status="w1_recommended",
+   blocking_issue="needs a defensible coding scheme rather than a complaint list",
+   differentiation_from_other_topics="infrastructure paper feeding all others (spec 23.1-2)"),
+
+ dict(topic_id="T013", title_zh="智能体语料的许可与二次使用合规", title_en="Licensing and Reuse Compliance of Agent Trajectory Corpora",
+   paper_type="C_new_metric", primary_dataset="all 8 downloaded datasets", external_validation_dataset="-",
+   theory_basis="data governance; downstream licensing", core_rq_h="H only part of the corpus estate permits unrestricted redistribution",
+   primary_dv="redistribution permissiveness score", primary_iv="license terms parsed from dataset cards",
+   main_method="card-vs-content audit + governance analysis", novelty_risk="low",
+   data_feasibility="VERIFIED 7 cards declare apache-2.0-ish; AgentInstruct license_declared empty",
+   compute_cost="low_cpu", expected_venue="情报杂志", status="w0_audit",
+   blocking_issue="must not overclaim legal conclusions; frame as governance evidence",
+   differentiation_from_other_topics="governance lens; T012 is technical schema"),
+
+ dict(topic_id="T014", title_zh="外部资源引用断裂与多模态语料可复现性", title_en="Broken External References and Multimodal Corpus Reproducibility",
+   paper_type="C_new_metric", primary_dataset="MMAT-1M", external_validation_dataset="Toucan metadata",
+   theory_basis="reproducibility; bit rot; reference integrity",
+   core_rq_h="无假设：量化引用外部资源样本的比例与不可解析率",
+   primary_dv="unresolvable reference rate", primary_iv="external reference structure",
+   main_method="full-corpus reference resolution scan", novelty_risk="medium",
+   data_feasibility="VERIFIED 12000/12000 sampled image references missing (ratio 1.0); 1659279 rows",
+   compute_cost="low_cpu", expected_venue="research-data / arXiv", status="w2_merge_into_T012",
+   blocking_issue="alone too thin; needs a corpus-wide scan to be citable",
+   differentiation_from_other_topics="measures decay of referenced resources; T012 measures schema"),
+
+ dict(topic_id="T015", title_zh="同文不同图：文本欠定的信息需求", title_en="Text-Identical Image-Different Queries as Under-specified Needs",
+   paper_type="A_mechanism", primary_dataset="MMAT-1M", external_validation_dataset="Toucan multi-turn",
+   theory_basis="under-specified information needs; ambiguity",
+   core_rq_h="H shared-text clusters with differing targets prove text alone is non-resolvable",
+   primary_dv="answer disagreement within shared-text clusters", primary_iv="exact-text cluster membership",
+   main_method="text clustering + agreement statistics", novelty_risk="medium",
+   data_feasibility="VERIFIED exact-dup user-text ratio 0.0933 over 12000 audited rows",
+   compute_cost="low_cpu", expected_venue="IP&M", status="w0_audit",
+   blocking_issue="images absent so answers cannot be scored: needs the images re-downloaded",
+   differentiation_from_other_topics="treats the 9.3% text duplication as signal not noise"),
+
+ dict(topic_id="T016", title_zh="12 个任务域上的指令语体变异", title_en="Instructional Register Variation Across 12+ Task Domains",
+   paper_type="A_mechanism", primary_dataset="AgentTrove original_source (12+ domains)", external_validation_dataset="Toucan 4 configs",
+   theory_basis="register theory; multi-dimensional analysis (Biber)",
+   core_rq_h="H domain differences in register dimensions are large enough to forbid pooled modelling",
+   primary_dv="MD factor scores per domain", primary_iv="task domain", main_method="stylometry + MDA + mixed models",
+   novelty_risk="pending_lit_audit", data_feasibility="VERIFIED instruction column only 3.0% non-null -> must use first conversation turn",
+   compute_cost="medium", expected_venue="现代外语 / Corpus Linguistics", status="w3_fold_into_T037",
+   blocking_issue="lit audit 2026-09-18 (round 2): register variation across agent task domains is descriptive while the outcome labels are unusable (data audit: judgment 0%, result 13.7%); P001 already reports per-domain robustness -> folded in as its E10 stratum",
+   differentiation_from_other_topics="language variation per se; T005 transfers a construct"),
+
+ dict(topic_id="T017", title_zh="教师模型对指令风格分布的塑造", title_en="Teacher-Model Shaping of Instruction Style Distributions",
+   paper_type="A_mechanism", primary_dataset="Toucan OSS/Qwen3/Kimi-K2/SFT", external_validation_dataset="hermes glm-5.1 vs kimi",
+   theory_basis="model lineage; distillation fingerprinting", core_rq_h="H corpora are linguistically identifiable by config even matched on task",
+   primary_dv="leave-one-config-out classification AUC", primary_iv="linguistic style features",
+   main_method="provenance classification + permutation null", novelty_risk="medium",
+   data_feasibility="VERIFIED config row counts 457130/551613/518516/119287", compute_cost="low_cpu",
+   expected_venue="EMNLP-family / IP&M", status="w3_fold_into_T037",
+   blocking_issue="lit audit 2026-09-18 (round 2): config/provenance fingerprinting overlaps distillation-fingerprint work and needs the T020 de-dup first; P001's leave-one-config-out transfer already measures the same cross-config stylistic distance -> folded in",
+   differentiation_from_other_topics="treats config as provenance source; no other topic does"),
+
+ dict(topic_id="T018", title_zh="多轮跟进指令的信息增益", title_en="Information Gain in Multi-turn Follow-up Instructions",
+   paper_type="A_mechanism", primary_dataset="Toucan subset_name=multi-turn", external_validation_dataset="AgentNet steps",
+   theory_basis="information gain; conversational retrieval",
+   core_rq_h="H incremental information in later turns improves gold-tool reachability",
+   primary_dv="delta retrieval score across turns", primary_iv="turn position", main_method="turn-level decomposition + fixed effects",
+   novelty_risk="pending_lit_audit", data_feasibility="subset_name non-empty 1.0; multi-turn share still unmeasured",
+   compute_cost="low_cpu", expected_venue="CHIIR", status="w0_audit",
+   blocking_issue="messages JSON must be parsed into turns before any claim",
+   differentiation_from_other_topics="only turn-position topic"),
+
+ dict(topic_id="T019", title_zh="百万级轨迹分析的抽样设计效应", title_en="Design Effects and Cluster Sampling Error in Million-Row Trajectory Analyses",
+   paper_type="C_new_metric", primary_dataset="AgentTrove + SWE-ZERO", external_validation_dataset="Toucan",
+   theory_basis="sampling design; intra-class correlation",
+   core_rq_h="H naive i.i.d. inference understates variance by a quantifiable multiple",
+   primary_dv="design effect; variance under-coverage rate", primary_iv="clustering unit (shard / instance_id / repo)",
+   main_method="ICC + bootstrap vs closed-form CI comparison", novelty_risk="medium",
+   data_feasibility="VERIFIED 1230 shards / 12.29M rows; 132 repos per shard; instance_id repeated",
+   compute_cost="low_cpu", expected_venue="JASIST methods", status="w0_audit",
+   blocking_issue="self-referential: must reuse real analyses (T008/T011) as cases",
+   differentiation_from_other_topics="about variance/inference; T020 is about leakage"),
+
+ dict(topic_id="T020", title_zh="跨语料近重复与基准污染", title_en="Cross-Corpus Near-Duplicates and Benchmark Contamination",
+   paper_type="C_new_metric", primary_dataset="AgentTrove + Toucan + SWE-ZERO", external_validation_dataset="AgentNet",
+   theory_basis="contamination; dynamic evaluation", core_rq_h="H the same task appears in several corpora and inflates apparent generality",
+   primary_dv="near-duplicate cross-corpus rate", primary_iv="MinHash/LSH similarity thresholds",
+   main_method="shingling + LSH + stratified manual inspection", novelty_risk="high (needs rigour)",
+   data_feasibility="exact-dup within Toucan measured 0-0.0077; cross-corpus rate unmeasured",
+   compute_cost="medium_high_cpu", expected_venue="NeurIPS D&B / ACL", status="w0_audit",
+   blocking_issue="duplicate definition must be pre-registered",
+   differentiation_from_other_topics="contamination; T019 is about sampling variance"),
+
+ dict(topic_id="T021", title_zh="工具调用序列的过程挖掘", title_en="Process Mining of Tool-Call Sequences", paper_type="E_knowledge_mgmt",
+   primary_dataset="Toucan messages", external_validation_dataset="AgentBank conversations",
+   theory_basis="process discovery; control-flow soundness",
+   core_rq_h="H mined control flow matches the documented recommended workflow",
+   primary_dv="fitness and precision of mined model", primary_iv="observed call sequences",
+   main_method="alpha/inductive mining + variant analysis", novelty_risk="pending_lit_audit",
+   data_feasibility="tool calls must be parsed out of message text (format heterogeneous)", compute_cost="medium",
+   expected_venue="BPM / IP&M", status="w0_audit", blocking_issue="call syntax heterogeneous; needs validated parser",
+   differentiation_from_other_topics="algorithmic mining, not catalog design or query form"),
+
+ dict(topic_id="T022", title_zh="失败轨迹能否作为可复用知识", title_en="Are Failed Trajectories Reusable Knowledge?", paper_type="E_knowledge_mgmt",
+   primary_dataset="SWE-ZERO + AgentTrove", external_validation_dataset="AgentBank",
+   theory_basis="case-based reasoning; experience reuse",
+   core_rq_h="H retrieving prior trajectories improves downstream plan quality", primary_dv="plan similarity to successful gold",
+   primary_iv="retrieved vs random exemplar", main_method="offline retrieval + nearest-neighbour analysis",
+   novelty_risk="high (trajectory-memory line crowded)", data_feasibility="retrieval feasible; reuse is not",
+   compute_cost="high_needs_generator", expected_venue="International Journal of Information Management",
+   status="killed_blocked", blocking_issue="our no-LLM-API rule blocks the downstream reuse experiment (spec 21 / data boundary)",
+   differentiation_from_other_topics="only reuse topic; parked unless a non-LLM generator is defensible"),
+
+ dict(topic_id="T023", title_zh="指令长度与显性度的分离", title_en="Disentangling Instruction Length from Explicitness",
+   paper_type="A_mechanism", primary_dataset="Toucan-1.5M", external_validation_dataset="AgentNet",
+   theory_basis="confounding; residualization", core_rq_h="H explicitness effects survive length control",
+   primary_dv="partial effect after length control", primary_iv="explicitness residualized on length",
+   main_method="residualization + sensitivity to alternative length proxies", novelty_risk="low",
+   data_feasibility="length and feature battery available (verified)", compute_cost="low_cpu",
+   expected_venue="methods section of T001", status="w3_fold_into_T001",
+   blocking_issue="standalone contribution too small", differentiation_from_other_topics="robustness core of T001, not a paper"),
+
+ dict(topic_id="T024", title_zh="内置 LLM 质量评分的构念效度", title_en="Construct Validity of Built-in LLM Quality Scores",
+   paper_type="C_new_metric", primary_dataset="Toucan quality_assessment JSON fields", external_validation_dataset="AgentNet alignment/efficiency scores",
+   theory_basis="LLM-as-judge validity; measurement theory",
+   core_rq_h="H built-in LLM scores correlate weakly with objective routing and load unstably",
+   primary_dv="criterion correlation; factor stability", primary_iv="quality dimension scores",
+   main_method="EFA + reliability + criterion-validity tests", novelty_risk="medium",
+   data_feasibility="VERIFIED both assessment fields are JSON with reasoning text, 100% present in audited rows",
+   compute_cost="low_cpu", expected_venue="IP&M / evaluation workshop", status="w0_audit",
+   blocking_issue="dimension extraction from JSON must be validated",
+   differentiation_from_other_topics="audits others' instruments; not using them as truth"),
+
+ dict(topic_id="T025", title_zh="角色标签异构性对统一解析的阻碍", title_en="Role-Tag Heterogeneity as a Parsing Barrier",
+   paper_type="C_new_metric", primary_dataset="all 8 datasets", external_validation_dataset="-",
+   theory_basis="canonical schema; parser conformance", core_rq_h="H schema divergence silently mislabels behavioural acts",
+   primary_dv="mis-mapping rate", primary_iv="parser conformance", main_method="canonical parser + unit tests",
+   novelty_risk="low", data_feasibility="VERIFIED 3 distinct message key schemes", compute_cost="low_cpu",
+   expected_venue="technical appendix of T012", status="w3_fold_into_T012",
+   blocking_issue="component not contribution", differentiation_from_other_topics="schema component of T012"),
+
+ dict(topic_id="T026", title_zh="任务难度的前定可计算指标", title_en="Pre-registered Computable Difficulty for Agent Tasks",
+   paper_type="C_new_metric", primary_dataset="Toucan + SWE-ZERO", external_validation_dataset="AgentNet task_difficulty",
+   theory_basis="task complexity; cognitive load", core_rq_h="H difficulty defined only from input text predicts held-out outcomes",
+   primary_dv="predictive validity AUC / R2", primary_iv="lexical-structural difficulty proxies",
+   main_method="fit on one corpus, test on another", novelty_risk="pending_lit_audit",
+   data_feasibility="difficulty proxies derivable from input text only", compute_cost="low_cpu",
+   expected_venue="IP&M", status="w0_audit", blocking_issue="difficulty proxies are contested in IR literature",
+   differentiation_from_other_topics="difficulty as construct; T001 uses difficulty as covariate"),
+
+ dict(topic_id="T027", title_zh="指令可读性与执行效率", title_en="Instruction Readability and Execution Efficiency",
+   paper_type="A_mechanism", primary_dataset="AgentNet efficiency_score", external_validation_dataset="SWE-ZERO duration_sec",
+   theory_basis="processing fluency; cognitive load", core_rq_h="H readability shows an inverted-U with efficiency",
+   primary_dv="efficiency_score; duration_sec", primary_iv="readability indices",
+   main_method="quadratic + segmented regression with cluster-robust SE", novelty_risk="medium",
+   data_feasibility="AgentNet has scores; Toucan does not (verified)", compute_cost="low_cpu",
+   expected_venue="当代语言学 / IP&M", status="w0_audit", blocking_issue="outcome availability limits generality",
+   differentiation_from_other_topics="efficiency outcome; T001 outcome is retrieval hit"),
+
+ dict(topic_id="T028", title_zh="指令中约束冲突的可检测性", title_en="Detecting Constraint Conflict in User Instructions",
+   paper_type="B_prediction", primary_dataset="Toucan + AgentNet", external_validation_dataset="-",
+   theory_basis="pragmatic consistency; inference", core_rq_h="H a rule detector reaches usable precision/recall on human-coded conflicts",
+   primary_dv="macro-F1 of conflict detector", primary_iv="conflict gold set",
+   main_method="rule system + two-coder gold set + kappa", novelty_risk="high",
+   data_feasibility="requires ~600 human-coded examples (not yet collected)", compute_cost="low_cpu_but_annotation_heavy",
+   expected_venue="ACL-family", status="w2_blocked", blocking_issue="no gold set exists; annotation needs two human coders",
+   differentiation_from_other_topics="conflict construct; T001 counts constraints without testing conflict"),
+
+ dict(topic_id="T029", title_zh="验证性表达与终止判断", title_en="Verification Language and Stopping Judgement",
+   paper_type="A_mechanism", primary_dataset="AgentNet last_step_correct", external_validation_dataset="SWE-ZERO final turns; hermes",
+   theory_basis="speech acts; termination criteria", core_rq_h="H after verification language, termination is more often correct",
+   primary_dv="step-level correctness", primary_iv="verification act markers",
+   main_method="step-level survival / hazard models", novelty_risk="low (extends our finished paper B)",
+   data_feasibility="AgentNet step labels exist; external corpora lack them (verified)", compute_cost="low_cpu",
+   expected_venue="现代外语", status="w2_blocked", blocking_issue="duplicate-slicing risk with our own completed Paper 01/B",
+   differentiation_from_other_topics="only admissible if the external-corpus part is genuinely new"),
+
+ dict(topic_id="T030", title_zh="约束密度作为认知负荷", title_en="Constraint Density as Cognitive Load in Agent Tasking",
+   paper_type="A_mechanism", primary_dataset="Toucan + AgentNet", external_validation_dataset="AgentTrove domains",
+   theory_basis="cognitive load; working memory", core_rq_h="H inverted-U of constraint density on outcomes",
+   primary_dv="routing / completion outcome", primary_iv="constraint count",
+   main_method="nonlinear mixed models", novelty_risk="low (our paper B did this on AgentNet)",
+   data_feasibility="feature extractor exists in MATLABINTOKEN/src/paper02", compute_cost="low_cpu",
+   expected_venue="当代语言学", status="w2_blocked", blocking_issue="would re-slice our own finished result",
+   differentiation_from_other_topics="admissible only as external-corpus extension of B"),
+
+ dict(topic_id="T031", title_zh="指代省略与落地失败", title_en="Referring-Expression Omission and Grounding Failure",
+   paper_type="A_mechanism", primary_dataset="Toucan-1.5M", external_validation_dataset="AgentNet steps",
+   theory_basis="grounding; anaphora resolution", core_rq_h="H ellipsis density predicts wrong-tool selection",
+   primary_dv="mis-selection of tool", primary_iv="rule-based ellipsis/coref proxies",
+   main_method="lexical coref heuristics + logistic with catalog fixed effects", novelty_risk="pending_lit_audit",
+   data_feasibility="spaCy-style rule coref allowed (no API)", compute_cost="low_cpu",
+   expected_venue="ACL-family / IP&M", status="w0_audit", blocking_issue="rule coref is noisy: validity test required",
+   differentiation_from_other_topics="isolates ellipsis; T001 bundles it into a battery"),
+
+ dict(topic_id="T032", title_zh="词汇落差的可干预性实验", title_en="An Intervention on Vocabulary Mismatch in Tool Descriptions",
+   paper_type="D_system", primary_dataset="Toucan available_tools", external_validation_dataset="-",
+   theory_basis="vocabulary mismatch; metadata rewriting", core_rq_h="H rule-based description rewriting raises hit@k without changing the instruction",
+   primary_dv="hit@k delta", primary_iv="rewritten vs original description",
+   main_method="counterfactual rewriting + ablation of rewrite rules", novelty_risk="pending_lit_audit",
+   data_feasibility="rewrites must be template/rule based (no LLM allowed)", compute_cost="low_cpu",
+   expected_venue="SIGIR short / IP&M", status="w0_audit", blocking_issue="template rewrites may look artificial; needs human check",
+   differentiation_from_other_topics="causal-intervention design; T001 is observational"),
+
+ dict(topic_id="T033", title_zh="工具目录规模是否存在拐点", title_en="Does a Catalog-Size Threshold Exist for Tool Routing?",
+   paper_type="A_mechanism", primary_dataset="Toucan-1.5M", external_validation_dataset="-",
+   theory_basis="choice overload", core_rq_h="H a breakpoint in accuracy as candidate count grows",
+   primary_dv="breakpoint location", primary_iv="tool count 1-79", main_method="piecewise regression + breakpoint test",
+   novelty_risk="low", data_feasibility="VERIFIED candidate counts 1-79", compute_cost="low_cpu",
+   expected_venue="T002 analysis section", status="w3_fold_into_T002", blocking_issue="subset of T002",
+   differentiation_from_other_topics="folded unless it yields its own robustness story"),
+
+ dict(topic_id="T034", title_zh="信息迷航指标的构建与验证", title_en="Constructing and Validating an Information-Wandering Index",
+   paper_type="C_new_metric", primary_dataset="SWE-ZERO + AgentTrove", external_validation_dataset="AgentBank",
+   theory_basis="information wandering; foraging", core_rq_h="H index relates to outcomes and is not replaced by action entropy",
+   primary_dv="wandering index validity", primary_iv="switching/repetition/gain proxies",
+   main_method="index construction + discriminant validity vs entropy", novelty_risk="high",
+   data_feasibility="needs a defensible information-gain proxy from observation text", compute_cost="medium",
+   expected_venue="JASIST", status="w0_audit", blocking_issue="risk of re-labelled entropy",
+   differentiation_from_other_topics="single new index; T008/T009 measure structure"),
+
+ dict(topic_id="T035", title_zh="长轨迹中的重复与探索权衡", title_en="Repetition versus Exploration in Long Trajectories",
+   paper_type="A_mechanism", primary_dataset="SWE-ZERO-12M", external_validation_dataset="AgentTrove",
+   theory_basis="information foraging; repetition-as-getting-stuck", core_rq_h="H repetition share rises in late stages and predicts non-submission",
+   primary_dv="n-gram repetition share", primary_iv="trajectory stage", main_method="segmented regression with censoring",
+   novelty_risk="pending_lit_audit", data_feasibility="VERIFIED 32-turn ceiling constrains late-stage claims", compute_cost="medium",
+   expected_venue="Behaviour&IT / IP&M", status="demoted_L3_crowded", blocking_issue="lit audit 2026-09-18 (round 2): repetition/foraging measures on agent traces are established, and the 32-turn right-censoring measured in the data audit makes the late-stage claim fragile -> not a standalone paper",
+   differentiation_from_other_topics="repetition construct only"),
+
+ dict(topic_id="T036", title_zh="智能体轨迹语料作为情报源", title_en="Agent Trajectory Corpora as Intelligence Sources",
+   paper_type="E_knowledge_mgmt", primary_dataset="all 8 datasets", external_validation_dataset="-",
+   theory_basis="intelligence studies; technological foresight", core_rq_h="无假设：描述性内容分析",
+   primary_dv="topic/tool/author landscape", primary_iv="corpus-level aggregation",
+   main_method="descriptive bibliometric-style aggregation", novelty_risk="medium",
+   data_feasibility="VERIFIED mcp_servers carries real server_name/author/overview", compute_cost="low_cpu",
+   expected_venue="情报杂志", status="w0_audit", blocking_issue="may be judged too descriptive",
+   differentiation_from_other_topics="supply-side view of the same estate"),
+
+ dict(topic_id="T037", title_zh="无大模型参与的智能体工具路由失败事前预测",
+   title_en="Predicting Tool-Routing Failure Before Retrieval, Without Any LLM in the Loop",
+   paper_type="B_prediction", primary_dataset="Toucan-1.5M OSS+Qwen3+Kimi-K2 (1,527,259 rows)",
+   external_validation_dataset="ToolRet (mangopy/benchmarking-tool-retrieval, 43k-tool corpus) as secondary; AgentNet human instructions for ecological check",
+   theory_basis="query performance prediction (CLARITY/ECLE/quasi-local); vocabulary mismatch; agentic IR",
+   core_rq_h="H1 pre-retrieval linguistic-only features predict lexical-routing failure above classical QPP baselines; H2 the effect survives chance correction; H3 it replicates across the 3 teacher configs; H4 it is not an artifact of non-exhaustive gold labels",
+   primary_dv="chance-corrected routing failure (Bits-over-Random / LLR against uniform-random ranker)",
+   primary_iv="instruction-only features: constraint density, ellipsis/coref proxies, subtask count, tool-name/description lexical reachability, catalog size",
+   main_method="logistic + gradient-boosted trees on lexical features; mixed-effects for catalog nesting; AUROC/AP + calibration + Brier; Holm correction",
+   novelty_risk="low_after_lit_audit", data_feasibility="grounding verified (EXP-0003) but pilot EXP-0004 found random hit@1 = 0.55 on OSS dev -> raw accuracy useless, chance correction mandatory",
+   compute_cost="low_cpu", expected_venue="SIGIR / CHIIR / IP&M", status="w1_recommended_flagship",
+   blocking_issue="must (a) rebuild gold-tool join via metadata.mcp_servers instead of name prefixes, (b) handle ToolEX-style equivalent-tool relabelling (30-47% of gains there were artifacts), (c) disclose that queries are forward-synthesised FROM the tool set so query-description overlap is partly generative artifact",
+   differentiation_from_other_topics="absorbs T001/T002/T003/T005/T016/T017 as its mechanism, moderator and index components; the novelty is prediction-without-LLM + chance correction + non-exhaustive-gold handling, none of which CoHyDE/Tool-DE/HumanMCP/2605.24660 do"),
+]
+
+
+TERMINAL = ("demoted_", "killed_", "not_", "w2_parked_", "w3_pilot_PROSE_ONLY", "w3_pilot_DONE_NO_GO")
+# Which decision a status records is named by the status, not by the wave that wrote it. Listing a wave prefix here
+# (`w5_`) used to make every packaged row terminal only because the builder had written every topic with that one
+# tag; a wave-1 topic re-registered as `w1_packaged_...` silently fell back into the live pool.
+TERMINAL_MARK = ("packaged", "package_complete", "main_done", "blocked_premise", "fold_into", "merged_into")
+
+
+def decided(status: str) -> bool:
+    return status.startswith(TERMINAL) or any(m in status for m in TERMINAL_MARK)
+
+
+def live(T_):
+    """The funnel's candidate pool: registered topics that have not been given a terminal decision.
+
+    Spec §20 sizes that pool at 30-50 and §23 item 7 asks for 30-50 registered topics. This file keeps every topic
+    ever screened, because a killed or folded row is the audit trail for the measurement that ended it, so the range
+    is checked against the pool the funnel can still advance, and the registered total is printed next to it rather
+    than hidden.
+    """
+    return [x for x in T_ if not decided(str(x.get("status", "")))]
+
+
+def check_integrity(T: list) -> None:
+    """The invariants the four evidence columns have to satisfy, asserted at every regeneration.
+
+    Checked here rather than by somebody remembering to look: a table whose evidence cells can go quietly empty,
+    or whose `package` column can name one package twice, cannot be cited by a paper.
+    """
+    EV = ("exp_ids", "measured_coverage", "figures_tables", "collision_verdict")
+    intake = {f"T{n:03d}" for n in list(range(101, 143)) + list(range(151, 195))}
+    claim: dict = {}
+    for t in T:
+        tid = t["topic_id"]
+        have = {c for c in EV if not str(t.get(c) or "").strip()}
+        if have and len(have) != len(EV):
+            raise SystemExit(f"ABORT: {tid} carries {sorted(EV - have)} but not {sorted(have)} - a row is either "
+                             f"measured or it is not; a partial evidence record cannot be read as either")
+        if tid in intake and have:
+            raise SystemExit(f"ABORT: intake topic {tid} has empty evidence column(s) {sorted(have)}")
+        if tid in intake and any(str(t.get(c) or "").startswith(("pending", "see the supplied design"))
+                                for c in ("core_rq_h", "data_feasibility", "primary_dv", "primary_iv")):
+            raise SystemExit(f"ABORT: intake topic {tid} still holds an intake placeholder in its design columns")
+        pkg = str(t.get("package") or "").strip()
+        if pkg:
+            claim.setdefault(pkg[:4], []).append(tid)
+    twice = {k: v for k, v in claim.items() if len(v) > 1}
+    if twice:
+        raise SystemExit(f"ABORT: package(s) {twice} claimed by more than one topic row")
+    print(f"integrity ok: {len(claim)} package(s) each named by one row, "
+          f"{sum(1 for t in T if str(t.get('exp_ids') or '').strip())} row(s) carry measured evidence")
+
+
+def main() -> None:
+    T.extend(rows4())
+    T.extend(rows5())
+    out = Path(__file__).resolve().parents[2] / "00_program_registry" / "topic_registry.csv"
+    # The funnel decides statuses by editing the shipped CSV (EXP-0032's screen, EXP-0098's reconciliation, the T027
+    # probe), so this file's literals are the state at the time each row was authored, not the current decision.
+    # Regenerating without that overlay would silently un-kill, un-fold and un-demote topics - so the decided fields
+    # are read back from the live registry and only new ids take the values written here.
+    # The sibling difference and the literature-audit marker are decided fields too: EXP-0160 writes them into the
+    # live registry, and an overlay that carried only `status` would erase them at the next regeneration, which is how
+    # 20 packaged topics came to be carrying an unmet reposition gate with no trace of the work that closed it.
+    decided = {}
+    DECIDED = ("status", "blocking_issue", "differentiation_from_other_topics", "novelty_risk")
+    if out.is_file():
+        for r in csv.DictReader(open(out, newline="", encoding="utf-8")):
+            decided[r["topic_id"]] = {k: r.get(k, "") for k in DECIDED}
+    for t in T:
+        if t["topic_id"] in decided and decided[t["topic_id"]]["status"]:
+            t.update(decided[t["topic_id"]])
+    ids = [t["topic_id"] for t in T]
+    # A completed package writes its own evidence row (`wave_package.write_evidence`), because this file is generated
+    # and a hand edit to topic_registry.csv would be erased by the next regeneration. The evidence overlay runs after
+    # the decided-status overlay, so a packaged topic's terminal state wins over the funnel's last screen verdict.
+    EV = Path(__file__).resolve().parents[2] / "00_program_registry" / "topic_evidence.csv"
+    EV_COLS = ["package", "exp_ids", "measured_coverage", "figures_tables", "collision_verdict", "status"]
+    if EV.is_file():
+        by_id = {t["topic_id"]: t for t in T}
+        n_ev = 0
+        for r in csv.DictReader(open(EV, newline="", encoding="utf-8")):
+            t = by_id.get((r.get("topic_id") or "").strip())
+            if t is None:
+                raise SystemExit(f"ABORT: {EV.name} names {r.get('topic_id')!r}, which is not a registered topic")
+            for k in EV_COLS:
+                if r.get(k):
+                    t[k] = r[k]
+            n_ev += 1
+        print(f"applied {n_ev} evidence row(s) from {EV.name}")
+    # The intake columns the two pools could not fill ("pending - fixed in the protocol freeze", "pending_funnel_screen",
+    # an empty `primary_dv`) are filled by EXP-0223 from the freeze modules, the premise censuses and the battery
+    # artefacts, because those documents have since settled every one of them and a stale "pending" reads as an open
+    # step. It runs last so a value a package wrote is never replaced by an inference.
+    FC = Path(__file__).resolve().parents[2] / "00_program_registry" / "topic_intake_facts.csv"
+    FC_COLS = ["core_rq_h", "primary_dv", "primary_iv", "theory_basis", "data_feasibility",
+               "external_validation_dataset", "novelty_risk"]
+    if FC.is_file():
+        by_id = {t["topic_id"]: t for t in T}
+        n_fc = 0
+        for r in csv.DictReader(open(FC, newline="", encoding="utf-8")):
+            t = by_id.get((r.get("topic_id") or "").strip())
+            if t is None:
+                raise SystemExit(f"ABORT: {FC.name} names {r.get('topic_id')!r}, which is not a registered topic")
+            for k in FC_COLS:
+                if r.get(k):
+                    t[k] = r[k]
+            n_fc += 1
+        print(f"applied {n_fc} intake-fact row(s) from {FC.name}")
+    assert len(ids) == len(set(ids)), "duplicate topic_id"
+    lv = live(T)
+    # Spec §20 sizes the *pool that enters the audit* at 30-50, and §23 item 7 asks for 30-50 registered topics. Two
+    # batches of new ideas arrived on 2026-09-23 (42 in the message, 44 in the attachment), so the unscreened backlog
+    # is larger than one pool; it is therefore screened in waves of at most 50, and the plan is printed here so the
+    # cap is checked against what the funnel actually advances rather than quietly exceeded.
+    pending = [t["topic_id"] for t in T if str(t.get("status")) == "w0_audit"]
+    waves = [pending[i:i + 50] for i in range(0, len(pending), 50)]
+    assert len(T) >= 30, f"spec §23 item 7 wants a 30-50 registered pool, got {len(T)}"
+    assert all(len(w) >= 30 for w in waves[:-1]), f"a screening wave must stay inside 30-50, got {[len(w) for w in waves]}"
+    for t in T:
+        unknown = set(t) - set(COLUMNS)
+        assert not unknown, f"{t['topic_id']}: unknown keys {unknown}"
+    check_integrity(T)
+    with open(out, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=COLUMNS, extrasaction="raise")
+        w.writeheader()
+        for t in T:
+            w.writerow({c: t.get(c, "") for c in COLUMNS})
+    print(f"wrote {out} with {len(T)} topics x {len(COLUMNS)} columns; terminal rows {len(T) - len(lv)}, "
+          f"live pool {len(lv)} of which {len(pending)} are unscreened intake, to be audited in waves of "
+          f"{[len(w) for w in waves]} (spec §20 caps one pool at 50)")
+
+
+if __name__ == "__main__":
+    main()

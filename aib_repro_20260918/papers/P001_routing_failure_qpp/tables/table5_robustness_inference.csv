@@ -1,0 +1,43 @@
+config,family,item,value
+OSS,E05 alternative DV,fail_at_1,"{""positives"": 1465, ""prevalence"": 0.2564, ""auc"": 0.729}"
+OSS,E05 alternative DV,fail_at_3,"{""positives"": 444, ""prevalence"": 0.0777, ""auc"": 0.8233}"
+OSS,E05 alternative DV,fail_at_5,"{""positives"": 163, ""prevalence"": 0.0285, ""auc"": 0.8851}"
+OSS,E05 alternative DV,norm_rank_vs_predicted_prob_spearman,"{""rho"": 0.3297, ""p"": 6.118590410905303e-145, ""note"": ""alternative continuous DV: does the predicted risk track ordinal best-rank?""}"
+OSS,E11 robustness,auc_desc_only_ranker_dv,0.8156
+OSS,E11 robustness,auc_with_5pct_label_noise,0.7058
+OSS,E11 robustness,auc_50pct_subsample,0.8125
+OSS,E11 robustness,auc_desc_vs_full_dv_overlap,6.55
+OSS,E14 inference,auc_preretrieval,"{""point"": 0.8229, ""cluster_boot_mean"": 0.823, ""ci95"": [0.8032, 0.8427], ""n_valid_resamples"": 2000}"
+OSS,E14 inference,ap_preretrieval,0.3335
+OSS,E14 inference,delta_vs_B0_length,"{""observed_delta_auc"": 0.1595, ""ci95"": [0.134, 0.1868], ""p_two_sided_cluster_bootstrap"": 0.0, ""n_valid_resamples"": 1000, ""boot_requested"": 1000}"
+OSS,E14 inference,delta_vs_B1_post_margin,"{""observed_delta_auc"": 0.0858, ""ci95"": [0.065, 0.109], ""p_two_sided_cluster_bootstrap"": 0.0, ""n_valid_resamples"": 1000, ""boot_requested"": 1000}"
+OSS,E14 inference,n_clusters,3992
+OSS,E14 inference,brier,0.06096
+Qwen3,E05 alternative DV,fail_at_1,"{""positives"": 1757, ""prevalence"": 0.3188, ""auc"": 0.7592}"
+Qwen3,E05 alternative DV,fail_at_3,"{""positives"": 712, ""prevalence"": 0.1292, ""auc"": 0.8294}"
+Qwen3,E05 alternative DV,fail_at_5,"{""positives"": 225, ""prevalence"": 0.0408, ""auc"": 0.904}"
+Qwen3,E05 alternative DV,norm_rank_vs_predicted_prob_spearman,"{""rho"": 0.4189, ""p"": 4.053484901660685e-233, ""note"": ""alternative continuous DV: does the predicted risk track ordinal best-rank?""}"
+Qwen3,E11 robustness,auc_desc_only_ranker_dv,0.8297
+Qwen3,E11 robustness,auc_with_5pct_label_noise,0.743
+Qwen3,E11 robustness,auc_50pct_subsample,0.838
+Qwen3,E11 robustness,auc_desc_vs_full_dv_overlap,10.6
+Qwen3,E14 inference,auc_preretrieval,"{""point"": 0.8283, ""cluster_boot_mean"": 0.8285, ""ci95"": [0.8114, 0.8445], ""n_valid_resamples"": 2000}"
+Qwen3,E14 inference,ap_preretrieval,0.4749
+Qwen3,E14 inference,delta_vs_B0_length,"{""observed_delta_auc"": 0.2799, ""ci95"": [0.252, 0.3085], ""p_two_sided_cluster_bootstrap"": 0.0, ""n_valid_resamples"": 1000, ""boot_requested"": 1000}"
+Qwen3,E14 inference,delta_vs_B1_post_margin,"{""observed_delta_auc"": 0.0322, ""ci95"": [0.0181, 0.0453], ""p_two_sided_cluster_bootstrap"": 0.0, ""n_valid_resamples"": 1000, ""boot_requested"": 1000}"
+Qwen3,E14 inference,n_clusters,3864
+Qwen3,E14 inference,brier,0.08756
+Kimi-K2,E05 alternative DV,fail_at_1,"{""positives"": 1759, ""prevalence"": 0.2206, ""auc"": 0.7024}"
+Kimi-K2,E05 alternative DV,fail_at_3,"{""positives"": 338, ""prevalence"": 0.0424, ""auc"": 0.7951}"
+Kimi-K2,E05 alternative DV,fail_at_5,"{""positives"": 120, ""prevalence"": 0.0151, ""auc"": 0.833}"
+Kimi-K2,E05 alternative DV,norm_rank_vs_predicted_prob_spearman,"{""rho"": 0.2621, ""p"": 2.4222444237224143e-125, ""note"": ""alternative continuous DV: does the predicted risk track ordinal best-rank?""}"
+Kimi-K2,E11 robustness,auc_desc_only_ranker_dv,0.7945
+Kimi-K2,E11 robustness,auc_with_5pct_label_noise,0.6435
+Kimi-K2,E11 robustness,auc_50pct_subsample,0.7855
+Kimi-K2,E11 robustness,auc_desc_vs_full_dv_overlap,3.4
+Kimi-K2,E14 inference,auc_preretrieval,"{""point"": 0.7909, ""cluster_boot_mean"": 0.7912, ""ci95"": [0.7676, 0.8134], ""n_valid_resamples"": 2000}"
+Kimi-K2,E14 inference,ap_preretrieval,0.1675
+Kimi-K2,E14 inference,delta_vs_B0_length,"{""observed_delta_auc"": 0.2366, ""ci95"": [0.2064, 0.271], ""p_two_sided_cluster_bootstrap"": 0.0, ""n_valid_resamples"": 1000, ""boot_requested"": 1000}"
+Kimi-K2,E14 inference,delta_vs_B1_post_margin,"{""observed_delta_auc"": 0.166, ""ci95"": [0.1338, 0.1991], ""p_two_sided_cluster_bootstrap"": 0.0, ""n_valid_resamples"": 1000, ""boot_requested"": 1000}"
+Kimi-K2,E14 inference,n_clusters,4690
+Kimi-K2,E14 inference,brier,0.0382

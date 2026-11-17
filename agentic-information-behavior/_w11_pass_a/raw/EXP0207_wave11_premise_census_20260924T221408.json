@@ -1,0 +1,235 @@
+{
+ "cluster_unit": "instance_id",
+ "duplicate_rollout_rows_dropped_before_sampling": 0,
+ "exp_id": "EXP-0207",
+ "files_read": [
+  "train-00051.parquet",
+  "train-00065.parquet",
+  "train-00178.parquet",
+  "train-00209.parquet",
+  "train-00228.parquet",
+  "train-00285.parquet",
+  "train-00457.parquet",
+  "train-00501.parquet",
+  "train-00563.parquet",
+  "train-00864.parquet",
+  "train-01116.parquet",
+  "train-01209.parquet"
+ ],
+ "gate_rules": {
+  "G10_agent_diversity_for_strata": ">= 3 scaffold agents with >= 200 rollouts each, the stratum the carry-forward models report inside",
+  "G11_negative_constraints_present": ">= 500 rollouts carrying a negative constraint, the class T140's hypothesis expects to be lost first",
+  "G12_source_diversity": ">= 3 sources with >= 200 rollouts each, so a pooled trajectory statistic is not one collection's artefact",
+  "G1_trajectories_readable": ">= 1,000 parsed rollouts with at least one assistant turn",
+  "G2_outcome_label_populated": ">= 500 rollouts carry a non-null outcome label, which is what separates a successful from a failed discourse in T131 and scores an attempt in T142",
+  "G3_repeated_attempts_of_one_task": ">= 300 tasks with two or more recorded attempts - the organisational memory the carry-forward designs read",
+  "G4_trajectories_long_enough_to_compress": ">= 500 rollouts with six or more assistant turns, below which a compression schedule has nothing to drop",
+  "G5_two_plus_component_kinds": ">= 1,000 rollouts whose agent prose carries at least two of the eight frozen component categories, since T137 asks which kind carries forward",
+  "G6_abstraction_contrast_computable": ">= 1,000 rollouts containing at least one code identifier, the concrete end of the abstraction axis",
+  "G7_relation_classes_computable": ">= 200 task groups with two or more attempts, at which a relation between two attempts (restatement, refinement, distant) can be classified at all",
+  "G8_observation_pairs_present": ">= 1,000 rollouts contain a user turn after an assistant command, i.e. a real observation the discourse responds to",
+  "G9_provenance_and_uncertainty_language": ">= 500 rollouts each carrying uncertainty language, which with the provenance and exception categories is what T140's H2 asks survives a compression"
+ },
+ "gates": {
+  "G10_agent_diversity_for_strata": {
+   "blocks": [
+    "T137",
+    "T138"
+   ],
+   "fires": true,
+   "measured": 1,
+   "note": "the estate's fixed 12-file draw is a single-scaffold corpus, so this gate is measured as one and is expected to fire; it scopes only the strata, and the stratum actually reported is the repository, which is named in every stratum row",
+   "rule": ">= 3 scaffold agents with >= 200 rollouts each, the stratum the carry-forward models report inside",
+   "scope": "strata",
+   "threshold": 3
+  },
+  "G11_negative_constraints_present": {
+   "blocks": [
+    "T140"
+   ],
+   "fires": false,
+   "measured": 8715,
+   "rule": ">= 500 rollouts carrying a negative constraint, the class T140's hypothesis expects to be lost first",
+   "scope": "H1",
+   "threshold": 500
+  },
+  "G12_source_diversity": {
+   "blocks": [
+    "T131",
+    "T137",
+    "T138",
+    "T140",
+    "T142"
+   ],
+   "fires": true,
+   "measured": 2,
+   "rule": ">= 3 sources with >= 200 rollouts each, so a pooled trajectory statistic is not one collection's artefact",
+   "scope": "strata",
+   "threshold": 3
+  },
+  "G1_trajectories_readable": {
+   "blocks": [
+    "T131",
+    "T137",
+    "T138",
+    "T140",
+    "T142"
+   ],
+   "fires": false,
+   "measured": 20000,
+   "rule": ">= 1,000 parsed rollouts with at least one assistant turn",
+   "scope": "design",
+   "threshold": 1000
+  },
+  "G2_outcome_label_populated": {
+   "blocks": [
+    "T131",
+    "T142"
+   ],
+   "fires": false,
+   "measured": 20000,
+   "rule": ">= 500 rollouts carry a non-null outcome label, which is what separates a successful from a failed discourse in T131 and scores an attempt in T142",
+   "scope": "design",
+   "threshold": 500
+  },
+  "G3_repeated_attempts_of_one_task": {
+   "blocks": [
+    "T137",
+    "T138",
+    "T140",
+    "T142"
+   ],
+   "fires": false,
+   "measured": 1775,
+   "rule": ">= 300 tasks with two or more recorded attempts - the organisational memory the carry-forward designs read",
+   "scope": "design",
+   "threshold": 300
+  },
+  "G4_trajectories_long_enough_to_compress": {
+   "blocks": [
+    "T140"
+   ],
+   "fires": false,
+   "measured": 19979,
+   "rule": ">= 500 rollouts with six or more assistant turns, below which a compression schedule has nothing to drop",
+   "scope": "H1",
+   "threshold": 500
+  },
+  "G5_two_plus_component_kinds": {
+   "blocks": [
+    "T137"
+   ],
+   "fires": false,
+   "measured": 19887,
+   "rule": ">= 1,000 rollouts whose agent prose carries at least two of the eight frozen component categories, since T137 asks which kind carries forward",
+   "scope": "H1",
+   "threshold": 1000
+  },
+  "G6_abstraction_contrast_computable": {
+   "blocks": [
+    "T138"
+   ],
+   "fires": false,
+   "measured": 18711,
+   "rule": ">= 1,000 rollouts containing at least one code identifier, the concrete end of the abstraction axis",
+   "scope": "H1",
+   "threshold": 1000
+  },
+  "G7_relation_classes_computable": {
+   "blocks": [
+    "T142"
+   ],
+   "fires": false,
+   "measured": 1775,
+   "rule": ">= 200 task groups with two or more attempts, at which a relation between two attempts (restatement, refinement, distant) can be classified at all",
+   "scope": "H1",
+   "threshold": 200
+  },
+  "G8_observation_pairs_present": {
+   "blocks": [
+    "T131"
+   ],
+   "fires": false,
+   "measured": 19995,
+   "rule": ">= 1,000 rollouts contain a user turn after an assistant command, i.e. a real observation the discourse responds to",
+   "scope": "H2",
+   "threshold": 1000
+  },
+  "G9_provenance_and_uncertainty_language": {
+   "blocks": [
+    "T140"
+   ],
+   "fires": false,
+   "measured": 11453,
+   "rule": ">= 500 rollouts each carrying uncertainty language, which with the provenance and exception categories is what T140's H2 asks survives a compression",
+   "scope": "H2",
+   "threshold": 500
+  }
+ },
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/probe_wave11_premises.py",
+ "measured": {
+  "component_row_counts": {
+   "condition": 17389,
+   "context": 9095,
+   "exception": 10823,
+   "observation": 12421,
+   "procedure": 20000,
+   "provenance": 17216,
+   "rationale": 15330,
+   "result": 7974
+  },
+  "corpus": "the same 12-file SWE-ZERO rollout draw waves 6 and 9 measured, whole (no subsample)",
+  "distinct_repos": 805,
+  "instances_with_2plus_rollouts": 1775,
+  "instances_with_3plus_rollouts": 1765,
+  "max_rollouts_per_instance": 27,
+  "mean_abstract_markers": 2.071,
+  "mean_assistant_turns": 14.88,
+  "mean_chars_of_agent_text": 4901.0,
+  "mean_concrete_markers": 18.095,
+  "median_assistant_turns": 15.0,
+  "median_component_kinds_per_rollout": 6.0,
+  "outcome_counts": {
+   "exit_status_non_null": 20000,
+   "incomplete": 19440,
+   "submitted": 560
+  },
+  "outcome_label_share": 1.0,
+  "repos_200plus_rollouts": 2,
+  "rollouts_drawn": 20000,
+  "rollouts_parsed": 20000,
+  "rollouts_with_2plus_component_kinds": 19887,
+  "rollouts_with_6plus_assistant_turns": 19979,
+  "rollouts_with_an_observation_after_a_command": 19995,
+  "rollouts_with_code_identifiers": 18711,
+  "rollouts_with_negative_constraints": 8715,
+  "rollouts_with_uncertainty_language": 11453,
+  "submitted_share": 0.028,
+  "task_instances": 1784
+ },
+ "rows_in_files": 120000,
+ "rows_requested": "the frozen sample of 20000 rollouts",
+ "run_cost": {
+  "cols_in": 0,
+  "exp_id": "EXP-0207",
+  "note": "wave-11 premise census",
+  "python": "3.11.7",
+  "rows_in": 20000,
+  "started_at": "2026-09-24T22:11:55",
+  "wallclock_sec": 132.6
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T22:14:08",
+ "verdict": {
+  "blocked_gates": [
+   "G10_agent_diversity_for_strata",
+   "G12_source_diversity"
+  ],
+  "blocked_whole_design": [],
+  "claim_limited": {
+   "G10_agent_diversity_for_strata": "strata",
+   "G12_source_diversity": "strata"
+  }
+ },
+ "wallclock_sec": 132.6
+}

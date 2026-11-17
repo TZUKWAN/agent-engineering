@@ -1,0 +1,180 @@
+{
+ "exp_id": "EXP-0064",
+ "at": "2026-09-20T03:56:49",
+ "records": {
+  "v1": 287,
+  "v2": 287,
+  "abstracts_recovered_by_e63": 30,
+  "graded_on_title_only_before": 94,
+  "graded_on_title_only_after": 64
+ },
+ "grade_dist_before": {
+  "L0": 152,
+  "L1": 56,
+  "L2": 54,
+  "L3": 25,
+  "L4": 0
+ },
+ "grade_dist_after": {
+  "L0": 149,
+  "L1": 49,
+  "L2": 59,
+  "L3": 30,
+  "L4": 0
+ },
+ "hand_check_before": 48,
+ "hand_check_after": 52,
+ "n_rule_changed": 12,
+ "n_changed_upwards": 12,
+ "changed": [
+  {
+   "row_index": 58,
+   "paper_id": "P002",
+   "cite_key": "Tajik2026d",
+   "title": "Disagreement as Data: Reasoning Trace Analytics in Multi-Agent Systems",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L0",
+   "rule_after": "L1",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 126,
+   "paper_id": "P004",
+   "cite_key": "Li2026e",
+   "title": "Evaluating Scoring Bias in LLM-as-a-Judge",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L1",
+   "rule_after": "L2",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 134,
+   "paper_id": "P004",
+   "cite_key": "Gu2026a",
+   "title": "A survey on LLM-as-a-judge",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L1",
+   "rule_after": "L3",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 137,
+   "paper_id": "P004",
+   "cite_key": "Haldar2025r",
+   "title": "Rating Roulette: Self-Inconsistency in LLM-As-A-Judge Frameworks",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L2",
+   "rule_after": "L3",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 141,
+   "paper_id": "P004",
+   "cite_key": "Meisenbacher2025l",
+   "title": "LLM-as-a-Judge for Privacy Evaluation? Exploring the Alignment of Human and LLM Perceptions of Privacy in Textual Data",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L1",
+   "rule_after": "L2",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 142,
+   "paper_id": "P004",
+   "cite_key": "Enguehard2025l",
+   "title": "LeMAJ (Legal LLM-as-a-Judge): Bridging Legal Reasoning and LLM Evaluation",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L1",
+   "rule_after": "L3",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 150,
+   "paper_id": "P004",
+   "cite_key": "Lee2026g",
+   "title": "Generative-Evaluative Agreement: A Necessary Validity Criterion for LLM-Enabled Adaptive Assessment",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L0",
+   "rule_after": "L2",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 151,
+   "paper_id": "P004",
+   "cite_key": "Chen2025d",
+   "title": "Distributional LLM-as-a-Judge",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L1",
+   "rule_after": "L2",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 154,
+   "paper_id": "P004",
+   "cite_key": "Amin2026m",
+   "title": "Multilingual Code Evaluation with LLM-as-a-Judge: AI-Assisted Feedback for Human-Centric Understanding",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L1",
+   "rule_after": "L3",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 156,
+   "paper_id": "P004",
+   "cite_key": "Guerdan2025v",
+   "title": "Validating LLM-as-a-Judge Systems under Rating Indeterminacy",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L1",
+   "rule_after": "L2",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 160,
+   "paper_id": "P004",
+   "cite_key": "Koc2026b",
+   "title": "Behavioral Transfer via Automated Prompt Optimization and LLM-as-a-Judge Evaluation Loops for Prompt-Based Knowledge Dis",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L1",
+   "rule_after": "L2",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  },
+  {
+   "row_index": 212,
+   "paper_id": "P005",
+   "cite_key": "Duan2024m",
+   "title": "ModelGo: A Practical Tool for Machine Learning License Analysis",
+   "collision_target": "graded in novelty_audit",
+   "rule_before": "L0",
+   "rule_after": "L3",
+   "graded_on_before": "title_only",
+   "graded_on_after": "title+abstract",
+   "abstract_source": "semanticscholar_DOI"
+  }
+ ],
+ "rule_reused_verbatim": "grade_collisions.grade() imported, not copied",
+ "v1_artefacts_left_untouched": [
+  "literature_abstracts.csv",
+  "literature_graded.csv"
+ ]
+}

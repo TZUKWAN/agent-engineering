@@ -1,0 +1,9 @@
+stratification,stratum,rows,clusters,dropped_constant_terms,identifiable,beta,se,ci_lo,ci_hi,p,n,cluster
+turn_quartile,q1_shortest,907,272,none,True,-1.1495,0.132,-1.4082,-0.8908,0.0,907,traj_id
+turn_quartile,q2,980,116,none,True,-0.38,0.0966,-0.5694,-0.1906,0.0001,980,traj_id
+turn_quartile,q3,981,81,none,True,-0.4492,0.105,-0.655,-0.2434,0.0,981,traj_id
+turn_quartile,q4_longest,896,46,none,True,-0.5487,0.082,-0.7094,-0.3881,0.0,896,traj_id
+category,Agent Tools,1341,213,none,True,-0.4408,0.1062,-0.649,-0.2326,0.0,1341,traj_id
+category,Multi-Tool,344,36,none,True,-0.7405,0.1188,-0.9734,-0.5076,0.0,344,traj_id
+category,Repository Tasks,719,39,none,True,-0.5337,0.0935,-0.7168,-0.3505,0.0,719,traj_id
+category,Terminal & Coding,704,116,none,True,-0.6626,0.1277,-0.9128,-0.4124,0.0,704,traj_id

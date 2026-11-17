@@ -1,0 +1,14 @@
+{
+ "paper_id": "P001",
+ "packaged_at": "2026-09-18T22:18:26",
+ "literature_rows": 20,
+ "copied": {
+  "results_raw": 38,
+  "results_processed": 21,
+  "logs": 19
+ },
+ "test_evaluations_recorded": 1,
+ "python": "3.11.7",
+ "cpus_logical": 16,
+ "ram_total_gb": 31.9
+}

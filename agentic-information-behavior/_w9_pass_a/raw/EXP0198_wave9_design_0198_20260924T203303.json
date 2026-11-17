@@ -1,0 +1,189 @@
+{
+ "baselines": [
+  {
+   "dv": "ll_bigram",
+   "mean_loglik": -2.5649,
+   "model": "uniform_baseline",
+   "n": 19981
+  },
+  {
+   "deviance_drop": 0.7288,
+   "dv": "ll_bigram",
+   "mean_loglik": -1.8362,
+   "model": "plus_unigram",
+   "n": 19981
+  },
+  {
+   "deviance_drop": 0.3319,
+   "dv": "ll_bigram",
+   "mean_loglik": -1.5043,
+   "model": "plus_pooled_bigram",
+   "n": 19981
+  },
+  {
+   "deviance_drop": 0.0805,
+   "dv": "ll_bigram",
+   "mean_loglik": -1.4238,
+   "model": "plus_family_bigram",
+   "n": 19981
+  }
+ ],
+ "blocked_designs_in_this_wave": [
+  "T151",
+  "T156"
+ ],
+ "cluster_unit": "instance_id (the unit a transition sequence belongs to)",
+ "descriptive_rates": {
+  "alphabet": {
+   "distinct_command_families": 13,
+   "mean_transitions_per_rollout": 13.66,
+   "rollouts_with_at_least_one_transition": 19981
+  },
+  "mean_loglik_by_model": {
+   "family_bigram": -1.4238,
+   "pooled_bigram": -1.5043,
+   "shuffled_bigram": -1.8615,
+   "uniform": -2.5649,
+   "unigram": -1.8362
+  },
+  "transitions_per_rollout": {
+   "1": 4,
+   "2": 3,
+   "3": 4,
+   "4": 15,
+   "5": 34,
+   "6": 44,
+   "7": 67,
+   "8": 97
+  }
+ },
+ "exp_id": "EXP-0198",
+ "finished_at": "2026-09-24T20:33:03",
+ "frame_files_read": {
+  "S": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0197_wave9_step_features.csv.gz",
+  "T": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0197_wave9_rollout_features.csv.gz"
+ },
+ "gate_scope": "H1",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave9_designs.py",
+ "models": [
+  {
+   "beta": 0.3319,
+   "ci_hi": 0.341,
+   "ci_lo": 0.3223,
+   "clusters": 1784,
+   "hypothesis": "H1",
+   "mean_transitions_per_rollout": 13.66,
+   "n": 19981,
+   "note": "EXP-0196's G6 froze >= 10 task families with >= 200 rollouts each and measured 2 of 805, so the cross-task claim this row would carry is limited by its own sentence; the estimate is printed because the number exists and is not offered as the scoped test",
+   "p": 0.001,
+   "p_holm": null,
+   "rollouts_with_transitions": 19981,
+   "term": "pooled_transition_matrix_against_the_uniform_baseline",
+   "unit": "nats per transition",
+   "verdict": "not_testable_premise_family_breadth_frozen_10_measured_2",
+   "verdict_direction": "predicted_positive: the pooled grammar predicts a held-out family better than a coin flip over the same alphabet"
+  },
+  {
+   "beta": 0.0805,
+   "ci_hi": 0.0855,
+   "ci_lo": 0.0752,
+   "clusters": 1784,
+   "hypothesis": "H2",
+   "mean_transitions_per_rollout": 13.66,
+   "n": 19981,
+   "p": 0.001,
+   "p_holm": 0.001,
+   "reported_per_family": [
+    {
+     "ci_hi": 0.0348,
+     "ci_lo": 0.0075,
+     "gain": 0.0216,
+     "instances": 30,
+     "rollouts": 352,
+     "task_family": "kubernetes-sigs"
+    }
+   ],
+   "rollouts_with_transitions": 19981,
+   "term": "a_family_s_own_matrix_against_the_pooled_leave_one_family_out_matrix",
+   "unit": "nats per transition",
+   "verdict": "partial",
+   "verdict_direction": "predicted_positive: each family speaks a dialect the pooled model does not capture"
+  },
+  {
+   "beta": 0.3319,
+   "bigram_vs_unigram": {
+    "beta": 0.3319,
+    "ci": [
+     0.3223,
+     0.341
+    ],
+    "clusters": 1784,
+    "n": 19981,
+    "p": 0.001
+   },
+   "hypothesis": "H3",
+   "n": 19981,
+   "note": "H3 is supported when the bigram adds over the unigram and the shuffled target does not, which is the ordering fact the sentence claims and nothing else",
+   "p_holm": null,
+   "shuffled_vs_unigram": {
+    "beta": -0.0253,
+    "ci": [
+     -0.0342,
+     -0.0161
+    ],
+    "clusters": 1784,
+    "n": 19981,
+    "p": 0.001
+   },
+   "term": "ordering_beyond_the_unigram_against_a_within_rollout_shuffle",
+   "verdict": "not_specific_the_shuffle_carries_the_same_gain",
+   "verdict_rule": "specificity"
+  }
+ ],
+ "n_clusters": 1784,
+ "n_rollouts": 19988,
+ "n_steps": 292992,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 48,
+  "exp_id": "EXP-0198",
+  "note": "wave-9 design",
+  "python": "3.11.7",
+  "rows_in": 19988,
+  "started_at": "2026-09-24T20:32:46",
+  "wallclock_sec": 17.2
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T20:33:03",
+ "strata": [
+  {
+   "mean_family_gain": 0.1327,
+   "mean_pooled_bigram_gain": 0.2308,
+   "rollouts": 60,
+   "stratification": "transitions_band",
+   "stratum": "1to5"
+  },
+  {
+   "mean_family_gain": 0.0803,
+   "mean_pooled_bigram_gain": 0.3322,
+   "rollouts": 19921,
+   "stratification": "transitions_band",
+   "stratum": "6to15"
+  },
+  {
+   "mean_family_gain": 0.0261,
+   "mean_pooled_bigram_gain": 0.2805,
+   "rollouts": 288,
+   "stratification": "task_family",
+   "stratum": "google"
+  },
+  {
+   "mean_family_gain": 0.0216,
+   "mean_pooled_bigram_gain": 0.2238,
+   "rollouts": 352,
+   "stratification": "task_family",
+   "stratum": "kubernetes-sigs"
+  }
+ ],
+ "topic": "T153"
+}

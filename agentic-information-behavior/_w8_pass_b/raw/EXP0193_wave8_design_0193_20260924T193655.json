@@ -1,0 +1,451 @@
+{
+ "baselines": [
+  {
+   "clusters": 14701,
+   "deviance": 165.64,
+   "dv": "repeat_share",
+   "model": "controls_only",
+   "n": 14701,
+   "terms": "log_turns+task_words_log"
+  },
+  {
+   "added_term": "spec_sum_z",
+   "deviance": 164.15,
+   "deviance_drop": 1.49,
+   "dv": "repeat_share",
+   "lr_chi2": 2.98,
+   "lr_df": 2,
+   "lr_p": 0.225204,
+   "model": "controls_plus_specificity_composite",
+   "n": 14701,
+   "spec_sum_z_beta": 0.0054,
+   "spec_sum_z_ci_hi": 0.0074,
+   "spec_sum_z_ci_lo": 0.0035,
+   "spec_sum_z_cluster": "traj_id",
+   "spec_sum_z_dropped_constant_terms": "none",
+   "spec_sum_z_p": 0.0,
+   "spec_sum_z_se": 0.001,
+   "terms": "spec_sum_z+first_chars_log+log_turns+task_words_log"
+  },
+  {
+   "added_term": "first_chars_log",
+   "deviance": 164.34,
+   "deviance_drop": 1.3,
+   "dv": "repeat_share",
+   "first_chars_log_beta": -0.0085,
+   "first_chars_log_ci_hi": -0.0071,
+   "first_chars_log_ci_lo": -0.01,
+   "first_chars_log_cluster": "traj_id",
+   "first_chars_log_dropped_constant_terms": "none",
+   "first_chars_log_p": 0.0,
+   "first_chars_log_se": 0.0007,
+   "lr_chi2": 2.6,
+   "lr_df": 1,
+   "lr_p": 0.106608,
+   "model": "controls_plus_length_only",
+   "n": 14701,
+   "terms": "first_chars_log+log_turns+task_words_log"
+  }
+ ],
+ "blocked_designs_in_this_wave": [
+  "T175",
+  "T176"
+ ],
+ "cluster_unit": "traj_id",
+ "descriptive_rates": {
+  "error_share_by_category": {
+   "Agent Tools": {
+    "mean_error_share": 0.595,
+    "mean_repeat_share": 0.0435,
+    "trajectories": 4249
+   },
+   "Browser Automation": {
+    "mean_error_share": 0.3044,
+    "mean_repeat_share": 0.2516,
+    "trajectories": 1687
+   },
+   "File Operations": {
+    "mean_error_share": 0.3262,
+    "mean_repeat_share": 0.0036,
+    "trajectories": 891
+   },
+   "Multi-Tool": {
+    "mean_error_share": 0.5447,
+    "mean_repeat_share": 0.0207,
+    "trajectories": 859
+   },
+   "Planning & Organization": {
+    "mean_error_share": 0.3658,
+    "mean_repeat_share": 0.0078,
+    "trajectories": 293
+   },
+   "Repository Tasks": {
+    "mean_error_share": 0.8387,
+    "mean_repeat_share": 0.0295,
+    "trajectories": 2131
+   },
+   "Scheduling": {
+    "mean_error_share": 0.654,
+    "mean_repeat_share": 0.0124,
+    "trajectories": 308
+   },
+   "Terminal & Coding": {
+    "mean_error_share": 0.6272,
+    "mean_repeat_share": 0.0211,
+    "trajectories": 4247
+   }
+  },
+  "outcomes_by_specificity_quartile": {
+   "s1_least": {
+    "final_clean_share": 0.3558,
+    "mean_error_share": 0.5957,
+    "mean_repeat_share": 0.1167,
+    "trajectories": 3676
+   },
+   "s2": {
+    "final_clean_share": 0.2969,
+    "mean_error_share": 0.5935,
+    "mean_repeat_share": 0.0446,
+    "trajectories": 3675
+   },
+   "s3": {
+    "final_clean_share": 0.2495,
+    "mean_error_share": 0.6243,
+    "mean_repeat_share": 0.026,
+    "trajectories": 3675
+   },
+   "s4_most": {
+    "final_clean_share": 0.2678,
+    "mean_error_share": 0.5185,
+    "mean_repeat_share": 0.0272,
+    "trajectories": 3675
+   }
+  },
+  "specificity_parts": {
+   "action_verbs": {
+    "mean": 2.068,
+    "median": 2.0
+   },
+   "constraints": {
+    "mean": 0.259,
+    "median": 0.0
+   },
+   "entities": {
+    "mean": 25.976,
+    "median": 10.0
+   },
+   "ordering": {
+    "mean": 2.546,
+    "median": 3.0
+   }
+  }
+ },
+ "exp_id": "EXP-0193",
+ "finished_at": "2026-09-24T19:36:55",
+ "frame_file_read": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0191_wave8_turn_features.csv.gz",
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave8_designs.py",
+ "models": [
+  {
+   "beta": 0.0054,
+   "ci_hi": 0.0074,
+   "ci_lo": 0.0035,
+   "cluster": "traj_id",
+   "dropped_constant_terms": "none",
+   "hypothesis": "H1",
+   "mean_repeat_share": 0.0537,
+   "median_spec_sum": 16.0,
+   "n": 14701,
+   "p": 0.0,
+   "p_holm": 0.0,
+   "se": 0.001,
+   "term": "first_turn_plan_specificity_on_the_repeated_call_share",
+   "trajectories": 14701,
+   "verdict": "opposite",
+   "verdict_direction": "predicted_negative: a more specific opening plan repeats fewer calls"
+  },
+  {
+   "beta": 0.0378,
+   "ci_hi": 0.0449,
+   "ci_lo": 0.0307,
+   "cluster": "traj_id",
+   "dropped_constant_terms": "none",
+   "hypothesis": "H2",
+   "mean_error_share": 0.583,
+   "n": 14701,
+   "p": 0.0,
+   "p_holm": 0.0,
+   "se": 0.0036,
+   "term": "first_turn_plan_specificity_on_the_error_marked_observation_share",
+   "trajectories_with_any_error": 13803,
+   "verdict": "opposite",
+   "verdict_direction": "predicted_negative: a more specific plan walks into fewer failed observations"
+  },
+  {
+   "beta": 0.003,
+   "ci_hi": 0.0049,
+   "ci_lo": 0.0011,
+   "dropped_constant_terms": "none",
+   "hypothesis": "H3",
+   "length_term": {
+    "beta": -0.0058,
+    "ci_hi": -0.0031,
+    "ci_lo": -0.0086,
+    "cluster": "traj_id",
+    "dropped_constant_terms": "none",
+    "n": 14701,
+    "p": 0.0,
+    "se": 0.0014
+   },
+   "n": 14701,
+   "note": "the freeze asks whether specificity is anything but verbosity, so the four counts and the opening turn's character length compete in one specification",
+   "p": 0.0017,
+   "p_holm": null,
+   "parts": {
+    "first_constraint_z": {
+     "beta": 0.0106,
+     "ci_hi": 0.0124,
+     "ci_lo": 0.0088,
+     "cluster": "traj_id",
+     "dropped_constant_terms": "none",
+     "n": 14701,
+     "p": 0.0,
+     "se": 0.0009
+    },
+    "first_entities_z": {
+     "beta": 0.003,
+     "ci_hi": 0.0049,
+     "ci_lo": 0.0011,
+     "cluster": "traj_id",
+     "dropped_constant_terms": "none",
+     "n": 14701,
+     "p": 0.0017,
+     "se": 0.001
+    },
+    "first_ordering_z": {
+     "beta": -0.0098,
+     "ci_hi": -0.0078,
+     "ci_lo": -0.0118,
+     "cluster": "traj_id",
+     "dropped_constant_terms": "none",
+     "n": 14701,
+     "p": 0.0,
+     "se": 0.001
+    },
+    "first_verbs_z": {
+     "beta": -0.0118,
+     "ci_hi": -0.0098,
+     "ci_lo": -0.0138,
+     "cluster": "traj_id",
+     "dropped_constant_terms": "none",
+     "n": 14701,
+     "p": 0.0,
+     "se": 0.001
+    }
+   },
+   "se": 0.001,
+   "secondary_reading_on_a_clean_final_observation": {
+    "beta": 0.0391,
+    "ci_hi": 0.0698,
+    "ci_lo": 0.0085,
+    "cluster": "traj_id",
+    "dropped_constant_terms": "none",
+    "n": 14701,
+    "p": 0.0124,
+    "se": 0.0156
+   },
+   "separated_parts": [
+    "first_entities_z",
+    "first_verbs_z",
+    "first_ordering_z",
+    "first_constraint_z"
+   ],
+   "term": "the_specificity_parts_against_opening_turn_length",
+   "verdict": "not_specific_length_carries_the_same_signal",
+   "verdict_rule": "specificity"
+  }
+ ],
+ "n_clusters": 14701,
+ "n_trajectories": 14701,
+ "n_turns": 147253,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 70,
+  "exp_id": "EXP-0193",
+  "note": "wave-8 design",
+  "python": "3.11.7",
+  "rows_in": 147253,
+  "started_at": "2026-09-24T19:36:52",
+  "wallclock_sec": 2.3
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T19:36:55",
+ "strata": [
+  {
+   "beta": 0.003,
+   "ci_hi": 0.0083,
+   "ci_lo": -0.0024,
+   "cluster": "traj_id",
+   "clusters": 4249,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 4249,
+   "p": 0.2764,
+   "rows": 4249,
+   "se": 0.0027,
+   "stratification": "category",
+   "stratum": "Agent Tools"
+  },
+  {
+   "beta": -0.0262,
+   "ci_hi": 0.1096,
+   "ci_lo": -0.162,
+   "cluster": "traj_id",
+   "clusters": 1687,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 1687,
+   "p": 0.7055,
+   "rows": 1687,
+   "se": 0.0693,
+   "stratification": "category",
+   "stratum": "Browser Automation"
+  },
+  {
+   "beta": 0.0022,
+   "ci_hi": 0.0037,
+   "ci_lo": 0.0006,
+   "cluster": "traj_id",
+   "clusters": 891,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 891,
+   "p": 0.0058,
+   "rows": 891,
+   "se": 0.0008,
+   "stratification": "category",
+   "stratum": "File Operations"
+  },
+  {
+   "beta": 0.0147,
+   "ci_hi": 0.0324,
+   "ci_lo": -0.003,
+   "cluster": "traj_id",
+   "clusters": 859,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 859,
+   "p": 0.1046,
+   "rows": 859,
+   "se": 0.009,
+   "stratification": "category",
+   "stratum": "Multi-Tool"
+  },
+  {
+   "beta": 0.0035,
+   "ci_hi": 0.0276,
+   "ci_lo": -0.0207,
+   "cluster": "traj_id",
+   "clusters": 2131,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 2131,
+   "p": 0.7777,
+   "rows": 2131,
+   "se": 0.0123,
+   "stratification": "category",
+   "stratum": "Repository Tasks"
+  },
+  {
+   "beta": -0.0104,
+   "ci_hi": 0.0322,
+   "ci_lo": -0.053,
+   "cluster": "traj_id",
+   "clusters": 308,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 308,
+   "p": 0.6311,
+   "rows": 308,
+   "se": 0.0217,
+   "stratification": "category",
+   "stratum": "Scheduling"
+  },
+  {
+   "beta": -0.0053,
+   "ci_hi": -0.0029,
+   "ci_lo": -0.0077,
+   "cluster": "traj_id",
+   "clusters": 4247,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 4247,
+   "p": 0.0,
+   "rows": 4247,
+   "se": 0.0012,
+   "stratification": "category",
+   "stratum": "Terminal & Coding"
+  },
+  {
+   "beta": 0.0012,
+   "ci_hi": 0.0028,
+   "ci_lo": -0.0005,
+   "cluster": "traj_id",
+   "clusters": 6823,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 6823,
+   "p": 0.1665,
+   "rows": 6823,
+   "se": 0.0008,
+   "stratification": "turn_quartile",
+   "stratum": "q1_shortest"
+  },
+  {
+   "beta": 0.0128,
+   "ci_hi": 0.0177,
+   "ci_lo": 0.0079,
+   "cluster": "traj_id",
+   "clusters": 3561,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 3561,
+   "p": 0.0,
+   "rows": 3561,
+   "se": 0.0025,
+   "stratification": "turn_quartile",
+   "stratum": "q2"
+  },
+  {
+   "beta": 0.0166,
+   "ci_hi": 0.0256,
+   "ci_lo": 0.0077,
+   "cluster": "traj_id",
+   "clusters": 2580,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 2580,
+   "p": 0.0003,
+   "rows": 2580,
+   "se": 0.0046,
+   "stratification": "turn_quartile",
+   "stratum": "q3"
+  },
+  {
+   "beta": 0.0231,
+   "ci_hi": 0.0351,
+   "ci_lo": 0.0112,
+   "cluster": "traj_id",
+   "clusters": 1737,
+   "dropped_constant_terms": "none",
+   "identifiable": true,
+   "n": 1737,
+   "p": 0.0001,
+   "rows": 1737,
+   "se": 0.0061,
+   "stratification": "turn_quartile",
+   "stratum": "q4_longest"
+  }
+ ],
+ "topic": "T182"
+}

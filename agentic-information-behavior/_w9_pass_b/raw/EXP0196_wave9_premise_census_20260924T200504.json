@@ -1,0 +1,241 @@
+{
+ "cluster_unit": "instance_id",
+ "duplicate_rollout_rows_dropped_before_sampling": 0,
+ "exp_id": "EXP-0196",
+ "files_read": [
+  "train-00051.parquet",
+  "train-00065.parquet",
+  "train-00178.parquet",
+  "train-00209.parquet",
+  "train-00228.parquet",
+  "train-00285.parquet",
+  "train-00457.parquet",
+  "train-00501.parquet",
+  "train-00563.parquet",
+  "train-00864.parquet",
+  "train-01116.parquet",
+  "train-01209.parquet"
+ ],
+ "gate_rules": {
+  "G10_duration_available": ">= 0.90 of rollouts carry a duration, the cost axis of T179's window and T193's value trade-off",
+  "G11_cluster_count": ">= 500 task instances, so an instance-clustered interval exists for every design in the wave",
+  "G12_bigram_support": ">= 50 family bigrams occurring >= 100 times, the support a transition matrix has to be estimated on",
+  "G1_rollouts_parseable": ">= 0.95 of drawn rollouts yield at least one commanded step",
+  "G2_outcome_label_present": ">= 0.95 of rollouts carry a non-empty exit_status, which is the only final-outcome label this release has and three designs condition on it",
+  "G3_command_families_for_a_taxonomy": ">= 12 command families with >= 500 steps each, below which a taxonomy of agent information behaviour would be a split of two bins",
+  "G4_rollouts_long_enough_for_a_first_fifth": ">= 1,000 rollouts have >= 10 commanded steps, so a first-fifth feature is more than one step",
+  "G5_failure_then_a_further_command": ">= 500 rollouts contain a failed observation followed by another command - the window T179 measures",
+  "G6_task_families_for_a_cross_task_grammar": ">= 10 task families with >= 200 rollouts each, which is the minimum for comparing a grammar across tasks rather than within one",
+  "G7_trajectories_with_switches": ">= 1,000 rollouts make >= 2 family switches, so a transition curve has variation to fit",
+  "G8_instances_with_repeated_rollouts": ">= 300 task instances attempted more than once, the comparison T193 needs to ask which rollout deserved reuse",
+  "G9_newness_available": ">= 0.90 of steps have an observation whose new-word share is computable"
+ },
+ "gates": {
+  "G10_duration_available": {
+   "blocks": [
+    "T193"
+   ],
+   "fires": false,
+   "measured": 1.0,
+   "rule": ">= 0.90 of rollouts carry a duration, the cost axis of T179's window and T193's value trade-off",
+   "scope": "H2",
+   "threshold": 0.9
+  },
+  "G11_cluster_count": {
+   "blocks": [
+    "T151",
+    "T153",
+    "T156",
+    "T178",
+    "T179",
+    "T193"
+   ],
+   "fires": false,
+   "measured": 1784,
+   "rule": ">= 500 task instances, so an instance-clustered interval exists for every design in the wave",
+   "scope": "design",
+   "threshold": 500
+  },
+  "G12_bigram_support": {
+   "blocks": [
+    "T153"
+   ],
+   "fires": false,
+   "measured": 77,
+   "rule": ">= 50 family bigrams occurring >= 100 times, the support a transition matrix has to be estimated on",
+   "scope": "H2",
+   "threshold": 50
+  },
+  "G1_rollouts_parseable": {
+   "blocks": [
+    "T151",
+    "T153",
+    "T156",
+    "T178",
+    "T179",
+    "T193"
+   ],
+   "fires": false,
+   "measured": 0.9994,
+   "rule": ">= 0.95 of drawn rollouts yield at least one commanded step",
+   "scope": "design",
+   "threshold": 0.95
+  },
+  "G2_outcome_label_present": {
+   "blocks": [
+    "T156",
+    "T178",
+    "T193"
+   ],
+   "fires": false,
+   "measured": 1.0,
+   "rule": ">= 0.95 of rollouts carry a non-empty exit_status, which is the only final-outcome label this release has and three designs condition on it",
+   "scope": "design",
+   "threshold": 0.95
+  },
+  "G3_command_families_for_a_taxonomy": {
+   "blocks": [
+    "T151"
+   ],
+   "fires": true,
+   "measured": 11,
+   "rule": ">= 12 command families with >= 500 steps each, below which a taxonomy of agent information behaviour would be a split of two bins",
+   "scope": "H1",
+   "threshold": 12
+  },
+  "G4_rollouts_long_enough_for_a_first_fifth": {
+   "blocks": [
+    "T178"
+   ],
+   "fires": false,
+   "measured": 19713,
+   "rule": ">= 1,000 rollouts have >= 10 commanded steps, so a first-fifth feature is more than one step",
+   "scope": "H1",
+   "threshold": 1000
+  },
+  "G5_failure_then_a_further_command": {
+   "blocks": [
+    "T179"
+   ],
+   "fires": false,
+   "measured": 17229,
+   "rule": ">= 500 rollouts contain a failed observation followed by another command - the window T179 measures",
+   "scope": "H1",
+   "threshold": 500
+  },
+  "G6_task_families_for_a_cross_task_grammar": {
+   "blocks": [
+    "T153"
+   ],
+   "fires": true,
+   "measured": 2,
+   "rule": ">= 10 task families with >= 200 rollouts each, which is the minimum for comparing a grammar across tasks rather than within one",
+   "scope": "H1",
+   "threshold": 10
+  },
+  "G7_trajectories_with_switches": {
+   "blocks": [
+    "T156"
+   ],
+   "fires": false,
+   "measured": 19964,
+   "rule": ">= 1,000 rollouts make >= 2 family switches, so a transition curve has variation to fit",
+   "scope": "H1",
+   "threshold": 1000
+  },
+  "G8_instances_with_repeated_rollouts": {
+   "blocks": [
+    "T193"
+   ],
+   "fires": false,
+   "measured": 1775,
+   "rule": ">= 300 task instances attempted more than once, the comparison T193 needs to ask which rollout deserved reuse",
+   "scope": "H1",
+   "threshold": 300
+  },
+  "G9_newness_available": {
+   "blocks": [
+    "T151",
+    "T156"
+   ],
+   "fires": true,
+   "measured": 0.7876,
+   "rule": ">= 0.90 of steps have an observation whose new-word share is computable",
+   "scope": "design",
+   "threshold": 0.9
+  }
+ },
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/probe_wave9_premises.py",
+ "measured": {
+  "bigrams_with_100plus_occurrences": 77,
+  "corpus": "the same 12 files of SWE-ZERO / AgentTrove step rollouts wave 6 drew",
+  "distinct_command_families": 13,
+  "distinct_family_bigrams": 138,
+  "distinct_task_prefixes": 805,
+  "duration_present_share": 1.0,
+  "failed_trajectories": 0,
+  "families_with_500plus_steps": 11,
+  "family_step_counts": {
+   "edit": 28826,
+   "inspect_env": 779,
+   "list": 32185,
+   "other": 18904,
+   "read_file": 71993,
+   "run_python": 1216,
+   "run_shell": 1938,
+   "search_content": 63798,
+   "search_name": 69634,
+   "version_control": 1670,
+   "write_file": 1976
+  },
+  "instances": 1784,
+  "instances_with_2plus_rollouts": 1775,
+  "mean_steps": 14.66,
+  "mean_switches_per_trajectory": 8.0,
+  "median_steps": 15.0,
+  "newness_available_share": 0.7876,
+  "outcome_label_share": 1.0,
+  "outcome_values": {
+   "Submitted": 560,
+   "incomplete": 19428
+  },
+  "steps_total": 292992,
+  "successful_trajectories": 0,
+  "task_prefixes_with_200plus_trajectories": 2,
+  "trajectories": 20000,
+  "trajectories_parsed": 19988,
+  "trajectories_with_10plus_steps": 19713,
+  "trajectories_with_2plus_switches": 19964,
+  "trajectories_with_a_failure_then_a_further_command": 17229,
+  "trajectory_parse_share": 0.9994
+ },
+ "rows_in_files": 120000,
+ "rows_requested": "the frozen cap of 20000 rollouts",
+ "run_cost": {
+  "cols_in": 0,
+  "exp_id": "EXP-0196",
+  "note": "wave-9 premise census",
+  "python": "3.11.7",
+  "rows_in": 20000,
+  "started_at": "2026-09-24T20:03:10",
+  "wallclock_sec": 114.0
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T20:05:04",
+ "verdict": {
+  "blocked_gates": [
+   "G3_command_families_for_a_taxonomy",
+   "G6_task_families_for_a_cross_task_grammar",
+   "G9_newness_available"
+  ],
+  "blocked_whole_design": [
+   "T151",
+   "T156"
+  ],
+  "claim_limited": {
+   "G3_command_families_for_a_taxonomy": "H1",
+   "G6_task_families_for_a_cross_task_grammar": "H1"
+  }
+ },
+ "wallclock_sec": 114.0
+}

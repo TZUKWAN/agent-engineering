@@ -1,0 +1,19 @@
+{
+ "exp_id": "EXP-0063",
+ "source_file": "literature_abstracts.csv",
+ "out_file": "literature_abstracts_s2.csv",
+ "records_without_abstract": 94,
+ "attempted": 94,
+ "batches": {
+  "informative": 2,
+  "all_null": 0,
+  "transport_error": 5,
+  "recovered": 28,
+  "title_match_rejected": 0
+ },
+ "with_abstract_now": 30,
+ "still_title_only": 64,
+ "wallclock_sec": 101.6,
+ "started_at": "2026-09-20T03:53:33",
+ "finished_at": "2026-09-20T03:55:14"
+}

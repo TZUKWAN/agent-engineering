@@ -1,0 +1,198 @@
+{
+ "baselines": [
+  {
+   "dv": "n_steps",
+   "mean": 14.882,
+   "model": "steps_only",
+   "n": 20000
+  },
+  {
+   "beta": -0.243,
+   "ci_hi": -0.1051,
+   "ci_lo": -0.3809,
+   "dropped_constant_terms": "none",
+   "dv": "n_steps",
+   "model": "plus_neighbour_similarity",
+   "n": 20000,
+   "p": 0.0006,
+   "se": 0.0704
+  }
+ ],
+ "blocked_designs_in_this_wave": [],
+ "claim_limited_in_this_wave": {
+  "T036": [
+   "H1",
+   "G12_eight_corpus_label_coverage"
+  ],
+  "T189": [
+   "H3",
+   "G7_mmat_no_correctness_label"
+  ],
+  "T194": [
+   "H1",
+   "G9_swe_has_neighbours"
+  ]
+ },
+ "cluster_unit": "instance_id",
+ "descriptive_rates": {
+  "attempts_per_instance": {
+   "1": 9,
+   "2": 10,
+   "3": 30,
+   "4": 61,
+   "5": 92,
+   "6": 132,
+   "7": 142,
+   "8": 179
+  },
+  "sibling_similarity_means": {
+   "both_at_or_above_0p3": 0.0,
+   "command": 0.0004,
+   "issue": 1.0
+  },
+  "steps_by_submitted": {
+   "0": {
+    "mean_steps": 14.95,
+    "rollouts": 19440
+   },
+   "1": {
+    "mean_steps": 12.39,
+    "rollouts": 560
+   }
+  }
+ },
+ "exp_id": "EXP-0218",
+ "finished_at": "2026-09-25T00:12:43",
+ "frame_files_read": {
+  "C": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_codeact_turns.csv.gz",
+  "IV": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_corpus_inventory.csv.gz",
+  "M": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_mmat_transitions.csv.gz",
+  "NE": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_neighbours.csv.gz",
+  "R": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_rollouts.csv.gz",
+  "SI": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_siblings.csv.gz"
+ },
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave12_designs.py",
+ "models": [
+  {
+   "beta": 0.1103,
+   "census_value_measured_over": 200,
+   "ci_hi": 0.1256,
+   "ci_lo": 0.095,
+   "clusters": null,
+   "frozen_floor": 1000,
+   "hypothesis": "H1",
+   "instances": 1784,
+   "mean_best_similarity": 0.2479,
+   "n": null,
+   "note": "EXP-0215's G9 value was counted per instance while its sentence names rollouts; both counts are printed and the unit of each is stated (deviation W12-D04). The gate fired, so this is a measured prevalence with its floor stated and not a claim that a case library is being drawn on.",
+   "p": 0.0016666666666666668,
+   "p_holm": null,
+   "rollouts": 20000,
+   "rollouts_reaching_floor": 2206,
+   "se": null,
+   "term": "share_of_rollouts_with_another_instance_at_content_similarity_0p30",
+   "verdict": "measured_descriptively_gate_fired_claim_limited",
+   "verdict_direction": "no direction predicted - H1 is a prevalence claim"
+  },
+  {
+   "beta": 0.0,
+   "ci_hi": null,
+   "ci_lo": null,
+   "clusters": 1775,
+   "hypothesis": "H2",
+   "instances": 1775,
+   "issue_similarity_distinct_values": 1,
+   "mean_command_similarity": 0.0004,
+   "mean_issue_similarity": 1.0,
+   "n": null,
+   "note": "attempts of one instance carry the same issue text, so the sibling issue similarity is constant by construction and the correlation H2 asks for has no variation on one side; that is reported here instead of being replaced by a proxy answering another question (deviation W12-D07)",
+   "p": null,
+   "p_holm": null,
+   "pairs": 126194,
+   "se": null,
+   "term": "sibling_issue_similarity_against_sibling_command_similarity",
+   "verdict": "not_testable",
+   "verdict_direction": "predicted_positive: attempts that look alike are done alike"
+  },
+  {
+   "beta": -0.243,
+   "ci_hi": -0.1051,
+   "ci_lo": -0.3809,
+   "clusters": 1784,
+   "hypothesis": "H3",
+   "n": 20000,
+   "note": "the association is estimated because the sentence asks for it, but the causal reading it would need - that a past case was drawn on - is unobservable: EXP-0215's G10 measured no timestamp and no retrieved-case column on any of the 20,000 rollouts, so H3 is claim-limited and is reported without a reuse mechanism (deviation W12-D02)",
+   "p": 0.0006,
+   "p_holm": null,
+   "release_records_a_retrieved_case_field": false,
+   "rollouts_with_timestamp": 0,
+   "se": 0.0704,
+   "steps_term": {
+    "beta": -0.243,
+    "ci_hi": -0.1051,
+    "ci_lo": -0.3809,
+    "cluster": "instance_id",
+    "dropped_constant_terms": "none",
+    "n": 20000,
+    "p": 0.0006,
+    "se": 0.0704
+   },
+   "term": "neighbour_similarity_against_steps_and_finishing",
+   "verdict": "not_testable_premise_no_order_or_case_library_recorded"
+  }
+ ],
+ "n_clusters": 1784,
+ "quick": false,
+ "rollouts": 20000,
+ "run_cost": {
+  "cols_in": 15,
+  "exp_id": "EXP-0218",
+  "note": "wave-12 design",
+  "python": "3.11.7",
+  "rows_in": 14741,
+  "started_at": "2026-09-25T00:12:19",
+  "wallclock_sec": 24.5
+ },
+ "seed": 42,
+ "sibling_pairs": 126194,
+ "started_at": "2026-09-25T00:12:43",
+ "strata": [
+  {
+   "mean_steps": 14.975,
+   "rollouts": 1744,
+   "stratification": "neighbour similarity band",
+   "stratum": "b1",
+   "submitted_share": 0.0034
+  },
+  {
+   "mean_steps": 14.893,
+   "rollouts": 16099,
+   "stratification": "neighbour similarity band",
+   "stratum": "b2",
+   "submitted_share": 0.0245
+  },
+  {
+   "mean_steps": 14.719,
+   "rollouts": 2157,
+   "stratification": "neighbour similarity band",
+   "stratum": "b3plus",
+   "submitted_share": 0.0737
+  },
+  {
+   "later_submitted_share": 0.0265,
+   "mean_step_difference": 0.01,
+   "pairs": 126193,
+   "stratification": "sibling command-similarity band",
+   "stratum": "c0"
+  },
+  {
+   "later_submitted_share": 0.0,
+   "mean_step_difference": 0.0,
+   "pairs": 1,
+   "stratification": "sibling command-similarity band",
+   "stratum": "c1"
+  }
+ ],
+ "topic": "T194"
+}

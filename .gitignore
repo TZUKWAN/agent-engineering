@@ -1,0 +1,32 @@
+# ===== 数据集（用户明确排除） =====
+01_datasets/
+MATLABINTOKEN/datasets/
+MATLABINTOKEN/data/
+
+# ===== 运行结果与中间产物 =====
+results_raw/
+results_processed/
+MATLABINTOKEN/results/
+logs/
+*.log
+
+# ===== 生成的大规模产物 =====
+agentic-information-behavior/papers/
+word_output/
+word_output_v2/
+word_output_v3/
+*.zip
+
+# ===== 重复工作副本 =====
+_cleanroom/
+agentic-information-behavior/_clean_room/
+
+# ===== 环境与缓存 =====
+.venv*/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+desktop.ini

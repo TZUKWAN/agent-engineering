@@ -1,0 +1,331 @@
+{
+ "cluster_unit": "conversation or rollout, per design",
+ "exp_id": "EXP-0215",
+ "gate_rules": {
+  "G10_swe_records_order_or_a_library": ">= 1 rollout carrying a timestamp or an explicit retrieved-case field, without which 'reuse of historical trajectories' cannot be observed as retrieval",
+  "G11_eight_corpora_inventoried": ">= 6 of the eight local corpora yield a file count, a row count and a column list, which is all T036's aggregation can be built from",
+  "G12_eight_corpus_label_coverage": ">= 4 corpora expose an outcome or quality column among their first columns, the ceiling on how many of the eight can carry a labelled claim",
+  "G1_codeact_readable": ">= 200 code-act conversations with at least one assistant turn, the units T184 types",
+  "G2_codeact_has_code_actions": ">= 200 conversations containing an executed code block, without which there is no code action to compare with a natural-language one",
+  "G3_codeact_has_errors_to_recover_from": ">= 100 conversations whose text reports an error, the correctability arm",
+  "G4_codeact_has_composition": ">= 100 conversations with a multi-statement code block, T184's composition arm",
+  "G5_mmat_readable": ">= 200 MMAT conversations with at least one <THOUGHT> block",
+  "G6_mmat_has_reflection_markers": ">= 200 reflection markers followed by a scoreable content pair, below which 'ritual versus corrective' has no events to split",
+  "G7_mmat_no_correctness_label": "a correctness label must be present for any claim about a reflection making the answer right; the release carries none, so this gate fires by design and the wave reports change instead of correctness",
+  "G8_swe_has_prior_attempts": ">= 300 instances attempted more than once in the draw, which is T194's reuse material",
+  "G9_swe_has_neighbours": ">= 1,000 rollouts whose issue text has a neighbour instance at Jaccard >= 0.3, the similar-past-case premise"
+ },
+ "gates": {
+  "G10_swe_records_order_or_a_library": {
+   "blocks": [
+    "T194"
+   ],
+   "fires": true,
+   "measured": 0,
+   "rule": ">= 1 rollout carrying a timestamp or an explicit retrieved-case field, without which 'reuse of historical trajectories' cannot be observed as retrieval",
+   "scope": "H3",
+   "threshold": 1
+  },
+  "G11_eight_corpora_inventoried": {
+   "blocks": [
+    "T036"
+   ],
+   "fires": false,
+   "measured": 8,
+   "rule": ">= 6 of the eight local corpora yield a file count, a row count and a column list, which is all T036's aggregation can be built from",
+   "scope": "design",
+   "threshold": 6
+  },
+  "G12_eight_corpus_label_coverage": {
+   "blocks": [
+    "T036"
+   ],
+   "fires": true,
+   "measured": 3,
+   "rule": ">= 4 corpora expose an outcome or quality column among their first columns, the ceiling on how many of the eight can carry a labelled claim",
+   "scope": "H1",
+   "threshold": 4
+  },
+  "G1_codeact_readable": {
+   "blocks": [
+    "T184"
+   ],
+   "fires": false,
+   "measured": 4000,
+   "rule": ">= 200 code-act conversations with at least one assistant turn, the units T184 types",
+   "scope": "design",
+   "threshold": 200
+  },
+  "G2_codeact_has_code_actions": {
+   "blocks": [
+    "T184"
+   ],
+   "fires": false,
+   "measured": 3990,
+   "rule": ">= 200 conversations containing an executed code block, without which there is no code action to compare with a natural-language one",
+   "scope": "design",
+   "threshold": 200
+  },
+  "G3_codeact_has_errors_to_recover_from": {
+   "blocks": [
+    "T184"
+   ],
+   "fires": false,
+   "measured": 567,
+   "rule": ">= 100 conversations whose text reports an error, the correctability arm",
+   "scope": "H3",
+   "threshold": 100
+  },
+  "G4_codeact_has_composition": {
+   "blocks": [
+    "T184"
+   ],
+   "fires": false,
+   "measured": 3171,
+   "rule": ">= 100 conversations with a multi-statement code block, T184's composition arm",
+   "scope": "H3",
+   "threshold": 100
+  },
+  "G5_mmat_readable": {
+   "blocks": [
+    "T189"
+   ],
+   "fires": false,
+   "measured": 4000,
+   "rule": ">= 200 MMAT conversations with at least one <THOUGHT> block",
+   "scope": "design",
+   "threshold": 200
+  },
+  "G6_mmat_has_reflection_markers": {
+   "blocks": [
+    "T189"
+   ],
+   "fires": false,
+   "measured": 267,
+   "rule": ">= 200 reflection markers followed by a scoreable content pair, below which 'ritual versus corrective' has no events to split",
+   "scope": "H1",
+   "threshold": 200
+  },
+  "G7_mmat_no_correctness_label": {
+   "blocks": [
+    "T189"
+   ],
+   "fires": true,
+   "measured": 0,
+   "rule": "a correctness label must be present for any claim about a reflection making the answer right; the release carries none, so this gate fires by design and the wave reports change instead of correctness",
+   "scope": "H3",
+   "threshold": 1
+  },
+  "G8_swe_has_prior_attempts": {
+   "blocks": [
+    "T194"
+   ],
+   "fires": false,
+   "measured": 1775,
+   "rule": ">= 300 instances attempted more than once in the draw, which is T194's reuse material",
+   "scope": "design",
+   "threshold": 300
+  },
+  "G9_swe_has_neighbours": {
+   "blocks": [
+    "T194"
+   ],
+   "fires": true,
+   "measured": 200,
+   "rule": ">= 1,000 rollouts whose issue text has a neighbour instance at Jaccard >= 0.3, the similar-past-case premise",
+   "scope": "H1",
+   "threshold": 1000
+  }
+ },
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/probe_wave12_premises.py",
+ "labelled_corpora": 3,
+ "measured": {
+  "codeact": {
+   "conversations_with_a_correction_cycle": 797,
+   "conversations_with_an_error_string": 567,
+   "conversations_with_code": 3990,
+   "conversations_with_multi_statement_code": 3171,
+   "corpus": "xingyaoww/code-act, both shards, read to the cap",
+   "distinct_sources": 2,
+   "mean_assistant_turns": 3.69,
+   "mean_content_words_per_nl_character_x1000": 110.809,
+   "mean_statements_per_code_block": 6.31,
+   "rows_read": 4000,
+   "rows_with_assistant_turns": 4000,
+   "sources_with_50plus_rows": 2
+  },
+  "corpus_set": "xingyaoww/code-act, VIS-MPU-Agent/MMAT-1M, the estate's SWE-ZERO draw, and all eight local corpora inventoried",
+  "eight_corpora": {
+   "AgentBank": {
+    "columns": [
+     "id",
+     "conversations"
+    ],
+    "files": 19,
+    "path": "Solaris99/AgentBank",
+    "rows_in_first_four_files": 15737
+   },
+   "AgentInstruct": {
+    "columns": [
+     "conversations",
+     "id"
+    ],
+    "files": 6,
+    "path": "zai-org/AgentInstruct",
+    "rows_in_first_four_files": 1320
+   },
+   "AgentTrove": {
+    "columns": [
+     "conversations",
+     "agent",
+     "model",
+     "date",
+     "task",
+     "episode",
+     "run_id",
+     "trial_name",
+     "model_provider",
+     "original_source",
+     "original_teacher",
+     "result",
+     "trace_source",
+     "path",
+     "task_binary",
+     "instruction",
+     "verifier_output",
+     "ground_truth",
+     "judgment",
+     "__index_level_0__",
+     "split"
+    ],
+    "files": 38,
+    "path": "open-thoughts/AgentTrove",
+    "rows_in_first_four_files": 180240
+   },
+   "MMAT-1M": {
+    "columns": [
+     "messages",
+     "images"
+    ],
+    "files": 4,
+    "path": "VIS-MPU-Agent/MMAT-1M",
+    "rows_in_first_four_files": 1659279
+   },
+   "SWE-ZERO-12M": {
+    "columns": [
+     "instance_id",
+     "repo",
+     "messages",
+     "trajectory_format",
+     "exit_status",
+     "duration_sec"
+    ],
+    "files": 1230,
+    "path": "AlienKevin/SWE-ZERO-12M-trajectories",
+    "rows_in_first_four_files": 40000
+   },
+   "Toucan-1.5M": {
+    "columns": [
+     "uuid",
+     "subset_name",
+     "messages",
+     "question",
+     "available_tools",
+     "target_tools",
+     "question_quality_assessment",
+     "response_quality_assessment",
+     "metadata"
+    ],
+    "files": 134,
+    "path": "Agent-Ark/Toucan-1.5M",
+    "rows_in_first_four_files": 51852
+   },
+   "code-act": {
+    "columns": [
+     "id",
+     "conversations"
+    ],
+    "files": 2,
+    "path": "xingyaoww/code-act",
+    "rows_in_first_four_files": 78385
+   },
+   "hermes-agent-reasoning-traces": {
+    "columns": [
+     "id",
+     "conversations",
+     "tools",
+     "category",
+     "subcategory",
+     "task"
+    ],
+    "files": 4,
+    "path": "lambda/hermes-agent-reasoning-traces",
+    "rows_in_first_four_files": 22347
+   }
+  },
+  "mmat": {
+   "conversations_with_a_final_answer_turn": 359,
+   "conversations_with_thoughts": 4000,
+   "corpus": "VIS-MPU-Agent/MMAT-1M, the validation split of the reflection-rewrite file",
+   "correctness_label_present": false,
+   "distinct_operators": 4,
+   "lines_read": 4000,
+   "marker_pairs_scored": 267,
+   "mean_jaccard_after_marker": 0.0324,
+   "mean_thought_turns": 2.93,
+   "pairs_that_shifted_content": 267,
+   "reflection_markers_total": 275,
+   "share_of_pairs_that_shifted": 1.0,
+   "top_operators": {
+    "face_detection": 97,
+    "image_caption": 2678,
+    "object_detection": 648,
+    "ocr": 1994
+   }
+  },
+  "swe": {
+   "corpus": "the estate's fixed 12-file SWE-ZERO draw",
+   "instances": 1784,
+   "instances_with_2plus_rollouts": 1775,
+   "mean_best_neighbour_similarity": 0.2483,
+   "repos": 947,
+   "repos_with_50plus_instances": 0,
+   "rollouts": 20000,
+   "rollouts_with_a_case_library_column": 0,
+   "rollouts_with_a_neighbour_at_0p3": 200,
+   "rollouts_with_a_timestamp_column": 0
+  }
+ },
+ "rows_requested": {
+  "codeact": 4000,
+  "mmat": 4000,
+  "swe": 20000
+ },
+ "run_cost": {
+  "cols_in": 0,
+  "exp_id": "EXP-0215",
+  "note": "wave-12 premise census",
+  "python": "3.11.7",
+  "rows_in": 0,
+  "started_at": "2026-09-24T23:04:59",
+  "wallclock_sec": 159.4
+ },
+ "seed": 42,
+ "started_at": "2026-09-24T23:07:39",
+ "verdict": {
+  "blocked_gates": [
+   "G7_mmat_no_correctness_label",
+   "G9_swe_has_neighbours",
+   "G10_swe_records_order_or_a_library",
+   "G12_eight_corpus_label_coverage"
+  ],
+  "blocked_whole_design": [],
+  "claim_limited": {
+   "G10_swe_records_order_or_a_library": "H3",
+   "G12_eight_corpus_label_coverage": "H1",
+   "G7_mmat_no_correctness_label": "H3",
+   "G9_swe_has_neighbours": "H1"
+  }
+ },
+ "wallclock_sec": 159.4
+}

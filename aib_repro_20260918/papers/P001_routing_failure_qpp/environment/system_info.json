@@ -1,0 +1,23 @@
+{
+ "system": "Windows",
+ "release": "10",
+ "machine": "AMD64",
+ "processor": "Intel64 Family 6 Model 165 Stepping 5, GenuineIntel",
+ "python": "3.11.7",
+ "executable": "D:\\Environment\\anaconda3\\python.exe",
+ "cpus_logical": 16,
+ "packages": {
+  "numpy": "1.26.4",
+  "pandas": "2.1.4",
+  "scipy": "1.11.4",
+  "sklearn": "1.2.2",
+  "pyarrow": "14.0.2",
+  "matplotlib": "3.8.0",
+  "statsmodels": "0.14.0"
+ },
+ "llm_api_available_by_policy": false,
+ "network_used_during_analysis": "none (all datasets are on local disk)",
+ "ram_total_gb": 31.9,
+ "ram_available_gb_at_lock": 14.6,
+ "gpu": "NVIDIA GeForce RTX 3060, 12288 MiB"
+}

@@ -1,0 +1,423 @@
+{
+ "baselines": [
+  {
+   "dv": "corpora",
+   "model": "labels_present",
+   "n": 8,
+   "value": 3
+  },
+  {
+   "dv": "corpora",
+   "mean_constructs": 2.25,
+   "model": "constructs_available_per_corpus"
+  }
+ ],
+ "blocked_designs_in_this_wave": [],
+ "claim_limited_in_this_wave": {
+  "T036": [
+   "H1",
+   "G12_eight_corpus_label_coverage"
+  ],
+  "T189": [
+   "H3",
+   "G7_mmat_no_correctness_label"
+  ],
+  "T194": [
+   "H1",
+   "G9_swe_has_neighbours"
+  ]
+ },
+ "cluster_unit": "corpus (a descriptive aggregation)",
+ "corpora": 8,
+ "descriptive_rates": {
+  "construct_totals": {
+   "contradiction-across-sources": 3,
+   "effort-and-budget": 1,
+   "grounding-in-evidence": 3,
+   "outcome-or-quality-label": 3,
+   "repair-after-failure": 2,
+   "source-attribution": 1,
+   "stopping-decision": 3,
+   "tool-catalogue": 2
+  },
+  "inventory": {
+   "AgentBank": {
+    "columns": [
+     "id",
+     "conversations"
+    ],
+    "files": 19,
+    "rows_in_first_four_files": 15737
+   },
+   "AgentInstruct": {
+    "columns": [
+     "conversations",
+     "id"
+    ],
+    "files": 6,
+    "rows_in_first_four_files": 1320
+   },
+   "AgentTrove": {
+    "columns": [
+     "conversations",
+     "agent",
+     "model",
+     "date",
+     "task",
+     "episode",
+     "run_id",
+     "trial_name",
+     "model_provider",
+     "original_source",
+     "original_teacher",
+     "result",
+     "trace_source",
+     "path"
+    ],
+    "files": 38,
+    "rows_in_first_four_files": 180240
+   },
+   "MMAT-1M": {
+    "columns": [
+     "messages",
+     "images"
+    ],
+    "files": 4,
+    "rows_in_first_four_files": 1659279
+   },
+   "SWE-ZERO-12M": {
+    "columns": [
+     "instance_id",
+     "repo",
+     "messages",
+     "trajectory_format",
+     "exit_status",
+     "duration_sec"
+    ],
+    "files": 1230,
+    "rows_in_first_four_files": 40000
+   },
+   "Toucan-1.5M": {
+    "columns": [
+     "uuid",
+     "subset_name",
+     "messages",
+     "question",
+     "available_tools",
+     "target_tools",
+     "question_quality_assessment",
+     "response_quality_assessment",
+     "metadata"
+    ],
+    "files": 134,
+    "rows_in_first_four_files": 51852
+   },
+   "code-act": {
+    "columns": [
+     "id",
+     "conversations"
+    ],
+    "files": 2,
+    "rows_in_first_four_files": 78385
+   },
+   "hermes-agent-reasoning-traces": {
+    "columns": [
+     "id",
+     "conversations",
+     "tools",
+     "category",
+     "subcategory",
+     "task"
+    ],
+    "files": 4,
+    "rows_in_first_four_files": 22347
+   }
+  }
+ },
+ "exp_id": "EXP-0219",
+ "finished_at": "2026-09-25T00:13:09",
+ "frame_files_read": {
+  "C": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_codeact_turns.csv.gz",
+  "IV": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_corpus_inventory.csv.gz",
+  "M": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_mmat_transitions.csv.gz",
+  "NE": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_neighbours.csv.gz",
+  "R": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_rollouts.csv.gz",
+  "SI": "G:\\刘俊琦\\AGENT ENGINEERING\\agentic-information-behavior\\results_processed\\EXP0220_wave12_swe_siblings.csv.gz"
+ },
+ "gate_scope": "design",
+ "invocation": "D:\\Environment\\anaconda3\\python.exe 02_shared_code/package_factory/exp_wave12_designs.py",
+ "models": [
+  {
+   "beta": 3,
+   "ci_hi": null,
+   "ci_lo": null,
+   "clusters": null,
+   "corpora": 8,
+   "frozen_floor": 4,
+   "hypothesis": "H1",
+   "labelled": 3,
+   "n": 8,
+   "note": "G12 fired: 3 of 8 rather than the frozen 4, so no claim about labelled evidence across the estate may be stronger than that count (W12-D03)",
+   "p": null,
+   "p_holm": null,
+   "per_corpus": [
+    {
+     "columns": "id|conversations",
+     "corpus": "AgentBank",
+     "outcome_or_quality_column": 0
+    },
+    {
+     "columns": "conversations|id",
+     "corpus": "AgentInstruct",
+     "outcome_or_quality_column": 0
+    },
+    {
+     "columns": "conversations|agent|model|date|task|episode|run_id|trial_name|model_provider|original_source|original_teacher|result|trace_source|path|task_binary|instruction|verifier_output|ground_truth|judgment|__i",
+     "corpus": "AgentTrove",
+     "outcome_or_quality_column": 1
+    },
+    {
+     "columns": "messages|images",
+     "corpus": "MMAT-1M",
+     "outcome_or_quality_column": 0
+    },
+    {
+     "columns": "instance_id|repo|messages|trajectory_format|exit_status|duration_sec",
+     "corpus": "SWE-ZERO-12M",
+     "outcome_or_quality_column": 1
+    },
+    {
+     "columns": "uuid|subset_name|messages|question|available_tools|target_tools|question_quality_assessment|response_quality_assessment|metadata",
+     "corpus": "Toucan-1.5M",
+     "outcome_or_quality_column": 1
+    },
+    {
+     "columns": "id|conversations",
+     "corpus": "code-act",
+     "outcome_or_quality_column": 0
+    },
+    {
+     "columns": "id|conversations|tools|category|subcategory|task",
+     "corpus": "hermes-agent-reasoning-traces",
+     "outcome_or_quality_column": 0
+    }
+   ],
+   "se": null,
+   "term": "corpora_exposing_an_outcome_or_quality_column",
+   "verdict": "measured_descriptively_gate_fired_claim_limited",
+   "verdict_rule": "descriptive"
+  },
+  {
+   "beta": 3.099,
+   "ci_hi": null,
+   "ci_lo": null,
+   "clusters": null,
+   "hypothesis": "H2",
+   "largest": {
+    "AgentTrove": 180240,
+    "MMAT-1M": 1659279,
+    "code-act": 78385
+   },
+   "n": 8,
+   "note": "rows in each corpus's first four shards, not the corpus totals, because a total would need a different read of every file; the ratio is the point - pooling across these units would be comparing trajectories with questions",
+   "p": null,
+   "p_holm": null,
+   "se": null,
+   "smallest": {
+    "AgentBank": 15737,
+    "AgentInstruct": 1320,
+    "hermes-agent-reasoning-traces": 22347
+   },
+   "term": "spread_in_unit_of_observation_across_the_eight",
+   "verdict": "measured_descriptively_no_band_was_frozen",
+   "verdict_rule": "descriptive"
+  },
+  {
+   "beta": 0.28125,
+   "ci_hi": null,
+   "ci_lo": null,
+   "clusters": null,
+   "hypothesis": "H3",
+   "matrix": {
+    "AgentBank": {
+     "contradiction-across-sources": 0,
+     "effort-and-budget": 0,
+     "grounding-in-evidence": 0,
+     "outcome-or-quality-label": 0,
+     "repair-after-failure": 0,
+     "source-attribution": 0,
+     "stopping-decision": 0,
+     "tool-catalogue": 0
+    },
+    "AgentInstruct": {
+     "contradiction-across-sources": 0,
+     "effort-and-budget": 0,
+     "grounding-in-evidence": 0,
+     "outcome-or-quality-label": 0,
+     "repair-after-failure": 0,
+     "source-attribution": 0,
+     "stopping-decision": 0,
+     "tool-catalogue": 0
+    },
+    "AgentTrove": {
+     "contradiction-across-sources": 0,
+     "effort-and-budget": 0,
+     "grounding-in-evidence": 0,
+     "outcome-or-quality-label": 1,
+     "repair-after-failure": 1,
+     "source-attribution": 1,
+     "stopping-decision": 0,
+     "tool-catalogue": 0
+    },
+    "MMAT-1M": {
+     "contradiction-across-sources": 1,
+     "effort-and-budget": 0,
+     "grounding-in-evidence": 1,
+     "outcome-or-quality-label": 0,
+     "repair-after-failure": 0,
+     "source-attribution": 0,
+     "stopping-decision": 1,
+     "tool-catalogue": 0
+    },
+    "SWE-ZERO-12M": {
+     "contradiction-across-sources": 1,
+     "effort-and-budget": 1,
+     "grounding-in-evidence": 1,
+     "outcome-or-quality-label": 1,
+     "repair-after-failure": 1,
+     "source-attribution": 0,
+     "stopping-decision": 1,
+     "tool-catalogue": 0
+    },
+    "Toucan-1.5M": {
+     "contradiction-across-sources": 1,
+     "effort-and-budget": 0,
+     "grounding-in-evidence": 1,
+     "outcome-or-quality-label": 1,
+     "repair-after-failure": 0,
+     "source-attribution": 0,
+     "stopping-decision": 1,
+     "tool-catalogue": 1
+    },
+    "code-act": {
+     "contradiction-across-sources": 0,
+     "effort-and-budget": 0,
+     "grounding-in-evidence": 0,
+     "outcome-or-quality-label": 0,
+     "repair-after-failure": 0,
+     "source-attribution": 0,
+     "stopping-decision": 0,
+     "tool-catalogue": 0
+    },
+    "hermes-agent-reasoning-traces": {
+     "contradiction-across-sources": 0,
+     "effort-and-budget": 0,
+     "grounding-in-evidence": 0,
+     "outcome-or-quality-label": 0,
+     "repair-after-failure": 0,
+     "source-attribution": 0,
+     "stopping-decision": 0,
+     "tool-catalogue": 1
+    }
+   },
+   "n": 8,
+   "note": "availability is whether the fields a construct was tested on exist in that corpus, read from the column names the release itself spells - a claim about what could be asked, not about what is true",
+   "p": null,
+   "p_holm": null,
+   "per_construct_totals": {
+    "contradiction-across-sources": 3,
+    "effort-and-budget": 1,
+    "grounding-in-evidence": 3,
+    "outcome-or-quality-label": 3,
+    "repair-after-failure": 2,
+    "source-attribution": 1,
+    "stopping-decision": 3,
+    "tool-catalogue": 2
+   },
+   "se": null,
+   "term": "construct_by_corpus_availability_matrix",
+   "verdict": "measured_descriptively_no_band_was_frozen",
+   "verdict_rule": "descriptive"
+  }
+ ],
+ "n_clusters": 8,
+ "quick": false,
+ "run_cost": {
+  "cols_in": 15,
+  "exp_id": "EXP-0219",
+  "note": "wave-12 design",
+  "python": "3.11.7",
+  "rows_in": 14741,
+  "started_at": "2026-09-25T00:12:44",
+  "wallclock_sec": 24.9
+ },
+ "seed": 42,
+ "started_at": "2026-09-25T00:13:09",
+ "strata": [
+  {
+   "files": 19,
+   "n_columns": 2,
+   "outcome_or_quality_column": 0,
+   "rows_in_first_four_files": 15737,
+   "stratification": "corpus",
+   "stratum": "AgentBank"
+  },
+  {
+   "files": 6,
+   "n_columns": 2,
+   "outcome_or_quality_column": 0,
+   "rows_in_first_four_files": 1320,
+   "stratification": "corpus",
+   "stratum": "AgentInstruct"
+  },
+  {
+   "files": 38,
+   "n_columns": 21,
+   "outcome_or_quality_column": 1,
+   "rows_in_first_four_files": 180240,
+   "stratification": "corpus",
+   "stratum": "AgentTrove"
+  },
+  {
+   "files": 4,
+   "n_columns": 2,
+   "outcome_or_quality_column": 0,
+   "rows_in_first_four_files": 1659279,
+   "stratification": "corpus",
+   "stratum": "MMAT-1M"
+  },
+  {
+   "files": 1230,
+   "n_columns": 6,
+   "outcome_or_quality_column": 1,
+   "rows_in_first_four_files": 40000,
+   "stratification": "corpus",
+   "stratum": "SWE-ZERO-12M"
+  },
+  {
+   "files": 134,
+   "n_columns": 9,
+   "outcome_or_quality_column": 1,
+   "rows_in_first_four_files": 51852,
+   "stratification": "corpus",
+   "stratum": "Toucan-1.5M"
+  },
+  {
+   "files": 2,
+   "n_columns": 2,
+   "outcome_or_quality_column": 0,
+   "rows_in_first_four_files": 78385,
+   "stratification": "corpus",
+   "stratum": "code-act"
+  },
+  {
+   "files": 4,
+   "n_columns": 6,
+   "outcome_or_quality_column": 0,
+   "rows_in_first_four_files": 22347,
+   "stratification": "corpus",
+   "stratum": "hermes-agent-reasoning-traces"
+  }
+ ],
+ "topic": "T036"
+}

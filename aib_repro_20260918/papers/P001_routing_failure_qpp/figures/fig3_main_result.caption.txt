@@ -1,0 +1,1 @@
+Figure 3. Main held-out result. Each of the three teacher-model corpora is evaluated once. The pre-retrieval model exceeds both the trivial length baseline and the post-retrieval quasi-local QPP baseline in every corpus. Chance = 0.5 AUROC.

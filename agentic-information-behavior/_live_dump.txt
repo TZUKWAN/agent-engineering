@@ -1,0 +1,41 @@
+T128 <-> T186 (shared 5) [REPOSITIONED]
+   T128 vs T186: shares 5 construct(s) ['evidenc', 'evidence', 'linguisti', 'uncertaint', 'uncertainty']; differs in outcome, what is manipulated, measurement, substrate - outcome: evidence weighting vs ; what is manipulated: source attribution, evidentiality, authority markers vs ; measurement: how attribution / evidential / authority / uncertainty markers shift t vs estimate U_1..U_T per turn; test drops after tool results, rises after; substrate: Toucan-1.5M vs hermes
+
+T128 <-> T188 (shared 4) [REPOSITIONED]
+   T128 vs T188: shares 4 construct(s) ['evidenc', 'evidence', 'sourc', 'source']; differs in outcome, what is manipulated, measurement, substrate - outcome: evidence weighting vs ; what is manipulated: source attribution, evidentiality, authority markers vs ; measurement: how attribution / evidential / authority / uncertainty markers shift t vs detect 'not enough' / 'need additional evidence' / 'can't conclude' an; substrate: Toucan-1.5M vs hermes
+
+T129 <-> T128 (shared 3) [REPOSITIONED]
+   T129 vs T128: shares 3 construct(s) ['attributio', 'sourc', 'source']; differs in outcome, what is manipulated, measurement - outcome: source criticism vs evidence weighting; what is manipulated: framing of provenance statements vs source attribution, evidentiality, authority markers; measurement: identical content framed as official documentation / a user report / a vs how attribution / evidential / authority / uncertainty markers shift t. Same on substrate
+
+T129 <-> T189 (shared 2) [REPOSITIONED]
+   T129 vs T189: shares 2 construct(s) ['sourc', 'source']; differs in outcome, what is manipulated, measurement, substrate - outcome: source criticism vs ; what is manipulated: framing of provenance statements vs ; measurement: identical content framed as official documentation / a user report / a vs compare reasoning, answer, tool use and source choice before and after; substrate: Toucan-1.5M vs MMAT-1M
+
+T134 <-> T135 (shared 6) [REPOSITIONED]
+   T134 vs T135: shares 6 construct(s) ['coherenc', 'evidenc', 'evidence', 'faithfulne', 'suppor', 'therefor']; differs in what is manipulated, measurement - what is manipulated: causal connectives, discourse coherence vs coherence markers; measurement: because/therefore/thus/since/however checked against whether the cited vs fluent A-therefore-B-therefore-C where the tool evidence does not supp. Same on outcome, substrate
+
+T134 <-> T131 (shared 4) [REPOSITIONED]
+   T134 vs T131: shares 4 construct(s) ['conclusio', 'discours', 'evidenc', 'evidence']; differs in outcome, what is manipulated, measurement, substrate - outcome: evidence faithfulness vs outcome; what is manipulated: causal connectives, discourse coherence vs discourse structure comparison; measurement: because/therefore/thus/since/however checked against whether the cited vs success: Hypothesis-Evidence-Evaluation-Revision vs failure: Hypothesi; substrate: Toucan-1.5M vs AgentTrove
+
+T135 <-> T188 (shared 4) [REPOSITIONED]
+   T135 vs T188: shares 4 construct(s) ['evidenc', 'evidence', 'not', 'tool']; differs in outcome, what is manipulated, measurement, substrate - outcome: evidence faithfulness vs ; what is manipulated: coherence markers vs ; measurement: fluent A-therefore-B-therefore-C where the tool evidence does not supp vs detect 'not enough' / 'need additional evidence' / 'can't conclude' an; substrate: Toucan-1.5M vs hermes
+
+T135 <-> T134 (shared 4) [REPOSITIONED]
+   T135 vs T134: shares 4 construct(s) ['evidenc', 'evidence', 'suppor', 'therefor']; differs in what is manipulated, measurement - what is manipulated: coherence markers vs causal connectives, discourse coherence; measurement: fluent A-therefore-B-therefore-C where the tool evidence does not supp vs because/therefore/thus/since/however checked against whether the cited. Same on outcome, substrate
+
+T136 <-> T167 (shared 5) [REPOSITIONED]
+   T136 vs T167: shares 5 construct(s) ['conditio', 'infor', 'plan', 'semanti', 'tool']; differs in outcome, what is manipulated, measurement - outcome: plan adherence vs ; what is manipulated: predicate/object/order/condition extraction from plans vs ; measurement: semantic alignment of what the plan says it will look up with the tool vs condition on the gold tool being in the candidate list and decompose t. Same on substrate
+
+T136 <-> T162 (shared 4) [REPOSITIONED]
+   T136 vs T162: shares 4 construct(s) ['actio', 'conditio', 'objec', 'tool']; differs in outcome, what is manipulated, measurement - outcome: plan adherence vs ; what is manipulated: predicate/object/order/condition extraction from plans vs ; measurement: semantic alignment of what the plan says it will look up with the tool vs code action verbs, object descriptions, conditions, parameter constrai. Same on substrate
+
+T123 <-> T185 (shared 7) [REPOSITIONED]
+   T123 vs T185: shares 7 construct(s) ['epistemi', 'link', 'ne', 'proba', 'unclea', 'verifi', 'verification']; differs in outcome, what is manipulated, measurement, substrate - outcome: verification action vs ; what is manipulated: epistemic modality, hedging detection vs ; measurement: may/might/probably/unclear/seems/need to verify in Hermes; link episte vs extract epistemic markers (maybe/probably/unclear/need to check/not su; substrate: hermes-agent-reasoning-traces vs hermes
+
+T123 <-> T151 (shared 4) [REPOSITIONED]
+   T123 vs T151: shares 4 construct(s) ['agent', 'behaviou', 'ne', 'verif']; differs in outcome, what is manipulated, measurement, substrate - outcome: verification action vs ; what is manipulated: epistemic modality, hedging detection vs ; measurement: may/might/probably/unclear/seems/need to verify in Hermes; link episte vs encode trajectories into information acts (NEED/PLAN/SEARCH/INSPECT/FI; substrate: hermes-agent-reasoning-traces vs AgentTrove
+
+T127 <-> T188 (shared 9) [REPOSITIONED]
+   T127 vs T188: shares 9 construct(s) ['compar', 'coverag', 'detec', 'enoug', 'evidenc', 'evidence', 'insufficien', 'ne', 'objectiv']; differs in outcome, what is manipulated, measurement, substrate - outcome: information foraging / stopping vs ; what is manipulated: sufficiency expressions vs ; measurement: detect 'enough evidence / insufficient / need more data' and compare w vs detect 'not enough' / 'need additional evidence' / 'can't conclude' an; substrate: Toucan-1.5M vs hermes
+
+T127 <-> T175 (shared 4) [REPOSITIONED]
+   T127 vs T175: shares 4 construct(s) ['evidenc', 'evidence', 'infor', 'stop']; differs in outcome, what is manipulated, measurement, substrate - outcome: information foraging / stopping vs ; what is manipulated: sufficiency expressions vs ; measurement: detect 'enough evidence / insufficient / need more data' and compare w vs predict STOP vs CONTINUE from marginal information, evidence consisten; substrate: Toucan-1.5M vs hermes
